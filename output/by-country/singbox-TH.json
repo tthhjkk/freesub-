@@ -6,44 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - github",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "v2ray.simspeedup.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - github",
-      "server": "45.77.241.190",
-      "server_port": 8441,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/act/company/intro",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 03 - github",
-      "server": "104.16.10.185",
+      "server": "162.159.192.125",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -61,18 +24,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 04 - github",
-      "server": "160.30.54.63",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - github",
+      "server": "34.15.162.1",
+      "server_port": 443,
+      "uuid": "2b1d0c2a-9c80-4b72-892e-93d0500b9210",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw",
+          "short_id": "ca672c53fbbac555"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - github",
+      "server": "8.222.70.238",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/channel?ed=2560fp=chrome",
+        "path": "/mall/china/doc?ed=2560fp=chrome",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -85,8 +72,7 @@
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github",
-        "🇹🇭 泰国 (Thailand) 04 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github"
       ]
     },
     {
@@ -95,8 +81,7 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github",
-        "🇹🇭 泰国 (Thailand) 04 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

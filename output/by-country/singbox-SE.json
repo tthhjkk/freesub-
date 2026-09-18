@@ -17,36 +17,32 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
-      "server": "79.141.174.147",
-      "server_port": 33743,
-      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
       "server": "143.246.195.138",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
         "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
+      "server": "34.51.231.250",
+      "server_port": 443,
+      "uuid": "e4be912f-68e8-4d51-80a4-1342b646f8e0",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg",
+          "short_id": "79ff7d51e3c56323"
+        }
       }
     },
     {
@@ -64,6 +60,30 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - github",
+      "server": "193.42.39.10",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -72,7 +92,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -94,7 +114,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - github",
         "🇸🇪 瑞典 (Sweden) 03 - github",
         "🇸🇪 瑞典 (Sweden) 04 - github",
-        "🇸🇪 瑞典 (Sweden) 05 - github"
+        "🇸🇪 瑞典 (Sweden) 05 - github",
+        "🇸🇪 瑞典 (Sweden) 06 - github"
       ]
     },
     {
@@ -105,7 +126,8 @@
         "🇸🇪 瑞典 (Sweden) 02 - github",
         "🇸🇪 瑞典 (Sweden) 03 - github",
         "🇸🇪 瑞典 (Sweden) 04 - github",
-        "🇸🇪 瑞典 (Sweden) 05 - github"
+        "🇸🇪 瑞典 (Sweden) 05 - github",
+        "🇸🇪 瑞典 (Sweden) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

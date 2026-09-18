@@ -7,25 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - github",
       "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
+      "server": "185.135.86.175",
       "server_port": 9068,
       "method": "aes-256-cfb",
       "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - github",
       "server": "185.135.86.175",
-      "server_port": 9036,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
@@ -39,13 +39,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - github",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - github",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - github",
       "server": "185.135.86.175",
       "server_port": 9033,
       "method": "aes-256-cfb",
@@ -53,27 +61,19 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - github",
-      "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - github",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - github",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "vless",
@@ -87,13 +87,37 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
           "short_id": "33acba1b"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - github",
+      "server": "46.243.142.227",
+      "server_port": 10443,
+      "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
+      "tls": {
+        "enabled": true,
+        "server_name": "shprcdn.quest",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KoNQ52irUOW-fybKx-gUKCuHpMnHhgQ_skjd8TmqJ2k",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.storage.v2.Storage"
       }
     },
     {
@@ -110,7 +134,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - github",
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github"
       ]
     },
     {
@@ -126,7 +151,8 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - github",
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
