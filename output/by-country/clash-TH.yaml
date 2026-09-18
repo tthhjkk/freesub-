@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - github
-  server: 103.86.49.57
+  server: 103.190.178.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /topic/htm?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇹🇭 泰国 (Thailand) 02 - github
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -15,8 +30,8 @@ proxies:
     path: /ws
     headers:
       Host: ais.speedtest.net
-- name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: 188.114.97.6
+- name: 🇹🇭 泰国 (Thailand) 03 - github
+  server: 104.18.26.90
   port: 443
   udp: true
   type: vless
@@ -36,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
+  - 🇹🇭 泰国 (Thailand) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
+  - 🇹🇭 泰国 (Thailand) 03 - github
 rules:
 - MATCH,PROXIES
