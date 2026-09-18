@@ -6,8 +6,22 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - github",
-      "server": "103.190.178.195",
-      "server_port": 443,
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - github",
+      "server": "45.77.241.190",
+      "server_port": 8441,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -20,7 +34,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/topic/htm?ed=2560fp=chrome",
+        "path": "/act/company/intro",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -28,22 +42,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - github",
-      "server": "v2ray.simspeedup.com",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "ais.speedtest.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - github",
-      "server": "104.18.26.90",
+      "server": "104.16.10.185",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
@@ -60,13 +60,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - github",
+      "server": "160.30.54.63",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/channel?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github",
+        "🇹🇭 泰国 (Thailand) 04 - github"
       ]
     },
     {
@@ -75,7 +95,8 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github",
+        "🇹🇭 泰国 (Thailand) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

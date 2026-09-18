@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - github",
-      "server": "vpn-au-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
+      "server": "82.198.246.37",
+      "server_port": 180,
+      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+      "security": "auto"
     },
     {
       "type": "vless",
@@ -48,36 +44,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - github",
-      "server": "34.87.244.111",
-      "server_port": 443,
-      "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E",
-          "short_id": "d725f0dd8cce210f"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - github",
-      "server": "82.198.246.250",
-      "server_port": 180,
-      "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-      "security": "auto"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - github",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - github",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -99,9 +67,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - github",
         "🇦🇺 澳大利亚 (Australia) 02 - github",
         "🇦🇺 澳大利亚 (Australia) 03 - github",
-        "🇦🇺 澳大利亚 (Australia) 04 - github",
-        "🇦🇺 澳大利亚 (Australia) 05 - github",
-        "🇦🇺 澳大利亚 (Australia) 06 - github"
+        "🇦🇺 澳大利亚 (Australia) 04 - github"
       ]
     },
     {
@@ -111,9 +77,7 @@
         "🇦🇺 澳大利亚 (Australia) 01 - github",
         "🇦🇺 澳大利亚 (Australia) 02 - github",
         "🇦🇺 澳大利亚 (Australia) 03 - github",
-        "🇦🇺 澳大利亚 (Australia) 04 - github",
-        "🇦🇺 澳大利亚 (Australia) 05 - github",
-        "🇦🇺 澳大利亚 (Australia) 06 - github"
+        "🇦🇺 澳大利亚 (Australia) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

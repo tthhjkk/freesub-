@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
+  server: 139.28.240.68
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 89.251.8.205
   port: 80
   udp: true
@@ -15,7 +23,7 @@ proxies:
     path: /
     headers:
       Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -27,8 +35,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
+  client-fingerprint: qq
+- name: 🇹🇷 土耳其 (Turkey) 04 - github
   server: antar.cdkshop.ir
   port: 8086
   udp: true
@@ -40,7 +48,7 @@ proxies:
     short-id: 5b58b0
   servername: pro.radeon.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
+- name: 🇹🇷 土耳其 (Turkey) 05 - github
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -51,7 +59,17 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 06 - github
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +79,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
+  - 🇹🇷 土耳其 (Turkey) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +90,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
+  - 🇹🇷 土耳其 (Turkey) 06 - github
 rules:
 - MATCH,PROXIES

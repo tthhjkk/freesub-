@@ -6,7 +6,30 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - github",
-      "server": "hk3n.wxgqlfx.vip",
+      "server": "165.232.39.158",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/m?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - github",
+      "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -15,33 +38,12 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
           "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
           "short_id": "e8daed2d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - github",
-      "server": "185.126.67.44",
-      "server_port": 1932,
-      "uuid": "bae8d9ba-9f5d-4802-bb5e-bc0956a472d6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.vk.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
         }
       }
     },
@@ -88,6 +90,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 05 - github",
+      "server": "185.126.67.44",
+      "server_port": 1932,
+      "uuid": "bae8d9ba-9f5d-4802-bb5e-bc0956a472d6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -95,7 +118,8 @@
         "🇸🇨 塞舌尔 (Seychelles) 01 - github",
         "🇸🇨 塞舌尔 (Seychelles) 02 - github",
         "🇸🇨 塞舌尔 (Seychelles) 03 - github",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - github"
+        "🇸🇨 塞舌尔 (Seychelles) 04 - github",
+        "🇸🇨 塞舌尔 (Seychelles) 05 - github"
       ]
     },
     {
@@ -105,7 +129,8 @@
         "🇸🇨 塞舌尔 (Seychelles) 01 - github",
         "🇸🇨 塞舌尔 (Seychelles) 02 - github",
         "🇸🇨 塞舌尔 (Seychelles) 03 - github",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - github"
+        "🇸🇨 塞舌尔 (Seychelles) 04 - github",
+        "🇸🇨 塞舌尔 (Seychelles) 05 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

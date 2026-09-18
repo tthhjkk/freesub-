@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - github",
-      "server": "189.74.97.47",
-      "server_port": 2087,
-      "uuid": "894fe9f0-b998-49c0-8003-a5007de921e1",
-      "transport": {
-        "type": "ws",
-        "path": "/755276b33b6f"
-      }
+      "type": "vmess",
+      "tag": "🇮🇩 印尼 (Indonesia) 01 - github",
+      "server": "zfd-boardv2.kunlun01dns.com",
+      "server_port": 16298,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - github"
+        "🇮🇩 印尼 (Indonesia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - github"
+        "🇮🇩 印尼 (Indonesia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
