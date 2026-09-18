@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇪 瑞典 (Sweden) 01 - myname
+- name: 🇸🇪 瑞典 (Sweden) 01 - github
   server: 143.246.194.60
   port: 8081
   udp: true
@@ -13,7 +13,21 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 02 - myname
+- name: 🇸🇪 瑞典 (Sweden) 02 - github
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - github
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -27,7 +41,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 03 - myname
+- name: 🇸🇪 瑞典 (Sweden) 04 - github
   server: 143.246.195.138
   port: 8081
   udp: true
@@ -36,7 +50,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - myname
+- name: 🇸🇪 瑞典 (Sweden) 05 - github
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -44,21 +58,7 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 05 - myname
-  server: 79.141.174.147
-  port: 33743
-  udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 06 - myname
+- name: 🇸🇪 瑞典 (Sweden) 06 - github
   server: 177.3.215.171
   port: 443
   udp: true
@@ -71,36 +71,27 @@ proxies:
     short-id: 7f2e9c4b1a8d6e53
   servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - myname
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇪 瑞典 (Sweden) 01 - myname
-  - 🇸🇪 瑞典 (Sweden) 02 - myname
-  - 🇸🇪 瑞典 (Sweden) 03 - myname
-  - 🇸🇪 瑞典 (Sweden) 04 - myname
-  - 🇸🇪 瑞典 (Sweden) 05 - myname
-  - 🇸🇪 瑞典 (Sweden) 06 - myname
-  - 🇸🇪 瑞典 (Sweden) 07 - myname
+  - 🇸🇪 瑞典 (Sweden) 01 - github
+  - 🇸🇪 瑞典 (Sweden) 02 - github
+  - 🇸🇪 瑞典 (Sweden) 03 - github
+  - 🇸🇪 瑞典 (Sweden) 04 - github
+  - 🇸🇪 瑞典 (Sweden) 05 - github
+  - 🇸🇪 瑞典 (Sweden) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇪 瑞典 (Sweden) 01 - myname
-  - 🇸🇪 瑞典 (Sweden) 02 - myname
-  - 🇸🇪 瑞典 (Sweden) 03 - myname
-  - 🇸🇪 瑞典 (Sweden) 04 - myname
-  - 🇸🇪 瑞典 (Sweden) 05 - myname
-  - 🇸🇪 瑞典 (Sweden) 06 - myname
-  - 🇸🇪 瑞典 (Sweden) 07 - myname
+  - 🇸🇪 瑞典 (Sweden) 01 - github
+  - 🇸🇪 瑞典 (Sweden) 02 - github
+  - 🇸🇪 瑞典 (Sweden) 03 - github
+  - 🇸🇪 瑞典 (Sweden) 04 - github
+  - 🇸🇪 瑞典 (Sweden) 05 - github
+  - 🇸🇪 瑞典 (Sweden) 06 - github
 rules:
 - MATCH,PROXIES

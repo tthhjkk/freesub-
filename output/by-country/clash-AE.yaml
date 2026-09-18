@@ -4,19 +4,19 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇪 阿联酋 (UAE) 01 - myname
+- name: 🇦🇪 阿联酋 (UAE) 01 - github
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: 04dc7739-5b33-49c9-bf16-3c6919a6498f
+  uuid: 21d11336-4659-448a-a903-e5b7e597ea8a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 02 - myname
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -25,28 +25,29 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
-- name: 🇦🇪 阿联酋 (UAE) 03 - myname
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - myname
-  server: 85.204.107.181
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 05 - myname
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -57,7 +58,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - myname
+- name: 🇦🇪 阿联酋 (UAE) 06 - github
   server: 146.70.102.82
   port: 443
   udp: true
@@ -70,42 +71,27 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - myname
-  server: 78.40.195.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
-    short-id: 98096455d963bdbb
-  servername: www.booking.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇪 阿联酋 (UAE) 01 - myname
-  - 🇦🇪 阿联酋 (UAE) 02 - myname
-  - 🇦🇪 阿联酋 (UAE) 03 - myname
-  - 🇦🇪 阿联酋 (UAE) 04 - myname
-  - 🇦🇪 阿联酋 (UAE) 05 - myname
-  - 🇦🇪 阿联酋 (UAE) 06 - myname
-  - 🇦🇪 阿联酋 (UAE) 07 - myname
+  - 🇦🇪 阿联酋 (UAE) 01 - github
+  - 🇦🇪 阿联酋 (UAE) 02 - github
+  - 🇦🇪 阿联酋 (UAE) 03 - github
+  - 🇦🇪 阿联酋 (UAE) 04 - github
+  - 🇦🇪 阿联酋 (UAE) 05 - github
+  - 🇦🇪 阿联酋 (UAE) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇪 阿联酋 (UAE) 01 - myname
-  - 🇦🇪 阿联酋 (UAE) 02 - myname
-  - 🇦🇪 阿联酋 (UAE) 03 - myname
-  - 🇦🇪 阿联酋 (UAE) 04 - myname
-  - 🇦🇪 阿联酋 (UAE) 05 - myname
-  - 🇦🇪 阿联酋 (UAE) 06 - myname
-  - 🇦🇪 阿联酋 (UAE) 07 - myname
+  - 🇦🇪 阿联酋 (UAE) 01 - github
+  - 🇦🇪 阿联酋 (UAE) 02 - github
+  - 🇦🇪 阿联酋 (UAE) 03 - github
+  - 🇦🇪 阿联酋 (UAE) 04 - github
+  - 🇦🇪 阿联酋 (UAE) 05 - github
+  - 🇦🇪 阿联酋 (UAE) 06 - github
 rules:
 - MATCH,PROXIES

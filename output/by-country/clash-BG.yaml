@@ -4,58 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01 - myname
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - myname
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - myname
-  server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - myname
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - myname
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - myname
-  server: 192.145.31.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - myname
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - myname
+- name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -64,8 +13,37 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: edge
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - myname
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  server: 192.145.31.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
   server: 193.148.59.178
   port: 443
   udp: true
@@ -77,8 +55,28 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - myname
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: randomized
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
   server: 131.123.39.29
   port: 443
   udp: true
@@ -91,50 +89,33 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - myname
-  server: 144.31.50.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - myname
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 02 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 03 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 04 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 05 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 06 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 07 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - myname
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - myname
+  - 🇧🇬 保加利亚 (Bulgaria) 01 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
 rules:
 - MATCH,PROXIES

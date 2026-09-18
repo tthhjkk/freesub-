@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - myname",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
       "server": "aotocon.ggisopi.su",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myname"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - myname"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

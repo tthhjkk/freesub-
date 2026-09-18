@@ -4,15 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - myname
-  server: 162.249.126.7
+- name: 🇷🇴 罗马尼亚 (Romania) 01 - github
+  server: 162.249.126.6
   port: 8443
   udp: true
   type: hysteria2
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: false
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - myname
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - github
   server: 85.204.107.170
   port: 8443
   udp: true
@@ -20,15 +20,15 @@ proxies:
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - myname
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: vk.com
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - myname
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
   server: 146.70.124.85
   port: 443
   udp: true
@@ -41,20 +41,7 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - myname
-  server: 193.163.203.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - myname
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - github
   server: 46.28.67.55
   port: 443
   udp: true
@@ -66,37 +53,41 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - myname
-  server: 154.46.31.106
+  client-fingerprint: safari
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - github
+  server: bl3fk52.sysopnova.art
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 02 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 03 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 04 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 05 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myname
+  - 🇷🇴 罗马尼亚 (Romania) 01 - github
+  - 🇷🇴 罗马尼亚 (Romania) 02 - github
+  - 🇷🇴 罗马尼亚 (Romania) 03 - github
+  - 🇷🇴 罗马尼亚 (Romania) 04 - github
+  - 🇷🇴 罗马尼亚 (Romania) 05 - github
+  - 🇷🇴 罗马尼亚 (Romania) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 02 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 03 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 04 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 05 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 06 - myname
-  - 🇷🇴 罗马尼亚 (Romania) 07 - myname
+  - 🇷🇴 罗马尼亚 (Romania) 01 - github
+  - 🇷🇴 罗马尼亚 (Romania) 02 - github
+  - 🇷🇴 罗马尼亚 (Romania) 03 - github
+  - 🇷🇴 罗马尼亚 (Romania) 04 - github
+  - 🇷🇴 罗马尼亚 (Romania) 05 - github
+  - 🇷🇴 罗马尼亚 (Romania) 06 - github
 rules:
 - MATCH,PROXIES

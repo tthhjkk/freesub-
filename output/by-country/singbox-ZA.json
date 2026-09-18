@@ -5,15 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 01 - myname",
-      "server": "102.133.165.160",
-      "server_port": 16233,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - myname",
+      "tag": "🇿🇦 南非 (South Africa) 01 - github",
       "server": "139.84.247.164",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -21,29 +13,37 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 03 - myname",
+      "tag": "🇿🇦 南非 (South Africa) 02 - github",
       "server": "102.37.156.224",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 03 - github",
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇿🇦 南非 (South Africa) 01 - myname",
-        "🇿🇦 南非 (South Africa) 02 - myname",
-        "🇿🇦 南非 (South Africa) 03 - myname"
+        "🇿🇦 南非 (South Africa) 01 - github",
+        "🇿🇦 南非 (South Africa) 02 - github",
+        "🇿🇦 南非 (South Africa) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇿🇦 南非 (South Africa) 01 - myname",
-        "🇿🇦 南非 (South Africa) 02 - myname",
-        "🇿🇦 南非 (South Africa) 03 - myname"
+        "🇿🇦 南非 (South Africa) 01 - github",
+        "🇿🇦 南非 (South Africa) 02 - github",
+        "🇿🇦 南非 (South Africa) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

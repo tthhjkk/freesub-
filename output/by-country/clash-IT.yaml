@@ -4,49 +4,60 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇹 意大利 (Italy) 01 - myname
+- name: 🇮🇹 意大利 (Italy) 01 - github
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02 - myname
+- name: 🇮🇹 意大利 (Italy) 02 - github
+  server: 204.216.216.23
+  port: 10086
+  udp: true
+  type: vless
+  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 03 - github
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03 - myname
-  server: 31.77.154.14
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
-  tls: true
-  reality-opts:
-    public-key: 3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ
-  servername: swscan.apple.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇮🇹 意大利 (Italy) 04 - myname
+- name: 🇮🇹 意大利 (Italy) 04 - github
   server: 91.201.65.122
-  port: 9092
+  port: 9050
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: TyNkGmp9hs6eGpDK
-- name: 🇮🇹 意大利 (Italy) 05 - myname
+  password: FG5ddLsMPbV5CutE
+- name: 🇮🇹 意大利 (Italy) 05 - github
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇹 意大利 (Italy) 06 - github
+  server: 91.201.65.122
+  port: 9097
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Sn5B7jTqr76aCJT8
+- name: 🇮🇹 意大利 (Italy) 07 - github
   server: 91.201.65.122
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇮🇹 意大利 (Italy) 06 - myname
+- name: 🇮🇹 意大利 (Italy) 08 - github
   server: 82.118.16.187
   port: 443
   udp: true
@@ -58,40 +69,15 @@ proxies:
     public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇹 意大利 (Italy) 07 - myname
-  server: 57.131.38.163
-  port: 2053
-  udp: true
-  type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇮🇹 意大利 (Italy) 08 - myname
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 09 - github
   server: 91.201.65.122
-  port: 9050
+  port: 9092
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FG5ddLsMPbV5CutE
-- name: 🇮🇹 意大利 (Italy) 09 - myname
-  server: 91.201.65.122
-  port: 9097
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 (Italy) 10 - myname
-  server: 204.216.216.23
-  port: 10086
-  udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 11 - myname
+  password: TyNkGmp9hs6eGpDK
+- name: 🇮🇹 意大利 (Italy) 10 - github
   server: 204.216.216.23
   port: 1114
   udp: true
@@ -109,32 +95,30 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇮🇹 意大利 (Italy) 01 - myname
-  - 🇮🇹 意大利 (Italy) 02 - myname
-  - 🇮🇹 意大利 (Italy) 03 - myname
-  - 🇮🇹 意大利 (Italy) 04 - myname
-  - 🇮🇹 意大利 (Italy) 05 - myname
-  - 🇮🇹 意大利 (Italy) 06 - myname
-  - 🇮🇹 意大利 (Italy) 07 - myname
-  - 🇮🇹 意大利 (Italy) 08 - myname
-  - 🇮🇹 意大利 (Italy) 09 - myname
-  - 🇮🇹 意大利 (Italy) 10 - myname
-  - 🇮🇹 意大利 (Italy) 11 - myname
+  - 🇮🇹 意大利 (Italy) 01 - github
+  - 🇮🇹 意大利 (Italy) 02 - github
+  - 🇮🇹 意大利 (Italy) 03 - github
+  - 🇮🇹 意大利 (Italy) 04 - github
+  - 🇮🇹 意大利 (Italy) 05 - github
+  - 🇮🇹 意大利 (Italy) 06 - github
+  - 🇮🇹 意大利 (Italy) 07 - github
+  - 🇮🇹 意大利 (Italy) 08 - github
+  - 🇮🇹 意大利 (Italy) 09 - github
+  - 🇮🇹 意大利 (Italy) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇹 意大利 (Italy) 01 - myname
-  - 🇮🇹 意大利 (Italy) 02 - myname
-  - 🇮🇹 意大利 (Italy) 03 - myname
-  - 🇮🇹 意大利 (Italy) 04 - myname
-  - 🇮🇹 意大利 (Italy) 05 - myname
-  - 🇮🇹 意大利 (Italy) 06 - myname
-  - 🇮🇹 意大利 (Italy) 07 - myname
-  - 🇮🇹 意大利 (Italy) 08 - myname
-  - 🇮🇹 意大利 (Italy) 09 - myname
-  - 🇮🇹 意大利 (Italy) 10 - myname
-  - 🇮🇹 意大利 (Italy) 11 - myname
+  - 🇮🇹 意大利 (Italy) 01 - github
+  - 🇮🇹 意大利 (Italy) 02 - github
+  - 🇮🇹 意大利 (Italy) 03 - github
+  - 🇮🇹 意大利 (Italy) 04 - github
+  - 🇮🇹 意大利 (Italy) 05 - github
+  - 🇮🇹 意大利 (Italy) 06 - github
+  - 🇮🇹 意大利 (Italy) 07 - github
+  - 🇮🇹 意大利 (Italy) 08 - github
+  - 🇮🇹 意大利 (Italy) 09 - github
+  - 🇮🇹 意大利 (Italy) 10 - github
 rules:
 - MATCH,PROXIES

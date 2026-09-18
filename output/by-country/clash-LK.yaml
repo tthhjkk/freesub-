@@ -4,32 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - myname
-  server: 129.151.64.169
-  port: 31867
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - myname
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - myname
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
 rules:
 - MATCH,PROXIES

@@ -4,27 +4,40 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 - myname
-  server: 207.56.137.51
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 - github
+  server: 31.58.181.88
+  port: 8443
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  uuid: 863ce48d-6b5e-4682-b5d7-0c9b43895841
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - myname
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - github
+  server: 46.17.40.234
+  port: 10301
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
   server: 176.32.35.44
   port: 50111
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - myname
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
+  server: 212.192.15.231
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Z9TvqsEkWr7P7GXe
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
   server: 162.128.157.164
   port: 443
   udp: true
@@ -36,23 +49,28 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - myname
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - myname
-  server: 46.17.40.234
-  port: 10301
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: 103.141.221.124
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: bdb313adf74c2ede
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - myname
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
+  server: 47.76.172.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: 60baeb19-560d-402d-b9c9-c062c2350e0b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9nukDgL8dc3PWV07DAwi-_FFj3Y25ifYnnrIp7uV0SI
+    short-id: 92ddbafbf38306f5
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
   server: 202.146.222.174
   port: 443
   udp: true
@@ -60,23 +78,33 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.174
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - myname
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+  server: nas.aizhzo.com
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүёрҹүі
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - myname
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - myname
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - github
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - github
   server: mz.hkychina.com
   port: 8443
   udp: true
@@ -84,64 +112,7 @@ proxies:
   password: HysTeria2026!Proxy
   sni: mz.hkychina.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - myname
-  server: www.shopify.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: yoga-suggesting-recording-calls.trycloudflare.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
-    headers:
-      Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - myname
-  server: 47.238.210.5
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - myname
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c36f62cc-ba6c-4f39-9bcc-b8a0ff01d21b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - myname
-  server: 103.136.150.119
-  port: 30222
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - myname
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 152.32.254.68
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - myname
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - github
   server: 47.239.6.251
   port: 13779
   udp: true
@@ -153,46 +124,66 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - github
+  server: 47.238.210.5
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - github
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me%252fripaojiedian
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 02 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 03 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 04 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 05 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 06 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 07 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 08 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 09 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 10 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 11 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myname
+  - 🇭🇰 中国香港 (Hong Kong) 01 - github
+  - 🇭🇰 中国香港 (Hong Kong) 02 - github
+  - 🇭🇰 中国香港 (Hong Kong) 03 - github
+  - 🇭🇰 中国香港 (Hong Kong) 04 - github
+  - 🇭🇰 中国香港 (Hong Kong) 05 - github
+  - 🇭🇰 中国香港 (Hong Kong) 06 - github
+  - 🇭🇰 中国香港 (Hong Kong) 07 - github
+  - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
+  - 🇭🇰 中国香港 (Hong Kong) 11 - github
+  - 🇭🇰 中国香港 (Hong Kong) 12 - github
+  - 🇭🇰 中国香港 (Hong Kong) 13 - github
+  - 🇭🇰 中国香港 (Hong Kong) 14 - github
+  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 02 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 03 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 04 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 05 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 06 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 07 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 08 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 09 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 10 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 11 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 12 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 13 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 14 - myname
-  - 🇭🇰 中国香港 (Hong Kong) 15 - myname
+  - 🇭🇰 中国香港 (Hong Kong) 01 - github
+  - 🇭🇰 中国香港 (Hong Kong) 02 - github
+  - 🇭🇰 中国香港 (Hong Kong) 03 - github
+  - 🇭🇰 中国香港 (Hong Kong) 04 - github
+  - 🇭🇰 中国香港 (Hong Kong) 05 - github
+  - 🇭🇰 中国香港 (Hong Kong) 06 - github
+  - 🇭🇰 中国香港 (Hong Kong) 07 - github
+  - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
+  - 🇭🇰 中国香港 (Hong Kong) 11 - github
+  - 🇭🇰 中国香港 (Hong Kong) 12 - github
+  - 🇭🇰 中国香港 (Hong Kong) 13 - github
+  - 🇭🇰 中国香港 (Hong Kong) 14 - github
+  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 rules:
 - MATCH,PROXIES
