@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaohe
-  server: soskeynets-project-4c7950.ez-dc9bbb.workers.dev
-  port: 443
+- name: 🇮🇶 IQ 01 - myname
+  server: 129.151.64.169
+  port: 31867
   udp: true
   type: vless
-  uuid: 96e341a7-3077-4613-b482-41bd9c90cc4d
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoiN2w4dDlRNVV5NkZ5NU1aeSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    path: /
     headers:
-      Host: ezaccess-project-4c7950.ez-dc9bbb.workers.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 01 - myname
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaohe
+  - 🇮🇶 IQ 01 - myname
 rules:
 - MATCH,PROXIES

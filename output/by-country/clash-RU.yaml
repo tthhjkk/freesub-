@@ -4,7 +4,57 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 01 - myname
+  server: 195.133.23.200
+  port: 10900
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 02 - myname
+  server: 195.133.5.102
+  port: 10900
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 03 - myname
+  server: 195.58.48.137
+  port: 10900
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
+- name: 🇷🇺 俄罗斯 (Russia) 04 - myname
+  server: els.mangshe.xyz
+  port: 2056
+  udp: true
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: els.mangshe.xyz
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - myname
+  server: 91.240.86.70
+  port: 22443
+  udp: true
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 06 - myname
+  server: 130.49.189.158
+  port: 45433
+  udp: true
+  type: vless
+  uuid: 4ea67585-c211-4358-9173-cbdff7a6aede
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
+    short-id: 5e101cd5
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07 - myname
   server: msk.frkn.org
   port: 443
   udp: true
@@ -12,20 +62,7 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  server: 130.49.189.158
-  port: 45433
-  udp: true
-  type: vless
-  uuid: 9b7a5b38-0a8e-4db8-9f1a-41e844b96456
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dfJb8gJq6IRsE1KMsfZp5tNLiwBNQMbSl5NF1z5dq3c
-    short-id: 7033c39f
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
+- name: 🇷🇺 俄罗斯 (Russia) 08 - myname
   server: 144.31.190.230
   port: 8443
   udp: true
@@ -38,21 +75,42 @@ proxies:
     short-id: '4326'
   servername: ozon.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  server: 46.8.200.91
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 09 - myname
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU=
+- name: 🇷🇺 俄罗斯 (Russia) 10 - myname
+  server: 94.249.187.46
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 11 - myname
+  server: ru.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 12 - myname
+  server: 45.12.75.242
+  port: 26424
   udp: true
   type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
   tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 13 - myname
   server: tr3.wba-pn.ru
   port: 443
   udp: true
@@ -61,68 +119,45 @@ proxies:
   tls: true
   servername: tr3.wba-pn.ru
   skip-cert-verify: false
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
-- name: 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  server: 94.249.187.46
-  port: 2086
-  udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  server: ru1.xiaoliyu.cyou
-  port: 4433
-  udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: ru1.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - myname
+  - 🇷🇺 俄罗斯 (Russia) 02 - myname
+  - 🇷🇺 俄罗斯 (Russia) 03 - myname
+  - 🇷🇺 俄罗斯 (Russia) 04 - myname
+  - 🇷🇺 俄罗斯 (Russia) 05 - myname
+  - 🇷🇺 俄罗斯 (Russia) 06 - myname
+  - 🇷🇺 俄罗斯 (Russia) 07 - myname
+  - 🇷🇺 俄罗斯 (Russia) 08 - myname
+  - 🇷🇺 俄罗斯 (Russia) 09 - myname
+  - 🇷🇺 俄罗斯 (Russia) 10 - myname
+  - 🇷🇺 俄罗斯 (Russia) 11 - myname
+  - 🇷🇺 俄罗斯 (Russia) 12 - myname
+  - 🇷🇺 俄罗斯 (Russia) 13 - myname
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇺 俄罗斯 (Russia) 01 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 02 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 03 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 04 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 05 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 06 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 07 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 08 - xiaohe
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaohe
+  - 🇷🇺 俄罗斯 (Russia) 01 - myname
+  - 🇷🇺 俄罗斯 (Russia) 02 - myname
+  - 🇷🇺 俄罗斯 (Russia) 03 - myname
+  - 🇷🇺 俄罗斯 (Russia) 04 - myname
+  - 🇷🇺 俄罗斯 (Russia) 05 - myname
+  - 🇷🇺 俄罗斯 (Russia) 06 - myname
+  - 🇷🇺 俄罗斯 (Russia) 07 - myname
+  - 🇷🇺 俄罗斯 (Russia) 08 - myname
+  - 🇷🇺 俄罗斯 (Russia) 09 - myname
+  - 🇷🇺 俄罗斯 (Russia) 10 - myname
+  - 🇷🇺 俄罗斯 (Russia) 11 - myname
+  - 🇷🇺 俄罗斯 (Russia) 12 - myname
+  - 🇷🇺 俄罗斯 (Russia) 13 - myname
 rules:
 - MATCH,PROXIES

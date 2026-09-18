@@ -4,7 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 01 - myname
+  server: 188.114.98.16
+  port: 2082
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - myname
+  server: 104.20.6.153
+  port: 8880
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - myname
   server: 156.67.63.231
   port: 443
   udp: true
@@ -17,7 +39,7 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaohe
+- name: 🇹🇷 土耳其 (Turkey) 04 - myname
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -28,48 +50,52 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  server: 206.1.97.61
-  port: 13323
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 05 - myname
+  server: 78.135.73.47
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: XyodFtypR0xCFHyWW9gxqp15oU78njiX
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  server: 139.28.240.68
-  port: 2086
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 06 - myname
+  server: helixgaming.ir
+  port: 80
   udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaohe
-  server: 139.28.240.68
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  type: vless
+  uuid: c0e453eb-33ac-4206-8423-3e1286c2ba7a
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - myname
+  - 🇹🇷 土耳其 (Turkey) 02 - myname
+  - 🇹🇷 土耳其 (Turkey) 03 - myname
+  - 🇹🇷 土耳其 (Turkey) 04 - myname
+  - 🇹🇷 土耳其 (Turkey) 05 - myname
+  - 🇹🇷 土耳其 (Turkey) 06 - myname
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 02 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 04 - xiaohe
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaohe
+  - 🇹🇷 土耳其 (Turkey) 01 - myname
+  - 🇹🇷 土耳其 (Turkey) 02 - myname
+  - 🇹🇷 土耳其 (Turkey) 03 - myname
+  - 🇹🇷 土耳其 (Turkey) 04 - myname
+  - 🇹🇷 土耳其 (Turkey) 05 - myname
+  - 🇹🇷 土耳其 (Turkey) 06 - myname
 rules:
 - MATCH,PROXIES

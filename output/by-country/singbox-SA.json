@@ -5,7 +5,30 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - myname",
+      "server": "164.92.147.213",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/city/my?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 02 - myname",
       "server": "81.208.170.142",
       "server_port": 1500,
       "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
@@ -31,14 +54,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - myname",
+        "🇸🇦 沙特 (Saudi Arabia) 02 - myname"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - myname",
+        "🇸🇦 沙特 (Saudi Arabia) 02 - myname"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

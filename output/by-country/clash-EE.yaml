@@ -4,7 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - myname
+  server: 178.18.147.66
+  port: 29900
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - myname
+  server: 94.183.170.147
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
+  tls: true
+  reality-opts:
+    public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
+    short-id: 72ccd4a7563c2953
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 9d30d49278
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - myname
   server: 94.183.170.135
   port: 443
   udp: true
@@ -13,15 +36,23 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - myname
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - myname
   server: 109.206.241.10
   port: 449
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  sni: 109.206.241.10
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - myname
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -30,8 +61,8 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - myname
   server: ee1.sferavpn.pro
   port: 443
   udp: true
@@ -41,49 +72,57 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  server: news.gazette.help
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: news.gazette.help
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
-  server: 185.174.135.250
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - myname
+  server: 95.85.224.17
   port: 443
   udp: true
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - myname
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-ee-01.hanvpn.cc
+  skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: TunService
+    grpc-service-name: ee01-grpc-8e47a
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - myname
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaohe
-  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 05 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 08 - myname
+  - 🇪🇪 爱沙尼亚 (Estonia) 09 - myname
 rules:
 - MATCH,PROXIES
