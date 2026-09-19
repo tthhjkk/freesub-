@@ -20,8 +20,39 @@
       "password": "itzvpn@321"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 03 - github",
+      "server": "91.201.65.122",
+      "server_port": 9070,
+      "method": "aes-256-cfb",
+      "password": "bf7v334KKDV3YDhH"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 04 - github",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 05 - github",
+      "server": "91.201.65.122",
+      "server_port": 9092,
+      "method": "aes-256-cfb",
+      "password": "TyNkGmp9hs6eGpDK"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 06 - github",
+      "server": "91.201.65.122",
+      "server_port": 9053,
+      "method": "aes-256-cfb",
+      "password": "SBM7R883jBmnqe6C"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 07 - github",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -30,7 +61,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -41,15 +72,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 04 - github",
-      "server": "91.201.65.122",
-      "server_port": 9070,
-      "method": "aes-256-cfb",
-      "password": "bf7v334KKDV3YDhH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 05 - github",
+      "tag": "🇮🇹 意大利 (Italy) 08 - github",
       "server": "91.201.65.122",
       "server_port": 9002,
       "method": "aes-256-cfb",
@@ -57,7 +80,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 06 - github",
+      "tag": "🇮🇹 意大利 (Italy) 09 - github",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -67,7 +90,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -78,34 +101,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 07 - github",
-      "server": "91.201.65.122",
-      "server_port": 9092,
-      "method": "aes-256-cfb",
-      "password": "TyNkGmp9hs6eGpDK"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 08 - github",
+      "tag": "🇮🇹 意大利 (Italy) 10 - github",
       "server": "91.201.65.122",
       "server_port": 9065,
       "method": "aes-256-cfb",
       "password": "PeHSHm5SqEjBuEXE"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 09 - github",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 10 - github",
-      "server": "91.201.65.122",
-      "server_port": 9053,
-      "method": "aes-256-cfb",
-      "password": "SBM7R883jBmnqe6C"
     },
     {
       "type": "vless",
@@ -119,7 +119,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,

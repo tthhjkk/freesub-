@@ -5,27 +5,50 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: fr.vpn.legendaah.xyz
-  port: 36723
+  server: 82.47.186.18
+  port: 19290
   udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: fr.vpn.legendaah.xyz
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
 - name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 31.77.199.182
+  server: 185.218.194.73
   port: 443
   udp: true
   type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: fi2.yservice.help
-  client-fingerprint: random
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 5.61.91.206
+  port: 443
+  udp: true
+  type: vless
+  uuid: bd99da97-265e-0021-82cc-4ec009fe9ce2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: 0a4b7c3d
+  servername: www.amd.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 150.241.71.148
+  port: 448
+  udp: true
+  type: trojan
+  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
+  sni: kiev.gosgenarchive.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TrojanGRPC
+- name: 🇫🇮 芬兰 (Finland) 05 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -37,62 +60,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 82.47.186.18
-  port: 19290
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: o2rw2hICwu1blrr_gZAl2Q
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: 150.241.71.148
-  port: 448
-  udp: true
-  type: trojan
-  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
-  sni: kiev.gosgenarchive.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TrojanGRPC
-- name: 🇫🇮 芬兰 (Finland) 07 - github
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 08 - github
-  server: est1313.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 09 - github
   server: 37.143.129.244
   port: 443
   udp: true
@@ -105,6 +73,90 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: random
+- name: 🇫🇮 芬兰 (Finland) 07 - github
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 08 - github
+  server: 185.218.194.69
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31216f81-3139-0021-bac4-646680314264
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: e1f8a3b6
+  servername: www.amd.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - github
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - github
+  server: est1313.ggisopi.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 11 - github
+  server: 188.225.56.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2cbf425a-aed6-4c8f-937f-6265ed13a7fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _qSbW4JL4Ffqvj25vX-6a2ul9Qlj6PBdlF0ghsf_0RQ
+    short-id: a9dc98a7dc87a7dc
+  servername: 188.225.56.11
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 12 - github
+  server: 31.77.199.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
+    short-id: abcd1234
+  servername: fi2.yservice.help
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 13 - github
+  server: fr.vpn.legendaah.xyz
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: fr.vpn.legendaah.xyz
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,6 +171,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
   - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
+  - 🇫🇮 芬兰 (Finland) 11 - github
+  - 🇫🇮 芬兰 (Finland) 12 - github
+  - 🇫🇮 芬兰 (Finland) 13 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,5 +189,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
   - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
+  - 🇫🇮 芬兰 (Finland) 11 - github
+  - 🇫🇮 芬兰 (Finland) 12 - github
+  - 🇫🇮 芬兰 (Finland) 13 - github
 rules:
 - MATCH,PROXIES
