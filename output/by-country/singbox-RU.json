@@ -6,7 +6,49 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - github",
-      "server": "162.159.0.53",
+      "server": "104.18.47.113",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - github",
+      "server": "172.64.32.108",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
+      "server": "172.64.154.8",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - github",
+      "server": "162.159.38.127",
       "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
@@ -19,15 +61,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - github",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
       "server": "195.133.5.102",
       "server_port": 10900,
       "method": "aes-256-gcm",
@@ -35,7 +69,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - github",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
@@ -46,16 +80,27 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - github",
+      "server": "152.42.138.167",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/event/post/discount?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08 - github",
       "server": "104.245.240.8",
       "server_port": 8443,
       "uuid": "bb20d3fc-fc15-0935-11c5-82775c39e6b0",
@@ -78,8 +123,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09 - github",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "5dLyPJpSV+QyXFRj+S0dt6xFKHxtcXEkRO/TzJGzryU="
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10 - github",
       "server": "130.49.189.158",
       "server_port": 45433,
       "uuid": "4ea67585-c211-4358-9173-cbdff7a6aede",
@@ -100,7 +153,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - github",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -111,51 +164,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - github",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - github",
-      "server": "134.0.112.71",
-      "server_port": 17517,
-      "method": "aes-256-gcm",
-      "password": "64Kms+G+nD6FlGJjZJfeUNJIGbX/EKrk2o/MH04zApw="
-    },
-    {
       "type": "vmess",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - github",
-      "server": "2.27.54.132",
-      "server_port": 443,
-      "uuid": "db50a20e-7ff5-4e70-948f-17cc9ca7c154",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "renderer-stream-2-62.mirra.now",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/v1/gpu-stream/socket",
-        "headers": {
-          "Host": "renderer-stream-2-62.mirra.now"
-        }
-      }
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - github",
+      "server": "94.249.187.46",
+      "server_port": 2086,
+      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -172,7 +186,8 @@
         "🇷🇺 俄罗斯 (Russia) 08 - github",
         "🇷🇺 俄罗斯 (Russia) 09 - github",
         "🇷🇺 俄罗斯 (Russia) 10 - github",
-        "🇷🇺 俄罗斯 (Russia) 11 - github"
+        "🇷🇺 俄罗斯 (Russia) 11 - github",
+        "🇷🇺 俄罗斯 (Russia) 12 - github"
       ]
     },
     {
@@ -189,7 +204,8 @@
         "🇷🇺 俄罗斯 (Russia) 08 - github",
         "🇷🇺 俄罗斯 (Russia) 09 - github",
         "🇷🇺 俄罗斯 (Russia) 10 - github",
-        "🇷🇺 俄罗斯 (Russia) 11 - github"
+        "🇷🇺 俄罗斯 (Russia) 11 - github",
+        "🇷🇺 俄罗斯 (Russia) 12 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
