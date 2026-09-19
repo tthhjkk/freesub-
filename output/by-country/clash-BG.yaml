@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
-  server: neth9.lunariai.ru
+  server: 192.145.31.5
   port: 443
   udp: true
   type: vless
@@ -21,6 +21,13 @@ proxies:
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -29,16 +36,7 @@ proxies:
   tls: true
   servername: neth9.lunariai.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
-  server: 131.123.39.29
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  client-fingerprint: qq
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
   server: 193.148.59.178
   port: 443
@@ -53,20 +51,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
-  server: 185.125.100.76
-  port: 8443
+  server: 131.123.39.29
+  port: 8081
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   network: ws
   ws-opts:
-    path: /trade/game/movies?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 87.120.196.212
   port: 443
@@ -90,7 +82,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

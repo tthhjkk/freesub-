@@ -15,7 +15,7 @@
         "server_name": "aotocon.ggisopi.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,43 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 02 - github",
+      "server": "138.124.25.250",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/team/index",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,26 +6,34 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - github",
-      "server": "104.20.6.153",
-      "server_port": 8880,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "185.87.24.173",
+      "server_port": 2085,
+      "uuid": "3f654175-4f83-47ec-8ce2-f2bf0d160b27",
       "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "index.harmonica02.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - github",
-      "server": "172.67.192.84",
-      "server_port": 2095,
+      "server": "104.21.70.21",
+      "server_port": 443,
       "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "tls": {
+        "enabled": true,
+        "server_name": "index.harmonica01.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
+        "path": "/axch1mttbxz2k55y01",
         "headers": {
-          "Host": "index.harmonica02.workers.dev"
+          "Host": "index.harmonica01.workers.dev"
         }
       }
     },
@@ -67,16 +75,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
-      "server": "153.52.92.81",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -97,7 +97,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -106,7 +106,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -117,7 +117,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 07 - github",
       "server": "139.28.240.68",
       "server_port": 2086,
       "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
@@ -134,8 +134,7 @@
         "🇹🇷 土耳其 (Turkey) 04 - github",
         "🇹🇷 土耳其 (Turkey) 05 - github",
         "🇹🇷 土耳其 (Turkey) 06 - github",
-        "🇹🇷 土耳其 (Turkey) 07 - github",
-        "🇹🇷 土耳其 (Turkey) 08 - github"
+        "🇹🇷 土耳其 (Turkey) 07 - github"
       ]
     },
     {
@@ -148,8 +147,7 @@
         "🇹🇷 土耳其 (Turkey) 04 - github",
         "🇹🇷 土耳其 (Turkey) 05 - github",
         "🇹🇷 土耳其 (Turkey) 06 - github",
-        "🇹🇷 土耳其 (Turkey) 07 - github",
-        "🇹🇷 土耳其 (Turkey) 08 - github"
+        "🇹🇷 土耳其 (Turkey) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
