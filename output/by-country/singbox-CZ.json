@@ -6,19 +6,26 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
-      "server": "104.17.148.22",
+      "server": "104.21.69.37",
       "server_port": 443,
-      "uuid": "513beae3-56e7-4954-a17e-930e06237b27",
+      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
       "tls": {
         "enabled": true,
-        "server_name": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev",
-        "insecure": false
+        "server_name": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/3wSAeuGJbrGHwJ45DA6ircvHC6?ed=2560",
+        "path": "/vl/uWq9DFRgj8BwQiSXmZ46 ",
         "headers": {
-          "Host": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev"
+          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
         }
       }
     },
@@ -34,12 +41,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - github",
+      "server": "212.193.1.234",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/image?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github"
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ]
     },
     {
@@ -47,7 +78,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github"
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

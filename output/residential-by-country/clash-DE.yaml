@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 (家宽) - github
-  server: 64.225.65.116
+  server: 132.243.203.218
   port: 8443
   udp: true
   type: vless
@@ -13,9 +13,10 @@ proxies:
   tls: true
   servername: cdn8848.776676.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /bd/pictures?ed=2560fp=chrome
+    path: /v?ed=2560
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:

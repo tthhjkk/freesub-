@@ -5,19 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - github
-  server: 129.151.64.169
-  port: 31867
+  server: aotocon.ggisopi.su
+  port: 443
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /files?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: aotocon.ggisopi.su
+  client-fingerprint: edge
 - name: 🇦🇲 亚美尼亚 (Armenia) 02 - github
   server: 2.27.244.164
   port: 8443
@@ -33,18 +31,6 @@ proxies:
     path: /channels/act
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇦🇲 亚美尼亚 (Armenia) 03 - github
-  server: aotocon.ggisopi.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: aotocon.ggisopi.su
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇦🇲 亚美尼亚 (Armenia) 01 - github
   - 🇦🇲 亚美尼亚 (Armenia) 02 - github
-  - 🇦🇲 亚美尼亚 (Armenia) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇦🇲 亚美尼亚 (Armenia) 01 - github
   - 🇦🇲 亚美尼亚 (Armenia) 02 - github
-  - 🇦🇲 亚美尼亚 (Armenia) 03 - github
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: 104.17.148.22
+  server: 104.21.69.37
   port: 443
   udp: true
   type: vless
-  uuid: 513beae3-56e7-4954-a17e-930e06237b27
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   tls: true
-  servername: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/3wSAeuGJbrGHwJ45DA6ircvHC6?ed=2560
+    path: '/vl/uWq9DFRgj8BwQiSXmZ46 '
     headers:
-      Host: cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02 - github
   server: 194.87.59.13
   port: 2085
@@ -27,6 +28,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇨🇿 捷克 (Czech) 03 - github
+  server: 212.193.1.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /image?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 rules:
 - MATCH,PROXIES

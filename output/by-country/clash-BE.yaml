@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇪 比利时 (Belgium) 01 - github
-  server: 34.38.82.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
-  tls: true
-  reality-opts:
-    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
-    short-id: 31f187650d9530bb
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇧🇪 比利时 (Belgium) 02 - github
   server: 172.67.209.13
   port: 443
   udp: true
@@ -31,18 +19,19 @@ proxies:
     path: '/sync '
     headers:
       Host: xo3ubk-c97eql-n2d4a9.shoameni17.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 03 - github
-  server: 172.67.155.136
-  port: 2095
+- name: 🇧🇪 比利时 (Belgium) 02 - github
+  server: 34.38.82.200
+  port: 443
   udp: true
   type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 04 - github
+  uuid: 6d341f6e-7b9d-4ae3-999b-00333de7bdfb
+  tls: true
+  reality-opts:
+    public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
+    short-id: 31f187650d9530bb
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇧🇪 比利时 (Belgium) 03 - github
   server: 35.195.122.169
   port: 443
   udp: true
@@ -62,7 +51,6 @@ proxy-groups:
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
   - 🇧🇪 比利时 (Belgium) 03 - github
-  - 🇧🇪 比利时 (Belgium) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +59,5 @@ proxy-groups:
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
   - 🇧🇪 比利时 (Belgium) 03 - github
-  - 🇧🇪 比利时 (Belgium) 04 - github
 rules:
 - MATCH,PROXIES

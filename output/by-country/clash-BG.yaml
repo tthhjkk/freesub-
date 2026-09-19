@@ -13,28 +13,18 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: neth9.lunariai.ru
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
-  server: 213.183.63.60
-  port: 9049
+  server: 192.145.31.5
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
+  type: vless
+  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
+  tls: true
+  servername: neth9.lunariai.ru
+  skip-cert-verify: false
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
-  server: 213.183.63.60
-  port: 9029
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
   server: 193.148.59.178
   port: 443
   udp: true
@@ -46,18 +36,8 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
-  server: neth9.lunariai.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
-  tls: true
-  servername: neth9.lunariai.ru
-  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 131.123.39.29
   port: 8081
   udp: true
@@ -66,7 +46,18 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  server: 87.120.196.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
+  flow: xtls-rprx-vision
+  tls: true
+  servername: holo-stream.videocactus.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
   server: 108.165.233.223
   port: 443
   udp: true
@@ -81,19 +72,8 @@ proxies:
     path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
     headers:
       Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  server: 87.120.196.212
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5561acfb-0adc-4c76-bfbf-767a76c7cbf0
-  flow: xtls-rprx-vision
-  tls: true
-  servername: holo-stream.videocactus.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
-  server: 144.31.50.236
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  server: prep.wwwinternetvideo.click
   port: 443
   udp: true
   type: vless
@@ -104,7 +84,7 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,9 +97,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,8 +109,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
 rules:
 - MATCH,PROXIES

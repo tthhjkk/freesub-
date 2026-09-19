@@ -20,8 +20,16 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 03 - github",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - github",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -40,30 +48,22 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - github",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 05 - github",
-      "server": "34.175.90.91",
+      "server": "34.175.44.113",
       "server_port": 443,
-      "uuid": "c55c9880-2f9c-4ad6-bfc2-5054516bf613",
+      "uuid": "0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4",
-          "short_id": "1c9e101e99bf86bb"
+          "public_key": "iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0",
+          "short_id": "fe85cb6a5c84e64c"
         }
       }
     },
@@ -79,7 +79,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -91,6 +91,26 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 07 - github",
+      "server": "34.175.90.91",
+      "server_port": 443,
+      "uuid": "c55c9880-2f9c-4ad6-bfc2-5054516bf613",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4",
+          "short_id": "1c9e101e99bf86bb"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 08 - github",
       "server": "87.76.179.117",
       "server_port": 7443,
       "uuid": "cb15d1b0-e48b-4c4c-b98a-fa1103aa3723",
@@ -106,26 +126,6 @@
           "enabled": true,
           "public_key": "1MLoHw7RVkGefh7XUyuGg4ndxwv4vDU9en-f9JxpXRQ",
           "short_id": "d2061bb1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - github",
-      "server": "34.175.44.113",
-      "server_port": 443,
-      "uuid": "0b4b1548-c7ca-45a5-9096-6c3cc4b1c43b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "iI9J--AfPKCXbVle3Om-WMn_g-3bO3SsVzUCNtwUkU0",
-          "short_id": "fe85cb6a5c84e64c"
         }
       }
     },

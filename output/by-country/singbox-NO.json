@@ -22,7 +22,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
       "tag": "🇳🇴 挪威 (Norway) 03 - github",
       "server": "151.242.168.125",
       "server_port": 390,
-      "uuid": "7b363f9c-3df9-4b60-a789-9cd36be0bdfe",
+      "uuid": "b02ff150-ee30-46e0-9ea1-adbfd7762a06",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -63,7 +63,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,

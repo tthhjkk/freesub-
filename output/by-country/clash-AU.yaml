@@ -5,15 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - github
-  server: 82.198.246.233
+  server: 208.103.161.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: d042a74a-c305-4eec-a89f-39a348022c92
+  tls: true
+  servername: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dry-butterfly-8eb9.tmpgnacio83.workers.dev
+- name: 🇦🇺 澳大利亚 (Australia) 02 - github
+  server: 82.198.246.37
   port: 180
   udp: true
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
   alterId: 0
   cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 02 - github
-  server: 88.119.168.61
+- name: 🇦🇺 澳大利亚 (Australia) 03 - github
+  server: 165.232.89.21
   port: 443
   udp: true
   type: vless
@@ -24,10 +39,19 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /discuss?ed=2560
+    path: /jump.html/map?ed=2560
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇦🇺 澳大利亚 (Australia) 03 - github
+- name: 🇦🇺 澳大利亚 (Australia) 04 - github
+  server: 172.105.169.70
+  port: 443
+  udp: true
+  type: vless
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  tls: true
+  servername: 172.105.169.70
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 05 - github
   server: 103.75.119.126
   port: 2087
   udp: true
@@ -36,7 +60,7 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 04 - github
+- name: 🇦🇺 澳大利亚 (Australia) 06 - github
   server: 51.161.204.244
   port: 443
   udp: true
@@ -49,7 +73,7 @@ proxies:
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇦🇺 澳大利亚 (Australia) 05 - github
+- name: 🇦🇺 澳大利亚 (Australia) 07 - github
   server: 34.87.244.111
   port: 443
   udp: true
@@ -61,15 +85,7 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 06 - github
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 07 - github
+- name: 🇦🇺 澳大利亚 (Australia) 08 - github
   server: 152.67.115.203
   port: 443
   udp: true
@@ -91,6 +107,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 05 - github
   - 🇦🇺 澳大利亚 (Australia) 06 - github
   - 🇦🇺 澳大利亚 (Australia) 07 - github
+  - 🇦🇺 澳大利亚 (Australia) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,5 +120,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 05 - github
   - 🇦🇺 澳大利亚 (Australia) 06 - github
   - 🇦🇺 澳大利亚 (Australia) 07 - github
+  - 🇦🇺 澳大利亚 (Australia) 08 - github
 rules:
 - MATCH,PROXIES
