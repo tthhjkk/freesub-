@@ -6,6 +6,48 @@
     {
       "type": "vless",
       "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - github",
+      "server": "134.209.194.199",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/jumping/files/videos?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 02 - github",
+      "server": "165.232.39.158",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/m?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 03 - github",
       "server": "81.208.170.142",
       "server_port": 1500,
       "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
@@ -31,14 +73,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github",
+        "🇸🇦 沙特 (Saudi Arabia) 02 - github",
+        "🇸🇦 沙特 (Saudi Arabia) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github",
+        "🇸🇦 沙特 (Saudi Arabia) 02 - github",
+        "🇸🇦 沙特 (Saudi Arabia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

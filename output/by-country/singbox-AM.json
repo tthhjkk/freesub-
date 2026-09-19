@@ -25,18 +25,68 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 02 - github",
+      "server": "164.92.147.213",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/city/my?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 03 - github",
+      "server": "88.119.168.61",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/discuss?ed=2560",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 02 - github",
+        "🇦🇲 亚美尼亚 (Armenia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
