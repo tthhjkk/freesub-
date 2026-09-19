@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇰🇬 KG 01 - github",
-      "server": "104.24.30.89",
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - github",
+      "server": "nomino.11hi8itbaf.workers.dev",
       "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "nomino.11hi8itbaf.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560",
+        "path": "/yoga-suggesting-recording-calls.trycloudflare.com/3aa71202-a099-49c1-99fc-6662f3335369-vm",
         "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
+          "Host": "nomino.11hi8itbaf.workers.dev"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇬 KG 01 - github"
+        "🌐 其他地区 (Other) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇬 KG 01 - github"
+        "🌐 其他地区 (Other) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

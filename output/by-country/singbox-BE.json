@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -26,26 +26,6 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 02 - github",
-      "server": "35.195.122.169",
-      "server_port": 443,
-      "uuid": "e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs",
-          "short_id": "68e97022627fa882"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 03 - github",
       "server": "172.67.209.13",
       "server_port": 443,
       "uuid": "fa45096d-bed0-ad80-c773-23c30000001b",
@@ -68,7 +48,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 04 - github",
+      "tag": "🇧🇪 比利时 (Belgium) 03 - github",
       "server": "172.67.155.136",
       "server_port": 2095,
       "uuid": "73796e63-0000-4000-8000-000000000008",
@@ -82,21 +62,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 05 - github",
-      "server": "207.175.190.56",
+      "tag": "🇧🇪 比利时 (Belgium) 04 - github",
+      "server": "35.195.122.169",
       "server_port": 443,
-      "uuid": "51e493d4-b275-45e0-a714-e014f40b3c32",
+      "uuid": "e3fb56fe-bdbc-4f0e-b1ed-de2f7c85f254",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "nTLhc6e5HMgO-hpD8RUMp0cd2t6p2_RqHLHM0P39_xA",
-          "short_id": "95ae4a39d3933191"
+          "public_key": "i_UbRo65YEpOFuKkNVa0GEMl7xLDx9B1nmeyeNWyJQs",
+          "short_id": "68e97022627fa882"
         }
       }
     },
@@ -108,8 +88,7 @@
         "🇧🇪 比利时 (Belgium) 01 - github",
         "🇧🇪 比利时 (Belgium) 02 - github",
         "🇧🇪 比利时 (Belgium) 03 - github",
-        "🇧🇪 比利时 (Belgium) 04 - github",
-        "🇧🇪 比利时 (Belgium) 05 - github"
+        "🇧🇪 比利时 (Belgium) 04 - github"
       ]
     },
     {
@@ -119,8 +98,7 @@
         "🇧🇪 比利时 (Belgium) 01 - github",
         "🇧🇪 比利时 (Belgium) 02 - github",
         "🇧🇪 比利时 (Belgium) 03 - github",
-        "🇧🇪 比利时 (Belgium) 04 - github",
-        "🇧🇪 比利时 (Belgium) 05 - github"
+        "🇧🇪 比利时 (Belgium) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

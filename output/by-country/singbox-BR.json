@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇧🇷 巴西 (Brazil) 01 - github",
-      "server": "198.71.191.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime06.workers.dev"
-        }
-      }
+      "server": "216.128.168.190",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "owVdNnQcdPgthSyX"
     },
     {
       "type": "selector",

@@ -6,23 +6,19 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
-      "server": "chatgpt.com",
+      "server": "104.17.148.22",
       "server_port": 443,
-      "uuid": "a43a9a45-7387-4faf-ad06-24b1ae181fdc",
+      "uuid": "513beae3-56e7-4954-a17e-930e06237b27",
       "tls": {
         "enabled": true,
-        "server_name": "snowy-glade-85fa.arshiatakalloo88.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
+        "server_name": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "path": "/vl/3wSAeuGJbrGHwJ45DA6ircvHC6?ed=2560",
         "headers": {
-          "Host": "snowy-glade-85fa.arshiatakalloo88.workers.dev"
+          "Host": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev"
         }
       }
     },
@@ -38,60 +34,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - github",
-      "server": "147.90.229.204",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sort/outbound/redirect.php?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - github",
-      "server": "132.243.203.218",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/v?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github"
+        "🇨🇿 捷克 (Czech) 02 - github"
       ]
     },
     {
@@ -99,9 +47,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github"
+        "🇨🇿 捷克 (Czech) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
