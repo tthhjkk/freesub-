@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -26,17 +26,13 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - github",
-      "server": "104.18.26.90",
+      "server": "104.16.10.185",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
@@ -47,12 +43,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - github",
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "ais.speedtest.net"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - github",
-        "🇹🇭 泰国 (Thailand) 02 - github"
+        "🇹🇭 泰国 (Thailand) 02 - github",
+        "🇹🇭 泰国 (Thailand) 03 - github"
       ]
     },
     {
@@ -60,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - github",
-        "🇹🇭 泰国 (Thailand) 02 - github"
+        "🇹🇭 泰国 (Thailand) 02 - github",
+        "🇹🇭 泰国 (Thailand) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
