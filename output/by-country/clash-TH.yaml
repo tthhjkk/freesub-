@@ -17,7 +17,16 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ios
 - name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: 104.16.10.185
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+- name: 🇹🇭 泰国 (Thailand) 03 - github
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -30,18 +39,19 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 8.222.84.103
+- name: 🇹🇭 泰国 (Thailand) 04 - github
+  server: 8.222.70.238
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /mall/china/doc?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -52,6 +62,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
+  - 🇹🇭 泰国 (Thailand) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +71,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
+  - 🇹🇭 泰国 (Thailand) 04 - github
 rules:
 - MATCH,PROXIES

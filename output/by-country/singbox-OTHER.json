@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "172.64.150.28",
+      "server": "162.159.244.91",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -25,7 +25,7 @@
     {
       "type": "trojan",
       "tag": "🌐 其他地区 (Other) 02 - github",
-      "server": "172.64.150.28",
+      "server": "162.159.244.91",
       "server_port": 443,
       "password": "humanity",
       "tls": {
