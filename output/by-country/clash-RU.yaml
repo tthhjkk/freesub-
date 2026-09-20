@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 94.249.187.46
-  port: 2086
+  server: 195.58.48.137
+  port: 10081
   udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
 - name: 🇷🇺 俄罗斯 (Russia) 02 - github
   server: 91.240.86.70
   port: 22443
@@ -21,17 +20,19 @@ proxies:
   sni: hy.quattro-tech.ru
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 03 - github
-  server: 45.12.75.242
-  port: 26424
+  server: 164.92.147.213
+  port: 2087
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
-  client-fingerprint: chrome
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /city/my
+    headers:
+      Host: cdn8848.776676.xyz
 - name: 🇷🇺 俄罗斯 (Russia) 04 - github
   server: msk.frkn.org
   port: 443
@@ -39,7 +40,50 @@ proxies:
   type: hysteria2
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  server: 144.31.200.207
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /code/directory/ads
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 188.130.207.30
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /m?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,6 +93,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - github
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
+  - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +105,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - github
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
+  - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 rules:
 - MATCH,PROXIES

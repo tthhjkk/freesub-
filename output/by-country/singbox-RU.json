@@ -4,12 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - github",
-      "server": "94.249.187.46",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
+      "server": "195.58.48.137",
+      "server_port": 10081,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
       "type": "hysteria2",
@@ -26,20 +26,19 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
-      "server": "45.12.75.242",
-      "server_port": 26424,
-      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "server": "164.92.147.213",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "ya.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
-          "short_id": "23103e1e"
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/city/my",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -52,7 +51,68 @@
       "tls": {
         "enabled": true,
         "server_name": "msk.frkn.org",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
+      "server": "144.31.200.207",
+      "server_port": 443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/code/directory/ads",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - github",
+      "server": "188.130.207.30",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/m?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07 - github",
+      "server": "46.8.200.91",
+      "server_port": 443,
+      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf3.rumedia-cdn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf3.rumedia-cdn.com"
+        }
       }
     },
     {
@@ -63,7 +123,10 @@
         "🇷🇺 俄罗斯 (Russia) 01 - github",
         "🇷🇺 俄罗斯 (Russia) 02 - github",
         "🇷🇺 俄罗斯 (Russia) 03 - github",
-        "🇷🇺 俄罗斯 (Russia) 04 - github"
+        "🇷🇺 俄罗斯 (Russia) 04 - github",
+        "🇷🇺 俄罗斯 (Russia) 05 - github",
+        "🇷🇺 俄罗斯 (Russia) 06 - github",
+        "🇷🇺 俄罗斯 (Russia) 07 - github"
       ]
     },
     {
@@ -73,7 +136,10 @@
         "🇷🇺 俄罗斯 (Russia) 01 - github",
         "🇷🇺 俄罗斯 (Russia) 02 - github",
         "🇷🇺 俄罗斯 (Russia) 03 - github",
-        "🇷🇺 俄罗斯 (Russia) 04 - github"
+        "🇷🇺 俄罗斯 (Russia) 04 - github",
+        "🇷🇺 俄罗斯 (Russia) 05 - github",
+        "🇷🇺 俄罗斯 (Russia) 06 - github",
+        "🇷🇺 俄罗斯 (Russia) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

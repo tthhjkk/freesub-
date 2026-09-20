@@ -4,9 +4,53 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "162.159.244.91",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 02 - github",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 03 - github",
+      "server": "188.114.97.6",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 04 - github",
+      "server": "104.16.72.50",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -24,8 +68,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 02 - github",
-      "server": "162.159.244.91",
+      "tag": "🌐 其他地区 (Other) 05 - github",
+      "server": "104.16.72.50",
       "server_port": 443,
       "password": "humanity",
       "tls": {
@@ -38,12 +82,31 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 06 - github",
+      "server": "104.16.72.50",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.calmlunch.com",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - github",
-        "🌐 其他地区 (Other) 02 - github"
+        "🌐 其他地区 (Other) 02 - github",
+        "🌐 其他地区 (Other) 03 - github",
+        "🌐 其他地区 (Other) 04 - github",
+        "🌐 其他地区 (Other) 05 - github",
+        "🌐 其他地区 (Other) 06 - github"
       ]
     },
     {
@@ -51,7 +114,11 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - github",
-        "🌐 其他地区 (Other) 02 - github"
+        "🌐 其他地区 (Other) 02 - github",
+        "🌐 其他地区 (Other) 03 - github",
+        "🌐 其他地区 (Other) 04 - github",
+        "🌐 其他地区 (Other) 05 - github",
+        "🌐 其他地区 (Other) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

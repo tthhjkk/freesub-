@@ -35,10 +35,7 @@
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
-        }
+        "path": "/"
       }
     },
     {
@@ -50,52 +47,28 @@
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-      "server": "cabinet.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
+        "server_name": "russiapower.accesscam.org",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
-      "server": "ee1.sferavpn.pro",
-      "server_port": 443,
-      "password": "cd74c0a406664a5bc0bac098220a2468",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.sferavpn.pro",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "44f1c1e2f8b99e792ceed574627a1eb0"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
       "server": "tishina-axe.dedyn.io",
       "server_port": 8443,
       "password": "319ed24b1c7203aa",
@@ -109,8 +82,20 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
+      "server": "31.76.71.63",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - github",
       "server": "estomin1.vodniki.monster",
       "server_port": 443,
       "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
@@ -120,12 +105,33 @@
         "server_name": "estomin1.vodniki.monster",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
           "short_id": "d98e7afec9c0c359"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - github",
+      "server": "45.11.27.86",
+      "server_port": 443,
+      "uuid": "a2738d8d-ed26-4b13-a4a2-b89c7238cd10",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "5post-gate.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk",
+          "short_id": "d0aae44f"
         }
       }
     },
@@ -153,48 +159,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 10 - github",
-      "server": "5.181.201.36",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "estomin1.vodniki.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
-          "short_id": "d98e7afec9c0c359"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 11 - github",
-      "server": "5.181.201.36",
-      "server_port": 443,
-      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "estomin1.vodniki.monster",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk",
-          "short_id": "d98e7afec9c0c359"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 12 - github",
       "server": "93.89.220.7",
       "server_port": 8443,
       "uuid": "6eefb4c5-96c2-4b41-a8e3-3dd13e8e09d0",
@@ -226,9 +190,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 07 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 08 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 09 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 11 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 12 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 10 - github"
       ]
     },
     {
@@ -244,9 +206,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 07 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 08 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 09 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 11 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 12 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 10 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
