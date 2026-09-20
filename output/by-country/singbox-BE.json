@@ -6,40 +6,31 @@
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 01 - github",
-      "server": "104.21.64.198",
-      "server_port": 2086,
-      "uuid": "73796e63-0000-4000-8000-000000000007",
+      "server": "164.92.147.213",
+      "server_port": 2087,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
       "transport": {
         "type": "ws",
-        "path": "/sync",
+        "path": "/city/my",
         "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇪 比利时 (Belgium) 02 - github",
-      "server": "172.67.155.136",
-      "server_port": 2095,
-      "uuid": "73796e63-0000-4000-8000-000000000008",
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 03 - github",
-      "server": "141.227.137.177",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "server": "202.181.177.8",
+      "server_port": 8443,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
+        "server_name": "cdn8848.776676.xyz",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -48,9 +39,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2048",
+        "path": "/channels/act",
         "headers": {
-          "Host": "kkkk-xcd.pages.dev"
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },
@@ -60,8 +51,7 @@
       "outbounds": [
         "auto",
         "🇧🇪 比利时 (Belgium) 01 - github",
-        "🇧🇪 比利时 (Belgium) 02 - github",
-        "🇧🇪 比利时 (Belgium) 03 - github"
+        "🇧🇪 比利时 (Belgium) 02 - github"
       ]
     },
     {
@@ -69,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇪 比利时 (Belgium) 01 - github",
-        "🇧🇪 比利时 (Belgium) 02 - github",
-        "🇧🇪 比利时 (Belgium) 03 - github"
+        "🇧🇪 比利时 (Belgium) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

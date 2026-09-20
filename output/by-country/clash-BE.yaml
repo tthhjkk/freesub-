@@ -5,42 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇪 比利时 (Belgium) 01 - github
-  server: 104.21.64.198
-  port: 2086
+  server: 164.92.147.213
+  port: 2087
   udp: true
   type: vless
-  uuid: 73796e63-0000-4000-8000-000000000007
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 02 - github
-  server: 172.67.155.136
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000008
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
-- name: 🇧🇪 比利时 (Belgium) 03 - github
-  server: 141.227.137.177
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b940be1b-3998-45d2-bf7b-06e7b6c4987a
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: kkkk-xcd.pages.dev
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /city/my
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇧🇪 比利时 (Belgium) 02 - github
+  server: 202.181.177.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /?ed=2048
+    path: /channels/act
     headers:
-      Host: kkkk-xcd.pages.dev
+      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +40,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
-  - 🇧🇪 比利时 (Belgium) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,6 +47,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
-  - 🇧🇪 比利时 (Belgium) 03 - github
 rules:
 - MATCH,PROXIES

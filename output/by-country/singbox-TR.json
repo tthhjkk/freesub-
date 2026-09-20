@@ -6,55 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - github",
-      "server": "184.168.47.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime40.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - github",
-      "server": "31.214.152.140",
-      "server_port": 443,
-      "uuid": "ad297a2b-ae17-4d2d-8fce-e2eafb89b145",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dw.b-cdn.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8",
-          "short_id": "08"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
-      "server": "max.karmatel.ir",
-      "server_port": 55519,
-      "uuid": "d10191ad-1671-496e-b0cb-be5a28d0739a",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play-apps-features.googleusercontent.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -75,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - github",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -84,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -94,22 +45,19 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
-      "server": "172.67.134.170",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
       "tls": {
         "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
+        "server_name": "me17.msjia8844.site",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
       }
     },
     {
@@ -119,10 +67,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - github",
         "🇹🇷 土耳其 (Turkey) 02 - github",
-        "🇹🇷 土耳其 (Turkey) 03 - github",
-        "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github"
+        "🇹🇷 土耳其 (Turkey) 03 - github"
       ]
     },
     {
@@ -131,10 +76,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - github",
         "🇹🇷 土耳其 (Turkey) 02 - github",
-        "🇹🇷 土耳其 (Turkey) 03 - github",
-        "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github"
+        "🇹🇷 土耳其 (Turkey) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

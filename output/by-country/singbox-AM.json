@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇴🇲 OM 01 - github",
-      "server": "146.70.37.253",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+      "server": "87.121.47.179",
       "server_port": 443,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
-        "insecure": false,
+        "server_name": "aotocon.ggisopi.su",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "kkkk-xcd.pages.dev"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇴🇲 OM 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇴🇲 OM 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
