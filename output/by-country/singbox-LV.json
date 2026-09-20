@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - github",
       "server": "185.135.86.175",
-      "server_port": 9007,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9036,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
@@ -31,13 +31,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - github",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - github",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - github",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - github",
       "server": "185.135.86.175",
       "server_port": 9017,
       "method": "aes-256-cfb",
@@ -45,52 +61,43 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - github",
       "server": "185.135.86.175",
-      "server_port": 9036,
+      "server_port": 9007,
       "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - github",
       "server": "185.135.86.175",
       "server_port": 9033,
       "method": "aes-256-cfb",
       "password": "UTJA57ypk2XKQpnm"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - github",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+      "server": "185.255.179.11",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "hub-lv-01.hanvpn.cc",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "lv01-grpc-8e47a"
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - github",
       "server": "46.243.142.227",
       "server_port": 10443,
       "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
@@ -113,6 +120,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - github",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -126,7 +154,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - github",
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - github"
       ]
     },
     {
@@ -142,7 +172,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 07 - github",
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 10 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

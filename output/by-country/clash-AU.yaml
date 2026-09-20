@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - github
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -13,25 +13,29 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02 - github
-  server: 34.87.229.148
+  server: 188.114.97.6
+  port: 80
+  udp: true
+  type: vless
+  uuid: e51453d3-7972-44d7-a657-ed89520f48b6
+  network: ws
+  ws-opts:
+    path: /au-do
+    headers:
+      Host: web.whatsapp.com.r3xxe.eu.cc
+- name: 🇦🇺 澳大利亚 (Australia) 03 - github
+  server: 51.161.204.244
   port: 443
   udp: true
   type: vless
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  uuid: 36e89875-9c53-482b-bc41-d3890e9da176
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-    short-id: 8a7d5e0248cdb1b1
+    public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
+    short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03 - github
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 04 - github
   server: 103.75.119.126
   port: 2087
@@ -53,6 +57,18 @@ proxies:
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 06 - github
+  server: 34.87.229.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,6 +79,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - github
   - 🇦🇺 澳大利亚 (Australia) 04 - github
   - 🇦🇺 澳大利亚 (Australia) 05 - github
+  - 🇦🇺 澳大利亚 (Australia) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +90,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 03 - github
   - 🇦🇺 澳大利亚 (Australia) 04 - github
   - 🇦🇺 澳大利亚 (Australia) 05 - github
+  - 🇦🇺 澳大利亚 (Australia) 06 - github
 rules:
 - MATCH,PROXIES

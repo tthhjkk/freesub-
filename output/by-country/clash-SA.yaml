@@ -5,35 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01 - github
-  server: 134.209.194.199
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /jumping/files/videos?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇦 沙特 (Saudi Arabia) 02 - github
-  server: 165.232.39.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /m?ed=2560fp=chrome
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇸🇦 沙特 (Saudi Arabia) 03 - github
   server: 81.208.170.142
   port: 1500
   udp: true
@@ -54,15 +25,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇦 沙特 (Saudi Arabia) 01 - github
-  - 🇸🇦 沙特 (Saudi Arabia) 02 - github
-  - 🇸🇦 沙特 (Saudi Arabia) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇦 沙特 (Saudi Arabia) 01 - github
-  - 🇸🇦 沙特 (Saudi Arabia) 02 - github
-  - 🇸🇦 沙特 (Saudi Arabia) 03 - github
 rules:
 - MATCH,PROXIES

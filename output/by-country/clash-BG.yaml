@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
-  server: 192.145.31.5
+  server: neth9.lunariai.ru
   port: 443
   udp: true
   type: vless
@@ -14,6 +14,13 @@ proxies:
   ws-opts:
     path: /
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 192.145.31.5
   port: 8443
   udp: true
@@ -21,8 +28,9 @@ proxies:
   uuid: 9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a
   tls: true
   servername: neth9.lunariai.ru
-  skip-cert-verify: true
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  skip-cert-verify: false
+  client-fingerprint: qq
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 193.148.59.178
   port: 443
   udp: true
@@ -34,16 +42,9 @@ proxies:
     public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
     short-id: e3daad69
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  client-fingerprint: firefox
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
-  server: 131.123.39.29
+  server: 131.123.37.199
   port: 8081
   udp: true
   type: vless
@@ -52,7 +53,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
-  server: 131.123.41.31
+  server: 131.123.39.29
   port: 8081
   udp: true
   type: vless
@@ -61,15 +62,6 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
-  server: 131.123.41.18
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
   server: 131.123.39.29
   port: 443
   udp: true
@@ -81,8 +73,8 @@ proxies:
     public-key: pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
-  client-fingerprint: ios
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  client-fingerprint: qq
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
   server: 131.123.41.18
   port: 443
   udp: true
@@ -95,7 +87,25 @@ proxies:
     short-id: 84be686ea1d16478
   servername: sheetpeek.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  server: 131.123.41.31
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  server: 131.123.41.18
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
   server: 144.31.50.236
   port: 443
   udp: true
@@ -107,7 +117,22 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 - github
+  server: 154.83.2.110
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-4beea30ea96c
+  tls: true
+  servername: 4cz9gseouyns.2iz1ile4upks.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/4beea30ea96c/loc-0
+    headers:
+      Host: 4cz9gseouyns.2iz1ile4upks.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,6 +148,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,5 +165,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 rules:
 - MATCH,PROXIES

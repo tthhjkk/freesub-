@@ -6,6 +6,46 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "8a36be1d-7c78-4885-8a1f-bedf5ba7db1c",
+      "transport": {
+        "type": "ws",
+        "path": "/rn50nmm9l1dey73c?ed=2560",
+        "headers": {
+          "Host": "lucky-lab-ac6d.caveyi8071.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - github",
+      "server": "104.21.69.37",
+      "server_port": 443,
+      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/uWq9DFRgj8BwQiSXmZ46 ",
+        "headers": {
+          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - github",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -15,7 +55,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +69,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - github"
+        "🇨🇿 捷克 (Czech) 01 - github",
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - github"
+        "🇨🇿 捷克 (Czech) 01 - github",
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

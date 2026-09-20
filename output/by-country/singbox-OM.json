@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "104.16.10.10",
+      "tag": "🇴🇲 OM 01 - github",
+      "server": "146.70.37.253",
       "server_port": 443,
-      "uuid": "b8d8a5b0-867f-4491-b4e4-30edc04bb10e",
+      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
       "tls": {
         "enabled": true,
-        "server_name": "u.srilankangrill.online",
+        "server_name": "kkkk-xcd.pages.dev",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -20,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/?ed=2048",
         "headers": {
-          "Host": "u.srilankangrill.online"
+          "Host": "kkkk-xcd.pages.dev"
         }
       }
     },
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - github"
+        "🇴🇲 OM 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - github"
+        "🇴🇲 OM 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

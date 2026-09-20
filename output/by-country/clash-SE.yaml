@@ -5,42 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - github
-  server: 143.246.195.138
-  port: 8081
+  server: 70.34.212.124
+  port: 8388
   udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 143.246.195.98
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 03 - github
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
-- name: 🇸🇪 瑞典 (Sweden) 04 - github
-  server: se-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - github
-  server: 193.42.39.10
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -53,7 +25,69 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03 - github
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 04 - github
+  server: 91.193.17.156
+  port: 9458
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 05 - github
+  server: 143.246.195.98
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 06 - github
+  server: 143.246.195.138
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 07 - github
+  server: 77.110.117.199
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-se-03.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: se03-grpc-8e47a
+- name: 🇸🇪 瑞典 (Sweden) 08 - github
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 09 - github
   server: 5.157.10.147
   port: 443
   udp: true
@@ -66,20 +100,32 @@ proxies:
     short-id: fb442438e2223836
   servername: svvedko.nxxzxaw.beer
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - github
-  server: 91.193.17.156
-  port: 9458
+- name: 🇸🇪 瑞典 (Sweden) 10 - github
+  server: 177.3.215.171
+  port: 443
   udp: true
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
+    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
+    short-id: 7f2e9c4b1a8d6e53
+  servername: yahoo.com
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 11 - github
+  server: se-arn-14.blook.democrat
+  port: 443
+  udp: true
+  type: vless
+  uuid: af55163a-8d6c-4d6b-85e7-88e52a12b126
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 73RxRqjaQXn2Vtqw-i5tRd-fHlm1nafliyjksbVWCyE
+    short-id: f9729356
+  servername: se-arn-14.blook.democrat
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +138,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - github
   - 🇸🇪 瑞典 (Sweden) 06 - github
   - 🇸🇪 瑞典 (Sweden) 07 - github
+  - 🇸🇪 瑞典 (Sweden) 08 - github
+  - 🇸🇪 瑞典 (Sweden) 09 - github
+  - 🇸🇪 瑞典 (Sweden) 10 - github
+  - 🇸🇪 瑞典 (Sweden) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +154,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 05 - github
   - 🇸🇪 瑞典 (Sweden) 06 - github
   - 🇸🇪 瑞典 (Sweden) 07 - github
+  - 🇸🇪 瑞典 (Sweden) 08 - github
+  - 🇸🇪 瑞典 (Sweden) 09 - github
+  - 🇸🇪 瑞典 (Sweden) 10 - github
+  - 🇸🇪 瑞典 (Sweden) 11 - github
 rules:
 - MATCH,PROXIES

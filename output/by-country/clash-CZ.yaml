@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
+  server: 188.114.97.6
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 8a36be1d-7c78-4885-8a1f-bedf5ba7db1c
+  network: ws
+  ws-opts:
+    path: /rn50nmm9l1dey73c?ed=2560
+    headers:
+      Host: lucky-lab-ac6d.caveyi8071.workers.dev
+- name: 🇨🇿 捷克 (Czech) 02 - github
+  server: 104.21.69.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
+  tls: true
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: '/vl/uWq9DFRgj8BwQiSXmZ46 '
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+- name: 🇨🇿 捷克 (Czech) 03 - github
   server: 95.85.230.35
   port: 443
   udp: true
@@ -15,18 +41,22 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: ''
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
+  - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
+  - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 rules:
 - MATCH,PROXIES
