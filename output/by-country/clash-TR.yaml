@@ -5,18 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 31.214.152.140
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: ad297a2b-ae17-4d2d-8fce-e2eafb89b145
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: bjqOUjqNQMF6NZ2kRis0NTNTcpdLBrr7CvZjFATrhg8
-    short-id: 08
-  servername: dw.b-cdn.net
-  client-fingerprint: firefox
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 78.135.73.47
   port: 443
@@ -30,40 +29,6 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
-  server: me17.msjia8844.site
-  port: 7443
-  udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
-- name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: 206.1.97.61
-  port: 443
-  udp: true
-  type: vless
-  uuid: 416cea75-4802-43b1-8f31-c7fa1e211a6a
-  tls: true
-  reality-opts:
-    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
-    short-id: d7397feef49deef9
-  servername: Miro.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
-  - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
-  - 🇹🇷 土耳其 (Turkey) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,8 +43,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
-  - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
-  - 🇹🇷 土耳其 (Turkey) 05 - github
 rules:
 - MATCH,PROXIES

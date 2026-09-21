@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇹 GT 01 - github
-  server: 185.47.254.251
+- name: 🌐 其他地区 (Other) 01 - github
+  server: 172.67.153.156
   port: 443
   udp: true
   type: vless
-  uuid: 878fb7f7-fc65-465e-a352-17c7216c6f3d
-  flow: xtls-rprx-vision
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  reality-opts:
-    public-key: 6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q
-    short-id: 6c059ecfddf9b179
-  servername: gateway.icloud.com
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /pai50288
+    headers:
+      Host: ccs2g.pai50288.uk
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇹 GT 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇹 GT 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 rules:
 - MATCH,PROXIES
