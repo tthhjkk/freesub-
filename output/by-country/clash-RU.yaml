@@ -5,8 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 146.185.178.18
+  server: 104.248.80.71
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /product/config/films?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 02 - github
+  server: 147.90.229.204
   port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /sort/outbound/redirect.php?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 03 - github
+  server: 193.181.216.117
+  port: 2053
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
@@ -19,14 +48,58 @@ proxies:
     path: /
     headers:
       Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 02 - github
+- name: 🇷🇺 俄罗斯 (Russia) 04 - github
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: itsallproxy.quattro-tech.ru
+  sni: hy.quattro-tech.ru
   skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  server: 46.101.230.110
+  port: 443
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /drama?ed=2560
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 46.8.200.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  tls: true
+  servername: cf3.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: cf3.rumedia-cdn.com
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+  server: 5.129.251.213
+  port: 46446
+  udp: true
+  type: vless
+  uuid: e42ba0b1-39a0-48fd-a80f-f3fca3bb4c6d
+  tls: true
+  reality-opts:
+    public-key: 4CTDvoTom2CNJqszbKlQApLSQJ8ZLNoQrQ5yH7j242I
+    short-id: 039204f18c9c90a0
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fromabroad-grpc-v1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +107,11 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01 - github
   - 🇷🇺 俄罗斯 (Russia) 02 - github
+  - 🇷🇺 俄罗斯 (Russia) 03 - github
+  - 🇷🇺 俄罗斯 (Russia) 04 - github
+  - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +119,10 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01 - github
   - 🇷🇺 俄罗斯 (Russia) 02 - github
+  - 🇷🇺 俄罗斯 (Russia) 03 - github
+  - 🇷🇺 俄罗斯 (Russia) 04 - github
+  - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 rules:
 - MATCH,PROXIES

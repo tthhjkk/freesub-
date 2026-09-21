@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
-      "server": "193.42.39.10",
+      "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -22,7 +22,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -69,8 +69,19 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
+      "server": "143.246.194.60",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - github",
       "server": "se-node.rumedia-cdn.com",
       "server_port": 25443,
       "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
@@ -82,7 +93,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - github",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - github",
+      "server": "95.129.236.239",
+      "server_port": 443,
+      "uuid": "38f2979a-fa16-45b5-afaa-c35529d5dd55",
+      "tls": {
+        "enabled": true,
+        "server_name": "wiki.solarinfra.net",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/615428/socket",
+        "headers": {
+          "Host": "wiki.solarinfra.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - github",
       "server": "91.193.17.156",
       "server_port": 9458,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
@@ -91,7 +128,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -102,17 +139,6 @@
       "transport": {
         "type": "grpc",
         "service_name": "TunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - github",
-      "server": "143.246.194.60",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
       }
     },
     {
@@ -127,7 +153,8 @@
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
         "🇸🇪 瑞典 (Sweden) 07 - github",
-        "🇸🇪 瑞典 (Sweden) 08 - github"
+        "🇸🇪 瑞典 (Sweden) 08 - github",
+        "🇸🇪 瑞典 (Sweden) 09 - github"
       ]
     },
     {
@@ -141,7 +168,8 @@
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
         "🇸🇪 瑞典 (Sweden) 07 - github",
-        "🇸🇪 瑞典 (Sweden) 08 - github"
+        "🇸🇪 瑞典 (Sweden) 08 - github",
+        "🇸🇪 瑞典 (Sweden) 09 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

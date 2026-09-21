@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 193.42.39.10
+  server: 79.141.174.147
   port: 33743
   udp: true
   type: vless
@@ -21,7 +21,7 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
@@ -53,6 +53,15 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 06 - github
+  server: 143.246.194.60
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
+- name: 🇸🇪 瑞典 (Sweden) 07 - github
   server: se-node.rumedia-cdn.com
   port: 25443
   udp: true
@@ -60,7 +69,22 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 07 - github
+- name: 🇸🇪 瑞典 (Sweden) 08 - github
+  server: 95.129.236.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38f2979a-fa16-45b5-afaa-c35529d5dd55
+  tls: true
+  servername: wiki.solarinfra.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /stream/615428/socket
+    headers:
+      Host: wiki.solarinfra.net
+- name: 🇸🇪 瑞典 (Sweden) 09 - github
   server: 91.193.17.156
   port: 9458
   udp: true
@@ -70,19 +94,10 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: qq
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 08 - github
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,6 +111,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - github
   - 🇸🇪 瑞典 (Sweden) 07 - github
   - 🇸🇪 瑞典 (Sweden) 08 - github
+  - 🇸🇪 瑞典 (Sweden) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,5 +125,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - github
   - 🇸🇪 瑞典 (Sweden) 07 - github
   - 🇸🇪 瑞典 (Sweden) 08 - github
+  - 🇸🇪 瑞典 (Sweden) 09 - github
 rules:
 - MATCH,PROXIES

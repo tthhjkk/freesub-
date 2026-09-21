@@ -18,8 +18,8 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - github",
-      "server": "160.25.75.40",
-      "server_port": 443,
+      "server": "140.245.38.33",
+      "server_port": 2096,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
@@ -28,9 +28,12 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/class/season",
         "headers": {
           "Host": "cdn8848.776676.xyz"
-        }
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
