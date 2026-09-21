@@ -18,13 +18,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02 - github
-  server: 129.159.156.109
-  port: 50160
+  server: 45.140.205.2
+  port: 443
   udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg
+  servername: promo.ch.iki-servers.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: 188.114.97.6
+  server: 172.66.44.124
   port: 443
   udp: true
   type: vless
@@ -13,36 +13,13 @@ proxies:
   tls: true
   servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /9BozNyvQ8VdRvsYX?ed=2560
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇨🇿 捷克 (Czech) 02 - github
-  server: 104.21.14.100
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7fc7f295-b80e-4235-bb17-61e3ddc0744a
-  tls: true
-  servername: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
-  skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/dUpDYuQTXxF5X83infdA74?ed=2560
+    path: /
     headers:
-      Host: 4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - github
-  server: 153.76.185.189
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 5ebdc9ee-8b41-4487-93af-231cb0b47d60
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 04 - github
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇨🇿 捷克 (Czech) 02 - github
   server: 95.85.230.35
   port: 443
   udp: true
@@ -53,37 +30,7 @@ proxies:
   reality-opts:
     public-key: mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0
   servername: de.oblaco.bet
-  client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 05 - github
-  server: 158.173.195.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /www?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇨🇿 捷克 (Czech) 06 - github
-  server: 132.243.203.207
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -91,10 +38,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
-  - 🇨🇿 捷克 (Czech) 04 - github
-  - 🇨🇿 捷克 (Czech) 05 - github
-  - 🇨🇿 捷克 (Czech) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,9 +45,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
-  - 🇨🇿 捷克 (Czech) 04 - github
-  - 🇨🇿 捷克 (Czech) 05 - github
-  - 🇨🇿 捷克 (Czech) 06 - github
 rules:
 - MATCH,PROXIES

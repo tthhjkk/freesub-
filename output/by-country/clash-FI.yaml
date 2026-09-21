@@ -12,30 +12,21 @@ proxies:
   cipher: aes-256-gcm
   password: rg0g3xp9rk9nk9o0
 - name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 104.16.72.101
-  port: 80
-  udp: true
-  type: vless
-  uuid: d5598622-46b8-b017-3af3-232500000001
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: nahan-core.netizo09.workers.dev
-- name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 65.108.3.59
+  server: 152.233.54.104
   port: 443
   udp: true
   type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
+  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
   tls: true
   reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - github
+    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
+    short-id: 0a30e2aee95a7571
+  servername: fi1.cache-4d8a.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇫🇮 芬兰 (Finland) 03 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -47,7 +38,44 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 196.196.206.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
+    short-id: d110331f200987ae
+  servername: finkafsb.finiki.lol
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 83.219.97.26
+  port: 443
+  udp: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - github
   server: 37.143.129.244
   port: 443
   udp: true
@@ -60,45 +88,18 @@ proxies:
     short-id: 48fd192dc4e46bc0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: 152.233.54.104
-  port: 443
-  udp: true
-  type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  tls: true
-  reality-opts:
-    public-key: V4SeM4OMxXoSKBmmyC5C0kZEhgL33a5vVZBe7ysJ42U
-    short-id: 0a30e2aee95a7571
-  servername: fi1.cache-4d8a.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇫🇮 芬兰 (Finland) 07 - github
-  server: 62.238.103.54
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d78de562-872e-43dd-be48-e9d7b06c87a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tADYkZWWksM_mCqqwlRHCciSCXnP3JMYrPi5eoRHh2s
-    short-id: d059fb98048c5318
-  servername: www.yahoo.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 08 - github
-  server: 83.219.97.26
-  port: 443
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 09 - github
   server: 31.77.199.182
@@ -112,84 +113,33 @@ proxies:
     public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
     short-id: abcd1234
   servername: fi2.yservice.help
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 10 - github
-  server: 185.79.138.71
-  port: 448
-  udp: true
-  type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
-  tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 11 - github
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 12 - github
-  server: 2.27.48.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7cbc0c1f-9aa1-4a4c-a052-45ccc855df10
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Ax1xKjjBS7afZ94zHY-9iI7hohBmzA-EpS-eRILX2CA
-    short-id: c66279532e2e
-  servername: intel.com
-  client-fingerprint: safari
-- name: 🇫🇮 芬兰 (Finland) 13 - github
-  server: se.belka.network
-  port: 443
-  udp: true
-  type: vless
-  uuid: c47b421f-65f1-4190-b7ba-bd2045086fe4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: diw5L3O4EkRQGWDSfdpQooPUc3zBTItooeOQ_fIDFWI
-    short-id: 7f2e9c4b1a8d6e53
-  servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 14 - github
-  server: assets-fi.pleiades.codes
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 10 - github
+  server: 77.110.117.199
+  port: 9443
   udp: true
   type: vless
-  uuid: c797b9ad-6f9e-4eee-befd-eef119ec3637
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
   tls: true
-  servername: assets-fi.pleiades.codes
+  servername: hub-fi-01.hanvpn.cc
   skip-cert-verify: false
-  client-fingerprint: edge
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 15 - github
-  server: 196.196.206.38
+    grpc-service-name: fi01-grpc-8e47a
+- name: 🇫🇮 芬兰 (Finland) 11 - github
+  server: 65.108.3.59
   port: 443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: YBKHp6R7xp2Ss2kxbvDNMFPpRrf3oh1wQ2dVMukPHmA
-    short-id: d110331f200987ae
-  servername: finkafsb.finiki.lol
-  client-fingerprint: qq
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -206,10 +156,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - github
   - 🇫🇮 芬兰 (Finland) 10 - github
   - 🇫🇮 芬兰 (Finland) 11 - github
-  - 🇫🇮 芬兰 (Finland) 12 - github
-  - 🇫🇮 芬兰 (Finland) 13 - github
-  - 🇫🇮 芬兰 (Finland) 14 - github
-  - 🇫🇮 芬兰 (Finland) 15 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -226,9 +172,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - github
   - 🇫🇮 芬兰 (Finland) 10 - github
   - 🇫🇮 芬兰 (Finland) 11 - github
-  - 🇫🇮 芬兰 (Finland) 12 - github
-  - 🇫🇮 芬兰 (Finland) 13 - github
-  - 🇫🇮 芬兰 (Finland) 14 - github
-  - 🇫🇮 芬兰 (Finland) 15 - github
 rules:
 - MATCH,PROXIES

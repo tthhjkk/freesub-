@@ -6,20 +6,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
-      "server": "188.114.97.6",
+      "server": "172.66.44.124",
       "server_port": 443,
       "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
       "tls": {
         "enabled": true,
         "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/9BozNyvQ8VdRvsYX?ed=2560",
+        "path": "/",
         "headers": {
           "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
         }
@@ -28,43 +29,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - github",
-      "server": "104.21.14.100",
-      "server_port": 443,
-      "uuid": "7fc7f295-b80e-4235-bb17-61e3ddc0744a",
-      "tls": {
-        "enabled": true,
-        "server_name": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/dUpDYuQTXxF5X83infdA74?ed=2560",
-        "headers": {
-          "Host": "4zgccbcb10pqyibnwmm4nvznj4.royaehman5.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - github",
-      "server": "153.76.185.189",
-      "server_port": 3090,
-      "uuid": "5ebdc9ee-8b41-4487-93af-231cb0b47d60",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - github",
       "server": "95.85.230.35",
       "server_port": 443,
       "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
@@ -74,7 +38,7 @@
         "server_name": "de.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -84,61 +48,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - github",
-      "server": "158.173.195.103",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/www?ed=2560",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - github",
-      "server": "132.243.203.207",
-      "server_port": 8443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github",
-        "🇨🇿 捷克 (Czech) 05 - github",
-        "🇨🇿 捷克 (Czech) 06 - github"
+        "🇨🇿 捷克 (Czech) 02 - github"
       ]
     },
     {
@@ -146,11 +61,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github",
-        "🇨🇿 捷克 (Czech) 05 - github",
-        "🇨🇿 捷克 (Czech) 06 - github"
+        "🇨🇿 捷克 (Czech) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
