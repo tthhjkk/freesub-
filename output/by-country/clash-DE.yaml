@@ -5,98 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - github
-  server: 188.114.96.8
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: y9p34JPJmQJazaYpf.pIIwDDIlxJcQEHr17af22U7XK-yu.workeRS.Dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/1nWXnOaq1ajP7PKxbRS7Sdck48oy?ed=2560
-- name: 🇩🇪 德国 (Germany) 02 - github
-  server: 104.21.70.21
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
-  tls: true
-  servername: courses.mftplus.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 🇩🇪 德国 (Germany) 03 - github
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: d6828805-5608-44d7-a44b-976d4c3ac2d0
-  network: ws
-  ws-opts:
-    path: /vl/5ibXbgAYxWzwbOtkXJWUtvKMKOYjh?ed
-    headers:
-      Host: 0lg3u92i0exn577l3mc637ycba3.sfgsfgsfgfsgsf-4630.workers.dev
-- name: 🇩🇪 德国 (Germany) 04 - github
-  server: 188.114.97.1
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0b3e7958-e5c4-498f-ab21-b49686f95d2d
-  tls: true
-  servername: bold-term-4edd.mbigspot.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: bold-term-4edd.mbigspot.workers.dev
-- name: 🇩🇪 德国 (Germany) 05 - github
-  server: 172.66.44.124
-  port: 2096
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /9BozNyvQ8VdRvsYX?ed=2560
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 06 - github
-  server: 172.67.160.14
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0b41f339-5809-46ef-8351-b03fdc441539
-  tls: true
-  servername: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vl/lYNtP7z8pJUmfp01tz5wEnuDujJtZ
-    headers:
-      Host: fpoixf69hqt3e6d4urtb.mamadneizeh.workers.dev
-- name: 🇩🇪 德国 (Germany) 07 - github
-  server: 172.67.143.94
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: Z6Y-Daox0HyHdTDy.R720KPBYx2L3I406.WorKERS.DEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/ZizffFwMuYF9RUfnS3Ad2bGqcOrQk?ed=2560
-- name: 🇩🇪 德国 (Germany) 08 - github
-  server: 104.21.58.246
+  server: www.speedtest.net
   port: 443
   udp: true
   type: vless
@@ -107,59 +16,10 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/cu5J5pJDG1sslsK4LQcTeN07h0IaUB?ed=2560
+    path: /vl/trUydYgvH0rYux5ihp4zgZjo4RYK412?ed=2560
     headers:
       Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇩🇪 德国 (Germany) 09 - github
-  server: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 10 - github
-  server: chatgpt.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: a43a9a45-7387-4faf-ad06-24b1ae181fdc
-  tls: true
-  servername: snowy-glade-85fa.arshiatakalloo88.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVzg3NkFVRjZaUCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: snowy-glade-85fa.arshiatakalloo88.workers.dev
-- name: 🇩🇪 德国 (Germany) 11 - github
-  server: 104.21.87.130
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: Z6Y-Daox0HyHdTDy.R720KPBYx2L3I406.WorKERS.DEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/ZizffFwMuYF9RUfnS3Ad2bGqcOrQk?ed=2560
-- name: 🇩🇪 德国 (Germany) 12 - github
-  server: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
-  tls: true
-  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-- name: 🇩🇪 德国 (Germany) 13 - github
+- name: 🇩🇪 德国 (Germany) 02 - github
   server: 172.67.166.127
   port: 443
   udp: true
@@ -171,77 +31,17 @@ proxies:
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/qvzh31VgY6yA9AcUDaTiXVVX?ed=2560
+    path: /vl/kKwMUdkX82TYb7lugJa2JJEGDyIe?ed=2560
     headers:
       Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇩🇪 德国 (Germany) 14 - github
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /9BozNyvQ8VdRvsYX?ed=2560
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 15 - github
-  server: 172.66.44.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇩🇪 德国 (Germany) 16 - github
-  server: 172.67.162.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
-  tls: true
-  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-- name: 🇩🇪 德国 (Germany) 17 - github
-  server: 104.21.15.145
-  port: 2053
-  udp: true
-  type: vless
-  uuid: dc1e9f00-c064-4870-9bfc-463db50257d7
-  tls: true
-  servername: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoicVkwaG9XUUQyUDhzRkZ5UiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: restless-moon-dd68ridam-too-in-mamlekat.hgtghff67tdfhut3.workers.dev
-- name: 🇩🇪 德国 (Germany) 18 - github
-  server: 213.202.208.199
-  port: 7001
+- name: 🇩🇪 德国 (Germany) 03 - github
+  server: 130.61.182.5
+  port: 59924
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
-- name: 🇩🇪 德国 (Germany) 19 - github
+  cipher: 2022-blake3-chacha20-poly1305
+  password: B+bJf2LIFkQktXQ5ZQUI4pLKETQS7UUqIyXES8X8LSM=
+- name: 🇩🇪 德国 (Germany) 04 - github
   server: 216.106.187.60
   port: 22324
   udp: true
@@ -249,35 +49,125 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇩🇪 德国 (Germany) 20 - github
+- name: 🇩🇪 德国 (Germany) 05 - github
+  server: 213.202.208.199
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 06 - github
   server: 8.209.74.72
   port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: PWpjPo3tqhPN4yRZ
-- name: 🇩🇪 德国 (Germany) 21 - github
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 22 - github
+- name: 🇩🇪 德国 (Germany) 07 - github
   server: 209.46.102.22
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 1hhrqrokj3ag
-- name: 🇩🇪 德国 (Germany) 23 - github
+- name: 🇩🇪 德国 (Germany) 08 - github
   server: 2.58.81.221
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: kKEd0rBrd56Furjz
-- name: 🇩🇪 德国 (Germany) 24 - github
+- name: 🇩🇪 德国 (Germany) 09 - github
+  server: 194.87.55.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 44a2e1af-a524-47a0-8d26-b160b20a5e37
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SzOhlaAgX-5m7RB6MTfx3MwjfYDi5G2JblGcpnLgam0
+    short-id: 8ef32bea5018959f
+  servername: cdn.jsdelivr.net
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 10 - github
+  server: 130.61.145.33
+  port: 59924
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 2IhI4JDsLapp7N4PfL+duHVI+taMbdDLJkhaQfTBUZQ=
+- name: 🇩🇪 德国 (Germany) 11 - github
+  server: web.turbooserver.net.tr
+  port: 2087
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
+- name: 🇩🇪 德国 (Germany) 12 - github
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 13 - github
+  server: 31.77.161.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: safari
+- name: 🇩🇪 德国 (Germany) 14 - github
+  server: 89.169.53.176
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15 - github
+  server: 185.226.172.8
+  port: 8008
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 16 - github
+  server: 179.61.138.145
+  port: 54759
+  udp: true
+  type: hysteria2
+  password: Telegram@vpnjey
+  sni: 179.61.138.145
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+- name: 🇩🇪 德国 (Germany) 17 - github
+  server: 144.31.168.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: qq
+- name: 🇩🇪 德国 (Germany) 18 - github
   server: 31.56.189.27
   port: 2087
   udp: true
@@ -286,37 +176,105 @@ proxies:
   tls: true
   servername: srv-21bac9.vless.monster
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: freegrpc
+- name: 🇩🇪 德国 (Germany) 19 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 20 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 21 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 22 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 23 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: OV-Germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 24 - github
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇩🇪 德国 (Germany) 25 - github
-  server: 103.109.234.243
-  port: 443
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
-    short-id: 59eee550a1014198
-  servername: de10.delivery-4f1c.com
-  client-fingerprint: firefox
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
 - name: 🇩🇪 德国 (Germany) 26 - github
-  server: 103.109.234.246
-  port: 443
+  server: 57.129.41.216
+  port: 80
   udp: true
   type: vless
-  uuid: ddf09ad0-02dc-485b-9048-1038de5bebf0
-  flow: xtls-rprx-vision
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 27 - github
+  server: 162.55.242.208
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
   tls: true
   reality-opts:
-    public-key: z_Rn0Vvq1GB39RhN6v7DhdtD-kS0XZa_je0h-no_hWs
-    short-id: 59eee550a1014198
-  servername: de10.delivery-4f1c.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 27 - github
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 28 - github
   server: 212.80.7.129
   port: 6215
   udp: true
@@ -328,43 +286,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: api.v1.ApiService
-- name: 🇩🇪 德国 (Germany) 28 - github
-  server: 89.169.53.176
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
-    short-id: df3aff719526dc5a
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 29 - github
-  server: 57.129.96.67
-  port: 443
-  udp: true
-  type: vless
-  uuid: nasnet
-  flow: xtls-rprx-vision
-  tls: true
-  servername: nasnet-571299667-direct.mbghalibaf.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 30 - github
-  server: 151.242.160.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: 129799e0-a9b1-4ae8-80bd-fa92db813f85
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: A0Na0oG3DYM8FtAsxN-oWVjikFbO-Ama8i1Z0C4V_ho
-  servername: germm2.shhflow.xyz
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 31 - github
   server: 82.118.19.153
   port: 443
   udp: true
@@ -377,82 +299,18 @@ proxies:
     short-id: 670ed9f350bd8ee0
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 32 - github
+- name: 🇩🇪 德国 (Germany) 30 - github
   server: ov-germany1.09vpn.com
   port: 80
   udp: true
   type: vless
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
   network: ws
   ws-opts:
     path: /vless/
     headers:
       Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 33 - github
-  server: 31.77.161.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: ''
-- name: 🇩🇪 德国 (Germany) 34 - github
-  server: 144.31.168.95
-  port: 443
-  udp: true
-  type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  servername: eu-central.cendora.ru
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 35 - github
-  server: de-node.rumedia-cdn.com
-  port: 25443
-  udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf6.rumedia-cdn.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 36 - github
-  server: 179.61.138.145
-  port: 54759
-  udp: true
-  type: hysteria2
-  password: Telegram@vpnjey
-  sni: 179.61.138.145
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-- name: 🇩🇪 德国 (Germany) 37 - github
-  server: 82.39.171.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 38 - github
-  server: web.turbooserver.net.tr
-  port: 2087
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: WAqeGA+dU+HZYSipCio+Jmt7SSVfHjwMH7j8xmsm7/s=:althddZ27iu261I+568pk7HZzBFDCyIx6pvG8H9oXow=
-- name: 🇩🇪 德国 (Germany) 39 - github
+- name: 🇩🇪 德国 (Germany) 31 - github
   server: 82.24.203.20
   port: 2087
   udp: true
@@ -461,33 +319,15 @@ proxies:
   network: ws
   ws-opts:
     path: /fd5ba98a3970
-- name: 🇩🇪 德国 (Germany) 40 - github
-  server: www.speedtest.net
-  port: 443
+- name: 🇩🇪 德国 (Germany) 32 - github
+  server: de-node.rumedia-cdn.com
+  port: 25443
   udp: true
-  type: vless
-  uuid: 709b1cf4-a386-4cbf-bcf4-46f03c4788a8
-  tls: true
-  servername: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/hZ8s90SJBdce8aSl3H4X?ed=2560
-    headers:
-      Host: q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev
-- name: 🇩🇪 德国 (Germany) 41 - github
-  server: dedicated.pivo.lol
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 44e1105d-b46e-402f-933b-eaa136fcbb24
-  flow: xtls-rprx-vision
-  tls: true
-  servername: dedicated.pivo.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 42 - github
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf6.rumedia-cdn.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 33 - github
   server: assets-de.pleiades.codes
   port: 443
   udp: true
@@ -500,25 +340,144 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-- name: 🇩🇪 德国 (Germany) 43 - github
-  server: 162.55.242.208
+- name: 🇩🇪 德国 (Germany) 34 - github
+  server: 104.21.19.69
   port: 2053
   udp: true
   type: vless
-  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  uuid: 522df6b1-a110-4163-a92f-9935561b1f77
+  tls: true
+  servername: de.huge-b.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Artemis_Vpn
+    headers:
+      Host: de.huge-b.com
+- name: 🇩🇪 德国 (Germany) 35 - github
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-de-04.hanvpn.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: de04-grpc-8e47a
+- name: 🇩🇪 德国 (Germany) 36 - github
+  server: nasnet-571299667-direct.mbghalibaf.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: e8b1500b-e9e8-5492-8312-f4eadf7d0767
+  flow: xtls-rprx-vision
+  tls: true
+  servername: nasnet-571299667-direct.mbghalibaf.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 37 - github
+  server: huifkhrte386.greendop.com
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: d73de85a-6434-44cc-a81d-e2576b3fbd43
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 38 - github
+  server: 92.255.79.246
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8057eabc-921d-0002-9acb-80ccc6b48379
   tls: true
   reality-opts:
-    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
-    short-id: 4d14da19b19cfc8c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 44 - github
-  server: 2.58.81.221
-  port: 80
+    public-key: 8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700
+  servername: supbober.mafioznik.xyz
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: Lizat
+- name: 🇩🇪 德国 (Germany) 39 - github
+  server: node8.quaxly.com
+  port: 25040
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kKEd0rBrd56Furjz
+  type: trojan
+  password: Km/pIG4AGCjCOiGWj5FsWA==
+  sni: /gay-anal
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 40 - github
+  server: 82.39.171.142
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 41 - github
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 42 - github
+  server: fra.huge-b.com
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 7b5ee755-9856-49aa-ab17-b3905bfecdfc
+  tls: true
+  servername: fra.huge-b.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Artemis_Vpn
+    headers:
+      Host: fra.huge-b.com
+- name: 🇩🇪 德国 (Germany) 43 - github
+  server: defrnode.jumpernode.online
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 44 - github
+  server: nor.accessgate.link
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 38eb3e71-4349-4bd6-9baf-9740e1896495
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CQBmePak1QN5SsSmK_KTOSLjsCTaiaM4Jtxt7jLheko
+    short-id: b0d8c9a285c70f6f
+  servername: unpkg.com
+  client-fingerprint: edge
 - name: 🇩🇪 德国 (Germany) 45 - github
   server: kentspark.org
   port: 443
@@ -533,66 +492,66 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: kentspark.org
 - name: 🇩🇪 德国 (Germany) 46 - github
-  server: aidrivercat.org
-  port: 443
+  server: 104.21.8.201
+  port: 2096
   udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
   tls: true
-  servername: aidrivercat.org
+  servername: cdn-de.skyvora.app
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /linkvws
+    path: /3cagtz3
     headers:
-      Host: aidrivercat.org
+      Host: cdn-de.skyvora.app
 - name: 🇩🇪 德国 (Germany) 47 - github
-  server: 82.39.171.12
+  server: 31.76.100.41
   port: 443
   udp: true
   type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: random
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
+  client-fingerprint: firefox
 - name: 🇩🇪 德国 (Germany) 48 - github
-  server: de1.xiaoliyu.cyou
-  port: 4433
+  server: 193.56.135.212
+  port: 9543
   udp: true
-  type: hysteria2
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  sni: 127.0.0.1
-  skip-cert-verify: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcde
+  servername: storage.yandexcloud.net
+  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 49 - github
-  server: 2.27.59.206
+  server: 138.124.32.110
   port: 443
   udp: true
-  type: hysteria2
-  password: cd74c0a406664a5bc0bac098220a2468
-  sni: de1.sferavpn.pro
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 44f1c1e2f8b99e792ceed574627a1eb0
+  type: vless
+  uuid: 974f2c7e-a292-4207-8315-ef4151bdca41
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LMcNHcOzPISa2fmZWt2JraL6_a_IObpS2znQW70gyDo
+  servername: fl-api.bachidze.com
+  client-fingerprint: safari
 - name: 🇩🇪 德国 (Germany) 50 - github
-  server: node8.quaxly.com
-  port: 25040
+  server: jgzt1997.qivfelo.ir
+  port: 5069
   udp: true
-  type: trojan
-  password: Km/pIG4AGCjCOiGWj5FsWA==
-  sni: /gay-anal
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
 - name: 🇩🇪 德国 (Germany) 51 - github
   server: 104.27.88.172
   port: 80
@@ -605,79 +564,60 @@ proxies:
     headers:
       Host: web-app-nr6wpa.app-tp57xz.workers.dev
 - name: 🇩🇪 德国 (Germany) 52 - github
-  server: 45.32.157.84
+  server: rubifen.adaspoloandco.com
   port: 443
-  udp: true
-  type: trojan
-  password: Tg3RnK7Xp8B1
-  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 53 - github
-  server: 88.99.189.60
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇩🇪 德国 (Germany) 54 - github
-  server: 78.47.146.151
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇩🇪 德国 (Germany) 55 - github
-  server: 78.47.146.151
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 56 - github
-  server: 78.47.146.151
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 57 - github
-  server: 78.47.146.151
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇩🇪 德国 (Germany) 58 - github
-  server: 163.8.195.241
-  port: 2087
   udp: true
   type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
+  uuid: cf39fab0-bb85-42cb-9945-2ad69d78e575
+  tls: true
+  servername: rubifen.adaspoloandco.com
+  skip-cert-verify: false
+  client-fingerprint: qq
   network: ws
   ws-opts:
-    path: /29c8fed7ca22
-    headers:
-      Host: zoom.us
+    path: /GOrbEh
+- name: 🇩🇪 德国 (Germany) 53 - github
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 17594
+  udp: true
+  type: vless
+  uuid: 55848813-689e-4a39-82cf-00748cbc7289
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA
+    short-id: 383e976fcf298029
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 54 - github
+  server: az-hti-de.ramzshadi.ir
+  port: 31770
+  udp: true
+  type: vless
+  uuid: 8124ddbb-bf22-49d9-945d-2e72c554deb2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GZqmhFHyMfIyRUi1k-2UDeJtjUakgZRhyXLhGLfL3Ws
+    short-id: 6a2a03e809012832
+  servername: sheets.google.com
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 55 - github
+  server: 94.249.187.46
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 56 - github
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -739,8 +679,6 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 54 - github
   - 🇩🇪 德国 (Germany) 55 - github
   - 🇩🇪 德国 (Germany) 56 - github
-  - 🇩🇪 德国 (Germany) 57 - github
-  - 🇩🇪 德国 (Germany) 58 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -802,7 +740,5 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 54 - github
   - 🇩🇪 德国 (Germany) 55 - github
   - 🇩🇪 德国 (Germany) 56 - github
-  - 🇩🇪 德国 (Germany) 57 - github
-  - 🇩🇪 德国 (Germany) 58 - github
 rules:
 - MATCH,PROXIES

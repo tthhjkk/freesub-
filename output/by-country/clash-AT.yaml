@@ -24,50 +24,6 @@ proxies:
     short-id: 43dcff53849b81e6
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
-- name: 🇦🇹 奥地利 (Austria) 03 - github
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 04 - github
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇹 奥地利 (Austria) 05 - github
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇹 奥地利 (Austria) 06 - github
-  server: 212.183.88.136
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,10 +31,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01 - github
   - 🇦🇹 奥地利 (Austria) 02 - github
-  - 🇦🇹 奥地利 (Austria) 03 - github
-  - 🇦🇹 奥地利 (Austria) 04 - github
-  - 🇦🇹 奥地利 (Austria) 05 - github
-  - 🇦🇹 奥地利 (Austria) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,9 +38,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01 - github
   - 🇦🇹 奥地利 (Austria) 02 - github
-  - 🇦🇹 奥地利 (Austria) 03 - github
-  - 🇦🇹 奥地利 (Austria) 04 - github
-  - 🇦🇹 奥地利 (Austria) 05 - github
-  - 🇦🇹 奥地利 (Austria) 06 - github
 rules:
 - MATCH,PROXIES

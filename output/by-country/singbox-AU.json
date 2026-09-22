@@ -12,14 +12,14 @@
       "security": "auto"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02 - github",
-      "server": "vpn-au-002.fastervpn.world",
+      "server": "172.105.169.70",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "172.105.169.70",
         "insecure": true
       }
     },
@@ -85,19 +85,47 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 06 - github",
-      "server": "152.67.115.203",
-      "server_port": 443,
-      "password": "633bc3be486b646190661ac2387c150a",
+      "server": "au1.gsafevpnapi.com",
+      "server_port": 20270,
+      "uuid": "8f2774ba-73fe-404d-a01b-7c01812ff75b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "www.yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE",
+          "short_id": "e6a5a4a9115456de"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - github",
+      "server": "202.166.187.132",
+      "server_port": 443,
+      "uuid": "8be20011-59b1-4118-91ed-83e8e6b662cd",
+      "tls": {
+        "enabled": true,
+        "server_name": "f.yoptybla.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "850a3fb1cd33a28f12d837578ae1a2e7"
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "f.yoptybla.ru"
+        }
       }
     },
     {
@@ -110,7 +138,8 @@
         "🇦🇺 澳大利亚 (Australia) 03 - github",
         "🇦🇺 澳大利亚 (Australia) 04 - github",
         "🇦🇺 澳大利亚 (Australia) 05 - github",
-        "🇦🇺 澳大利亚 (Australia) 06 - github"
+        "🇦🇺 澳大利亚 (Australia) 06 - github",
+        "🇦🇺 澳大利亚 (Australia) 07 - github"
       ]
     },
     {
@@ -122,7 +151,8 @@
         "🇦🇺 澳大利亚 (Australia) 03 - github",
         "🇦🇺 澳大利亚 (Australia) 04 - github",
         "🇦🇺 澳大利亚 (Australia) 05 - github",
-        "🇦🇺 澳大利亚 (Australia) 06 - github"
+        "🇦🇺 澳大利亚 (Australia) 06 - github",
+        "🇦🇺 澳大利亚 (Australia) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
