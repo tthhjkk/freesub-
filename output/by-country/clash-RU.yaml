@@ -5,101 +5,79 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 104.248.80.71
-  port: 2053
+  server: 162.159.0.53
+  port: 2052
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /product/config/films?ed=2560
+    path: /?ed=2560security=tls
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 02 - github
-  server: 147.90.229.204
-  port: 443
+  server: 104.18.47.113
+  port: 8080
   udp: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /sort/outbound/redirect.php?ed=2560fp=chrome
+    path: /?ed=2560security=tls
     headers:
-      Host: cdn8848.776676.xyz
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇷🇺 俄罗斯 (Russia) 03 - github
-  server: 193.181.216.117
-  port: 2053
+  server: 172.64.145.202
+  port: 2083
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  servername: newwk1.f1w.de5.net
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
     headers:
-      Host: cdn8848.776676.xyz
+      Host: newwk1.f1w.de5.net
 - name: 🇷🇺 俄罗斯 (Russia) 04 - github
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: e56059f1-5a1a-4d0a-a2d0-58ecb4eb2f3f
+  tls: true
+  servername: ezaccess-project-f62c30.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZWlPODVjTnhnaSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: ezaccess-project-f62c30.pages.dev
+- name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  server: 94.249.187.46
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rSeYcig_XBy8q3k33NpK3A
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 94.249.187.46
+  port: 2086
+  udp: true
+  type: vmess
+  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
+  alterId: 0
+  cipher: auto
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
   server: 91.240.86.70
   port: 22443
   udp: true
   type: hysteria2
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
+  sni: itsallproxy.quattro-tech.ru
   skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05 - github
-  server: 46.101.230.110
-  port: 443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /drama?ed=2560
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 06 - github
-  server: 46.8.200.91
-  port: 443
-  udp: true
-  type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
-  tls: true
-  servername: cf3.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 07 - github
-  server: 5.129.251.213
-  port: 46446
-  udp: true
-  type: vless
-  uuid: e42ba0b1-39a0-48fd-a80f-f3fca3bb4c6d
-  tls: true
-  reality-opts:
-    public-key: 4CTDvoTom2CNJqszbKlQApLSQJ8ZLNoQrQ5yH7j242I
-    short-id: 039204f18c9c90a0
-  servername: www.cloudflare.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: fromabroad-grpc-v1
 proxy-groups:
 - name: PROXIES
   type: select

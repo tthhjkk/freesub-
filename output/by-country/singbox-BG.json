@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - github",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -29,15 +21,49 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - github",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - github",
+      "server": "213.183.63.60",
+      "server_port": 9061,
+      "method": "aes-256-cfb",
+      "password": "4R3hUfZ2FHhDmNcP"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - github",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - github",
+      "server": "192.145.31.5",
+      "server_port": 443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
@@ -45,15 +71,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - github",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - github",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -63,7 +89,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,35 +99,9 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
-      "server": "213.183.63.60",
-      "server_port": 9061,
-      "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - github",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-      "server": "neth9.lunariai.ru",
-      "server_port": 443,
-      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - github",
-      "server": "131.123.41.177",
+      "server": "131.123.37.199",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -112,28 +112,28 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - github",
-      "server": "131.123.39.29",
-      "server_port": 443,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sheetpeek.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
-          "short_id": "84be686ea1d16478"
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 13 - github",
-      "server": "131.123.41.31",
+      "server": "131.123.41.177",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -144,7 +144,7 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 14 - github",
-      "server": "131.123.37.199",
+      "server": "131.123.41.31",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
@@ -166,17 +166,6 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 16 - github",
-      "server": "131.123.39.29",
-      "server_port": 8081,
-      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
-      "transport": {
-        "type": "ws",
-        "path": "/vless-test"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 17 - github",
       "server": "131.123.41.18",
       "server_port": 443,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -186,12 +175,49 @@
         "server_name": "sheetpeek.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "pX9uknHGLC9I26TT5kq4bIAljtX2AGWLK23EMgn6xFo",
           "short_id": "84be686ea1d16478"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 17 - github",
+      "server": "144.31.50.236",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 18 - github",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
+      "tls": {
+        "enabled": true,
+        "server_name": "neth9.lunariai.ru",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -216,7 +242,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 14 - github",
         "🇧🇬 保加利亚 (Bulgaria) 15 - github",
         "🇧🇬 保加利亚 (Bulgaria) 16 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 17 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 17 - github",
+        "🇧🇬 保加利亚 (Bulgaria) 18 - github"
       ]
     },
     {
@@ -239,7 +266,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 14 - github",
         "🇧🇬 保加利亚 (Bulgaria) 15 - github",
         "🇧🇬 保加利亚 (Bulgaria) 16 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 17 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 17 - github",
+        "🇧🇬 保加利亚 (Bulgaria) 18 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

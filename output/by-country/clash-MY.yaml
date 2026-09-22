@@ -5,27 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - github
+  server: 47.250.135.244
+  port: 10000
+  udp: true
+  type: vmess
+  uuid: aedc66b8-99d7-4a21-8310-61870e7f870d
+  alterId: 0
+  cipher: auto
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - github
   server: 47.250.84.25
   port: 443
   udp: true
   type: trojan
   password: 5931134d1cde66bf83a54acdfebe7ab2
-  sni: 47.250.84.25
+  sni: moltbot.doctoroyy.net
   skip-cert-verify: true
-- name: 🇲🇾 马来西亚 (Malaysia) 02 - github
-  server: 140.245.38.33
-  port: 2096
+- name: 🇲🇾 马来西亚 (Malaysia) 03 - github
+  server: msjp.mangshe.xyz
+  port: 20563
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
+  type: hysteria2
+  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
+  sni: mlxy.mangshe.xyz
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /class/season
-    headers:
-      Host: cdn8848.776676.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +35,7 @@ proxy-groups:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - github
   - 🇲🇾 马来西亚 (Malaysia) 02 - github
+  - 🇲🇾 马来西亚 (Malaysia) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +43,6 @@ proxy-groups:
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - github
   - 🇲🇾 马来西亚 (Malaysia) 02 - github
+  - 🇲🇾 马来西亚 (Malaysia) 03 - github
 rules:
 - MATCH,PROXIES

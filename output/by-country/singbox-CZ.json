@@ -6,12 +6,48 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "uuid": "709b1cf4-a386-4cbf-bcf4-46f03c4788a8",
+      "server": "188.114.97.8",
+      "server_port": 8443,
+      "uuid": "31aa0950-eb19-45ff-94a2-af416deb3b90",
       "tls": {
         "enabled": true,
-        "server_name": "q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev",
+        "server_name": "square-salad-ebde.zdfgvccfguuyggg.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "square-salad-ebde.zdfgvccfguuyggg.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02 - github",
+      "server": "188.114.97.6",
+      "server_port": 8080,
+      "uuid": "f2f4e2dc-3e7b-402f-a461-b48acc6aa310",
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoid2JBOTRVclNMOVdBSVQiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119",
+        "headers": {
+          "Host": "steep-bonus-8e6a.amirhon1376.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - github",
+      "server": "104.21.70.223",
+      "server_port": 443,
+      "uuid": "527451fe-ee1f-4e6f-94ca-808f055f7c9b",
+      "tls": {
+        "enabled": true,
+        "server_name": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -23,15 +59,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/hZ8s90SJBdce8aSl3H4X?ed=2560",
+        "path": "/vl/ERYN0G44hia16zhR",
         "headers": {
-          "Host": "q2-phbest7v2a8iuowpr.g0xigfh41wwnv39y-b3rzmht.workers.dev"
+          "Host": "05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - github",
+      "tag": "🇨🇿 捷克 (Czech) 04 - github",
       "server": "95.182.94.186",
       "server_port": 443,
       "uuid": "ec7a4183-3e7b-49c4-90dc-fe352e1b0ad0",
@@ -51,34 +87,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - github",
-      "server": "95.85.230.35",
-      "server_port": 443,
-      "uuid": "bbfd1f68-ec64-452f-8404-9e2bcf1df951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "de.oblaco.bet",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mJ-0fJDvKp0rhuyUvs1bw4RasRRM-BEOAl9iAZ8gXy0",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - github",
         "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github"
+        "🇨🇿 捷克 (Czech) 03 - github",
+        "🇨🇿 捷克 (Czech) 04 - github"
       ]
     },
     {
@@ -87,7 +103,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - github",
         "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github"
+        "🇨🇿 捷克 (Czech) 03 - github",
+        "🇨🇿 捷克 (Czech) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

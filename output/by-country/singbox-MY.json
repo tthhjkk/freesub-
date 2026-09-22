@@ -4,36 +4,35 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - github",
+      "server": "47.250.135.244",
+      "server_port": 10000,
+      "uuid": "aedc66b8-99d7-4a21-8310-61870e7f870d",
+      "security": "auto"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - github",
       "server": "47.250.84.25",
       "server_port": 443,
       "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "47.250.84.25",
+        "server_name": "moltbot.doctoroyy.net",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - github",
-      "server": "140.245.38.33",
-      "server_port": 2096,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "type": "hysteria2",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - github",
+      "server": "msjp.mangshe.xyz",
+      "server_port": 20563,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
       "tls": {
         "enabled": true,
-        "server_name": "cdn8848.776676.xyz",
+        "server_name": "mlxy.mangshe.xyz",
         "insecure": true
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/class/season",
-        "headers": {
-          "Host": "cdn8848.776676.xyz"
-        },
-        "max_early_data": 2560,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
       }
     },
     {
@@ -42,7 +41,8 @@
       "outbounds": [
         "auto",
         "🇲🇾 马来西亚 (Malaysia) 01 - github",
-        "🇲🇾 马来西亚 (Malaysia) 02 - github"
+        "🇲🇾 马来西亚 (Malaysia) 02 - github",
+        "🇲🇾 马来西亚 (Malaysia) 03 - github"
       ]
     },
     {
@@ -50,7 +50,8 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇾 马来西亚 (Malaysia) 01 - github",
-        "🇲🇾 马来西亚 (Malaysia) 02 - github"
+        "🇲🇾 马来西亚 (Malaysia) 02 - github",
+        "🇲🇾 马来西亚 (Malaysia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
