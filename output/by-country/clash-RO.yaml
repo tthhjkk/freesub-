@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - github
-  server: 85.204.107.171
+  server: 85.204.107.173
   port: 8443
   udp: true
   type: hysteria2
@@ -13,6 +13,14 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - github
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 46.28.67.55
   port: 443
   udp: true
@@ -24,8 +32,8 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: safari
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - github
+  client-fingerprint: random
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
   server: 146.70.124.85
   port: 443
   udp: true
@@ -38,8 +46,8 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
-  server: 193.163.203.253
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - github
+  server: bl3fk52.sysopnova.art
   port: 443
   udp: true
   type: vless
@@ -50,15 +58,7 @@ proxies:
     public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - github
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

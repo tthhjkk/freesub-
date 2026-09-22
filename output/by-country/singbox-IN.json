@@ -4,19 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 01 - github",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - github",
+      "tag": "🇮🇳 印度 (India) 01 - github",
       "server": "34.47.245.203",
       "server_port": 443,
       "uuid": "3fed34dc-2fe6-4fe0-86e7-a80213f9b7cc",
@@ -35,20 +24,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 03 - github",
-      "server": "vpn-in-001.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - github",
+      "tag": "🇮🇳 印度 (India) 02 - github",
       "server": "34.93.188.70",
       "server_port": 443,
       "uuid": "5004e3d7-a9bd-4a7c-a6d5-58aa5e1be9ed",
@@ -68,20 +45,32 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 05 - github",
+      "tag": "🇮🇳 印度 (India) 03 - github",
       "server": "35.244.28.130",
       "server_port": 443,
       "password": "M7v%w11Se*",
       "tls": {
         "enabled": true,
         "server_name": "tttyder.wsone.icu",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 06 - github",
-      "server": "35.154.58.87",
+      "tag": "🇮🇳 印度 (India) 04 - github",
+      "server": "vpn-in-001.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-in-001.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 05 - github",
+      "server": "13.207.151.141",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
@@ -92,8 +81,8 @@
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 07 - github",
-      "server": "hyfuuf6.wsone.icu",
+      "tag": "🇮🇳 印度 (India) 06 - github",
+      "server": "34.131.228.210",
       "server_port": 443,
       "password": "M7v%w11Se*",
       "tls": {
@@ -104,7 +93,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 08 - github",
+      "tag": "🇮🇳 印度 (India) 07 - github",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -120,6 +109,17 @@
           "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
           "short_id": "9980e0609b0d3891"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 08 - github",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
