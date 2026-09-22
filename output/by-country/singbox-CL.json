@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 01 - github",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 02 - github",
       "server": "34.176.98.128",
       "server_port": 443,
       "uuid": "4fe7ceb2-160c-4564-89e6-8f5fd0b05cd5",
@@ -39,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03 - github",
+      "tag": "🇨🇱 智利 (Chile) 02 - github",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -53,15 +39,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 04 - github",
-      "server": "platform109.golnamakcert.top",
+      "tag": "🇨🇱 智利 (Chile) 03 - github",
+      "server": "platform118.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform118",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "platform118.halalkhor.info"
         }
       }
     },
@@ -72,8 +58,7 @@
         "auto",
         "🇨🇱 智利 (Chile) 01 - github",
         "🇨🇱 智利 (Chile) 02 - github",
-        "🇨🇱 智利 (Chile) 03 - github",
-        "🇨🇱 智利 (Chile) 04 - github"
+        "🇨🇱 智利 (Chile) 03 - github"
       ]
     },
     {
@@ -82,8 +67,7 @@
       "outbounds": [
         "🇨🇱 智利 (Chile) 01 - github",
         "🇨🇱 智利 (Chile) 02 - github",
-        "🇨🇱 智利 (Chile) 03 - github",
-        "🇨🇱 智利 (Chile) 04 - github"
+        "🇨🇱 智利 (Chile) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -15,9 +15,9 @@ proxies:
     public-key: LklWoqMQz_TWiuLCUNRwHAKX1adVRSGMhtbo98fbDxw
     short-id: ca672c53fbbac555
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
 - name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: 162.159.192.125
+  server: 104.21.34.106
   port: 443
   udp: true
   type: vless
@@ -31,18 +31,7 @@ proxies:
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 118.193.57.167
-  port: 49667
-  udp: true
-  type: vmess
-  uuid: d46bf492-45f4-4c33-82d1-ea2a1cb54eb6
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /d46bf492
-- name: 🇹🇭 泰国 (Thailand) 04 - github
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -60,7 +49,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +57,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
 rules:
 - MATCH,PROXIES
