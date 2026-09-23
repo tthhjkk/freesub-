@@ -9,7 +9,7 @@ proxies:
   port: 8443
   udp: true
   type: vless
-  uuid: 2202f333-f8d6-4e13-a6c7-0b437e42f5e3
+  uuid: 4a64b0c2-de7e-4e32-b931-247be6dc4488
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,16 +17,6 @@ proxies:
   servername: tradingview.com
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 02 - github
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 94.183.224.45
   port: 443
   udp: true
@@ -38,8 +28,8 @@ proxies:
     public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 78.40.195.140
   port: 443
   udp: true
@@ -52,7 +42,7 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
   server: 85.204.107.181
   port: 8080
   udp: true
@@ -60,6 +50,16 @@ proxies:
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 06 - github
   server: uae.unixzone.us
   port: 22573
