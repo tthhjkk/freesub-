@@ -14,6 +14,26 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - github",
+      "server": "195.74.90.115",
+      "server_port": 9443,
+      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "tls": {
+        "enabled": true,
+        "server_name": "hub-vie-01.hanvpn.cc",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vie01-grpc-8e47a"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - github",
       "server": "152.53.1.40",
       "server_port": 443,
       "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
@@ -23,7 +43,7 @@
         "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - github",
-        "🇦🇹 奥地利 (Austria) 02 - github"
+        "🇦🇹 奥地利 (Austria) 02 - github",
+        "🇦🇹 奥地利 (Austria) 03 - github"
       ]
     },
     {
@@ -46,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - github",
-        "🇦🇹 奥地利 (Austria) 02 - github"
+        "🇦🇹 奥地利 (Austria) 02 - github",
+        "🇦🇹 奥地利 (Austria) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
