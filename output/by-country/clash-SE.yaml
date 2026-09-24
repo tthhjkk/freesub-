@@ -5,47 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - github
-  server: 16.170.163.124
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 02 - github
   server: 51.20.96.231
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 03 - github
-  server: 51.20.143.248
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 04 - github
-  server: 16.171.55.2
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 05 - github
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 06 - github
+- name: 🇸🇪 瑞典 (Sweden) 02 - github
   server: 172.238.244.13
   port: 17000
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+- name: 🇸🇪 瑞典 (Sweden) 03 - github
+  server: 16.171.55.2
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 04 - github
+  server: 13.62.228.76
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 05 - github
+  server: 70.34.212.124
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
+- name: 🇸🇪 瑞典 (Sweden) 06 - github
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 07 - github
   server: 51.20.122.188
   port: 443
@@ -54,42 +54,44 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 08 - github
-  server: 16.170.214.108
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 09 - github
-  server: 70.34.212.124
-  port: 8388
+  server: 51.20.143.248
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 10 - github
-  server: 13.62.228.76
+  server: 16.170.214.108
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 11 - github
-  server: 51.20.72.15
+  server: 16.170.163.124
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 12 - github
-  server: 16.170.221.224
-  port: 443
+  server: 143.246.196.152
+  port: 8081
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 13 - github
-  server: 143.246.195.138
+  server: 143.246.194.60
   port: 8081
   udp: true
   type: vless
@@ -98,15 +100,21 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 14 - github
-  server: se-node.rumedia-cdn.com
-  port: 25443
+  server: 193.42.39.10
+  port: 33743
   udp: true
-  type: hysteria2
-  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
-  sni: cf2.rumedia-cdn.com
-  skip-cert-verify: false
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 15 - github
-  server: 143.246.195.98
+  server: 143.246.195.138
   port: 8081
   udp: true
   type: vless
@@ -115,20 +123,20 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 16 - github
-  server: 143.246.194.213
+  server: 143.246.196.122
   port: 443
   udp: true
   type: vless
-  uuid: dc9e93bc-b53a-11f1-91d3-52540030ba36
+  uuid: ac0c2945-b758-11f1-8181-54db13ea7d40
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.ikea.com
-  client-fingerprint: firefox
+  servername: www.blocket.se
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 17 - github
-  server: 79.141.174.147
-  port: 33743
+  server: 91.193.17.156
+  port: 9458
   udp: true
   type: vless
   uuid: b3a11068-1a7e-4643-85de-7c82cce46943
@@ -141,7 +149,7 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 18 - github
-  server: 143.246.196.152
+  server: 143.246.195.98
   port: 8081
   udp: true
   type: vless
@@ -150,28 +158,12 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇸🇪 瑞典 (Sweden) 19 - github
-  server: 91.193.17.156
-  port: 9458
+  server: se1.auronvpn.site
+  port: 1443
   udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 20 - github
-  server: 143.246.194.60
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: N2YzM
 proxy-groups:
 - name: PROXIES
   type: select
@@ -196,7 +188,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 17 - github
   - 🇸🇪 瑞典 (Sweden) 18 - github
   - 🇸🇪 瑞典 (Sweden) 19 - github
-  - 🇸🇪 瑞典 (Sweden) 20 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -221,6 +212,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 17 - github
   - 🇸🇪 瑞典 (Sweden) 18 - github
   - 🇸🇪 瑞典 (Sweden) 19 - github
-  - 🇸🇪 瑞典 (Sweden) 20 - github
 rules:
 - MATCH,PROXIES
