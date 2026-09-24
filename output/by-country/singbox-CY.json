@@ -14,7 +14,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -26,6 +26,27 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
+      "server": "132.243.242.97",
+      "server_port": 9543,
+      "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "storage.yandexcloud.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc",
+          "short_id": "123abcdf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
       "server": "2.56.121.43",
       "server_port": 443,
       "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
@@ -35,7 +56,7 @@
         "server_name": "www.ikea.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,8 +67,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-      "server": "5.253.28.218",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - github",
+      "server": "hydra.yokkastars.com",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -75,7 +96,8 @@
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
       ]
     },
     {
@@ -84,7 +106,8 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
+        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

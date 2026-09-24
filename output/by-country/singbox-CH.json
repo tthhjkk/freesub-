@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - github",
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - github",
       "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
@@ -17,7 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - github",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - github",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -27,7 +35,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -38,57 +46,33 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - github",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - github",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
       "tls": {
         "enabled": true,
         "server_name": "cf9.rumedia-cdn.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ]
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/cdn/v3/live"
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf9.rumedia-cdn.com"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - github",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - github",
       "server": "131.123.34.145",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/vless-test",
-        "headers": {
-          "Host": "131.123.34.145"
-        }
+        "path": "/vless-test"
       }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - github",
-      "server": "77.110.104.238",
-      "server_port": 443,
-      "password": "5413edfb-08d6-4fba-b51c-809c04feb127",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch2-hy2.veilvpn.life",
-        "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - github",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "selector",
@@ -99,8 +83,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - github",
         "🇨🇭 瑞士 (Switzerland) 03 - github",
         "🇨🇭 瑞士 (Switzerland) 04 - github",
-        "🇨🇭 瑞士 (Switzerland) 05 - github",
-        "🇨🇭 瑞士 (Switzerland) 06 - github"
+        "🇨🇭 瑞士 (Switzerland) 05 - github"
       ]
     },
     {
@@ -111,8 +94,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - github",
         "🇨🇭 瑞士 (Switzerland) 03 - github",
         "🇨🇭 瑞士 (Switzerland) 04 - github",
-        "🇨🇭 瑞士 (Switzerland) 05 - github",
-        "🇨🇭 瑞士 (Switzerland) 06 - github"
+        "🇨🇭 瑞士 (Switzerland) 05 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
