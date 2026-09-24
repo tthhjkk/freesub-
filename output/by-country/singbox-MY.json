@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 01 - github",
-      "server": "172.67.141.75",
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - github",
+      "server": "47.250.84.25",
       "server_port": 443,
-      "uuid": "de78c0b1-c5c8-412a-bd92-430d1f2e2642",
+      "password": "5931134d1cde66bf83a54acdfebe7ab2",
       "tls": {
         "enabled": true,
-        "server_name": "frosty-pond-7436.shhabbyat914.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NmrU9ImDG7jA7oFEem",
-        "headers": {
-          "Host": "frosty-pond-7436.shhabbyat914.workers.dev"
-        }
+        "server_name": "47.250.84.25",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - github"
+        "🇲🇾 马来西亚 (Malaysia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - github"
+        "🇲🇾 马来西亚 (Malaysia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

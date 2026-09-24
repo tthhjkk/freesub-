@@ -7,17 +7,17 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - github",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "Lp27rqyJq72bZsqX"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
@@ -31,22 +31,54 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
       "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
+      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
-      "server": "84.32.215.94",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
+      "server": "84.32.215.5",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -55,7 +87,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -74,7 +106,11 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - github",
         "🇱🇹 立陶宛 (Lithuania) 04 - github",
         "🇱🇹 立陶宛 (Lithuania) 05 - github",
-        "🇱🇹 立陶宛 (Lithuania) 06 - github"
+        "🇱🇹 立陶宛 (Lithuania) 06 - github",
+        "🇱🇹 立陶宛 (Lithuania) 07 - github",
+        "🇱🇹 立陶宛 (Lithuania) 08 - github",
+        "🇱🇹 立陶宛 (Lithuania) 09 - github",
+        "🇱🇹 立陶宛 (Lithuania) 10 - github"
       ]
     },
     {
@@ -86,7 +122,11 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - github",
         "🇱🇹 立陶宛 (Lithuania) 04 - github",
         "🇱🇹 立陶宛 (Lithuania) 05 - github",
-        "🇱🇹 立陶宛 (Lithuania) 06 - github"
+        "🇱🇹 立陶宛 (Lithuania) 06 - github",
+        "🇱🇹 立陶宛 (Lithuania) 07 - github",
+        "🇱🇹 立陶宛 (Lithuania) 08 - github",
+        "🇱🇹 立陶宛 (Lithuania) 09 - github",
+        "🇱🇹 立陶宛 (Lithuania) 10 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
