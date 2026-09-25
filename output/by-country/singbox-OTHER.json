@@ -6,23 +6,14 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "141.101.122.147",
-      "server_port": 443,
-      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
-      "tls": {
-        "enabled": true,
-        "server_name": "a.cwvps.eu.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "172.67.149.27",
+      "server_port": 80,
+      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/snob-ws",
         "headers": {
-          "Host": "a.cwvps.eu.org"
+          "Host": "fi.snobvpn.online"
         }
       }
     },

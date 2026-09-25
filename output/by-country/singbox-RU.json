@@ -12,8 +12,20 @@
       "password": "895b4b796a357570"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - github",
+      "server": "91.196.32.163",
+      "server_port": 443,
+      "password": "mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj",
+      "tls": {
+        "enabled": true,
+        "server_name": "germany3.h2corp.local",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
       "server": "91.196.32.216",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
@@ -23,7 +35,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -33,52 +45,36 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
-      "server": "138.124.121.231",
-      "server_port": 443,
-      "uuid": "8e826a69-63f6-0001-a67d-4a1958e8b2d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - github",
-      "server": "xinnusvpn.duckdns.org",
-      "server_port": 8443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xinnusvpn.duckdns.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsnl"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - github",
       "server": "91.240.86.70",
       "server_port": 22443,
       "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "91.240.86.70",
-        "insecure": true
+        "server_name": "itsallproxy.quattro-tech.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "du-rov.secureservice.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
+        }
       }
     },
     {
@@ -90,7 +86,14 @@
       "tls": {
         "enabled": true,
         "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -115,7 +118,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -123,27 +126,6 @@
         "path": "/ws",
         "headers": {
           "Host": "fbsv6.guardora.pro"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08 - github",
-      "server": "138.124.121.233",
-      "server_port": 443,
-      "uuid": "8e826a69-63f6-0001-a67d-4a1958e8b2d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
         }
       }
     },
@@ -158,8 +140,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - github",
         "🇷🇺 俄罗斯 (Russia) 05 - github",
         "🇷🇺 俄罗斯 (Russia) 06 - github",
-        "🇷🇺 俄罗斯 (Russia) 07 - github",
-        "🇷🇺 俄罗斯 (Russia) 08 - github"
+        "🇷🇺 俄罗斯 (Russia) 07 - github"
       ]
     },
     {
@@ -172,8 +153,7 @@
         "🇷🇺 俄罗斯 (Russia) 04 - github",
         "🇷🇺 俄罗斯 (Russia) 05 - github",
         "🇷🇺 俄罗斯 (Russia) 06 - github",
-        "🇷🇺 俄罗斯 (Russia) 07 - github",
-        "🇷🇺 俄罗斯 (Russia) 08 - github"
+        "🇷🇺 俄罗斯 (Russia) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
