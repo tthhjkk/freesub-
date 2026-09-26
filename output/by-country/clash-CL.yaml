@@ -5,16 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - github
-  server: platform115.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
-- name: 🇨🇱 智利 (Chile) 02 - github
-  server: platform117.golnamakcert.top
+  server: 64.176.26.17
   port: 80
   udp: true
   type: vless
@@ -24,19 +15,19 @@ proxies:
     path: /platform117
     headers:
       Host: platform117.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 03 - github
-  server: platform118.golnamakcert.top
+- name: 🇨🇱 智利 (Chile) 02 - github
+  server: 64.176.26.47
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform118
+    path: /platform106
     headers:
-      Host: platform118.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 04 - github
-  server: platform102.golnamakcert.top
+      Host: platform106.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 03 - github
+  server: 64.176.3.179
   port: 80
   udp: true
   type: vless
@@ -46,19 +37,19 @@ proxies:
     path: /platform102
     headers:
       Host: platform102.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 05 - github
-  server: platform101.golnamakcert.top
+- name: 🇨🇱 智利 (Chile) 04 - github
+  server: 64.176.20.232
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform101
+    path: /platform118
     headers:
-      Host: platform101.halalkhor.info
-- name: 🇨🇱 智利 (Chile) 06 - github
-  server: platform113.golnamakcert.top
+      Host: platform118.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 05 - github
+  server: 64.176.24.245
   port: 80
   udp: true
   type: vless
@@ -68,8 +59,19 @@ proxies:
     path: /platform113
     headers:
       Host: platform113.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 06 - github
+  server: 64.176.23.85
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform108
+    headers:
+      Host: platform108.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 07 - github
-  server: platform103.golnamakcert.top
+  server: 64.176.26.46
   port: 80
   udp: true
   type: vless
@@ -80,7 +82,18 @@ proxies:
     headers:
       Host: platform103.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 08 - github
-  server: platform109.golnamakcert.top
+  server: 64.176.23.88
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 09 - github
+  server: 64.176.13.207
   port: 80
   udp: true
   type: vless
@@ -88,17 +101,30 @@ proxies:
   network: ws
   ws-opts:
     path: /platform109
-- name: 🇨🇱 智利 (Chile) 09 - github
-  server: platform108.golnamakcert.top
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 10 - github
+  server: 64.176.5.110
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform108
+    path: /platform101
     headers:
-      Host: platform108.halalkhor.info
+      Host: platform101.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 11 - github
+  server: platform107.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform107
+    headers:
+      Host: platform107.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -113,6 +139,8 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 07 - github
   - 🇨🇱 智利 (Chile) 08 - github
   - 🇨🇱 智利 (Chile) 09 - github
+  - 🇨🇱 智利 (Chile) 10 - github
+  - 🇨🇱 智利 (Chile) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,5 +155,7 @@ proxy-groups:
   - 🇨🇱 智利 (Chile) 07 - github
   - 🇨🇱 智利 (Chile) 08 - github
   - 🇨🇱 智利 (Chile) 09 - github
+  - 🇨🇱 智利 (Chile) 10 - github
+  - 🇨🇱 智利 (Chile) 11 - github
 rules:
 - MATCH,PROXIES

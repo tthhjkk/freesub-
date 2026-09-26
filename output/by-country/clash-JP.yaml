@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - github
+  server: 149.22.87.241
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 02 - github
+  server: 13.230.153.249
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 03 - github
+  server: 13.231.184.186
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 04 - github
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 05 - github
+  server: 54.95.40.17
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 06 - github
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -12,56 +47,75 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 02 - github
-  server: 3.112.209.209
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 03 - github
-  server: 54.95.40.17
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 04 - github
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05 - github
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 06 - github
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 07 - github
-  server: 13.231.184.186
+  server: 13.115.71.198
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇯🇵 日本 (Japan) 08 - github
-  server: 18.179.111.96
+  server: 149.22.87.204
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 09 - github
+  server: 13.113.166.191
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 09 - github
+- name: 🇯🇵 日本 (Japan) 10 - github
+  server: 13.230.223.121
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 11 - github
+  server: 3.112.197.237
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 12 - github
+  server: 18.181.145.202
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 13 - github
+  server: 18.181.165.254
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 14 - github
+  server: 137.220.221.179
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- name: 🇯🇵 日本 (Japan) 15 - github
+  server: 108.160.128.46
+  port: 443
+  udp: true
+  type: vless
+  uuid: de241e4e-226e-46d5-aa79-602e11ef94d8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cZ9MxrT-CYtdhBdbGeqzcQEvWvAuKw7fEfRbR8QrOlM
+    short-id: 37bb73b5
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 16 - github
   server: 103.137.215.122
   port: 443
   udp: true
@@ -73,21 +127,21 @@ proxies:
     public-key: T587xqua0Nrs0YreQRWJAP9Wto94NcbbhKPK4DkSi0c
     short-id: 2223411c2ad9c55f
   servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 10 - github
-  server: 154.31.114.248
-  port: 50159
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 17 - github
+  server: 43.133.11.187
+  port: 443
   udp: true
   type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11 - github
+    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
+    short-id: 913e9b95fbc71278
+  servername: cloudflare.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 18 - github
   server: 18.183.215.124
   port: 28573
   udp: true
@@ -99,8 +153,95 @@ proxies:
     public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
     short-id: 03653bc03be10c97
   servername: www.sony.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 19 - github
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 20 - github
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇯🇵 日本 (Japan) 21 - github
+  server: 64.176.51.214
+  port: 23462
+  udp: true
+  type: vmess
+  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /a15206
+- name: 🇯🇵 日本 (Japan) 22 - github
+  server: open.w2m.ink
+  port: 443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 23 - github
+  server: open.w2m.ink
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 24 - github
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: 138.3.208.26
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25 - github
+  server: 154.31.114.248
+  port: 50159
+  udp: true
+  type: vless
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 12 - github
+- name: 🇯🇵 日本 (Japan) 26 - github
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 27 - github
   server: jp-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -113,88 +254,7 @@ proxies:
     short-id: 89fecfdaf45cd76d
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - github
-  server: 43.133.11.187
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4192524f-09f0-414f-88fd-7a14378491c7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ueVbgAT9A7SkGgua_uljhQsvpnRUQlfdc7meiqcaxXE
-    short-id: 913e9b95fbc71278
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 14 - github
-  server: 64.176.51.214
-  port: 23462
-  udp: true
-  type: vmess
-  uuid: 95c5abc1-018d-4628-89a7-25ab9c62ab74
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /a15206
-- name: 🇯🇵 日本 (Japan) 15 - github
-  server: 137.220.221.179
-  port: 443
-  udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 16 - github
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17 - github
-  server: 38.207.130.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: amazon.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 18 - github
-  server: open.w2m.ink
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - github
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 20 - github
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 21 - github
-  server: open.w2m.ink
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 22 - github
+- name: 🇯🇵 日本 (Japan) 28 - github
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -206,21 +266,56 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 23 - github
-  server: 3.114.220.22
-  port: 19645
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 29 - github
+  server: jumpernode.online
+  port: 443
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: e4cd263b-c5c7-4410-bf61-8893179ec429
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 24 - github
+    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
+    short-id: 6d962e8d8a0dce
+  servername: amazon.com
+  client-fingerprint: safari
+- name: 🇯🇵 日本 (Japan) 30 - github
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 31 - github
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 32 - github
+  server: high-speed-test-01.linkpc.net
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37615d66-5467-44a3-bc23-f2c3bef7f761
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p8VhFzvFOBAhWAEAeWmwDxT3xBSRsGYixqi0qnLFnBM
+    short-id: 21270a66
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 33 - github
+  server: open.2ml.cc.cd
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 34 - github
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -232,24 +327,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 25 - github
-  server: open.2ml.cc.cd
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.cc.cd
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 26 - github
-  server: open.2ml.bid
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 27 - github
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 35 - github
   server: or.521166.xyz
   port: 2083
   udp: true
@@ -263,41 +342,47 @@ proxies:
   network: ws
   ws-opts:
     path: /or3
-- name: 🇯🇵 日本 (Japan) 28 - github
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
     headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 29 - github
-  server: 13.230.153.249
+      Host: or.521166.xyz
+- name: 🇯🇵 日本 (Japan) 36 - github
+  server: 43.167.208.94
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇯🇵 日本 (Japan) 30 - github
+  type: hysteria2
+  password: RQBXe4kpsRant_2u1PzdneBOPuCSwUSI
+  sni: 43.167.208.94
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 37 - github
   server: open.2ml.bid
-  port: 5443
+  port: 443
   udp: true
   type: hysteria2
   password: my_super_password_123
   sni: open.2ml.bid
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 31 - github
-  server: 13.115.71.198
+- name: 🇯🇵 日本 (Japan) 38 - github
+  server: aa.ccmusic.jp
+  port: 443
+  udp: true
+  type: trojan
+  password: tsuchiya
+  sni: aa.ccmusic.jp
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 39 - github
+  server: 18.179.37.17
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
+- name: 🇯🇵 日本 (Japan) 40 - github
+  server: oc.imfun.fun
+  port: 18112
+  udp: true
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -334,6 +419,15 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - github
   - 🇯🇵 日本 (Japan) 30 - github
   - 🇯🇵 日本 (Japan) 31 - github
+  - 🇯🇵 日本 (Japan) 32 - github
+  - 🇯🇵 日本 (Japan) 33 - github
+  - 🇯🇵 日本 (Japan) 34 - github
+  - 🇯🇵 日本 (Japan) 35 - github
+  - 🇯🇵 日本 (Japan) 36 - github
+  - 🇯🇵 日本 (Japan) 37 - github
+  - 🇯🇵 日本 (Japan) 38 - github
+  - 🇯🇵 日本 (Japan) 39 - github
+  - 🇯🇵 日本 (Japan) 40 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -370,5 +464,14 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 29 - github
   - 🇯🇵 日本 (Japan) 30 - github
   - 🇯🇵 日本 (Japan) 31 - github
+  - 🇯🇵 日本 (Japan) 32 - github
+  - 🇯🇵 日本 (Japan) 33 - github
+  - 🇯🇵 日本 (Japan) 34 - github
+  - 🇯🇵 日本 (Japan) 35 - github
+  - 🇯🇵 日本 (Japan) 36 - github
+  - 🇯🇵 日本 (Japan) 37 - github
+  - 🇯🇵 日本 (Japan) 38 - github
+  - 🇯🇵 日本 (Japan) 39 - github
+  - 🇯🇵 日本 (Japan) 40 - github
 rules:
 - MATCH,PROXIES

@@ -11,8 +11,25 @@
       "uuid": "684f9a2e-4f96-497f-bfd9-ff1e34637952",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github",
+      "server": "free.sahanwickramasinghe.me",
+      "server_port": 443,
+      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "aka.ms",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
@@ -21,14 +38,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
