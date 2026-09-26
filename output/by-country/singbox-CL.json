@@ -6,20 +6,48 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 01 - github",
-      "server": "platform108.golnamakcert.top",
+      "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform108",
+        "path": "/platform117",
         "headers": {
-          "Host": "platform108.halalkhor.info"
+          "Host": "platform117.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 02 - github",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 03 - github",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 04 - github",
       "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -32,12 +60,86 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 05 - github",
+      "server": "platform102.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 06 - github",
+      "server": "platform101.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 07 - github",
+      "server": "platform115.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform115"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 08 - github",
+      "server": "platform103.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform103",
+        "headers": {
+          "Host": "platform103.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 09 - github",
+      "server": "platform108.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform108",
+        "headers": {
+          "Host": "platform108.halalkhor.info"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇱 智利 (Chile) 01 - github",
-        "🇨🇱 智利 (Chile) 02 - github"
+        "🇨🇱 智利 (Chile) 02 - github",
+        "🇨🇱 智利 (Chile) 03 - github",
+        "🇨🇱 智利 (Chile) 04 - github",
+        "🇨🇱 智利 (Chile) 05 - github",
+        "🇨🇱 智利 (Chile) 06 - github",
+        "🇨🇱 智利 (Chile) 07 - github",
+        "🇨🇱 智利 (Chile) 08 - github",
+        "🇨🇱 智利 (Chile) 09 - github"
       ]
     },
     {
@@ -45,7 +147,14 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 智利 (Chile) 01 - github",
-        "🇨🇱 智利 (Chile) 02 - github"
+        "🇨🇱 智利 (Chile) 02 - github",
+        "🇨🇱 智利 (Chile) 03 - github",
+        "🇨🇱 智利 (Chile) 04 - github",
+        "🇨🇱 智利 (Chile) 05 - github",
+        "🇨🇱 智利 (Chile) 06 - github",
+        "🇨🇱 智利 (Chile) 07 - github",
+        "🇨🇱 智利 (Chile) 08 - github",
+        "🇨🇱 智利 (Chile) 09 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

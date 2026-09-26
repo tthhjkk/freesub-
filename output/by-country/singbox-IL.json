@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -57,96 +57,12 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
           "short_id": "db46e2946fc466fd"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 04 - github",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 05 - github",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 06 - github",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 07 - github",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 08 - github",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 09 - github",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
         }
       }
     },
@@ -157,13 +73,7 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - github",
         "🇮🇱 以色列 (Israel) 02 - github",
-        "🇮🇱 以色列 (Israel) 03 - github",
-        "🇮🇱 以色列 (Israel) 04 - github",
-        "🇮🇱 以色列 (Israel) 05 - github",
-        "🇮🇱 以色列 (Israel) 06 - github",
-        "🇮🇱 以色列 (Israel) 07 - github",
-        "🇮🇱 以色列 (Israel) 08 - github",
-        "🇮🇱 以色列 (Israel) 09 - github"
+        "🇮🇱 以色列 (Israel) 03 - github"
       ]
     },
     {
@@ -172,13 +82,7 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - github",
         "🇮🇱 以色列 (Israel) 02 - github",
-        "🇮🇱 以色列 (Israel) 03 - github",
-        "🇮🇱 以色列 (Israel) 04 - github",
-        "🇮🇱 以色列 (Israel) 05 - github",
-        "🇮🇱 以色列 (Israel) 06 - github",
-        "🇮🇱 以色列 (Israel) 07 - github",
-        "🇮🇱 以色列 (Israel) 08 - github",
-        "🇮🇱 以色列 (Israel) 09 - github"
+        "🇮🇱 以色列 (Israel) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
