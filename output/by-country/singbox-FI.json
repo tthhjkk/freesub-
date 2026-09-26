@@ -6,67 +6,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - github",
-      "server": "104.16.72.101",
-      "server_port": 80,
-      "uuid": "d5598622-46b8-b017-3af3-232500000001",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "nahan-core.netizo09.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - github",
-      "server": "45.149.147.124",
-      "server_port": 8443,
-      "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.vkimages.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-          "short_id": "844352756c1fabba"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-yandex"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - github",
-      "server": "45.149.147.189",
-      "server_port": 8443,
-      "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.vkimages.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-          "short_id": "844352756c1fabba"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-yandex"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - github",
       "server": "45.149.147.113",
       "server_port": 8443,
       "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
@@ -90,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - github",
       "server": "45.149.147.137",
       "server_port": 8443,
       "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
@@ -114,76 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - github",
-      "server": "45.149.147.95",
-      "server_port": 8443,
-      "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.vkimages.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-          "short_id": "844352756c1fabba"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-yandex"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - github",
-      "server": "45.149.147.110",
-      "server_port": 8443,
-      "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.vkimages.io",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
-          "short_id": "844352756c1fabba"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-yandex"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - github",
-      "server": "95.217.24.236",
-      "server_port": 2087,
-      "uuid": "10d85f65-f8d6-4504-b1e2-94649db1577a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "62.238.41.21",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk",
-          "short_id": "a32cfb5deca913ad"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - github",
       "server": "83.219.97.26",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -204,29 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - github",
-      "server": "k2.cloud--vpn.site",
-      "server_port": 443,
-      "uuid": "64c2bc5c-7534-4359-9b1e-e1dce5a380cd",
-      "tls": {
-        "enabled": true,
-        "server_name": "ssl.fastly.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "c12.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 11 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - github",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -235,7 +83,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -246,21 +94,52 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 12 - github",
-      "server": "104.21.33.198",
-      "server_port": 80,
-      "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - github",
+      "server": "fi.riotvpn.eu",
+      "server_port": 8443,
+      "uuid": "440f3c08-7599-406e-8ba3-7dbc6324c5ed",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.vkimages.io",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg",
+          "short_id": "844352756c1fabba"
+        }
+      },
       "transport": {
-        "type": "ws",
-        "path": "/snob-ws",
-        "headers": {
-          "Host": "fi.snobvpn.online"
+        "type": "grpc",
+        "service_name": "grpc-yandex"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - github",
+      "server": "37.143.129.244",
+      "server_port": 443,
+      "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY",
+          "short_id": "48fd192dc4e46bc0"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 13 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - github",
       "server": "185.79.138.71",
       "server_port": 448,
       "uuid": "0b0915d7-6800-4580-a44b-77d84f105e6a",
@@ -280,7 +159,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 14 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - github",
       "server": "212.193.18.183",
       "server_port": 8446,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -304,7 +183,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 15 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - github",
       "server": "212.193.18.183",
       "server_port": 8443,
       "uuid": "246b101b-4e4a-451f-8e9c-5e8d3b64b4ef",
@@ -313,7 +192,7 @@
         "server_name": "maps.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -323,30 +202,17 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 16 - github",
-      "server": "37.143.129.244",
-      "server_port": 443,
-      "uuid": "0e6de971-69e8-4536-b06d-8b6eae57021b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "5HArul2NDXfFUxijHj1xiPCfH-77zuuRxylT1vWIvUY",
-          "short_id": "48fd192dc4e46bc0"
-        }
-      }
+      "type": "vmess",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - github",
+      "server": "me6.movieseryalirani.ir",
+      "server_port": 57361,
+      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
+      "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 17 - github",
-      "server": "me3.movieseryalirani.ir",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - github",
+      "server": "me2.movieseryalirani.ir",
       "server_port": 443,
       "uuid": "63aaea7f-2847-4f41-afab-0836b1cf79d9",
       "tls": {
@@ -365,32 +231,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 18 - github",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇮 芬兰 (Finland) 12 - github",
+      "server": "me4.movieseryalirani.ir",
+      "server_port": 443,
+      "uuid": "63aaea7f-2847-4f41-afab-0836b1cf79d9",
       "tls": {
         "enabled": true,
-        "server_name": "images.unsplash.com",
+        "server_name": "matrix-client.matrix.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
+          "public_key": "CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk",
+          "short_id": "8d814a"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 19 - github",
-      "server": "me6.movieseryalirani.ir",
-      "server_port": 57361,
-      "uuid": "ed815caa-bff1-4419-8c61-1d108eabaf1f",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -408,14 +265,7 @@
         "🇫🇮 芬兰 (Finland) 09 - github",
         "🇫🇮 芬兰 (Finland) 10 - github",
         "🇫🇮 芬兰 (Finland) 11 - github",
-        "🇫🇮 芬兰 (Finland) 12 - github",
-        "🇫🇮 芬兰 (Finland) 13 - github",
-        "🇫🇮 芬兰 (Finland) 14 - github",
-        "🇫🇮 芬兰 (Finland) 15 - github",
-        "🇫🇮 芬兰 (Finland) 16 - github",
-        "🇫🇮 芬兰 (Finland) 17 - github",
-        "🇫🇮 芬兰 (Finland) 18 - github",
-        "🇫🇮 芬兰 (Finland) 19 - github"
+        "🇫🇮 芬兰 (Finland) 12 - github"
       ]
     },
     {
@@ -433,14 +283,7 @@
         "🇫🇮 芬兰 (Finland) 09 - github",
         "🇫🇮 芬兰 (Finland) 10 - github",
         "🇫🇮 芬兰 (Finland) 11 - github",
-        "🇫🇮 芬兰 (Finland) 12 - github",
-        "🇫🇮 芬兰 (Finland) 13 - github",
-        "🇫🇮 芬兰 (Finland) 14 - github",
-        "🇫🇮 芬兰 (Finland) 15 - github",
-        "🇫🇮 芬兰 (Finland) 16 - github",
-        "🇫🇮 芬兰 (Finland) 17 - github",
-        "🇫🇮 芬兰 (Finland) 18 - github",
-        "🇫🇮 芬兰 (Finland) 19 - github"
+        "🇫🇮 芬兰 (Finland) 12 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
