@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
   server: 213.183.63.60
-  port: 9085
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
   server: 213.183.63.60
-  port: 9066
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
   port: 9098
@@ -27,33 +27,53 @@ proxies:
   password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
   server: 213.183.63.60
-  port: 9030
+  port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  server: 193.148.59.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
   server: 213.183.63.60
-  port: 9028
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -66,18 +86,18 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  server: 193.148.59.178
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
+  server: bg.masterpgd.com
+  port: 6016
   udp: true
   type: vless
-  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
+  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
-    short-id: e3daad69
-  servername: www.apple.com
+    public-key: ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk
+    short-id: 1779b108c9eb4da7
+  servername: play.google.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -93,6 +113,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,5 +129,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
 rules:
 - MATCH,PROXIES
