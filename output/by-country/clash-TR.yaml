@@ -5,15 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 93.190.9.35
+  server: 188.114.98.16
+  port: 2082
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
+  server: 172.67.192.84
+  port: 2095
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: index.harmonica02.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
+  server: 93.190.9.52
   port: 3090
   udp: true
   type: vless
-  uuid: b55a33d7-83ee-416a-971e-eaaa0c928043
+  uuid: 52e8bce3-b255-486d-beb2-aa1b549c44b1
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
+- name: 🇹🇷 土耳其 (Turkey) 04 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -26,7 +48,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
+- name: 🇹🇷 土耳其 (Turkey) 05 - github
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -38,7 +60,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
+- name: 🇹🇷 土耳其 (Turkey) 06 - github
   server: me17.msjia8844.site
   port: 7443
   udp: true
@@ -57,6 +79,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
+  - 🇹🇷 土耳其 (Turkey) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +90,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
+  - 🇹🇷 土耳其 (Turkey) 06 - github
 rules:
 - MATCH,PROXIES
