@@ -20,75 +20,33 @@ proxies:
   password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
-  port: 9066
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
-  server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
   server: 213.183.63.60
   port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  server: 136.175.82.85
-  port: 18775
-  udp: true
-  type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
-  server: 108.165.233.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000001
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 193.148.59.178
   port: 443
   udp: true
@@ -101,18 +59,25 @@ proxies:
     short-id: e3daad69
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 12 - github
-  server: bg.masterpgd.com
-  port: 6016
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  server: 136.175.82.85
+  port: 18775
   udp: true
   type: vless
-  uuid: e19f406e-0f0f-4abd-9861-a3d2d213b650
+  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqviTSUKpqxl9htoEiix8iIH3lRB6ahvw00btl-HOSk
-    short-id: 1779b108c9eb4da7
-  servername: play.google.com
+    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
+    short-id: 6ba85179e30d4fc2
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -128,9 +93,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,8 +107,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 07 - github
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
-  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 rules:
 - MATCH,PROXIES

@@ -12,38 +12,36 @@
       "password": "aduB9HGxQHjA2SBMRjkHX6"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 02 - github",
-      "server": "139.84.247.164",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tfAcRikawhNoZAhu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇿🇦 南非 (South Africa) 03 - github",
-      "server": "102.133.165.160",
-      "server_port": 16233,
-      "method": "chacha20-ietf-poly1305",
-      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
-    },
-    {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04 - github",
-      "server": "139.84.243.189",
+      "tag": "🇿🇦 南非 (South Africa) 02 - github",
+      "server": "139.84.250.128",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform101",
+        "path": "/platform109",
         "headers": {
-          "Host": "platform101.halalkhor.info"
+          "Host": "platform109.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05 - github",
+      "tag": "🇿🇦 南非 (South Africa) 03 - github",
+      "server": "139.84.249.25",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform102",
+        "headers": {
+          "Host": "platform102.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 04 - github",
       "server": "139.84.246.73",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -57,7 +55,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06 - github",
+      "tag": "🇿🇦 南非 (South Africa) 05 - github",
       "server": "139.84.247.122",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -66,6 +64,20 @@
         "path": "/platform115",
         "headers": {
           "Host": "platform115.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 06 - github",
+      "server": "139.84.243.189",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform101",
+        "headers": {
+          "Host": "platform101.halalkhor.info"
         }
       }
     },
@@ -86,14 +98,14 @@
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 08 - github",
-      "server": "platform109.golnamakcert.top",
+      "server": "139.84.250.125",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform109",
+        "path": "/platform106",
         "headers": {
-          "Host": "platform109.halalkhor.info"
+          "Host": "platform106.halalkhor.info"
         }
       }
     },
@@ -114,7 +126,18 @@
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 10 - github",
-      "server": "139.84.246.240",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 11 - github",
+      "server": "platform103.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
@@ -126,8 +149,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇿🇦 南非 (South Africa) 12 - github",
+      "server": "139.84.247.164",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "tfAcRikawhNoZAhu"
+    },
+    {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 11 - github",
+      "tag": "🇿🇦 南非 (South Africa) 13 - github",
       "server": "139.84.228.106",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -140,46 +171,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 12 - github",
-      "server": "platform102.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform102",
-        "headers": {
-          "Host": "platform102.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 13 - github",
-      "server": "platform106.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform106",
-        "headers": {
-          "Host": "platform106.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 14 - github",
-      "server": "139.84.245.78",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform107",
-        "headers": {
-          "Host": "platform107.halalkhor.info"
-        }
-      }
+      "server": "102.133.165.160",
+      "server_port": 16233,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
       "type": "selector",

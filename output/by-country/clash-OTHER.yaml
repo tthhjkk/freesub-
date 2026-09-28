@@ -4,28 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01 - github
-  server: 192.0.54.30
-  port: 8880
+- name: 🌐 其他地区 (Other) 01 - github
+  server: ccs2g.pai50288.uk
+  port: 443
   udp: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime35.workers.dev
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 rules:
 - MATCH,PROXIES

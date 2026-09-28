@@ -5,31 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
-      "server": "192.0.54.30",
-      "server_port": 8880,
-      "uuid": "6202b230-417c-4d8e-b624-0f71afa9c75d",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vms.lifetime35.workers.dev"
-        }
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github",
+      "server": "test.keoplentuio.xyz",
+      "server_port": 2053,
+      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
