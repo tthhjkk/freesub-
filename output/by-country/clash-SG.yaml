@@ -5,91 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - github
-  server: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: af0db32b-2cb0-48c7-b04e-96003f8c2369
-  tls: true
-  servername: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/ZONyHuyg0cpDAFQTzm3u?ed=2560
-    headers:
-      Host: dl2uf-ivdezilz3e86rk18.hhvt37tjm2xbosql5hxogn-y.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 02 - github
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 088b8483-f76b-46be-b710-4f756a0fe487
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 03 - github
-  server: 172.66.44.124
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
-  tls: true
-  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-  skip-cert-verify: false
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
-- name: 🇸🇬 新加坡 (Singapore) 04 - github
-  server: www.speedtest.net
-  port: 80
-  udp: true
-  type: vless
-  uuid: 63f1ef69-92fd-427a-b3e4-98ffddf81ac6
-  network: ws
-  ws-opts:
-    path: /nPKoVRUdyuRZ6jpY/YnBiLnlvdXNlZi5pc2VnYXJvLmNvbSxwcm94eWlwLmNtbGl1c3Nzcy5uZXQsbmltYS5uc2NsLmlyLHR1cmsucmFkaWNhbGl6YXRpb24uaXI=
-    headers:
-      Host: young-rice-749e.heliy78750.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 05 - github
-  server: 188.253.125.109
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: MTQ3Y2FlZDZkZTMwODgyMQ==:M2EyMWJhOWItYjhjYi00ZQ==
-- name: 🇸🇬 新加坡 (Singapore) 06 - github
-  server: 68.183.227.236
+  server: 68.183.227.4
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07 - github
+- name: 🇸🇬 新加坡 (Singapore) 02 - github
   server: 213.35.124.191
   port: 56927
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: f3lz1aPywEuTpS4I3mmarFU+LDABF1eDBRHJ2zNgiRM=
-- name: 🇸🇬 新加坡 (Singapore) 08 - github
-  server: 149.88.23.202
-  port: 18000
+- name: 🇸🇬 新加坡 (Singapore) 03 - github
+  server: 68.183.227.45
+  port: 8080
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 09 - github
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 04 - github
   server: 149.88.23.207
   port: 18000
   udp: true
@@ -97,94 +33,56 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 10 - github
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 11 - github
-  server: 168.107.78.228
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
-- name: 🇸🇬 新加坡 (Singapore) 12 - github
-  server: 161.118.219.5
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 9PfRlIGvpMs8nD7s65B/3IxccQG+p631X9tCLZy+CRI=
-- name: 🇸🇬 新加坡 (Singapore) 13 - github
+- name: 🇸🇬 新加坡 (Singapore) 05 - github
   server: 168.107.84.41
   port: 56927
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
-- name: 🇸🇬 新加坡 (Singapore) 14 - github
-  server: 68.183.227.45
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 06 - github
+  server: 149.88.23.202
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 07 - github
+  server: 168.107.78.228
+  port: 56927
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 15 - github
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+- name: 🇸🇬 新加坡 (Singapore) 08 - github
+  server: 103.36.91.32
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇸🇬 新加坡 (Singapore) 09 - github
   server: 68.183.235.122
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 16 - github
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 17 - github
-  server: 18.140.238.157
-  port: 31870
+- name: 🇸🇬 新加坡 (Singapore) 10 - github
+  server: 146.235.16.130
+  port: 19825
   udp: true
   type: vless
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HEaa9lsAxLy1r13R-eB0nZWYj9n4kwxAeZFLFTKF4kc
-    short-id: 2fef6c2f
-  servername: www.cloudflare.com
+    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
+    short-id: 6ba85179e30d4fc2
+  servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - github
-  server: 217.217.254.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
-  tls: true
-  reality-opts:
-    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
-    short-id: 87829de0e2bb82cb
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 19 - github
-  server: sg-1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: q78tZmuaXQTsrrjZtjjRDtoni6tzN-HhXcAY-iT5zF0
-    short-id: fc13d6208ebbae16
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 20 - github
+- name: 🇸🇬 新加坡 (Singapore) 11 - github
   server: 18.140.72.106
   port: 23070
   udp: true
@@ -197,40 +95,7 @@ proxies:
     short-id: c7f5ef2673cc86bc
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 21 - github
-  server: 54.169.72.60
-  port: 8686
-  udp: true
-  type: vless
-  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  tls: true
-  reality-opts:
-    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
-    short-id: 628b3c90c98ead4f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - github
-  server: xjp2.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xjp2.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 23 - github
-  server: 54.169.200.246
-  port: 41688
-  udp: true
-  type: vless
-  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
-    short-id: 7f342137c20387
-  servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 24 - github
+- name: 🇸🇬 新加坡 (Singapore) 12 - github
   server: onhit.shalana.xyz
   port: 443
   udp: true
@@ -239,7 +104,8 @@ proxies:
   tls: true
   servername: onhit.shalana.xyz
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 25 - github
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 13 - github
   server: 18.143.191.201
   port: 21464
   udp: true
@@ -252,7 +118,7 @@ proxies:
     short-id: 52f8
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 26 - github
+- name: 🇸🇬 新加坡 (Singapore) 14 - github
   server: 84.32.22.117
   port: 443
   udp: true
@@ -265,7 +131,7 @@ proxies:
     short-id: d38eea587f1a4f68
   servername: sg.responsiblecare.uk
   client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 27 - github
+- name: 🇸🇬 新加坡 (Singapore) 15 - github
   server: 54.251.239.81
   port: 26415
   udp: true
@@ -277,23 +143,37 @@ proxies:
     public-key: eC5S3o9uFN6i_YjDjiALCXbc_dzh3kEm2C5zduDGtS8
     short-id: b7dd999667b0406e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 28 - github
-  server: 57.129.130.57
-  port: 52014
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 16 - github
+  server: 68.183.227.236
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 17 - github
+  server: 128.199.172.224
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 18 - github
+  server: port2.axiomed.ir
+  port: 443
   udp: true
   type: vless
-  uuid: 52ea9acf-8c78-4589-9e10-824bdbd3f121
+  uuid: b825ccd6-f90c-4273-afe1-7f85b436a4a2
   tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
+  servername: ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: '/vl/6ayyVzPLRWVROzJKD82qZxn?ed=2560 '
     headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 29 - github
+      Host: ejtl1lb-mlyxnz0ko5iz618motr0msa.fornewiran-1011.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 19 - github
   server: 18.136.119.69
   port: 20975
   udp: true
@@ -306,44 +186,51 @@ proxies:
     short-id: 2bb0dc48
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 30 - github
-  server: 170.114.45.6
+- name: 🇸🇬 新加坡 (Singapore) 20 - github
+  server: 54.169.72.60
+  port: 8686
+  udp: true
+  type: vless
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - github
+  server: support.zoom.us
   port: 80
   udp: true
   type: vless
-  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  uuid: 31727d09-1958-42d5-b437-adc9cf0ddd34
   network: ws
   ws-opts:
-    path: /free-server.techsonic.dev
+    path: /shalana
     headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 31 - github
-  server: 211.48.30.184
-  port: 30017
+      Host: onhit.shalana.xyz
+- name: 🇸🇬 新加坡 (Singapore) 22 - github
+  server: 217.217.254.126
+  port: 2053
   udp: true
   type: vless
-  uuid: beec57a5-8266-4279-b279-f495bdc70699
+  uuid: cb15cce9-73ed-4928-b38c-462f0732cbe9
   tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 32 - github
-  server: 138.2.89.249
-  port: 443
+  reality-opts:
+    public-key: VzRjuHwcY-nLqkEIJS4S1CpButKc90Bh0gDbphyZ0Tw
+    short-id: 87829de0e2bb82cb
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 23 - github
+  server: s3.huhiuh.space
+  port: 18642
   udp: true
   type: hysteria2
-  password: d042d150716709bb778cc73889cddb02
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
   sni: www.bing.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
-- name: 🇸🇬 新加坡 (Singapore) 33 - github
-  server: 91.193.58.85
+- name: 🇸🇬 新加坡 (Singapore) 24 - github
+  server: 91.193.58.132
   port: 2096
   udp: true
   type: vless
@@ -357,66 +244,33 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 34 - github
-  server: 54.251.9.130
-  port: 24146
+- name: 🇸🇬 新加坡 (Singapore) 25 - github
+  server: 3.0.111.82
+  port: 10574
   udp: true
   type: vless
-  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
-    short-id: 7205d9079521832c
-  servername: www.intel.com
-  client-fingerprint: firefox
-- name: 🇸🇬 新加坡 (Singapore) 35 - github
-  server: xjp1.mangshe.xyz
-  port: 2060
-  udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xjp1.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 36 - github
-  server: 170.114.52.22
-  port: 443
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 26 - github
+  server: 3.0.111.82
+  port: 17623
   udp: true
   type: vless
-  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
   tls: true
-  servername: asia.csmasterofficial.store
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cs
-    headers:
-      Host: asia.csmasterofficial.store
-- name: 🇸🇬 新加坡 (Singapore) 37 - github
-  server: 116.251.217.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2388e166-3890-33ae-f77e-efac00000002
-  tls: true
-  servername: netlivpn4813.ddhshhshs.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn4813.ddhshhshs.workers.dev
-- name: 🇸🇬 新加坡 (Singapore) 38 - github
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 39 - github
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇸🇬 新加坡 (Singapore) 27 - github
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -429,6 +283,60 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 28 - github
+  server: 54.251.9.130
+  port: 24146
+  udp: true
+  type: vless
+  uuid: 9d9a048b-3aea-4b3e-b106-1106bf301feb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
+    short-id: 7205d9079521832c
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 29 - github
+  server: 54.169.200.246
+  port: 41688
+  udp: true
+  type: vless
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
+  client-fingerprint: ios
+- name: 🇸🇬 新加坡 (Singapore) 30 - github
+  server: 138.2.89.249
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d042d150716709bb778cc73889cddb02
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 309502c4a8df10b46fb976d4a8c43f42
+- name: 🇸🇬 新加坡 (Singapore) 31 - github
+  server: support.zoom.us
+  port: 80
+  udp: true
+  type: vless
+  uuid: a57223c7-3581-4fec-9bc4-ad5c30900efb
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 32 - github
+  server: 161.118.219.5
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9PfRlIGvpMs8nD7s65B/3IxccQG+p631X9tCLZy+CRI=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -466,13 +374,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 30 - github
   - 🇸🇬 新加坡 (Singapore) 31 - github
   - 🇸🇬 新加坡 (Singapore) 32 - github
-  - 🇸🇬 新加坡 (Singapore) 33 - github
-  - 🇸🇬 新加坡 (Singapore) 34 - github
-  - 🇸🇬 新加坡 (Singapore) 35 - github
-  - 🇸🇬 新加坡 (Singapore) 36 - github
-  - 🇸🇬 新加坡 (Singapore) 37 - github
-  - 🇸🇬 新加坡 (Singapore) 38 - github
-  - 🇸🇬 新加坡 (Singapore) 39 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -510,12 +411,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 30 - github
   - 🇸🇬 新加坡 (Singapore) 31 - github
   - 🇸🇬 新加坡 (Singapore) 32 - github
-  - 🇸🇬 新加坡 (Singapore) 33 - github
-  - 🇸🇬 新加坡 (Singapore) 34 - github
-  - 🇸🇬 新加坡 (Singapore) 35 - github
-  - 🇸🇬 新加坡 (Singapore) 36 - github
-  - 🇸🇬 新加坡 (Singapore) 37 - github
-  - 🇸🇬 新加坡 (Singapore) 38 - github
-  - 🇸🇬 新加坡 (Singapore) 39 - github
 rules:
 - MATCH,PROXIES

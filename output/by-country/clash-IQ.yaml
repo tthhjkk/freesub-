@@ -5,46 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - github
-  server: courses.mftplus.qzz.io
-  port: 2096
+  server: frosty-pond-7436.shhabbyat914.workers.dev
+  port: 443
   udp: true
   type: vless
-  uuid: b9ede7a5-5b4b-4aee-ac37-2c307e587e47
+  uuid: de78c0b1-c5c8-412a-bd92-430d1f2e2642
   tls: true
-  servername: courses.mftplus.qzz.io
+  servername: frosty-pond-7436.shhabbyat914.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /eyJqdW5rIjoidVkzQm1ROUg4dyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
-    headers:
-      Host: courses.mftplus.qzz.io
-- name: 🇮🇶 IQ 02 - github
-  server: 178.17.57.34
-  port: 40443
-  udp: true
-  type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
-    short-id: db46e2946fc466fd
-  servername: deepl.com
-  client-fingerprint: qq
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - github
-  - 🇮🇶 IQ 02 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - github
-  - 🇮🇶 IQ 02 - github
 rules:
 - MATCH,PROXIES
