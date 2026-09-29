@@ -18,130 +18,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02 - github",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - github",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 04 - github",
-      "server": "platform101.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform101",
-        "headers": {
-          "Host": "platform101.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 05 - github",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103",
-        "headers": {
-          "Host": "platform103.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 06 - github",
-      "server": "platform108.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform108",
-        "headers": {
-          "Host": "platform108.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 07 - github",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109",
-        "headers": {
-          "Host": "platform109.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 08 - github",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115",
-        "headers": {
-          "Host": "platform115.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01 - github",
-        "🇲🇾 马来西亚 (Malaysia) 02 - github",
-        "🇲🇾 马来西亚 (Malaysia) 03 - github",
-        "🇲🇾 马来西亚 (Malaysia) 04 - github",
-        "🇲🇾 马来西亚 (Malaysia) 05 - github",
-        "🇲🇾 马来西亚 (Malaysia) 06 - github",
-        "🇲🇾 马来西亚 (Malaysia) 07 - github",
-        "🇲🇾 马来西亚 (Malaysia) 08 - github"
+        "🇲🇾 马来西亚 (Malaysia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01 - github",
-        "🇲🇾 马来西亚 (Malaysia) 02 - github",
-        "🇲🇾 马来西亚 (Malaysia) 03 - github",
-        "🇲🇾 马来西亚 (Malaysia) 04 - github",
-        "🇲🇾 马来西亚 (Malaysia) 05 - github",
-        "🇲🇾 马来西亚 (Malaysia) 06 - github",
-        "🇲🇾 马来西亚 (Malaysia) 07 - github",
-        "🇲🇾 马来西亚 (Malaysia) 08 - github"
+        "🇲🇾 马来西亚 (Malaysia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

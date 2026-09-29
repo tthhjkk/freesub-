@@ -7,13 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - github",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9008,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - github",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
       "server": "195.238.126.20",
       "server_port": 9011,
       "method": "aes-256-cfb",
@@ -21,27 +37,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03 - github",
-      "server": "195.238.126.20",
-      "server_port": 9045,
-      "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
@@ -55,29 +55,37 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9001,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
+      "server": "195.238.126.20",
+      "server_port": 9045,
+      "method": "aes-256-cfb",
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
       "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - github",
       "server": "94.176.234.161",
       "server_port": 443,
       "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
@@ -87,7 +95,7 @@
         "server_name": "www.intel.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -110,7 +118,8 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
         "🇱🇹 立陶宛 (Lithuania) 09 - github",
-        "🇱🇹 立陶宛 (Lithuania) 10 - github"
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github"
       ]
     },
     {
@@ -126,7 +135,8 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
         "🇱🇹 立陶宛 (Lithuania) 09 - github",
-        "🇱🇹 立陶宛 (Lithuania) 10 - github"
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

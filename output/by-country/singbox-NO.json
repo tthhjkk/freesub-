@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇴 挪威 (Norway) 01 - github",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 02 - github",
+      "server": "80.242.57.97",
+      "server_port": 1,
+      "method": "chacha20-ietf-poly1305",
+      "password": "9qGcNiZj4uCi7DGSjxlg5Q"
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 03 - github",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -14,7 +30,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -24,20 +40,13 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 02 - github",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01 - github",
-        "🇳🇴 挪威 (Norway) 02 - github"
+        "🇳🇴 挪威 (Norway) 02 - github",
+        "🇳🇴 挪威 (Norway) 03 - github"
       ]
     },
     {
@@ -45,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01 - github",
-        "🇳🇴 挪威 (Norway) 02 - github"
+        "🇳🇴 挪威 (Norway) 02 - github",
+        "🇳🇴 挪威 (Norway) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
