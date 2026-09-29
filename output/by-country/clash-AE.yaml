@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 78.40.195.140
   port: 443
   udp: true
@@ -17,16 +27,6 @@ proxies:
     short-id: 98096455d963bdbb
   servername: www.booking.com
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 94.183.224.45
   port: 443
@@ -41,7 +41,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
-  server: 85.204.107.177
+  server: 85.204.107.174
   port: 8080
   udp: true
   type: hysteria2
@@ -49,7 +49,20 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: uae.unixzone.us
+  server: pl-2.omuvpn.tech
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
+    short-id: c2798cd4032a02b8
+  servername: ozone.nl
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 06 - github
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -59,7 +72,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
+- name: 🇦🇪 阿联酋 (UAE) 07 - github
   server: 146.70.102.82
   port: 443
   udp: true
@@ -71,7 +84,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,6 +96,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - github
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
+  - 🇦🇪 阿联酋 (UAE) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,5 +108,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - github
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
+  - 🇦🇪 阿联酋 (UAE) 07 - github
 rules:
 - MATCH,PROXIES
