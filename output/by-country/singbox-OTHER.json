@@ -1,0 +1,73 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 01 - github",
+      "server": "104.21.57.84",
+      "server_port": 8443,
+      "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "v2ray1.dozapp.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lMnsZUN4/",
+        "headers": {
+          "Host": "v2ray1.dozapp.xyz"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🌐 其他地区 (Other) 02 - github",
+      "server": "172.67.77.76",
+      "server_port": 2083,
+      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "or.521166.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/or3",
+        "headers": {
+          "Host": "or.521166.xyz"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🌐 其他地区 (Other) 01 - github",
+        "🌐 其他地区 (Other) 02 - github"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🌐 其他地区 (Other) 01 - github",
+        "🌐 其他地区 (Other) 02 - github"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

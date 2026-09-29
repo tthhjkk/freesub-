@@ -4,25 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01 - github
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16305
+- name: 🇨🇿 捷克 (Czech) 01 - github
+  server: 153.76.185.155
+  port: 3090
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 43b15d01-8cc5-40ea-b42a-cb1a727224dc
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01 - github
+  - 🇨🇿 捷克 (Czech) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01 - github
+  - 🇨🇿 捷克 (Czech) 01 - github
 rules:
 - MATCH,PROXIES

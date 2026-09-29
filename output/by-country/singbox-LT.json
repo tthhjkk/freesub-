@@ -7,33 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - github",
       "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
-      "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
       "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - github",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
@@ -47,45 +47,89 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
       "server": "195.238.126.20",
-      "server_port": 9068,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
       "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
       "password": "UkXRsXvR6buDMG2Y"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
+    },
+    {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
-      "server": "94.176.234.161",
+      "server": "62.77.158.1",
       "server_port": 443,
-      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
+      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.intel.com",
+        "server_name": "online.1c.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
-          "short_id": "dbb2ef1c7c"
+          "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
+          "short_id": "6a"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
+      "server": "lithuania-2.kochvpn.pw",
+      "server_port": 443,
+      "uuid": "2923fef2-3b52-a9c2-cde4-c2343eb74a2c",
+      "tls": {
+        "enabled": true,
+        "server_name": "lithuania-2.kochvpn.pw",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - github",
+      "server": "176.123.165.180",
+      "server_port": 9881,
+      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
+          "short_id": "aabbccdd"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -101,7 +145,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - github",
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
-        "🇱🇹 立陶宛 (Lithuania) 09 - github"
+        "🇱🇹 立陶宛 (Lithuania) 09 - github",
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github"
       ]
     },
     {
@@ -116,7 +162,9 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - github",
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
-        "🇱🇹 立陶宛 (Lithuania) 09 - github"
+        "🇱🇹 立陶宛 (Lithuania) 09 - github",
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
