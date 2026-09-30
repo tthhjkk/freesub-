@@ -13,13 +13,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - github
-  server: 160.187.100.109
-  port: 443
+  server: dog-tw.kunlun01dns.com
+  port: 21037
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - github
   server: 85.237.207.49
   port: 50160
@@ -27,8 +27,24 @@ proxies:
   type: hysteria2
   password: a56619e2bed91121eabb97d20be207c3
   sni: 85-237-207-49.liao.kdns.fr
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - github
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - github
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 06 - github
   server: 35.201.181.122
   port: 443
   udp: true
@@ -39,8 +55,8 @@ proxies:
     public-key: PLslPQOBA3bfWO5hXLv7jioCTuNR8vCxa_axi0dC7C0
     short-id: 32f66f37df3f58d2
   servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 05 - github
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 07 - github
   server: 60.248.219.78
   port: 443
   udp: true
@@ -64,6 +80,8 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
   - 🇹🇼 中国台湾 (Taiwan) 04 - github
   - 🇹🇼 中国台湾 (Taiwan) 05 - github
+  - 🇹🇼 中国台湾 (Taiwan) 06 - github
+  - 🇹🇼 中国台湾 (Taiwan) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +92,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
   - 🇹🇼 中国台湾 (Taiwan) 04 - github
   - 🇹🇼 中国台湾 (Taiwan) 05 - github
+  - 🇹🇼 中国台湾 (Taiwan) 06 - github
+  - 🇹🇼 中国台湾 (Taiwan) 07 - github
 rules:
 - MATCH,PROXIES

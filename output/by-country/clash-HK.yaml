@@ -12,30 +12,62 @@ proxies:
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - github
+  server: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 40fb1315-191a-11ed-b0ca-f23c91cfbbc9
+  sni: f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  sni: https%3a%2f%2ft.me%2fclashv8
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - github
+  server: champion.xn--kivt58h.lol
+  port: 80
+  udp: true
+  type: vless
+  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: hk3.569283.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zkPIO05A0_tpRCfRTRIHKUCUoi7kCaxt_RDg-f9zVns
+    short-id: 06ba
+  servername: gateway.icloud.com
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
   server: 194.99.79.26
   port: 443
   udp: true
@@ -49,7 +81,23 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - github
   server: 74.82.192.82
   port: 443
   udp: true
@@ -64,26 +112,38 @@ proxies:
     path: /cdn/packages/runtime-core.tar.gz
     headers:
       Host: hk.152568.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - github
+  server: hk2.xiaoliyu.cyou
+  port: 4433
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - github
+  server: 85.149.211.28
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
+  tls: true
+  servername: hk.152568.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /cdn/packages/runtime-core.tar.gz
+    headers:
+      Host: hk.152568.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - github
+  server: ru.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - github
   server: 47.238.210.5
   port: 13779
   udp: true
@@ -94,7 +154,7 @@ proxies:
     public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
     short-id: af1bdd293097b664
   servername: tesla.com
-  client-fingerprint: random
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +169,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
   - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
+  - 🇭🇰 中国香港 (Hong Kong) 11 - github
+  - 🇭🇰 中国香港 (Hong Kong) 12 - github
+  - 🇭🇰 中国香港 (Hong Kong) 13 - github
+  - 🇭🇰 中国香港 (Hong Kong) 14 - github
+  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -123,5 +189,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
   - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
+  - 🇭🇰 中国香港 (Hong Kong) 11 - github
+  - 🇭🇰 中国香港 (Hong Kong) 12 - github
+  - 🇭🇰 中国香港 (Hong Kong) 13 - github
+  - 🇭🇰 中国香港 (Hong Kong) 14 - github
+  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 rules:
 - MATCH,PROXIES
