@@ -5,25 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
-  server: 104.143.223.60
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 60f70a3c-6d58-4929-9b64-6bdf38eb5c95
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 78.40.195.140
   port: 443
   udp: true
@@ -35,8 +16,8 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 151.241.166.181
   port: 443
   udp: true
@@ -47,29 +28,29 @@ proxies:
   reality-opts:
     public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
   servername: pl.gazladder.work
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 85.204.107.183
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
+  server: 85.204.107.178
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: 78.17.161.77
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  server: pl-3.omuvpn.tech
   port: 443
   udp: true
   type: vless
-  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
+  uuid: 6db7ea14-ed33-4591-a9b1-f1e91b1c0ff5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
     short-id: 3670a2a25a110a
-  servername: www.nl.ozone.nl
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - github
+  servername: ozone.nl
+  client-fingerprint: random
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -80,7 +61,7 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - github
+- name: 🇦🇪 阿联酋 (UAE) 06 - github
   server: 146.70.102.82
   port: 443
   udp: true
@@ -92,8 +73,8 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 09 - github
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 07 - github
   server: 139.185.44.42
   port: 8443
   udp: true
@@ -118,8 +99,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
-  - 🇦🇪 阿联酋 (UAE) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,7 +111,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
-  - 🇦🇪 阿联酋 (UAE) 09 - github
 rules:
 - MATCH,PROXIES
