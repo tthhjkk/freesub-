@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - github
   server: 51.75.67.209
   port: 443
@@ -23,7 +21,7 @@ proxies:
   uuid: 3d08ed67-5a47-42d3-a948-ebc7d2eb21f7
   tls: true
   servername: free.sahanwickramasinghe.me
-  skip-cert-verify: true
+  skip-cert-verify: false
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

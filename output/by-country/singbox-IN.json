@@ -24,49 +24,19 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - github",
-      "server": "34.131.228.210",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
-      "tls": {
-        "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - github",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - github",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - github",
       "server": "139.84.177.239",
       "server_port": 443,
       "uuid": "d90087c3-54f5-4283-a13f-615260c8b0c7",
@@ -86,6 +56,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 04 - github",
+      "server": "34.131.228.210",
+      "server_port": 443,
+      "password": "M7v%w11Se*",
+      "tls": {
+        "enabled": true,
+        "server_name": "hyfuuf6.wsone.icu",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -93,8 +75,7 @@
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 04 - github"
       ]
     },
     {
@@ -104,8 +85,7 @@
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
