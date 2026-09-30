@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - github
-  server: v2ray.simspeedup.com
-  port: 80
+  server: th1.zestapp778.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
+  type: trojan
+  password: Trojan@82164024
+  sni: th1.zestapp778.com
+  skip-cert-verify: true
 - name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: 104.16.111.193
+  server: 104.16.10.9
   port: 443
   udp: true
   type: vless
