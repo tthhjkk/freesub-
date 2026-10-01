@@ -4,32 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - github
-  server: 104.21.14.64
+- name: 🇧🇷 巴西 (Brazil) 01 - github
+  server: 89.39.161.157
   port: 443
   udp: true
-  type: vless
-  uuid: 07821f66-cdb7-4c70-9de6-e230cffac470
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+  servername: aksai.org
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/Li1khIHH3DNItJyzraemsPBQvu
+    path: /linkvws
     headers:
-      Host: wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev
+      Host: aksai.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - github
+  - 🇧🇷 巴西 (Brazil) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - github
+  - 🇧🇷 巴西 (Brazil) 01 - github
 rules:
 - MATCH,PROXIES

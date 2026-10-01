@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇶 IQ 01 - github",
-      "server": "104.21.14.64",
+      "type": "vmess",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - github",
+      "server": "89.39.161.157",
       "server_port": 443,
-      "uuid": "07821f66-cdb7-4c70-9de6-e230cffac470",
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "aksai.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/Li1khIHH3DNItJyzraemsPBQvu",
+        "path": "/linkvws",
         "headers": {
-          "Host": "wgrcqwtkfyqujs43.ghydgdbdbddvv.workers.dev"
+          "Host": "aksai.org"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01 - github"
+        "🇧🇷 巴西 (Brazil) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01 - github"
+        "🇧🇷 巴西 (Brazil) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

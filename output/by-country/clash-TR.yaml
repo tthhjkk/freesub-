@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 93.190.9.35
-  port: 3090
-  udp: true
-  type: vless
-  uuid: eb95d26f-2200-4780-9986-cc4960c665f2
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 85.192.48.142
   port: 443
   udp: true
@@ -25,8 +16,26 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
+  server: 109.230.196.66
+  port: 208
+  udp: true
+  type: vless
+  uuid: 8d89622f-3150-424e-8446-06866a3d6b66
 - name: 🇹🇷 土耳其 (Turkey) 03 - github
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -39,46 +48,22 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
-  server: 151.241.226.201
+- name: 🇹🇷 土耳其 (Turkey) 05 - github
+  server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: tr2.gigobingo.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 46e62b9b-f9db-4310-8f18-7d6e449cfd5c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
-    short-id: ef7c4e4302bd52d7
-  servername: tr2.gigobingo.ru
-  client-fingerprint: firefox
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇷 土耳其 (Turkey) 06 - github
-  server: 155.103.70.53
-  port: 30303
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
-    headers:
-      Host: wzs.echo.net.eu.org
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 proxy-groups:
 - name: PROXIES
   type: select

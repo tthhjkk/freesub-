@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - github
-  server: 77.74.123.100
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
@@ -13,40 +13,32 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - github
-  server: 162.249.127.135
+  server: 162.249.127.134
   port: 8443
   udp: true
   type: hysteria2
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: t.me
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - github
-  server: 103.126.51.38
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - github
-  server: hy2-new.aspidnet.xyz
+  server: 162.249.125.133
   port: 443
   udp: true
   type: hysteria2
   password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
   sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - github
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - github
   server: 46.28.67.55
   port: 443
   udp: true
@@ -58,7 +50,17 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: qq
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - github
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - github
   server: 146.70.124.85
   port: 443
@@ -73,18 +75,7 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 08 - github
-  server: 188.225.76.197
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5cb9410c-1b31-48dc-b33f-cacd93722ffd
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn-pl-exit.extazy.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - github
-  server: bl3fk52.sysopnova.art
+  server: 193.163.203.253
   port: 443
   udp: true
   type: vless
@@ -96,8 +87,8 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 10 - github
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - github
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -117,7 +108,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - github
   - 🇷🇴 罗马尼亚 (Romania) 08 - github
   - 🇷🇴 罗马尼亚 (Romania) 09 - github
-  - 🇷🇴 罗马尼亚 (Romania) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +122,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - github
   - 🇷🇴 罗马尼亚 (Romania) 08 - github
   - 🇷🇴 罗马尼亚 (Romania) 09 - github
-  - 🇷🇴 罗马尼亚 (Romania) 10 - github
 rules:
 - MATCH,PROXIES
