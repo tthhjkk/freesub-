@@ -5,34 +5,89 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - github
-  server: 13.62.228.76
+  server: 51.20.143.248
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 13.49.76.55
+  server: 13.62.228.76
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 03 - github
-  server: 51.20.122.188
+  server: 13.60.213.145
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 04 - github
-  server: 51.20.86.152
+  server: 13.48.104.64
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 05 - github
+  server: 51.20.122.188
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 06 - github
+  server: 13.49.76.55
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 07 - github
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 08 - github
+  server: 51.20.86.152
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇸🇪 瑞典 (Sweden) 09 - github
+  server: 193.42.39.10
+  port: 33743
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 10 - github
+  server: 132.243.231.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4496d9fb-37da-4c7f-98bb-eb1ccf110c4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
+    short-id: 2d6d073dc88f22a8
+  servername: nordic.global-cdn.org
+  client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 11 - github
   server: 5.157.10.148
   port: 443
   udp: true
@@ -44,43 +99,20 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 06 - github
-  server: 51.20.96.231
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 12 - github
+  server: 2.26.101.134
   port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 07 - github
-  server: 13.48.104.64
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 08 - github
-  server: 193.42.39.10
-  port: 33743
   udp: true
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
+    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
+  servername: sw-01.vacvps.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇸🇪 瑞典 (Sweden) 09 - github
-  server: 13.60.213.145
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 10 - github
+- name: 🇸🇪 瑞典 (Sweden) 13 - github
   server: 62.60.159.81
   port: 2053
   udp: true
@@ -91,55 +123,10 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
-- name: 🇸🇪 瑞典 (Sweden) 11 - github
-  server: 34.51.187.118
-  port: 443
-  udp: true
-  type: vless
-  uuid: e4be912f-68e8-4d51-80a4-1342b646f8e0
-  tls: true
-  reality-opts:
-    public-key: fV003yDr_sb_Wkgz6MxnIUJMgD15osWhzU-HZ5fLPFg
-    short-id: 79ff7d51e3c56323
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 12 - github
-  server: 34.51.240.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 788950f8-dbd9-4234-a42c-a7204665ce9f
-  tls: true
-  reality-opts:
-    public-key: SOvacyM6CABhBHYdOHvhXbkNLHJBHuAkoJj2Z13xKlE
-    short-id: b4a6faed784ff461
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 13 - github
-  server: 51.20.143.248
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 14 - github
-  server: 51.20.72.15
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 15 - github
-  server: 51.170.190.165
-  port: 45819
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: +j8L6GQEjVqBUKRFbbAOabPqoQOrbgcM/JLOV35trj4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,8 +145,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 11 - github
   - 🇸🇪 瑞典 (Sweden) 12 - github
   - 🇸🇪 瑞典 (Sweden) 13 - github
-  - 🇸🇪 瑞典 (Sweden) 14 - github
-  - 🇸🇪 瑞典 (Sweden) 15 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,7 +163,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 11 - github
   - 🇸🇪 瑞典 (Sweden) 12 - github
   - 🇸🇪 瑞典 (Sweden) 13 - github
-  - 🇸🇪 瑞典 (Sweden) 14 - github
-  - 🇸🇪 瑞典 (Sweden) 15 - github
 rules:
 - MATCH,PROXIES

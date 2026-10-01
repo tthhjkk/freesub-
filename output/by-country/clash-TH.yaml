@@ -13,6 +13,14 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - github
+  server: th1.zestapp778.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: th1.zestapp778.com
+  skip-cert-verify: true
+- name: 🇹🇭 泰国 (Thailand) 03 - github
   server: 103.86.49.57
   port: 80
   udp: true
@@ -21,10 +29,8 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 104.19.32.166
+- name: 🇹🇭 泰国 (Thailand) 04 - github
+  server: 104.16.10.9
   port: 443
   udp: true
   type: vless
@@ -37,14 +43,6 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - github
-  server: th1.zestapp778.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: th1.zestapp778.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
