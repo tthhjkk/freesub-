@@ -4,46 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
-      "server": "218.250.216.236",
-      "server_port": 443,
-      "uuid": "6d56436c-150d-11f0-b0c8-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "download.windowsupdate.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
-      "server": "60f05df6-tmm5c0-tmapa2-1ryup.hk3.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
+      "server": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "3ee091ca-ab9c-11ef-a791-f23c9164ca5d",
+      "password": "19dd9c70-e4a5-11ed-8347-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "60f05df6-tmm5c0-tmapa2-1ryup.hk3.hyhuawei.com",
+        "server_name": "24f1571a-tmm5c0-tug19l-1go3q.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github",
-      "server": "3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
+      "server": "be86eb84-tmm5c0-tt2yf5-1j61y.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b",
+      "password": "f13f964e-f06c-11ec-a858-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com",
+        "server_name": "be86eb84-tmm5c0-tt2yf5-1j61y.nw4.hyhuawei.com",
         "insecure": true
       }
     },
@@ -53,8 +33,7 @@
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github"
       ]
     },
     {
@@ -62,8 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

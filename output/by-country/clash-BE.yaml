@@ -27,15 +27,7 @@ proxies:
     public-key: v6QpErcVOVKIYLm53R3bAP8zIKCFr4HAJWW0VwBKtws
     short-id: 31f187650d9530bb
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇧🇪 比利时 (Belgium) 03 - github
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16307
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
-  - 🇧🇪 比利时 (Belgium) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇧🇪 比利时 (Belgium) 01 - github
   - 🇧🇪 比利时 (Belgium) 02 - github
-  - 🇧🇪 比利时 (Belgium) 03 - github
 rules:
 - MATCH,PROXIES

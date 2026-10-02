@@ -12,8 +12,29 @@
       "password": "RexnBgU7EV5ADxG"
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02 - github",
+      "server": "149.33.30.176",
+      "server_port": 443,
+      "uuid": "5fffad1b-10f0-41ff-abe7-e5a92696d5ef",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rk_iTiKEWYK02oF8lCIXrVlM7pWMSYX-Iuaz6Eat5lI",
+          "short_id": "4b26322b354bd74e"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - github",
       "server": "47.250.84.25",
       "server_port": 443,
       "password": "5931134d1cde66bf83a54acdfebe7ab2",
@@ -21,29 +42,6 @@
         "enabled": true,
         "server_name": "moltbot.doctoroyy.net",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 03 - github",
-      "server": "175.29.23.138",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "ju88t.ce8d.q6g.hh.ov0.kdns.fr",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "headers": {
-          "Host": "ju88t.ce8d.q6g.hh.ov0.kdns.fr"
-        }
       }
     },
     {

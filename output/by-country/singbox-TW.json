@@ -19,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
+        "server_name": "103.115.109.49",
         "insecure": true
       }
     },
@@ -31,22 +31,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
-      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
-      "server_port": 11224,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - github",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -64,6 +55,15 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github",
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
+      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
+      "security": "auto",
+      "alter_id": 2
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
         "🇹🇼 中国台湾 (Taiwan) 03 - github",
         "🇹🇼 中国台湾 (Taiwan) 04 - github",
-        "🇹🇼 中国台湾 (Taiwan) 05 - github"
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ]
     },
     {
@@ -83,7 +83,7 @@
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
         "🇹🇼 中国台湾 (Taiwan) 03 - github",
         "🇹🇼 中国台湾 (Taiwan) 04 - github",
-        "🇹🇼 中国台湾 (Taiwan) 05 - github"
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

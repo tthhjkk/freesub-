@@ -34,7 +34,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,21 +44,12 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇧🇪 比利时 (Belgium) 03 - github",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16307,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇧🇪 比利时 (Belgium) 01 - github",
-        "🇧🇪 比利时 (Belgium) 02 - github",
-        "🇧🇪 比利时 (Belgium) 03 - github"
+        "🇧🇪 比利时 (Belgium) 02 - github"
       ]
     },
     {
@@ -66,8 +57,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇪 比利时 (Belgium) 01 - github",
-        "🇧🇪 比利时 (Belgium) 02 - github",
-        "🇧🇪 比利时 (Belgium) 03 - github"
+        "🇧🇪 比利时 (Belgium) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
