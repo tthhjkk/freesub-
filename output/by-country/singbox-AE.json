@@ -4,22 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - github",
-      "server": "104.21.67.122",
+      "server": "130.49.161.70",
       "server_port": 443,
-      "uuid": "ee556a4f-d9f6-44de-af02-42c51659416a",
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
-        "server_name": "novantunnel.tech",
+        "server_name": "hy2.aspidnet.xyz",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/Novan-AE9",
-        "headers": {
-          "Host": "novantunnel.tech"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
       }
     },
     {
@@ -34,7 +31,7 @@
         "server_name": "google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -46,17 +43,13 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - github",
-      "server": "130.49.161.70",
+      "server": "217.60.33.215",
       "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+        "server_name": "streambox.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -83,36 +76,23 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
-      "server": "217.60.33.215",
-      "server_port": 443,
-      "password": "865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01",
-      "tls": {
-        "enabled": true,
-        "server_name": "streambox.wwwinternetvideo.click",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
-      "server": "admin.wwwinternetvideo.click",
+      "server": "45.192.12.93",
       "server_port": 443,
       "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
       "tls": {
         "enabled": true,
         "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
         }
@@ -120,7 +100,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 08 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - github",
       "server": "146.70.102.82",
       "server_port": 443,
       "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9",
@@ -150,8 +130,7 @@
         "🇦🇪 阿联酋 (UAE) 04 - github",
         "🇦🇪 阿联酋 (UAE) 05 - github",
         "🇦🇪 阿联酋 (UAE) 06 - github",
-        "🇦🇪 阿联酋 (UAE) 07 - github",
-        "🇦🇪 阿联酋 (UAE) 08 - github"
+        "🇦🇪 阿联酋 (UAE) 07 - github"
       ]
     },
     {
@@ -164,8 +143,7 @@
         "🇦🇪 阿联酋 (UAE) 04 - github",
         "🇦🇪 阿联酋 (UAE) 05 - github",
         "🇦🇪 阿联酋 (UAE) 06 - github",
-        "🇦🇪 阿联酋 (UAE) 07 - github",
-        "🇦🇪 阿联酋 (UAE) 08 - github"
+        "🇦🇪 阿联酋 (UAE) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

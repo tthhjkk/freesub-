@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - github
-  server: 104.21.36.36
+  server: port2.axiomed.ir
   port: 443
   udp: true
   type: vless
-  uuid: 41750e18-7143-49a3-bdac-4edcb3c8b8f3
+  uuid: d443c411-85e4-4e0e-8251-2294d7e7ae0b
   tls: true
-  servername: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
+  servername: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560
+    path: /vl/II2kyrr06FWkCZfkFs?ed=2560
     headers:
-      Host: h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev
+      Host: jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select

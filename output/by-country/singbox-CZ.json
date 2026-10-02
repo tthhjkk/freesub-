@@ -6,51 +6,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01 - github",
-      "server": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
-      "server_port": 443,
-      "uuid": "3423809a-08e5-4b93-bd76-c6cdcbfd9b52",
-      "tls": {
-        "enabled": true,
-        "server_name": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/1zCIGMyxlm8xzeGwdyy",
-        "headers": {
-          "Host": "bn1jywok-7txq9p7e.fbgbjr7g344b78sqlruz7u621njij.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02 - github",
-      "server": "go.inmobi.com",
-      "server_port": 8443,
-      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
-      "tls": {
-        "enabled": true,
-        "server_name": "socks5.revil-time3.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/socks5://128.140.46.169:13482",
-        "headers": {
-          "Host": "socks5.revil-time3.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - github",
       "server": "85.117.235.50",
       "server_port": 443,
       "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
@@ -60,7 +15,7 @@
         "server_name": "cz1.animeteka.info",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -70,32 +25,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇨🇿 捷克 (Czech) 04 - github",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16280,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github"
+        "🇨🇿 捷克 (Czech) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github",
-        "🇨🇿 捷克 (Czech) 03 - github",
-        "🇨🇿 捷克 (Czech) 04 - github"
+        "🇨🇿 捷克 (Czech) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

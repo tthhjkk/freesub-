@@ -6,26 +6,19 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01 - github",
-      "server": "104.21.36.36",
+      "server": "port2.axiomed.ir",
       "server_port": 443,
-      "uuid": "41750e18-7143-49a3-bdac-4edcb3c8b8f3",
+      "uuid": "d443c411-85e4-4e0e-8251-2294d7e7ae0b",
       "tls": {
         "enabled": true,
-        "server_name": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560",
+        "path": "/vl/II2kyrr06FWkCZfkFs?ed=2560",
         "headers": {
-          "Host": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
+          "Host": "jwd9bmigrp5s8pqhayvpr6dj6ol.fornewiran-1014.workers.dev"
         }
       }
     },
