@@ -13,21 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 02 - github
-  server: 66.163.118.73
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇪🇸 西班牙 (Spain) 03 - github
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 04 - github
   server: 185.174.137.172
   port: 8446
   udp: true
@@ -35,6 +20,21 @@ proxies:
   password: e9dc02d400b67c727aca1620
   sni: 185.174.137.172
   skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 03 - github
+  server: 66.163.118.73
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 04 - github
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 05 - github
   server: 140.174.184.5
   port: 8388
@@ -53,45 +53,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 07 - github
-  server: 34.175.107.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: c55c9880-2f9c-4ad6-bfc2-5054516bf613
-  tls: true
-  reality-opts:
-    public-key: lM9EQ1rZH9inQjrZesuqgldsXYN_yfT5-tqhPfbyen4
-    short-id: 1c9e101e99bf86bb
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 08 - github
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇪🇸 西班牙 (Spain) 09 - github
-  server: 193.238.154.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-  tls: true
-  servername: assets-es.pleiades.codes
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇪🇸 西班牙 (Spain) 10 - github
   server: 83.147.18.3
   port: 443
   udp: true
@@ -103,8 +66,34 @@ proxies:
     public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 11 - github
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 08 - github
+  server: 193.238.154.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  tls: true
+  servername: assets-es.pleiades.codes
+  skip-cert-verify: false
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇪🇸 西班牙 (Spain) 09 - github
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 10 - github
   server: 66.163.118.73
   port: 443
   udp: true
@@ -118,8 +107,6 @@ proxies:
   network: ws
   ws-opts:
     path: /linkvws
-    headers:
-      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,7 +122,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - github
   - 🇪🇸 西班牙 (Spain) 09 - github
   - 🇪🇸 西班牙 (Spain) 10 - github
-  - 🇪🇸 西班牙 (Spain) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,6 +137,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 08 - github
   - 🇪🇸 西班牙 (Spain) 09 - github
   - 🇪🇸 西班牙 (Spain) 10 - github
-  - 🇪🇸 西班牙 (Spain) 11 - github
 rules:
 - MATCH,PROXIES

@@ -11,6 +11,26 @@ proxies:
   type: vless
   uuid: 0c1b7949-fe09-43d9-863f-2c031f66bfc1
 - name: 🇫🇮 芬兰 (Finland) 02 - github
+  server: 144.31.232.216
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 06e88dd6-e264-4981-8c26-d7ab17348ab2
+  sni: fi01.clgate.network
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 35.228.61.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
+  tls: true
+  reality-opts:
+    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
+    short-id: d4b34bc6b3d2b5ab
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - github
   server: 45.149.147.97
   port: 443
   udp: true
@@ -22,16 +42,8 @@ proxies:
     public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
     short-id: d345ad4657adeef9
   servername: google.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 04 - github
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -43,7 +55,28 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - github
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 07 - github
+  server: 144.31.150.185
+  port: 443
+  udp: true
+  type: vless
+  uuid: 49c8e76e-7e52-426a-8669-51d93c7a6d12
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Z1_596gzjw7TiPAhowugetKeotIJzLGHA41Fu5Re3WE
+    short-id: 410a04029b24
+  servername: start.ru
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - github
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -56,18 +89,6 @@ proxies:
     short-id: 568d87a47271344e
   servername: 144.31.27.215
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: 35.228.61.63
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06e58eed-afc8-4cbf-a0bf-1b7b42e1a87f
-  tls: true
-  reality-opts:
-    public-key: wJwb5WExAnmGiq9mmjtMvoA8E-k10u5VvPegm9RomWU
-    short-id: d4b34bc6b3d2b5ab
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +100,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
+  - 🇫🇮 芬兰 (Finland) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,5 +113,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
+  - 🇫🇮 芬兰 (Finland) 08 - github
 rules:
 - MATCH,PROXIES

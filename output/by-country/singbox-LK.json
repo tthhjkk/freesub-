@@ -6,16 +6,22 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
-      "server": "51.75.67.209",
+      "server": "trackydev.site",
       "server_port": 443,
-      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
       "tls": {
         "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
+        "server_name": "trackydev.site",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "trackydev.site"
         }
       }
     },
@@ -30,12 +36,25 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 03 - github",
+      "server": "51.75.67.209",
+      "server_port": 443,
+      "uuid": "3d08ed67-5a47-42d3-a948-ebc7d2eb21f7",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 03 - github"
       ]
     },
     {
@@ -43,7 +62,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 02 - github",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

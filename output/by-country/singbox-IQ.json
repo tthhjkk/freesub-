@@ -5,25 +5,28 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - github",
-      "server": "81.208.170.142",
-      "server_port": 1500,
-      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
+      "tag": "🇮🇶 IQ 01 - github",
+      "server": "104.21.36.36",
+      "server_port": 443,
+      "uuid": "41750e18-7143-49a3-bdac-4edcb3c8b8f3",
       "tls": {
         "enabled": true,
-        "server_name": "www.ebay.com",
+        "server_name": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
-          "short_id": "775eb6408888248e"
         }
       },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/vl/ml3Epzqnzr8r2cTPtolbD5lTi1GWsZOP?ed=2560",
+        "headers": {
+          "Host": "h3hadzojqmjxwseayj0dwe4o0.ade-1018.workers.dev"
+        }
       }
     },
     {
@@ -31,14 +34,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
+        "🇮🇶 IQ 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
+        "🇮🇶 IQ 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
