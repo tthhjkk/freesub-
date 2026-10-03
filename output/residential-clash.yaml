@@ -4,28 +4,47 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  server: 178.83.46.216
-  port: 2053
+- name: 🇺🇸 美国 (United States) 01 (家宽) - github
+  server: 172.64.154.8
+  port: 2095
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇯🇵 日本 (Japan) 02 (家宽) - github
-  server: 57.129.52.47
-  port: 52014
-  udp: true
-  type: vless
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  server: tw6.dexlos.com
+  port: 8080
+  udp: true
+  type: tuic
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  sni: tw6.dexlos.com
+  skip-cert-verify: true
+  congestion-controller: bbr
+  udp-relay-mode: native
+  alpn:
+  - h3
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+  server: 95691df5-tmm5c0-trpvht-1ey07.hk3.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  sni: 95691df5-tmm5c0-trpvht-1ey07.hk3.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github
+  server: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5dc6fa05-a601-aba6-7761-ecde22d2b0fc
+  sni: 33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
   server: 118.167.235.241
   port: 24215
   udp: true
@@ -35,56 +54,44 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 04 (家宽) - github
-  server: 209.38.238.229
-  port: 20202
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 06 (家宽) - github
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - github
+  server: 145.239.30.17
+  port: 2053
   udp: true
   type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
-    headers:
-      Host: wzs.echo.net.eu.org
-- name: 🇺🇸 美国 (United States) 05 (家宽) - github
-  server: 69.63.221.116
-  port: 25517
-  udp: true
-  type: vless
-  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
-  tls: true
-  servername: wzs.echo.net.eu.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HBRETS1lYDldeEEFRGxhbVloPHhpEVl9AFwxSGQ9bSQ==
-    headers:
-      Host: wzs.echo.net.eu.org
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  - 🇯🇵 日本 (Japan) 02 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
-  - 🇩🇪 德国 (Germany) 04 (家宽) - github
-  - 🇺🇸 美国 (United States) 05 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  - 🇯🇵 日本 (Japan) 02 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
-  - 🇩🇪 德国 (Germany) 04 (家宽) - github
-  - 🇺🇸 美国 (United States) 05 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 06 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 07 (移动家宽) - github
 rules:
 - MATCH,PROXIES

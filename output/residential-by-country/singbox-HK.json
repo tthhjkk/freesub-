@@ -1,0 +1,57 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
+      "server": "95691df5-tmm5c0-trpvht-1ey07.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "203d1d64-3313-11ed-bb74-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "95691df5-tmm5c0-trpvht-1ey07.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
+      "server": "33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "5dc6fa05-a601-aba6-7761-ecde22d2b0fc",
+      "tls": {
+        "enabled": true,
+        "server_name": "33632b49-tmm5c0-tonrmx-8n27.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
