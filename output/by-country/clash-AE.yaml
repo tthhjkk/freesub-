@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 31.59.150.11
   port: 443
   udp: true
@@ -26,15 +16,17 @@ proxies:
     public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
   servername: google.com
   client-fingerprint: qq
-- name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: streambox.wwwinternetvideo.click
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 78.40.195.140
   port: 443
   udp: true
@@ -46,28 +38,24 @@ proxies:
     public-key: Rp0WaupRP9LtJ-dd4vjKwuvSzqo_ZqIZPZWDEbSoIAo
     short-id: 98096455d963bdbb
   servername: www.booking.com
-  client-fingerprint: qq
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 45.192.12.93
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: 151.241.137.132
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
+  server: streambox.wwwinternetvideo.click
   port: 443
   udp: true
-  type: vless
-  uuid: 5786d86f-7731-4174-b1a3-84297e54b015
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: finland.ali-bard.online
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - github
+  type: hysteria2
+  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
+  sni: streambox.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 06 - github
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -76,20 +64,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - github
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 09 - github
+- name: 🇦🇪 阿联酋 (UAE) 07 - github
   server: 146.70.102.82
   port: 443
   udp: true
@@ -101,7 +76,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,8 +89,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
-  - 🇦🇪 阿联酋 (UAE) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,7 +101,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
-  - 🇦🇪 阿联酋 (UAE) 09 - github
 rules:
 - MATCH,PROXIES

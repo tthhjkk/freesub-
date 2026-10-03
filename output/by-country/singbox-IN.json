@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - github",
-      "server": "34.131.228.210",
-      "server_port": 443,
-      "password": "M7v%w11Se*",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
       "tls": {
         "enabled": true,
-        "server_name": "hyfuuf6.wsone.icu",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
+        }
       }
     },
     {
@@ -24,69 +32,19 @@
       "tls": {
         "enabled": true,
         "server_name": "tttyder.wsone.icu",
-        "insecure": true
+        "insecure": false
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 03 - github",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - github",
-      "server": "148.113.5.44",
+      "server": "34.131.228.210",
       "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
+      "password": "M7v%w11Se*",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - github",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
+        "server_name": "hyfuuf6.wsone.icu",
+        "insecure": true
       }
     },
     {
@@ -96,9 +54,7 @@
         "auto",
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
-        "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 03 - github"
       ]
     },
     {
@@ -107,9 +63,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
-        "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

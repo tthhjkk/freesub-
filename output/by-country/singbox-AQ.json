@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 01 - github",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
+      "tag": "🇦🇶 AQ 01 - github",
+      "server": "2.27.26.132",
+      "server_port": 444,
+      "uuid": "141bbdef-a341-4846-aec7-9d6531ff8790",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
+          "public_key": "dEhIR-YkvqguXB5_P3LMuyNYM82lMHQsSGhhtkmvE0k",
+          "short_id": "d7abeb515312dc2f"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "apple.com"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - github"
+        "🇦🇶 AQ 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - github"
+        "🇦🇶 AQ 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
