@@ -6,17 +6,31 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - github",
-      "server": "178.83.46.216",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "server": "85.192.48.142",
+      "server_port": 443,
+      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nvidia.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
+          "short_id": "db04ce8bdb8900f1"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - github",
-      "server": "206.1.103.221",
-      "server_port": 17721,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "YdXo5FtbFp8lnDRbIvewaOaXbDtf5eR1Bk/O594+x40=:iZdLC0QQ5kSj7Y1QqwR/t23h1gp/jHyiWkf2MJFjq5s="
+      "server": "bale.xv98.ir",
+      "server_port": 5051,
+      "method": "chacha20-ietf-poly1305",
+      "password": "68mL2QkZEBlxWa3hcslGDw"
     },
     {
       "type": "vless",
@@ -29,7 +43,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,45 +74,15 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
-      "server": "206.1.99.160",
-      "server_port": 41310,
-      "uuid": "Nitro_Skybot",
-      "security": "auto",
+      "server": "176.96.131.251",
+      "server_port": 1280,
+      "uuid": "c0e8fb58-a60f-4c15-9444-4e7c109797a8",
       "transport": {
         "type": "ws",
         "path": "/"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
-      "server": "85.192.48.142",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - github",
-      "server": "bale.xv98.ir",
-      "server_port": 5051,
-      "method": "chacha20-ietf-poly1305",
-      "password": "68mL2QkZEBlxWa3hcslGDw"
     },
     {
       "type": "selector",
@@ -109,9 +93,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github",
-        "🇹🇷 土耳其 (Turkey) 07 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github"
       ]
     },
     {
@@ -122,9 +104,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github",
-        "🇹🇷 土耳其 (Turkey) 07 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
