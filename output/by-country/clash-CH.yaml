@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - github
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 02 - github
   server: 152.67.75.161
   port: 443
   udp: true
@@ -26,8 +14,18 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 02 - github
+  server: 208.69.78.217
+  port: 8444
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 03 - github
-  server: 82.38.64.239
+  server: 82.38.64.237
   port: 8443
   udp: true
   type: hysteria2
@@ -48,16 +46,8 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - github
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 140.238.213.114
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 06 - github
   server: 208.69.78.217
-  port: 8444
+  port: 21000
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -65,6 +55,19 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
+  ports: 21000-21199,33000-33199
+- name: 🇨🇭 瑞士 (Switzerland) 06 - github
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇨🇭 瑞士 (Switzerland) 07 - github
   server: 104.165.205.42
   port: 8443
@@ -74,6 +77,14 @@ proxies:
   sni: speedtestmark.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 08 - github
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 09 - github
   server: 132.243.175.144
   port: 8388
   udp: true
@@ -93,6 +104,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - github
   - 🇨🇭 瑞士 (Switzerland) 07 - github
   - 🇨🇭 瑞士 (Switzerland) 08 - github
+  - 🇨🇭 瑞士 (Switzerland) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -106,5 +118,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 06 - github
   - 🇨🇭 瑞士 (Switzerland) 07 - github
   - 🇨🇭 瑞士 (Switzerland) 08 - github
+  - 🇨🇭 瑞士 (Switzerland) 09 - github
 rules:
 - MATCH,PROXIES

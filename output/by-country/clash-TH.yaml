@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: 103.86.49.57
+  server: support.zoom.us.v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: v2ray.simspeedup.com
+      Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 104.18.26.90
+  server: 104.16.111.193
   port: 443
   udp: true
   type: vless
@@ -32,13 +32,19 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 04 - github
+  server: pphfree2.mvpnpvpn.de5.net
+  port: 52351
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 05 - github
   server: silversbgfgov.vip43.wogbcnmnagfwgov.com
   port: 11243
   udp: true
@@ -55,6 +61,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
   - 🇹🇭 泰国 (Thailand) 04 - github
+  - 🇹🇭 泰国 (Thailand) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +71,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
   - 🇹🇭 泰国 (Thailand) 04 - github
+  - 🇹🇭 泰国 (Thailand) 05 - github
 rules:
 - MATCH,PROXIES

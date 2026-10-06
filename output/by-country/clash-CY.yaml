@@ -5,6 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - github
+  server: 2.56.123.131
+  port: 443
+  udp: true
+  type: vless
+  uuid: a47f8110-de83-4c37-b6a7-16010535aef4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wDAQ_iQ_vv6lQiB9nCxIJviEhARWOQOPyhzos8EJW3o
+    short-id: 9da47879658f9f25
+  servername: contact.yump.online
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - github
+  server: 194.76.154.31
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - github
   server: 185.166.154.111
   port: 443
   udp: true
@@ -16,9 +41,9 @@ proxies:
     public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
     short-id: 94f32cfc
   servername: cdn.bulkavpn.top
-  client-fingerprint: firefox
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - github
-  server: 5.253.28.240
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - github
+  server: hydra.yokkastars.com
   port: 40443
   udp: true
   type: vless
@@ -30,7 +55,7 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - github
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05 - github
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -53,6 +78,8 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - github
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - github
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - github
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - github
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +88,7 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - github
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - github
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - github
+  - 🇨🇾 塞浦路斯 (Cyprus) 04 - github
+  - 🇨🇾 塞浦路斯 (Cyprus) 05 - github
 rules:
 - MATCH,PROXIES
