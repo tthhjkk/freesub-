@@ -5,17 +5,14 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - github",
-      "server": "89.125.96.91",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - github",
+      "server": "128.241.25.3",
+      "server_port": 30021,
+      "uuid": "46869f66-b7b3-4e52-bb32-ce6ae0a6791f",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
+        "server_name": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,9 +20,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "wss.zazazuza.ru"
+          "Host": "sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev"
         }
       }
     },
@@ -34,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - github"
+        "🇯🇵 日本 (Japan) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - github"
+        "🇯🇵 日本 (Japan) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

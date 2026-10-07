@@ -5,22 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - github
+  server: 34.242.77.118
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
   server: 3.253.106.233
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: loved-shark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
-  server: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
+  server: ie.tronsg.com
   port: 443
   udp: true
   type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - github
   server: 198.55.102.59
   port: 4443
   udp: true
@@ -32,15 +40,7 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: firefox
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - github
-  server: ie.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: ie.tronsg.com
-  skip-cert-verify: false
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
