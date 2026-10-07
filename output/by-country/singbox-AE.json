@@ -33,7 +33,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -43,6 +43,27 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - github",
+      "server": "157.228.155.238",
+      "server_port": 443,
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I",
+          "short_id": "6f76ad09"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
       "server": "31.59.210.26",
       "server_port": 2088,
       "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
@@ -51,7 +72,7 @@
         "server_name": "www.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -66,28 +87,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
-      "server": "155.212.187.222",
-      "server_port": 8451,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
+      "server": "78.40.194.233",
+      "server_port": 443,
+      "uuid": "5b5e4cbf-2366-499a-8327-0cd9918c687d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "cdn2.surfweb.club",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg",
-          "short_id": "5ea112e8"
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -100,7 +121,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - github",
       "server": "146.70.102.82",
       "server_port": 443,
       "uuid": "31fd2fde-ca69-450e-8c03-eaad819b06b9",
@@ -120,6 +141,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - github",
+      "server": "157.228.128.59",
+      "server_port": 443,
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
+          "short_id": "06e00e7c"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -129,7 +171,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
         "🇦🇪 阿联酋 (UAE) 05 - github",
-        "🇦🇪 阿联酋 (UAE) 06 - github"
+        "🇦🇪 阿联酋 (UAE) 06 - github",
+        "🇦🇪 阿联酋 (UAE) 07 - github",
+        "🇦🇪 阿联酋 (UAE) 08 - github"
       ]
     },
     {
@@ -141,7 +185,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
         "🇦🇪 阿联酋 (UAE) 05 - github",
-        "🇦🇪 阿联酋 (UAE) 06 - github"
+        "🇦🇪 阿联酋 (UAE) 06 - github",
+        "🇦🇪 阿联酋 (UAE) 07 - github",
+        "🇦🇪 阿联酋 (UAE) 08 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

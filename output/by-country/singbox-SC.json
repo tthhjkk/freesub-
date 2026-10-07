@@ -8,7 +8,7 @@
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01 - github",
       "server": "45.205.27.78",
       "server_port": 10443,
-      "password": "2b62b091-cb83-4752-9e3a-b422dce95131",
+      "password": "fc25b2d9-11c5-4866-9dac-796c34ca073d",
       "tls": {
         "enabled": true,
         "server_name": "45.205.27.78",
@@ -18,7 +18,7 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - github",
-      "server": "156.226.168.221",
+      "server": "hk3n.wxgqlfx.vip",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
       "flow": "xtls-rprx-vision",
@@ -27,7 +27,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -39,6 +39,27 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - github",
+      "server": "45.142.31.21",
+      "server_port": 443,
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gr-root.sworkingvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
+          "short_id": "15bcc0a77c3cacdf"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - github",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -64,7 +85,8 @@
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - github",
         "🇸🇨 塞舌尔 (Seychelles) 02 - github",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - github"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - github",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - github"
       ]
     },
     {
@@ -73,7 +95,8 @@
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - github",
         "🇸🇨 塞舌尔 (Seychelles) 02 - github",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - github"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - github",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

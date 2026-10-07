@@ -5,53 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - github
-  server: 104.21.57.25
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 02 - github
-  server: 104.21.57.25
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 03 - github
-  server: 104.21.57.25
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+    path: /pai50288
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - github
-  - 🌐 其他地区 (Other) 02 - github
-  - 🌐 其他地区 (Other) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - github
-  - 🌐 其他地区 (Other) 02 - github
-  - 🌐 其他地区 (Other) 03 - github
 rules:
 - MATCH,PROXIES
