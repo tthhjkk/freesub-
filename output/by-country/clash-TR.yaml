@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 89.116.46.50
-  port: 8880
-  udp: true
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: vms.lifetime07.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -27,21 +16,8 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
-  server: 91.228.227.9
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8fc806fa-350b-4548-937a-2bf35f7fe7eb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0
-    short-id: ae64c9b46bff174a
-  servername: tr1.sky-vault.top
-  client-fingerprint: safari
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -52,20 +28,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: ststictr.hamiramkemax.ir
-  port: 1081
-  udp: true
-  type: vless
-  uuid: 250865f0-4a0f-4e2e-8d14-4c39a25d0bef
-  tls: true
-  reality-opts:
-    public-key: _UlBf1BRa52KM89xxvfbSHuLZWrvWuGuhvbsL3gx01A
-    short-id: daa22fbb023ab4a2
-  servername: www12.gameservice-iramn3.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - github
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
   server: 85.192.48.142
   port: 443
   udp: true
@@ -77,7 +41,7 @@ proxies:
     public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,9 +50,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
-  - 🇹🇷 土耳其 (Turkey) 05 - github
-  - 🇹🇷 土耳其 (Turkey) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,8 +58,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
-  - 🇹🇷 土耳其 (Turkey) 05 - github
-  - 🇹🇷 土耳其 (Turkey) 06 - github
 rules:
 - MATCH,PROXIES
