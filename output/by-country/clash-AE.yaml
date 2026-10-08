@@ -5,6 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
+  server: 104.21.67.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
+  tls: true
+  servername: novantunnel.tech
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Novan-AE9
+    headers:
+      Host: novantunnel.tech
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
+  server: 157.228.155.238
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: qq
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 157.228.155.185
   port: 443
   udp: true
@@ -17,7 +44,7 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
   server: 130.49.161.70
   port: 443
   udp: true
@@ -27,20 +54,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
   server: 31.59.210.26
   port: 2088
   udp: true
@@ -51,23 +65,12 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: random
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 78.40.194.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: cdn2.surfweb.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -89,20 +92,7 @@ proxies:
     public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 08 - github
-  server: 157.228.128.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -115,7 +105,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,6 +117,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 05 - github
   - 🇦🇪 阿联酋 (UAE) 06 - github
   - 🇦🇪 阿联酋 (UAE) 07 - github
-  - 🇦🇪 阿联酋 (UAE) 08 - github
 rules:
 - MATCH,PROXIES

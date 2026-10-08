@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,18 +28,58 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
+      "server": "77.110.96.201",
+      "server_port": 36264,
+      "password": "Telegram-vpnjey",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.vpnjey2.dpdns.org",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "Telegram@vpnjey"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
+      "server": "sub.merky.top",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - github"
+        "🇸🇪 瑞典 (Sweden) 01 - github",
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - github"
+        "🇸🇪 瑞典 (Sweden) 01 - github",
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

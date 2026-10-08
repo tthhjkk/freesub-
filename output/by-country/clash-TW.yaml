@@ -5,30 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - github
-  server: 165.154.195.38
-  port: 35034
-  udp: true
-  type: vmess
-  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - github
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: 'https:'
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - github
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - github
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
   server: sbgfgov.vip24.wogacnmnagfwgov.com
   port: 11224
   udp: true
@@ -44,7 +36,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 rules:
 - MATCH,PROXIES
