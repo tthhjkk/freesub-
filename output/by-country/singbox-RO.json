@@ -6,25 +6,45 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - github",
-      "server": "77.74.123.107",
+      "server": "77.74.123.101",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
         "enabled": true,
         "server_name": "grape-test-italy.dynuddns.net",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "185.156.44.99",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "hy2-new.aspidnet.xyz",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -32,20 +52,27 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
-      "server": "103.126.51.50",
-      "server_port": 8443,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
+      "server": "46.183.16.4",
+      "server_port": 2087,
+      "uuid": "69d76969-4c52-40f5-ac1d-303571634362",
       "tls": {
         "enabled": true,
-        "server_name": "ocober-romania-new.yyuyy.com",
-        "insecure": true
+        "server_name": "ro1.b0w.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -55,7 +82,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,20 +92,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "whatsapp.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - github",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -98,26 +113,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - github",
-      "server": "162.249.126.40",
-      "server_port": 8443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08 - github",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -128,8 +123,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
         "🇷🇴 罗马尼亚 (Romania) 05 - github",
         "🇷🇴 罗马尼亚 (Romania) 06 - github",
-        "🇷🇴 罗马尼亚 (Romania) 07 - github",
-        "🇷🇴 罗马尼亚 (Romania) 08 - github"
+        "🇷🇴 罗马尼亚 (Romania) 07 - github"
       ]
     },
     {
@@ -142,8 +136,7 @@
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
         "🇷🇴 罗马尼亚 (Romania) 05 - github",
         "🇷🇴 罗马尼亚 (Romania) 06 - github",
-        "🇷🇴 罗马尼亚 (Romania) 07 - github",
-        "🇷🇴 罗马尼亚 (Romania) 08 - github"
+        "🇷🇴 罗马尼亚 (Romania) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -27,7 +27,7 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - github",
-      "server": "es.srv.dvzh.net",
+      "server": "103.240.146.87",
       "server_port": 443,
       "uuid": "91344c03-b37f-42c5-90f1-cbb95c5cf256",
       "flow": "xtls-rprx-vision",

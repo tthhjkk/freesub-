@@ -6,40 +6,47 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
   server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
-  server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
   server: 213.183.63.60
-  port: 9049
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 213.183.63.60
-  port: 9061
+  port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 87.120.205.56
   port: 443
   udp: true
@@ -51,8 +58,22 @@ proxies:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
   servername: de-root.sworkingvpn.com
-  client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  client-fingerprint: random
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  server: 213.183.63.60
+  port: 9066
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 2KUaE2a8NWTvuCZ3
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
   server: 87.120.216.137
   port: 443
   udp: true
@@ -64,15 +85,8 @@ proxies:
     public-key: AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI
     short-id: 15bcc0a77c3cacdf
   servername: de-root.sworkingvpn.com
-  client-fingerprint: safari
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
-  server: 213.183.63.60
-  port: 9030
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  client-fingerprint: firefox
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -84,14 +98,7 @@ proxies:
     public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
-  client-fingerprint: safari
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -107,6 +114,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +130,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 08 - github
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 11 - github
 rules:
 - MATCH,PROXIES

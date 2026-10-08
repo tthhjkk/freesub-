@@ -5,81 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - github
-  server: 43.99.93.77
-  port: 443
+  server: 43.161.230.103
+  port: 8443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: o8SsyMfDn8-WIfsseuvnnyq5dVpZqql_ubVTuj-S6FU
-    short-id: c69c8691
-  servername: www.apple.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - github
-  server: 45.207.156.198
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
-  server: 45.207.157.8
-  port: 9443
-  udp: true
-  type: vless
-  uuid: cbe82d99-2927-49d2-8ea9-d0d0162a60ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
-  server: 38.180.188.178
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 52d5defc-88f6-4c2c-9b1f-c19bf3e99778
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
   server: 202.146.222.174
   port: 443
   udp: true
@@ -87,7 +20,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%253a%252f%252ft.me%252fclashv8%25f0%259f%2587%25a8%25f0%259f%2587%25b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
   server: jumpernode.site
   port: 443
   udp: true
@@ -100,34 +41,28 @@ proxies:
     short-id: 6d962e8d8a0dce
   servername: p-nt-www-amazon-com-kalias.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
-  server: champion.xn--kivt58h.lol
-  port: 80
-  udp: true
-  type: vless
-  uuid: ed2864f9-37b3-4222-8c54-014aedc400a2
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - github
-  server: strong-haddock.rooster465.autos
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: strong-haddock.rooster465.autos
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - github
-  server: hk2.xiaoliyu.cyou
-  port: 4433
-  udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: 3696b38bsg.murphyweb.sbs
+  port: 32134
+  udp: true
+  type: vless
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OdTELUjAUKO_qr-O-uihaAZJAhA8GyIWVI6CpozVCU4
+    short-id: 6c6c7c97
+  servername: buylite.music.apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -143,17 +78,23 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - github
-  server: nas.aizhzo.com
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
+  server: hk2.998998.best
+  port: 443
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - github
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server15.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /asivewritten
+    headers:
+      Host: server15.9966338.xyz
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
   server: silversbgfgov.vip26.wogbcnmnagfwgov.com
   port: 11226
   udp: true
@@ -161,6 +102,13 @@ proxies:
   uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
   alterId: 2
   cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
+  server: 46.17.45.31
+  port: 50660
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: bdb313adf74c2ede
 proxy-groups:
 - name: PROXIES
   type: select
@@ -176,11 +124,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
   - 🇭🇰 中国香港 (Hong Kong) 09 - github
   - 🇭🇰 中国香港 (Hong Kong) 10 - github
-  - 🇭🇰 中国香港 (Hong Kong) 11 - github
-  - 🇭🇰 中国香港 (Hong Kong) 12 - github
-  - 🇭🇰 中国香港 (Hong Kong) 13 - github
-  - 🇭🇰 中国香港 (Hong Kong) 14 - github
-  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -196,10 +139,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
   - 🇭🇰 中国香港 (Hong Kong) 09 - github
   - 🇭🇰 中国香港 (Hong Kong) 10 - github
-  - 🇭🇰 中国香港 (Hong Kong) 11 - github
-  - 🇭🇰 中国香港 (Hong Kong) 12 - github
-  - 🇭🇰 中国香港 (Hong Kong) 13 - github
-  - 🇭🇰 中国香港 (Hong Kong) 14 - github
-  - 🇭🇰 中国香港 (Hong Kong) 15 - github
 rules:
 - MATCH,PROXIES
