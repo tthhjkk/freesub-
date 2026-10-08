@@ -4,45 +4,39 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - github",
-      "server": "128.241.25.72",
-      "server_port": 30021,
-      "uuid": "65f26a08-9a5e-4b28-9004-f98676cc1e49",
+      "type": "hysteria2",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - github",
+      "server": "155.117.19.17",
+      "server_port": 443,
+      "password": "5fa748137b6d822308eea4611f474ad5",
       "tls": {
         "enabled": true,
-        "server_name": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi  ",
-        "headers": {
-          "Host": "2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
+      "server": "42.200.173.5",
+      "server_port": 443,
+      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
+        "server_name": "s3.ap-east-1.amazonaws.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
+          "short_id": "1a"
         }
       }
     },
@@ -54,23 +48,35 @@
       "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 (家宽) - github",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 (家宽) - github",
+      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽) - github",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
       "tls": {
         "enabled": true,
-        "server_name": "s3.huhiuh.space",
+        "server_name": "www.bing.com",
         "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
       }
     },
     {
@@ -78,22 +84,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
+        "🇺🇸 美国 (United States) 01 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - github",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - github",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽) - github"
+        "🇸🇬 新加坡 (Singapore) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
+        "🇺🇸 美国 (United States) 01 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 03 (移动家宽) R50 - github",
-        "🇰🇷 韩国 (South Korea) 04 (家宽) - github",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽) - github"
+        "🇸🇬 新加坡 (Singapore) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

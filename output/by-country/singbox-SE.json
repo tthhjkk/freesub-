@@ -14,7 +14,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -28,39 +28,24 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
-      "server": "77.110.96.201",
-      "server_port": 36264,
-      "password": "Telegram-vpnjey",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.vpnjey2.dpdns.org",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "Telegram@vpnjey"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
-      "server": "sub.merky.top",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
+      "server": "144.31.62.162",
       "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false,
+        "server_name": "de2.srv.vbuste.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/merky-connect/de6/"
       }
     },
     {
@@ -69,8 +54,7 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - github",
-        "🇸🇪 瑞典 (Sweden) 02 - github",
-        "🇸🇪 瑞典 (Sweden) 03 - github"
+        "🇸🇪 瑞典 (Sweden) 02 - github"
       ]
     },
     {
@@ -78,8 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - github",
-        "🇸🇪 瑞典 (Sweden) 02 - github",
-        "🇸🇪 瑞典 (Sweden) 03 - github"
+        "🇸🇪 瑞典 (Sweden) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
