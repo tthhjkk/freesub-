@@ -4,8 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
-  server: 61.230.162.88
+- name: 🇯🇵 日本 (Japan) 01 (家宽) - github
+  server: 46.101.46.169
+  port: 486
+  udp: true
+  type: vless
+  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
+  tls: true
+  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  server: hinet1.2yly.com
   port: 24215
   udp: true
   type: vless
@@ -14,15 +29,23 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - github
+  client-fingerprint: edge
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - github
   server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - github
   server: 42.200.173.5
   port: 443
   udp: true
@@ -34,32 +57,26 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
-  server: sbgfgov.vip24.wogacnmnagfwgov.com
-  port: 11224
-  udp: true
-  type: vmess
-  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
-  alterId: 2
-  cipher: auto
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
+  - 🇯🇵 日本 (Japan) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
+  - 🇯🇵 日本 (Japan) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - github
 rules:
 - MATCH,PROXIES

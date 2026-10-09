@@ -1,0 +1,51 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇮🇸 冰岛 (Iceland) 01 - github",
+      "server": "6fac.n9ne.com.tr",
+      "server_port": 35302,
+      "uuid": "e81e1114-99b5-4fea-aafc-84426e845a14",
+      "tls": {
+        "enabled": true,
+        "server_name": "n9ne.com.tr",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DtVBvGoI2P-aAqhOA3_v06MMaHBk0CFVBpAOUTtv4RY",
+          "short_id": "14153cf0dcda62ed"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇮🇸 冰岛 (Iceland) 01 - github"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇮🇸 冰岛 (Iceland) 01 - github"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

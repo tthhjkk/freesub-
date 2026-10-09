@@ -31,6 +31,22 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 87.251.17.11
+  port: 9443
+  udp: true
+  type: hysteria2
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 06 - github
   server: 65.108.3.59
   port: 443
   udp: true
@@ -42,16 +58,8 @@ proxies:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
   servername: web.eitaa.com
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 144.31.212.253
-  port: 443
-  udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: 144.31.212.253
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06 - github
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - github
   server: 151.241.137.132
   port: 443
   udp: true
@@ -62,8 +70,8 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: finland.ali-bard.online
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - github
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 08 - github
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -76,7 +84,7 @@ proxies:
     short-id: 568d87a47271344e
   servername: 144.31.27.215
   client-fingerprint: edge
-- name: 🇫🇮 芬兰 (Finland) 08 - github
+- name: 🇫🇮 芬兰 (Finland) 09 - github
   server: van2.ragnarok-it.xyz
   port: 8446
   udp: true
@@ -89,6 +97,19 @@ proxies:
     short-id: 7bac4b112d30d1
   servername: amd.com
   client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 10 - github
+  server: 217.19.122.214
+  port: 7449
+  udp: true
+  type: vless
+  uuid: 985fbc4e-f2fd-4a7f-b09f-f9b7728dd0a4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OGMQnJGgrCYDojFm4u7YrvOoOmtjK6iZ4_q-Kmanozs
+    short-id: 03cf706025caa46e
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,6 +123,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,5 +138,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
 rules:
 - MATCH,PROXIES
