@@ -5,23 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - github",
-      "server": "31.129.22.141",
+      "tag": "🌐 其他地区 (Other) 01 - github",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "pt-root.sworkingvpn.com",
+        "server_name": "ccs2g.pai50288.uk",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
+          "fingerprint": "chrome"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pai50288"
       }
     },
     {
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - github"
+        "🌐 其他地区 (Other) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - github"
+        "🌐 其他地区 (Other) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
