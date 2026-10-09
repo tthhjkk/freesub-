@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: cz.h2.cleanersaz.help
+  server: 95.85.238.173
   port: 443
   udp: true
   type: hysteria2
@@ -13,14 +13,6 @@ proxies:
   sni: cz.h2.cleanersaz.help
   skip-cert-verify: true
 - name: 🇨🇿 捷克 (Czech) 02 - github
-  server: ger6.fytpn.com
-  port: 2097
-  udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: ger6.fytpn.com
-  skip-cert-verify: false
-- name: 🇨🇿 捷克 (Czech) 03 - github
   server: 194.87.6.192
   port: 56789
   udp: true
@@ -33,6 +25,14 @@ proxies:
     short-id: a2aa
   servername: ger6.fytpn.com
   client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - github
+  server: ger6.fytpn.com
+  port: 2097
+  udp: true
+  type: trojan
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  sni: ger6.fytpn.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select

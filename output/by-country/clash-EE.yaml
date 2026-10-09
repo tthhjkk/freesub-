@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - github
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
   server: 109.206.241.10
   port: 449
   udp: true
@@ -21,7 +12,7 @@ proxies:
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   sni: 109.206.241.10
   skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -30,7 +21,17 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - github
   server: 77.72.85.247
   port: 8443
@@ -65,7 +66,20 @@ proxies:
     public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
     short-id: e88cb983f3c97528
   servername: ibm.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - github
+  server: stoniy.fytpn.com
+  port: 56789
+  udp: true
+  type: vless
+  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ
+    short-id: a2aa
+  servername: stoniy.fytpn.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +91,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,5 +103,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
+  - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
 rules:
 - MATCH,PROXIES

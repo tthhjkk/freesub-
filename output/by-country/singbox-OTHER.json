@@ -6,21 +6,20 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "ccs2g.pai50288.uk",
+      "server": "104.24.2.147",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "uuid": "c4edb87e-8544-4fa4-bd1c-b0cda9a34b46",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "a.cwvps.eu.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/pai50288"
+        "path": "/ws",
+        "headers": {
+          "Host": "a.cwvps.eu.org"
+        }
       }
     },
     {

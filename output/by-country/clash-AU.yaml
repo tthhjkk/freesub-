@@ -16,7 +16,7 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 02 - github
   server: 152.67.115.203
   port: 443
@@ -28,6 +28,19 @@ proxies:
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 - name: 🇦🇺 澳大利亚 (Australia) 03 - github
+  server: 51.161.204.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
+    short-id: d15c17cef9b2e456
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 04 - github
   server: vpn-au-001.fastervpn.world
   port: 443
   udp: true
@@ -35,7 +48,7 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 04 - github
+- name: 🇦🇺 澳大利亚 (Australia) 05 - github
   server: 2610sgdodo.volkvpn.com
   port: 35715
   udp: true
@@ -57,6 +70,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - github
   - 🇦🇺 澳大利亚 (Australia) 03 - github
   - 🇦🇺 澳大利亚 (Australia) 04 - github
+  - 🇦🇺 澳大利亚 (Australia) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,5 +80,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02 - github
   - 🇦🇺 澳大利亚 (Australia) 03 - github
   - 🇦🇺 澳大利亚 (Australia) 04 - github
+  - 🇦🇺 澳大利亚 (Australia) 05 - github
 rules:
 - MATCH,PROXIES

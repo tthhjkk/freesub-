@@ -4,44 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
       "server": "109.206.241.10",
       "server_port": 449,
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
         "server_name": "109.206.241.10",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
       "tls": {
         "enabled": true,
         "server_name": "estproxy4.lockdwn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "estproxy4.lockdwn.com"
         }
       }
     },
@@ -92,12 +88,33 @@
         "server_name": "ibm.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
           "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
           "short_id": "e88cb983f3c97528"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - github",
+      "server": "stoniy.fytpn.com",
+      "server_port": 56789,
+      "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "stoniy.fytpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ",
+          "short_id": "a2aa"
         }
       }
     },
@@ -111,7 +128,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - github"
       ]
     },
     {
@@ -123,7 +141,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
+        "🇪🇪 爱沙尼亚 (Estonia) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
