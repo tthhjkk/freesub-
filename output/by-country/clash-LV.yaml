@@ -5,6 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - github
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - github
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - github
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - github
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - github
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - github
   server: 138.124.180.137
   port: 443
   udp: true
@@ -16,71 +51,48 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - github
-  server: 185.135.86.175
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - github
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - github
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - github
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - github
-  server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
+  client-fingerprint: random
 - name: 🇱🇻 拉脱维亚 (Latvia) 07 - github
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - github
   server: 185.135.86.175
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - github
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 09 - github
   server: 185.135.86.175
-  port: 9034
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - github
   server: 185.135.86.175
-  port: 9033
+  port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 11 - github
+  server: 185.220.223.109
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f7f48934-f14c-4819-b225-36e89bda5491
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RdMrEyniUBYe4bPHFYIwdczUWW4vbZe_DboFu8gjN0w
+  servername: lv.shadowshroom.org
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - github
   server: 31.57.106.241
   port: 443
   udp: true
@@ -92,7 +104,20 @@ proxies:
     public-key: 4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o
     short-id: 44f7c5615039ae1b
   servername: www.lmt.lv
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - github
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +134,8 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 09 - github
   - 🇱🇻 拉脱维亚 (Latvia) 10 - github
   - 🇱🇻 拉脱维亚 (Latvia) 11 - github
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - github
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,5 +152,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 09 - github
   - 🇱🇻 拉脱维亚 (Latvia) 10 - github
   - 🇱🇻 拉脱维亚 (Latvia) 11 - github
+  - 🇱🇻 拉脱维亚 (Latvia) 12 - github
+  - 🇱🇻 拉脱维亚 (Latvia) 13 - github
 rules:
 - MATCH,PROXIES

@@ -5,20 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: 95.85.238.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: e937b92c-701f-420e-a621-3eb3b75de467
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WrqktJc0i6tesi_bVc6WS1mYM0yxhbriI4jrU_butSA
-    short-id: cd529c087b552f2f
-  servername: bobr.puffixhosting.com
-  client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 02 - github
-  server: cz.h2.cleanersaz.help
+  server: 95.85.238.173
   port: 443
   udp: true
   type: hysteria2
@@ -31,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
-  - 🇨🇿 捷克 (Czech) 02 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
-  - 🇨🇿 捷克 (Czech) 02 - github
 rules:
 - MATCH,PROXIES
