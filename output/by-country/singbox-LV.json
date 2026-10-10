@@ -4,28 +4,41 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - github",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - github",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
@@ -36,20 +49,12 @@
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - github",
-      "server": "188.220.205.44",
-      "server_port": 2097,
-      "password": "gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU",
-      "tls": {
-        "enabled": true,
-        "server_name": "lit.fytpn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
@@ -68,206 +73,32 @@
       "password": "rpgbNnU9rDDU4aWZ"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - github",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
-      }
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-      "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - github",
-      "server": "104.165.205.21",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - github",
       "server": "185.135.86.175",
       "server_port": 9034,
       "method": "aes-256-cfb",
       "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - github",
-      "server": "104.165.205.142",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - github",
-      "server": "104.165.205.46",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 14 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - github",
       "server": "185.135.86.175",
-      "server_port": 9086,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 15 - github",
-      "server": "104.165.205.44",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - github",
-      "server": "104.165.205.81",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 17 - github",
-      "server": "104.165.205.250",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 18 - github",
-      "server": "216.173.71.43",
-      "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv.nztvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08",
-          "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 19 - github",
-      "server": "31.76.104.152",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 20 - github",
-      "server": "104.165.205.43",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 21 - github",
-      "server": "104.165.205.219",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 22 - github",
-      "server": "31.76.104.160",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 23 - github",
-      "server": "104.165.205.23",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 24 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - github",
       "server": "31.57.106.241",
       "server_port": 443,
       "uuid": "a4801105-c0c7-4cab-87c6-f257ff2afc09",
@@ -287,60 +118,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 25 - github",
-      "server": "lv02.gotosvo.com",
-      "server_port": 9443,
-      "password": "e3c3b722-1264-4cdc-a97c-b0a1bb73cd67",
-      "tls": {
-        "enabled": true,
-        "server_name": "onecloudstream.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 26 - github",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 27 - github",
-      "server": "lit.fytpn.com",
-      "server_port": 56789,
-      "uuid": "a889fba5-5472-4022-a6b4-9710157fda2f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lit.fytpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ",
-          "short_id": "a2aa"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -355,23 +132,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
         "🇱🇻 拉脱维亚 (Latvia) 10 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 14 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 15 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 16 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 17 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 18 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 21 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 22 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 23 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 24 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 25 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 26 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 27 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github"
       ]
     },
     {
@@ -388,23 +149,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - github",
         "🇱🇻 拉脱维亚 (Latvia) 09 - github",
         "🇱🇻 拉脱维亚 (Latvia) 10 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 12 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 13 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 14 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 15 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 16 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 17 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 18 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 19 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 20 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 21 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 22 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 23 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 24 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 25 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 26 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 27 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

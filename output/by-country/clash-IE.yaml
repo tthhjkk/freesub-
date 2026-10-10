@@ -5,36 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - github
-  server: master-possum.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: master-possum.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: true
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
-  server: 3.253.106.233
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: loved-shark.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - github
   server: adapting-basilisk.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
+  server: master-possum.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
+  server: 34.242.77.118
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - github
+  server: loved-shark.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
   skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 05 - github
   server: 198.55.102.59
@@ -48,15 +48,7 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: edge
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - github
-  server: 3.255.76.207
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: 3.255.76.207
-  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +59,6 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - github
   - 🇮🇪 爱尔兰 (Ireland) 04 - github
   - 🇮🇪 爱尔兰 (Ireland) 05 - github
-  - 🇮🇪 爱尔兰 (Ireland) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,6 +69,5 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - github
   - 🇮🇪 爱尔兰 (Ireland) 04 - github
   - 🇮🇪 爱尔兰 (Ireland) 05 - github
-  - 🇮🇪 爱尔兰 (Ireland) 06 - github
 rules:
 - MATCH,PROXIES

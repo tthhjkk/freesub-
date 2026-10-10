@@ -6,7 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - github",
-      "server": "77.74.123.106",
+      "server": "77.74.123.101",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -18,7 +18,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server": "154.46.31.106",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
@@ -26,18 +26,6 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -45,6 +33,22 @@
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
         "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "server": "hy2-new.aspidnet.xyz",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -63,7 +67,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -73,8 +77,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "google.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 07 - github",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -84,7 +100,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -103,7 +119,8 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
         "🇷🇴 罗马尼亚 (Romania) 05 - github",
-        "🇷🇴 罗马尼亚 (Romania) 06 - github"
+        "🇷🇴 罗马尼亚 (Romania) 06 - github",
+        "🇷🇴 罗马尼亚 (Romania) 07 - github"
       ]
     },
     {
@@ -115,7 +132,8 @@
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
         "🇷🇴 罗马尼亚 (Romania) 05 - github",
-        "🇷🇴 罗马尼亚 (Romania) 06 - github"
+        "🇷🇴 罗马尼亚 (Romania) 06 - github",
+        "🇷🇴 罗马尼亚 (Romania) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

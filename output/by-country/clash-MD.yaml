@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇦 乌克兰 (Ukraine) 01 - github
-  server: 45.158.185.172
+- name: 🇲🇩 摩尔多瓦 (Moldova) 01 - github
+  server: 185.147.27.131
   port: 443
   udp: true
   type: vless
-  uuid: 698b212d-ca12-4794-8256-252a6e1b4533
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
   tls: true
-  servername: z5n1.vpnpolar.online
+  servername: ap2.directly.chat
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /beeline
+    path: /md/1
     headers:
-      Host: z5n1.vpnpolar.online
+      Host: ap2.directly.chat
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇦 乌克兰 (Ukraine) 01 - github
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇦 乌克兰 (Ukraine) 01 - github
+  - 🇲🇩 摩尔多瓦 (Moldova) 01 - github
 rules:
 - MATCH,PROXIES

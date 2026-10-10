@@ -15,23 +15,11 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: swidenlanzerotte.live
-  port: 443
-  udp: true
-  type: vless
-  uuid: 56de13ac-086e-4789-8e1e-1bf2bd90216b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
-  servername: swidenlanzerotte.live
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 03 - github
   server: sub.merky.top
   port: 443
   udp: true
@@ -40,7 +28,6 @@ proxies:
   tls: true
   servername: sub.merky.top
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /merky-connect/de6/
@@ -51,7 +38,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
-  - 🇸🇪 瑞典 (Sweden) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +45,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
-  - 🇸🇪 瑞典 (Sweden) 03 - github
 rules:
 - MATCH,PROXIES
