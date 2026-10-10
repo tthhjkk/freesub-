@@ -6,22 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 01 - github",
-      "server": "ca225.vpnbook.com",
+      "server": "149.22.95.183",
       "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e5c65ph"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 02 - github",
-      "server": "134.195.196.211",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 03 - github",
+      "tag": "🇨🇦 加拿大 (Canada) 02 - github",
       "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -29,8 +21,16 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 03 - github",
+      "server": "ca225.vpnbook.com",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e5c65ph"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 04 - github",
-      "server": "138.197.141.58",
+      "server": "137.184.174.93",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
@@ -38,30 +38,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 05 - github",
-      "server": "137.184.174.93",
+      "server": "138.197.141.58",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 06 - github",
-      "server": "66.70.179.198",
-      "server_port": 2053,
-      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
-          "short_id": "83f8317a948bb769"
-        }
-      }
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "vless",
@@ -75,7 +63,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -85,35 +73,47 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - github",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - github",
-      "server": "212.74.39.188",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - github",
-      "server": "23.162.200.198",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - github",
+      "server": "134.195.196.211",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
       "security": "auto"
     },
     {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - github",
+      "server": "66.70.179.198",
+      "server_port": 2053,
+      "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
+          "short_id": "83f8317a948bb769"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - github",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 11 - github",
-      "server": "51.222.200.165",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
+      "server": "51.222.107.43",
+      "server_port": 2083,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
     },
     {
       "type": "shadowsocks",
@@ -124,12 +124,28 @@
       "password": "g5MeD6Ft3CWlJId"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇨🇦 加拿大 (Canada) 13 - github",
-      "server": "51.222.107.43",
-      "server_port": 2083,
-      "method": "2022-blake3-aes-256-gcm",
-      "password": "cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs="
+      "server": "23.162.200.198",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - github",
+      "server": "64.74.163.69",
+      "server_port": 18766,
+      "method": "aes-128-gcm",
+      "password": "4efe1af272e7292139b889f6a63ee071"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - github",
+      "server": "51.222.155.113",
+      "server_port": 5601,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
     },
     {
       "type": "selector",
@@ -148,7 +164,9 @@
         "🇨🇦 加拿大 (Canada) 10 - github",
         "🇨🇦 加拿大 (Canada) 11 - github",
         "🇨🇦 加拿大 (Canada) 12 - github",
-        "🇨🇦 加拿大 (Canada) 13 - github"
+        "🇨🇦 加拿大 (Canada) 13 - github",
+        "🇨🇦 加拿大 (Canada) 14 - github",
+        "🇨🇦 加拿大 (Canada) 15 - github"
       ]
     },
     {
@@ -167,7 +185,9 @@
         "🇨🇦 加拿大 (Canada) 10 - github",
         "🇨🇦 加拿大 (Canada) 11 - github",
         "🇨🇦 加拿大 (Canada) 12 - github",
-        "🇨🇦 加拿大 (Canada) 13 - github"
+        "🇨🇦 加拿大 (Canada) 13 - github",
+        "🇨🇦 加拿大 (Canada) 14 - github",
+        "🇨🇦 加拿大 (Canada) 15 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

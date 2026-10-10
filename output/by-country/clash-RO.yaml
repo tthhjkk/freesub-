@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - github
-  server: 77.74.123.106
+  server: 77.74.123.98
   port: 8443
   udp: true
   type: hysteria2
@@ -13,20 +13,20 @@ proxies:
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - github
-  server: 95.133.247.98
+  server: 77.74.123.110
   port: 995
   udp: true
   type: vless
-  uuid: df275727-c25a-450b-99c3-29e4e6b0b6b9
+  uuid: d5eb7d7c-244c-46bd-87c9-ea1abfad915c
   tls: true
-  servername: love-paris.roxa.org
+  servername: italy-pay-october.yyuyy.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: httpupgrade
   httpupgrade-opts:
     path: /api/v1
     headers:
-      Host: love-paris.roxa.org
+      Host: italy-pay-october.yyuyy.com
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 162.249.125.133
   port: 443
@@ -62,15 +62,22 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - github
   server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: t.me
+  sni: whatsapp.com
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - github
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +89,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - github
   - 🇷🇴 罗马尼亚 (Romania) 05 - github
   - 🇷🇴 罗马尼亚 (Romania) 06 - github
+  - 🇷🇴 罗马尼亚 (Romania) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +101,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 04 - github
   - 🇷🇴 罗马尼亚 (Romania) 05 - github
   - 🇷🇴 罗马尼亚 (Romania) 06 - github
+  - 🇷🇴 罗马尼亚 (Romania) 07 - github
 rules:
 - MATCH,PROXIES
