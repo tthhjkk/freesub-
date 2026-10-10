@@ -13,7 +13,7 @@ proxies:
   sni: cz.h2.cleanersaz.help
   skip-cert-verify: true
 - name: 🇨🇿 捷克 (Czech) 02 - github
-  server: 194.87.6.192
+  server: ger6.fytpn.com
   port: 56789
   udp: true
   type: vless

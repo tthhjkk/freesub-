@@ -18,14 +18,7 @@ proxies:
     path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
     headers:
       Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
   server: 42.200.173.5
   port: 443
   udp: true
@@ -37,15 +30,9 @@ proxies:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
     short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
-  server: 168.222.43.200
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  server: hinet1.2yly.com
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
+  server: 61.230.162.88
   port: 24215
   udp: true
   type: vless
@@ -54,8 +41,36 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇩🇪 德国 (Germany) 05 (家宽) - github
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - github
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - github
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
   server: sbgfgov.vip23.wogacnmnagfwgov.com
   port: 11223
   udp: true
@@ -69,21 +84,23 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - github
+  - 🇩🇪 德国 (Germany) 05 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
   - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽) - github
+  - 🇩🇪 德国 (Germany) 05 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 06 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
 rules:
 - MATCH,PROXIES
