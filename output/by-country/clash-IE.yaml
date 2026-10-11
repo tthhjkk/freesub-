@@ -11,7 +11,7 @@ proxies:
   type: trojan
   password: UX82473651
   sni: adapting-basilisk.rooster465.autos
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - github
   server: master-possum.rooster465.autos
   port: 443
@@ -19,9 +19,9 @@ proxies:
   type: trojan
   password: UX82473651
   sni: master-possum.rooster465.autos
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - github
-  server: loved-shark.rooster465.autos
+  server: 3.253.106.233
   port: 443
   udp: true
   type: trojan
@@ -29,14 +29,6 @@ proxies:
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - github
-  server: sacred-anemone.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: sacred-anemone.rooster465.autos
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - github
   server: 198.55.102.59
   port: 4443
   udp: true
@@ -48,7 +40,31 @@ proxies:
     public-key: 9gYnZLxZAPxIKzu9e-cOLBpbCn9p9og9gBodOCh5HB8
     short-id: ce6767c3f1
   servername: vk.com
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - github
+  server: 3.255.76.207
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: ie.tronsg.com
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 06 - github
+  server: 34.242.77.118
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 07 - github
+  server: v4.hdacd.com
+  port: 30804
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +75,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - github
   - 🇮🇪 爱尔兰 (Ireland) 04 - github
   - 🇮🇪 爱尔兰 (Ireland) 05 - github
+  - 🇮🇪 爱尔兰 (Ireland) 06 - github
+  - 🇮🇪 爱尔兰 (Ireland) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +87,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 03 - github
   - 🇮🇪 爱尔兰 (Ireland) 04 - github
   - 🇮🇪 爱尔兰 (Ireland) 05 - github
+  - 🇮🇪 爱尔兰 (Ireland) 06 - github
+  - 🇮🇪 爱尔兰 (Ireland) 07 - github
 rules:
 - MATCH,PROXIES
