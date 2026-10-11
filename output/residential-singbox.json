@@ -4,23 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
-      "server": "61.230.162.88",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "server": "sg.australiacaregroup.site",
+      "server_port": 20004,
+      "password": "aec8e5e3-bb81-4b22-8802-0b88c54997b3",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
+        "server_name": "tw.australiacaregroup.site",
+        "insecure": true
       }
     },
     {
@@ -32,33 +24,55 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github",
-      "server": "t4.qifei.app",
+      "tag": "🇸🇬 新加坡 (Singapore) 03 (家宽) - github",
+      "server": "103.25.202.102",
       "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
+      "uuid": "d18c6897-2849-456a-8c46-d7ecece47c20",
       "tls": {
         "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
+        "server_name": "wzs.echo.net.eu.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": ""
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c",
+        "headers": {
+          "Host": "wzs.echo.net.eu.org"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
+      "server": "sbgfgov.vip24.wogacnmnagfwgov.com",
+      "server_port": 11224,
       "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
       "security": "auto",
       "alter_id": 2
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "selector",
@@ -67,8 +81,9 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ]
     },
     {
@@ -77,8 +92,9 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇸🇬 新加坡 (Singapore) 03 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
