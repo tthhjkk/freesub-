@@ -20,7 +20,7 @@ proxies:
   sni: keyhop-voxility-at.dynuddns.com
   skip-cert-verify: true
 - name: 🇦🇹 奥地利 (Austria) 03 - github
-  server: 80.87.194.252
+  server: 80.87.194.253
   port: 2096
   udp: true
   type: vless
@@ -29,7 +29,7 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: id.vk.com
-  client-fingerprint: qq
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: vless-grpc-reality

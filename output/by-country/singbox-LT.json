@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - github",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
@@ -30,38 +30,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
-      "server": "195.238.126.20",
-      "server_port": 9078,
+      "server": "195.238.126.84",
+      "server_port": 9039,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "qYEN5HX4JKeVCdEC"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
       "server": "195.238.126.20",
-      "server_port": 9045,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "Lp27rqyJq72bZsqX"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
-      "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
       "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
@@ -69,16 +53,61 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
-      "server": "195.238.126.84",
-      "server_port": 9039,
+      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
+      "server": "195.238.126.20",
+      "server_port": 9045,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "Lp27rqyJq72bZsqX"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - github",
+      "server": "195.238.126.20",
+      "server_port": 9002,
+      "method": "aes-256-cfb",
+      "password": "b8KkNDjEd5QqFyRm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 09 - github",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - github",
-      "server": "b58e68t.lt1.h1clayd.click",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 11 - github",
+      "server": "84.32.109.20",
+      "server_port": 443,
+      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "litv.nztvpn.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4",
+          "short_id": "0da7e14db353e7d0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 12 - github",
+      "server": "80.209.238.60",
       "server_port": 443,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
@@ -109,7 +138,9 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
         "🇱🇹 立陶宛 (Lithuania) 09 - github",
-        "🇱🇹 立陶宛 (Lithuania) 10 - github"
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github",
+        "🇱🇹 立陶宛 (Lithuania) 12 - github"
       ]
     },
     {
@@ -125,7 +156,9 @@
         "🇱🇹 立陶宛 (Lithuania) 07 - github",
         "🇱🇹 立陶宛 (Lithuania) 08 - github",
         "🇱🇹 立陶宛 (Lithuania) 09 - github",
-        "🇱🇹 立陶宛 (Lithuania) 10 - github"
+        "🇱🇹 立陶宛 (Lithuania) 10 - github",
+        "🇱🇹 立陶宛 (Lithuania) 11 - github",
+        "🇱🇹 立陶宛 (Lithuania) 12 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
