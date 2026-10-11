@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 33918b20-9e02-4dc6-8b30-79b2d4b2e0e6
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUjJBU3JkVlRwSWtnciIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbImJwYi55b3VzZWYuaXNlZ2Fyby5jb20iXX0
-    headers:
-      Host: auto-scale-238b2b.infra-core-1630dd.workers.dev
-- name: 🇨🇿 捷克 (Czech) 02 - github
-  server: 172.67.145.5
-  port: 443
-  udp: true
-  type: vless
-  uuid: 20836693-ea23-4f40-a1e7-48a6da897917
-  tls: true
-  servername: netra-85a0ca.shoameni19.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/bluttbb7mo8rvx1coeyh4ww4qzbr2aui
-    headers:
-      Host: netra-85a0ca.shoameni19.workers.dev
-- name: 🇨🇿 捷克 (Czech) 03 - github
   server: 95.85.238.173
   port: 443
   udp: true
@@ -44,15 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
-  - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
-  - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
 rules:
 - MATCH,PROXIES

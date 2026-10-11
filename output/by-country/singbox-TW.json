@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "160.187.100.109",
         "insecure": true
       }
     },
@@ -35,25 +35,46 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - github",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "fsjp19.46852.top",
+      "server_port": 13459,
+      "uuid": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a",
-        "insecure": true
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hNCjtGGnj9dBM_b9_naRrpaMxW6uPJshmi3cxiKLnnw",
+          "short_id": "b9"
+        }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github",
-      "server": "sbgfgov.vip23.wogacnmnagfwgov.com",
-      "server_port": 11223,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
+      "server": "fsjp19.46852.top",
+      "server_port": 13460,
+      "uuid": "1b0ef044-585e-4b57-ab38-8b97e4eef8fa",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aMWflVU1irMrKvFSbdiD4CwJd7cvHPkjKu7ip9r-EHw",
+          "short_id": "05282fc98fd39400"
+        }
+      }
     },
     {
       "type": "selector",
@@ -63,7 +84,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
         "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 04 - github"
       ]
     },
     {
@@ -73,7 +94,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
         "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

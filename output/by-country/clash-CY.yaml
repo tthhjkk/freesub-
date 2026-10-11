@@ -17,7 +17,7 @@ proxies:
   servername: deepl.com
   client-fingerprint: qq
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02 - github
-  server: 185.166.154.111
+  server: cdn.bulkavpn.top
   port: 443
   udp: true
   type: vless
@@ -56,7 +56,7 @@ proxies:
     public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
     short-id: 88b6
   servername: deepl.com
-  client-fingerprint: firefox
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
