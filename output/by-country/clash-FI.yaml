@@ -19,6 +19,51 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 85.209.129.5
+  port: 443
+  udp: true
+  type: trojan
+  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
+  sni: fl.global-cdn.org
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: 144.31.212.253
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 65.108.3.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
+    short-id: 90ec9bba2019
+  servername: web.eitaa.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 170.168.4.59
+  port: 17170
+  udp: true
+  type: vless
+  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
+  tls: true
+  servername: northerntrail.gazette.help
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: trail-grpc
+- name: 🇫🇮 芬兰 (Finland) 07 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -30,48 +75,41 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 144.31.212.253
+- name: 🇫🇮 芬兰 (Finland) 08 - github
+  server: fi.pythonsetupbib.online
   port: 443
   udp: true
-  type: hysteria2
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  sni: vps155-edge.kermemehori.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 170.168.4.59
-  port: 17170
-  udp: true
   type: vless
-  uuid: 3eec23c1-2a0d-4d53-afa5-62745a1f5ffe
-  tls: true
-  servername: northerntrail.gazette.help
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 07 - github
-  server: 109.172.54.135
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
+    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
+    short-id: bdf5852d1423e694
+  servername: fi.pythonsetupbib.online
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 08 - github
+- name: 🇫🇮 芬兰 (Finland) 09 - github
+  server: finkawwwbroy5.qcloud.surf
+  port: 20326
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: finkawwwbroy5.qcloud.surf
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 10 - github
+  server: van2.ragnarok-it.xyz
+  port: 8446
+  udp: true
+  type: vless
+  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
+    short-id: 7bac4b112d30d1
+  servername: amd.com
+  client-fingerprint: edge
+- name: 🇫🇮 芬兰 (Finland) 11 - github
   server: 87.228.92.114
   port: 25481
   udp: true
@@ -86,60 +124,25 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 09 - github
-  server: 65.108.3.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8df2e661-6f46-471b-9133-7fc13a0daa35
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
-    short-id: 90ec9bba2019
-  servername: web.eitaa.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 10 - github
-  server: 45.149.114.171
-  port: 777
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
-- name: 🇫🇮 芬兰 (Finland) 11 - github
-  server: 195.226.92.129
-  port: 8446
-  udp: true
-  type: vless
-  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
-    short-id: 7bac4b112d30d1
-  servername: amd.com
-  client-fingerprint: edge
 - name: 🇫🇮 芬兰 (Finland) 12 - github
-  server: fi.pythonsetupbib.online
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 13 - github
+  server: 31.76.102.60
   port: 443
   udp: true
   type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg
-    short-id: bdf5852d1423e694
-  servername: fi.pythonsetupbib.online
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 13 - github
-  server: finkawwwbroy5.qcloud.surf
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: true
+    public-key: KHRzAlZ3DEIjxqfixi545KJ4BpTsefHlO8nCZxdtj34
+    short-id: dee20bb2421604f8
+  servername: fl1.nztvpn.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

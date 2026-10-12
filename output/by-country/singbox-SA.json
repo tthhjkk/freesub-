@@ -5,22 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - github",
-      "server": "best.valaiqm.ir",
-      "server_port": 3037,
-      "uuid": "a1fb63f7-a942-4010-a830-bc395703a9a4",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - github",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "telewebion.ir",
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cYQAluLQY4m0yBUkvqWo3LEXTp-_9In3gJUDoEMmn1U",
-          "short_id": "a9c9"
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

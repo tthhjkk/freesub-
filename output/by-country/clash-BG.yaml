@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
-  server: 213.183.63.60
-  port: 9030
+  server: 45.131.6.30
+  port: 8880
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: vms.lifetime61.workers.dev
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
   server: 213.183.63.60
   port: 9054
@@ -27,25 +31,25 @@ proxies:
   password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
   server: 213.183.63.60
-  port: 9028
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
-  server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
   server: 213.183.63.60
-  port: 9061
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 213.183.63.60
   port: 9049
@@ -55,12 +59,26 @@ proxies:
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
   server: 213.183.63.60
-  port: 9098
+  port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
+  server: 213.183.63.60
+  port: 9030
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: GeregetR8cvQHzYr
+- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -73,7 +91,7 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 - github
   server: 195.123.226.21
   port: 443
   udp: true
@@ -86,13 +104,6 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - github
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +120,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
   - 🇧🇬 保加利亚 (Bulgaria) 11 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -125,5 +137,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 09 - github
   - 🇧🇬 保加利亚 (Bulgaria) 10 - github
   - 🇧🇬 保加利亚 (Bulgaria) 11 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 12 - github
 rules:
 - MATCH,PROXIES

@@ -5,6 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - github
+  server: 104.21.70.21
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 20e295db-a6af-4006-bfd6-91453f169968
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiSFM1N0lLQmx2UU1qRzlnTiIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: 057.electrocellco-cf-057.workers.dev
+- name: 🇮🇶 IQ 02 - github
+  server: 104.18.12.149
+  port: 443
+  udp: true
+  type: vless
+  uuid: 36a857e4-f3d4-43aa-8b90-d7da849da989
+  tls: true
+  servername: 002.inc-electrocell-001-002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoib0RnakxTZUZvOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 002.inc-electrocell-001-002.workers.dev
+- name: 🇮🇶 IQ 03 - github
   server: 178.17.57.120
   port: 40443
   udp: true
@@ -23,11 +49,15 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - github
+  - 🇮🇶 IQ 02 - github
+  - 🇮🇶 IQ 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - github
+  - 🇮🇶 IQ 02 - github
+  - 🇮🇶 IQ 03 - github
 rules:
 - MATCH,PROXIES
