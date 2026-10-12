@@ -21,62 +21,6 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇺🇸 美国 (United States) 03 (家宽) R40 - github
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  server: 24864168545164.d6f54hd1j.cc
-  port: 443
-  udp: true
-  type: vmess
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 24864168545164.d6f54hd1j.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
-  server: 654168416355441.d6f54hd1j.cc
-  port: 443
-  udp: true
-  type: vmess
-  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 654168416355441.d6f54hd1j.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,11 +28,6 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - github
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇺🇸 美国 (United States) 03 (家宽) R40 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,10 +35,5 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - github
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - github
-  - 🇺🇸 美国 (United States) 03 (家宽) R40 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
 rules:
 - MATCH,PROXIES

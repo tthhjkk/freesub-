@@ -4,26 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - github",
-      "server": "147.15.23.247",
-      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
-      },
-      "server_ports": [
-        "20000:30000"
-      ]
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - github",
+      "tag": "🇧🇷 巴西 (Brazil) 01 - github",
       "server": "35.199.90.53",
       "server_port": 443,
       "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
@@ -42,12 +24,22 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 03 - github",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16314,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇧🇷 巴西 (Brazil) 02 - github",
+      "server": "147.15.23.247",
+      "password": "CyG0RFxMjzs41uQD4OLuHQ==",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "CyG0RFxMjzs41uQD4OLuHQ=="
+      },
+      "server_ports": [
+        "20000:30000"
+      ]
     },
     {
       "type": "selector",
@@ -55,8 +47,7 @@
       "outbounds": [
         "auto",
         "🇧🇷 巴西 (Brazil) 01 - github",
-        "🇧🇷 巴西 (Brazil) 02 - github",
-        "🇧🇷 巴西 (Brazil) 03 - github"
+        "🇧🇷 巴西 (Brazil) 02 - github"
       ]
     },
     {
@@ -64,8 +55,7 @@
       "tag": "auto",
       "outbounds": [
         "🇧🇷 巴西 (Brazil) 01 - github",
-        "🇧🇷 巴西 (Brazil) 02 - github",
-        "🇧🇷 巴西 (Brazil) 03 - github"
+        "🇧🇷 巴西 (Brazil) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
