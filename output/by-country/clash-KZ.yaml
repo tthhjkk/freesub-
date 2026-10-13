@@ -5,44 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - github
-  server: 206.223.249.90
-  port: 33891
-  udp: true
-  type: vless
-  uuid: 9977ba41-b6aa-4033-9492-2f6abfcade31
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
-    short-id: f5bc6788
-  servername: browser.yandex.com
-  client-fingerprint: random
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
-  server: 176.12.74.226
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vL7_EY1_SpsyEROqEDtLaatpZEmna_VixzsEfWI5wDo
-    short-id: aef88ffbbfde7dea
-  servername: kz-first.yourzloy.site
-  client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
-  server: 83.222.23.81
-  port: 38065
-  udp: true
-  type: vless
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  tls: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - github
   server: 38.107.234.57
   port: 80
   udp: true
@@ -53,19 +15,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - github
-  server: 178.236.16.98
-  port: 35728
-  udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: random
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - github
+    headers:
+      Host: google.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -77,7 +29,7 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - github
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
   server: 5.252.33.175
   port: 9882
   udp: true
@@ -88,10 +40,22 @@ proxies:
     public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
     short-id: aabbccdd
   servername: dl.google.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - github
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,9 +65,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -113,8 +74,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - github
 rules:
 - MATCH,PROXIES

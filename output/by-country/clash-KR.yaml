@@ -5,14 +5,42 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - github
-  server: 140.238.2.250
+  server: 141.164.45.187
+  port: 9101
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: e4FCWrgpkji3QY
+- name: 🇰🇷 韩国 (South Korea) 02 - github
+  server: 141.164.45.187
+  port: 6679
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 (South Korea) 03 - github
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 04 - github
+  server: 141.164.45.187
+  port: 8888
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 05 - github
+  server: 13.125.69.162
   port: 443
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 02 - github
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - github
   server: 34.22.111.30
   port: 443
   udp: true
@@ -23,172 +51,16 @@ proxies:
     public-key: M0QKczb2MzOH45qDViIAbb9LPrVVyCp880D4HlwIKnA
     short-id: 8685f8b4d9f4f51e
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 03 - github
-  server: 218.237.185.234
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 04 - github
-  server: 3.36.50.213
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pure-kodiak.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 05 - github
-  server: 13.125.29.37
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-skink.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 06 - github
-  server: 3.39.4.109
-  port: 18967
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇰🇷 韩国 (South Korea) 07 - github
-  server: 3.35.214.220
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glorious-lark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - github
-  server: 43.203.225.50
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 43.203.225.50
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - github
-  server: 43.203.120.240
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cunning-grub.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 10 - github
-  server: 52.78.158.255
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 52.78.158.255
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11 - github
-  server: 3.34.192.47
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: central-jawfish.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 12 - github
-  server: 3.34.95.215
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 3.34.95.215
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13 - github
   server: 132.226.226.189
   port: 50160
   udp: true
   type: hysteria2
   password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14 - github
-  server: 52.78.119.244
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 52.78.119.244
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15 - github
-  server: 3.36.52.203
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: inviting-rabbit.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 16 - github
-  server: 54.180.231.160
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 54.180.231.160
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 17 - github
-  server: 3.38.251.233
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18 - github
-  server: 13.124.119.204
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 13.124.119.204
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 19 - github
-  server: 3.38.115.120
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 20 - github
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 21 - github
-  server: pretty-rat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 22 - github
-  server: 52.78.100.155
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 52.78.100.155
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23 - github
+- name: 🇰🇷 韩国 (South Korea) 08 - github
   server: 132.145.80.230
   port: 80
   udp: true
@@ -200,10 +72,37 @@ proxies:
   ws-opts:
     path: /cctv13.m3u8
     headers:
-      Host: 'null'
-- name: 🇰🇷 韩国 (South Korea) 24 - github
+      Host: kr02.a0a.xyz
+- name: 🇰🇷 韩国 (South Korea) 09 - github
+  server: kr2-r.link-t7.com
+  port: 10047
+  udp: true
+  type: vless
+  uuid: 58C828CD-3EBA-46F9-B297-16003D7A6E68
+  tls: true
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: 686c0ef0
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: update
+- name: 🇰🇷 韩国 (South Korea) 10 - github
+  server: cu.riverveil.com
+  port: 35864
+  udp: true
+  type: vless
+  uuid: 777a9b68-ea7f-483c-b08f-ab5160e1f61f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PzFWst5Vz9KjbZjbSX1UJ1TweCalk9LH3SVI7L1YlhY
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 11 - github
   server: 3.39.4.109
-  port: 13672
+  port: 18967
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -213,47 +112,8 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 25 - github
-  server: 152.69.231.175
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 26 - github
-  server: 43.203.202.217
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 43.203.202.217
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 27 - github
-  server: noted-cougar.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: noted-cougar.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 28 - github
-  server: 52.78.42.192
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: working-tomcat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 29 - github
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: 🇰🇷 韩国 (South Korea) 30 - github
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 12 - github
   server: 64.176.231.183
   port: 443
   udp: true
@@ -266,14 +126,92 @@ proxies:
     short-id: ca193e889d958f81
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 31 - github
-  server: 141.164.45.187
-  port: 9101
+- name: 🇰🇷 韩国 (South Korea) 13 - github
+  server: 152.69.231.175
+  port: 50160
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: e4FCWrgpkji3QY
-- name: 🇰🇷 韩国 (South Korea) 32 - github
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 14 - github
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15 - github
+  server: kr.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: kr.tronsg.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 16 - github
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 17 - github
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 18 - github
+  server: central-jawfish.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: central-jawfish.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 19 - github
+  server: 43.201.100.203
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 20 - github
+  server: 3.35.168.225
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: noted-cougar.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 21 - github
+  server: pretty-rat.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 22 - github
+  server: main-fawn.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: main-fawn.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 23 - github
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -284,106 +222,16 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 33 - github
-  server: kr.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: kr.tronsg.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 34 - github
-  server: main-fawn.rooster465.autos
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 24 - github
+  server: 3.36.50.213
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: main-fawn.rooster465.autos
+  sni: pure-kodiak.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 35 - github
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 36 - github
-  server: 43.201.100.203
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 37 - github
-  server: 13.125.69.162
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 38 - github
-  server: 52.78.203.191
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 39 - github
-  server: 3.39.225.215
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 40 - github
-  server: x1.good2026.com
-  port: 11051
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 99234c60-b01a-4d67-889a-cab58ab0061a
-- name: 🇰🇷 韩国 (South Korea) 41 - github
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 42 - github
-  server: 152.70.237.123
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: maintell
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 43 - github
-  server: 141.164.45.187
-  port: 8091
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: PCnnH6SQSnfoS27
-- name: 🇰🇷 韩国 (South Korea) 44 - github
-  server: 47.80.19.173
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 45 - github
+- name: 🇰🇷 韩国 (South Korea) 25 - github
   server: jp4.998998.best
   port: 443
   udp: true
@@ -399,6 +247,57 @@ proxies:
     path: /vvvvvvvvv
     headers:
       Host: nat12.9966338.xyz
+- name: 🇰🇷 韩国 (South Korea) 26 - github
+  server: 141.164.45.187
+  port: 5001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇰🇷 韩国 (South Korea) 27 - github
+  server: silversbgfgov.vip40.wogbcnmnagfwgov.com
+  port: 11240
+  udp: true
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 28 - github
+  server: 141.164.45.187
+  port: 8091
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: PCnnH6SQSnfoS27
+- name: 🇰🇷 韩国 (South Korea) 29 - github
+  server: 140.238.2.250
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 41a7089a-040b-4538-8b8d-010902405bde
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 30 - github
+  server: 141.164.45.187
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇰🇷 韩国 (South Korea) 31 - github
+  server: 141.164.45.187
+  port: 6697
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: TEzjfAYq2IjtuoS
+- name: 🇰🇷 韩国 (South Korea) 32 - github
+  server: 141.164.45.187
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
 proxy-groups:
 - name: PROXIES
   type: select
@@ -436,19 +335,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 30 - github
   - 🇰🇷 韩国 (South Korea) 31 - github
   - 🇰🇷 韩国 (South Korea) 32 - github
-  - 🇰🇷 韩国 (South Korea) 33 - github
-  - 🇰🇷 韩国 (South Korea) 34 - github
-  - 🇰🇷 韩国 (South Korea) 35 - github
-  - 🇰🇷 韩国 (South Korea) 36 - github
-  - 🇰🇷 韩国 (South Korea) 37 - github
-  - 🇰🇷 韩国 (South Korea) 38 - github
-  - 🇰🇷 韩国 (South Korea) 39 - github
-  - 🇰🇷 韩国 (South Korea) 40 - github
-  - 🇰🇷 韩国 (South Korea) 41 - github
-  - 🇰🇷 韩国 (South Korea) 42 - github
-  - 🇰🇷 韩国 (South Korea) 43 - github
-  - 🇰🇷 韩国 (South Korea) 44 - github
-  - 🇰🇷 韩国 (South Korea) 45 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -486,18 +372,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 30 - github
   - 🇰🇷 韩国 (South Korea) 31 - github
   - 🇰🇷 韩国 (South Korea) 32 - github
-  - 🇰🇷 韩国 (South Korea) 33 - github
-  - 🇰🇷 韩国 (South Korea) 34 - github
-  - 🇰🇷 韩国 (South Korea) 35 - github
-  - 🇰🇷 韩国 (South Korea) 36 - github
-  - 🇰🇷 韩国 (South Korea) 37 - github
-  - 🇰🇷 韩国 (South Korea) 38 - github
-  - 🇰🇷 韩国 (South Korea) 39 - github
-  - 🇰🇷 韩国 (South Korea) 40 - github
-  - 🇰🇷 韩国 (South Korea) 41 - github
-  - 🇰🇷 韩国 (South Korea) 42 - github
-  - 🇰🇷 韩国 (South Korea) 43 - github
-  - 🇰🇷 韩国 (South Korea) 44 - github
-  - 🇰🇷 韩国 (South Korea) 45 - github
 rules:
 - MATCH,PROXIES
