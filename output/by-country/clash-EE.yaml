@@ -23,6 +23,15 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+  server: 94.183.170.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - github
   server: 185.31.242.61
   port: 443
   udp: true
@@ -35,56 +44,8 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: est.nztvpn.com
   client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - github
-  server: 185.252.177.216
-  port: 443
-  udp: true
-  type: vless
-  uuid: 616c7b3b-41f4-4038-88c6-d6fedd0ae4a7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PKlt_5ASsz137EvA9SKSadtjEv1k_U7VRtoelKCgADs
-    short-id: 9ea74b83f4993ca9
-  servername: est-1.ardesnode.ru
-  client-fingerprint: random
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - github
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - github
-  server: 13.143.239.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - github
-  server: ee.h1cloud.net
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - github
-  server: ees92.shhflow.xyz
+  server: 143.246.41.31
   port: 443
   udp: true
   type: vless
@@ -95,8 +56,20 @@ proxies:
     public-key: h1xVB_-djXL6A7tvnnVbjV4bYKplHOuN0bgmFJQE6AE
     short-id: 7f3a91c2d8e640ab
   servername: ees92.shhflow.xyz
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - github
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - github
+  server: ee.h1cloud.net
+  port: 25895
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  tls: true
+  reality-opts:
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
+  client-fingerprint: qq
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - github
   server: 93.89.220.37
   port: 443
   udp: true
@@ -108,7 +81,22 @@ proxies:
     public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
     short-id: e88cb983f3c97528
   servername: ibm.com
-  client-fingerprint: random
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - github
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-ee
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,7 +110,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - github
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -136,6 +123,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 08 - github
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - github
 rules:
 - MATCH,PROXIES

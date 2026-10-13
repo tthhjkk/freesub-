@@ -5,26 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
-      "server": "88.218.95.88",
-      "server_port": 443,
-      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
+      "server": "118.167.248.243",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
         "enabled": true,
-        "server_name": "www.google.com",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
-          "short_id": "43adea0ec9f97a0a"
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc"
       }
     },
     {
@@ -32,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

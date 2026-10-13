@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - github
-  server: master-possum.rooster465.autos
+  server: 34.242.77.118
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: master-possum.rooster465.autos
+  sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - github
   server: adapting-basilisk.rooster465.autos
@@ -21,7 +21,7 @@ proxies:
   sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 03 - github
-  server: 3.253.106.233
+  server: loved-shark.rooster465.autos
   port: 443
   udp: true
   type: trojan
@@ -29,12 +29,12 @@ proxies:
   sni: loved-shark.rooster465.autos
   skip-cert-verify: false
 - name: 🇮🇪 爱尔兰 (Ireland) 04 - github
-  server: sacred-anemone.rooster465.autos
+  server: master-possum.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: sacred-anemone.rooster465.autos
+  sni: master-possum.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
