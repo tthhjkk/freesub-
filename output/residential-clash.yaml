@@ -4,29 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  server: 218.237.185.234
-  port: 4652
+- name: 🇨🇳 CN 01 (家宽) - github
+  server: 112.132.215.108
+  port: 50002
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇸🇬 新加坡 (Singapore) 02 (家宽) - github
-  server: s3.huhiuh.space
-  port: 18642
-  udp: true
-  type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
-  sni: s3.huhiuh.space
-  skip-cert-verify: true
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
-  server: googol.wookshop.ir
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  alterId: 64
+  cipher: auto
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
+  server: 206.1.102.81
   port: 17915
   udp: true
   type: vless
@@ -34,23 +21,20 @@ proxies:
   tls: true
   servername: googol.wookshop.ir
   skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
+  - 🇨🇳 CN 01 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  - 🇸🇬 新加坡 (Singapore) 02 (家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - github
+  - 🇨🇳 CN 01 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
 rules:
 - MATCH,PROXIES

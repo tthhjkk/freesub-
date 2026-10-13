@@ -10,22 +10,9 @@ proxies:
   udp: true
   type: trojan
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
+  sni: 109.206.241.10
   skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
-  server: 93.123.39.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5298d5c5-0633-4989-95c8-68ee13cd507e
-  tls: true
-  servername: ee2x.global-cdn.org
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: content.v1.Feed
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
   server: 185.31.242.61
   port: 443
   udp: true
@@ -38,6 +25,19 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: est.nztvpn.com
   client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+  server: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  port: 443
+  udp: true
+  type: vless
+  uuid: ace33fb8-c593-4b17-8f72-f3359b6e9638
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r1MW0o1DsC6EEWN-KPKnoXszb1trxlKShRIgOpxqHBk
+    short-id: d98e7afec9c0c359
+  servername: zahvatpribaltovonline.vvzzkontaktezzvv.garden
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - github
   server: 94.183.170.135
   port: 8443
@@ -57,8 +57,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 94.183.170.135
 - name: 🇪🇪 爱沙尼亚 (Estonia) 06 - github
   server: ee.h1cloud.net
   port: 25895
@@ -70,23 +68,8 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - github
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: tgmansion.site
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - github
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - github
   server: 93.89.220.37
   port: 443
   udp: true
@@ -111,7 +94,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,6 +106,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - github
   - 🇪🇪 爱沙尼亚 (Estonia) 07 - github
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - github
 rules:
 - MATCH,PROXIES

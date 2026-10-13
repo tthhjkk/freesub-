@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - github
+  server: 165.154.195.38
+  port: 35034
+  udp: true
+  type: vmess
+  uuid: 959a8caf-4cea-43d0-a548-3628e7ddfafc
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 02 - github
   server: 103.115.109.49
   port: 443
   udp: true
@@ -12,24 +20,16 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02 - github
-  server: 160.187.100.109
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
+  server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
-  server: dog-tw.kunlun01dns.com
-  port: 21036
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - github
-  server: 59.125.69.23
+  server: 60.248.219.78
   port: 443
   udp: true
   type: vless

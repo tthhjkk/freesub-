@@ -4,52 +4,48 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 01 - github",
-      "server": "141.164.45.187",
-      "server_port": 9101,
-      "method": "aes-256-gcm",
-      "password": "e4FCWrgpkji3QY"
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 02 - github",
-      "server": "141.164.45.187",
-      "server_port": 6679,
-      "method": "aes-256-gcm",
-      "password": "TEzjfAYq2IjtuoS"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - github",
-      "server": "49.254.204.133",
-      "server_port": 1774,
+      "server": "211.178.105.134",
+      "server_port": 6123,
       "method": "aes-256-cfb",
-      "password": "1234!@#$"
+      "password": "qwerREWQ@@"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - github",
-      "server": "141.164.45.187",
-      "server_port": 8888,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - github",
-      "server": "13.125.69.162",
-      "server_port": 443,
-      "password": "UX82473651",
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - github",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "engaging-toucan.rooster465.autos",
-        "insecure": false
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - github",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
+      "tls": {
+        "enabled": true,
+        "server_name": "152.70.237.123",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - github",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - github",
       "server": "34.22.111.30",
       "server_port": 443,
       "uuid": "cb2abff3-5fe6-4b5a-aa19-5739deb285b6",
@@ -68,6 +64,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - github",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 07 - github",
       "server": "132.226.226.189",
@@ -80,68 +97,20 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 08 - github",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "kr02.a0a.xyz"
-        }
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152-69-231-175.liao.kdns.fr",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇷 韩国 (South Korea) 09 - github",
-      "server": "kr2-r.link-t7.com",
-      "server_port": 10047,
-      "uuid": "58C828CD-3EBA-46F9-B297-16003D7A6E68",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE",
-          "short_id": "686c0ef0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "update"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - github",
-      "server": "cu.riverveil.com",
-      "server_port": 35864,
-      "uuid": "777a9b68-ea7f-483c-b08f-ab5160e1f61f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PzFWst5Vz9KjbZjbSX1UJ1TweCalk9LH3SVI7L1YlhY",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - github",
       "server": "3.39.4.109",
       "server_port": 18967,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -158,6 +127,30 @@
           "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
           "short_id": "48050fab"
         }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - github",
+      "server": "132.145.80.230",
+      "server_port": 80,
+      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/cctv13.m3u8"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - github",
+      "server": "3.34.192.47",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "central-jawfish.rooster465.autos",
+        "insecure": true
       }
     },
     {
@@ -182,44 +175,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 13 - github",
-      "server": "152.69.231.175",
-      "server_port": 50160,
-      "password": "1beb216e3f60aea9555dae60d219a5ca",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-69-231-175.liao.kdns.fr",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - github",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 15 - github",
-      "server": "kr.tronsg.com",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "kr.tronsg.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 16 - github",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -230,42 +187,82 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 17 - github",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 14 - github",
+      "server": "z2ithkfx1hkxe8us.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "b89b702b-31ef-4f6a-85df-c264795a987b",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "z2ithkfx1hkxe8us.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 15 - github",
+      "server": "noted-cougar.rooster465.autos",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "noted-cougar.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 16 - github",
+      "server": "3.34.131.153",
+      "server_port": 443,
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "pretty-rat.rooster465.autos",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 17 - github",
+      "server": "151.245.106.49",
+      "server_port": 2053,
+      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
+          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
+          "short_id": "429499c03d4cc8a0"
         }
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 18 - github",
-      "server": "central-jawfish.rooster465.autos",
+      "server": "3.36.50.213",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "central-jawfish.rooster465.autos",
-        "insecure": true
+        "server_name": "pure-kodiak.rooster465.autos",
+        "insecure": false
       }
     },
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 19 - github",
-      "server": "43.201.100.203",
+      "server": "optimum-snapper.rooster465.autos",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
@@ -277,74 +274,18 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 20 - github",
-      "server": "3.35.168.225",
+      "server": "13.125.69.162",
       "server_port": 443,
       "password": "UX82473651",
       "tls": {
         "enabled": true,
-        "server_name": "noted-cougar.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 21 - github",
-      "server": "pretty-rat.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pretty-rat.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 22 - github",
-      "server": "main-fawn.rooster465.autos",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "main-fawn.rooster465.autos",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 23 - github",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 24 - github",
-      "server": "3.36.50.213",
-      "server_port": 443,
-      "password": "UX82473651",
-      "tls": {
-        "enabled": true,
-        "server_name": "pure-kodiak.rooster465.autos",
-        "insecure": false
+        "server_name": "engaging-toucan.rooster465.autos",
+        "insecure": true
       }
     },
     {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 25 - github",
+      "tag": "🇰🇷 韩国 (South Korea) 21 - github",
       "server": "jp4.998998.best",
       "server_port": 443,
       "uuid": "5504eaa8-1395-402f-8e0e-75ecd762e627",
@@ -363,61 +304,44 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 26 - github",
-      "server": "141.164.45.187",
-      "server_port": 5001,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 27 - github",
-      "server": "silversbgfgov.vip40.wogbcnmnagfwgov.com",
-      "server_port": 11240,
-      "uuid": "605956ee-544d-308e-8b90-51e67c6ea8da",
-      "security": "auto",
-      "alter_id": 2
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 28 - github",
-      "server": "141.164.45.187",
-      "server_port": 8091,
-      "method": "aes-256-gcm",
-      "password": "PCnnH6SQSnfoS27"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 29 - github",
-      "server": "140.238.2.250",
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 22 - github",
+      "server": "3.35.207.188",
       "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
-      "security": "auto"
+      "password": "UX82473651",
+      "tls": {
+        "enabled": true,
+        "server_name": "main-fawn.rooster465.autos",
+        "insecure": false
+      }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 30 - github",
+      "tag": "🇰🇷 韩国 (South Korea) 23 - github",
       "server": "141.164.45.187",
-      "server_port": 7002,
+      "server_port": 2376,
       "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "password": "faBAoD54k87UJG7"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 31 - github",
-      "server": "141.164.45.187",
-      "server_port": 6697,
-      "method": "aes-256-gcm",
-      "password": "TEzjfAYq2IjtuoS"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 32 - github",
-      "server": "141.164.45.187",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 24 - github",
+      "server": "baBfGGlhjs86aTxZ.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "b89b702b-31ef-4f6a-85df-c264795a987b",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "baBfGGlhjs86aTxZ.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "baBfGGlhjs86aTxZ.v.3dns.vip"
+        }
+      }
     },
     {
       "type": "selector",
@@ -447,15 +371,7 @@
         "🇰🇷 韩国 (South Korea) 21 - github",
         "🇰🇷 韩国 (South Korea) 22 - github",
         "🇰🇷 韩国 (South Korea) 23 - github",
-        "🇰🇷 韩国 (South Korea) 24 - github",
-        "🇰🇷 韩国 (South Korea) 25 - github",
-        "🇰🇷 韩国 (South Korea) 26 - github",
-        "🇰🇷 韩国 (South Korea) 27 - github",
-        "🇰🇷 韩国 (South Korea) 28 - github",
-        "🇰🇷 韩国 (South Korea) 29 - github",
-        "🇰🇷 韩国 (South Korea) 30 - github",
-        "🇰🇷 韩国 (South Korea) 31 - github",
-        "🇰🇷 韩国 (South Korea) 32 - github"
+        "🇰🇷 韩国 (South Korea) 24 - github"
       ]
     },
     {
@@ -485,15 +401,7 @@
         "🇰🇷 韩国 (South Korea) 21 - github",
         "🇰🇷 韩国 (South Korea) 22 - github",
         "🇰🇷 韩国 (South Korea) 23 - github",
-        "🇰🇷 韩国 (South Korea) 24 - github",
-        "🇰🇷 韩国 (South Korea) 25 - github",
-        "🇰🇷 韩国 (South Korea) 26 - github",
-        "🇰🇷 韩国 (South Korea) 27 - github",
-        "🇰🇷 韩国 (South Korea) 28 - github",
-        "🇰🇷 韩国 (South Korea) 29 - github",
-        "🇰🇷 韩国 (South Korea) 30 - github",
-        "🇰🇷 韩国 (South Korea) 31 - github",
-        "🇰🇷 韩国 (South Korea) 32 - github"
+        "🇰🇷 韩国 (South Korea) 24 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
