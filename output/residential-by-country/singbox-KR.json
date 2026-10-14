@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇴🇲 OM 01 - github",
-      "server": "ruot.ayucloudservices.nl",
-      "server_port": 35016,
-      "method": "aes-128-gcm",
-      "password": "9c51ca33-a332-4de5-8677-5624e940097c"
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇴🇲 OM 01 - github"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇴🇲 OM 01 - github"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

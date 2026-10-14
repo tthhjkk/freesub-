@@ -4,14 +4,16 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01 (家宽) - github
-  server: 112.132.215.108
-  port: 50002
+- name: 🇺🇸 美国 (United States) 01 (家宽) - github
+  server: 155.117.19.17
+  port: 443
   udp: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  alterId: 64
-  cipher: auto
+  type: hysteria2
+  password: 5fa748137b6d822308eea4611f474ad5
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
   server: 206.1.102.81
   port: 17915
@@ -20,21 +22,40 @@ proxies:
   uuid: 439628ee-ef8e-4a3e-ba0f-091b7376dcb8
   tls: true
   servername: googol.wookshop.ir
-  skip-cert-verify: false
+  skip-cert-verify: true
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (家宽) - github
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (家宽) - github
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
 rules:
 - MATCH,PROXIES
