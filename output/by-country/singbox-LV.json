@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -28,29 +28,37 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
       "server": "185.135.86.175",
-      "server_port": 9034,
-      "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - github",
-      "server": "185.135.86.175",
       "server_port": 9082,
       "method": "aes-256-cfb",
       "password": "45xgMgm386pjWjTx"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - github",
       "server": "185.135.86.175",
       "server_port": 9086,
       "method": "aes-256-cfb",
       "password": "37Z4TFCYhfxcpc9Q"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - github",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - github",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - github",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -70,105 +78,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - github",
-      "server": "31.57.106.241",
-      "server_port": 443,
-      "uuid": "a4801105-c0c7-4cab-87c6-f257ff2afc09",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.lmt.lv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o",
-          "short_id": "44f7c5615039ae1b"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - github",
-      "server": "85.31.102.163",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - github",
-      "server": "94.158.219.126",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-      "server": "94.158.219.126",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - github",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -178,11 +87,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - github",
         "🇱🇻 拉脱维亚 (Latvia) 04 - github",
         "🇱🇻 拉脱维亚 (Latvia) 05 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - github"
       ]
     },
     {
@@ -194,11 +99,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 03 - github",
         "🇱🇻 拉脱维亚 (Latvia) 04 - github",
         "🇱🇻 拉脱维亚 (Latvia) 05 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 06 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 07 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 08 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 10 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

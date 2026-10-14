@@ -31,7 +31,7 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - github
-  server: tr.datanode-internal.net
+  server: 201.34.148.44
   port: 443
   udp: true
   type: vless
@@ -42,8 +42,21 @@ proxies:
     public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
     short-id: abbcd128
   servername: sun9-38.userapi.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - github
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 05 - github
   server: 85.192.48.142
   port: 443
   udp: true
@@ -56,19 +69,6 @@ proxies:
     short-id: db04ce8bdb8900f1
   servername: nvidia.com
   client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
