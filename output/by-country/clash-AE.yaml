@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
-  server: 157.228.155.238
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
-    short-id: 6f76ad09
-  servername: addons.mozilla.org
-  client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 157.228.155.185
   port: 443
   udp: true
@@ -29,18 +16,21 @@ proxies:
     public-key: 4q8nqNb-0c-akP3XqVmen67BLXJVlx48a_GDRw16nVg
     short-id: 5ea112e8
   servername: addons.mozilla.org
-  client-fingerprint: randomized
-- name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: 130.49.161.70
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
+  server: 157.228.155.238
   port: 443
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
+    short-id: 6f76ad09
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: 157.228.128.59
   port: 443
   udp: true
@@ -53,22 +43,65 @@ proxies:
     short-id: 06e00e7c
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 31.59.210.37
-  port: 443
+- name: 🇦🇪 阿联酋 (UAE) 04 - github
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
+  server: 31.59.210.25
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
+  tls: true
+  reality-opts:
+    public-key: KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY
+    short-id: ed435c242097fd05
+  servername: www.yandex.ru
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 06 - github
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 07 - github
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 08 - github
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 09 - github
   server: 146.70.102.82
   port: 443
   udp: true
@@ -81,39 +114,18 @@ proxies:
     short-id: 002fb4ec7b3088cc
   servername: www.datadoghq.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 07 - github
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 08 - github
-  server: 37.9.4.112
-  port: 17701
-  udp: true
-  type: hysteria2
-  password: 56ff50da-a238-4646-95ab-dd159634bd87
-  sni: ru03.arpanet-cdn.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
-- name: 🇦🇪 阿联酋 (UAE) 09 - github
-  server: 31.59.210.26
-  port: 2088
+- name: 🇦🇪 阿联酋 (UAE) 10 - github
+  server: 31.59.210.32
+  port: 443
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
+    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
+    short-id: 7ec4374ffc6308fd
   servername: www.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -131,6 +143,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - github
   - 🇦🇪 阿联酋 (UAE) 08 - github
   - 🇦🇪 阿联酋 (UAE) 09 - github
+  - 🇦🇪 阿联酋 (UAE) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -145,5 +158,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 07 - github
   - 🇦🇪 阿联酋 (UAE) 08 - github
   - 🇦🇪 阿联酋 (UAE) 09 - github
+  - 🇦🇪 阿联酋 (UAE) 10 - github
 rules:
 - MATCH,PROXIES
