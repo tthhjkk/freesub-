@@ -4,21 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - github",
-      "server": "141.227.137.177",
-      "server_port": 2053,
-      "uuid": "b940be1b-3998-45d2-bf7b-06e7b6c4987a",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
+      "server": "fujrdt.d6f54hd1j.cc",
+      "server_port": 443,
+      "uuid": "d877dc6f-7323-4b47-a7dd-14228cbae854",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "kkkk-xcd.pages.dev",
+        "server_name": "fujrdt.d6f54hd1j.cc",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/fp=chrome",
+        "path": "/",
         "headers": {
-          "Host": "kkkk-xcd.pages.dev"
+          "Host": "fujrdt.d6f54hd1j.cc"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

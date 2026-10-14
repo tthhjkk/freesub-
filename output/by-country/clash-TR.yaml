@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 85.192.48.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 62.60.233.157
   port: 8444
   udp: true
@@ -31,6 +18,18 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - github
   server: 78.135.73.47
   port: 443
@@ -45,20 +44,13 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - github
-  server: 153.56.210.61
-  port: 443
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: 172.67.176.3
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -69,30 +61,20 @@ proxies:
   ws-opts:
     path: /0962
 - name: 🇹🇷 土耳其 (Turkey) 06 - github
-  server: tr.datanode-internal.net
-  port: 443
+  server: tr2.h1cloud.net
+  port: 25375
   udp: true
   type: vless
-  uuid: 93996a55-febe-4183-9366-df6cb11a34dd
-  flow: xtls-rprx-vision
+  uuid: ec572cf0-1337-4c51-b4ec-ff2f538c1f4c
   tls: true
   reality-opts:
-    public-key: r6lN34m1nN-xQZ458j5NPD5xJ3_QBF2bGzY4KJEo4ic
-    short-id: abbcd128
-  servername: sun9-38.userapi.com
+    public-key: PdiXtqIEtNpVRKgB1WCKnmIOC7yJ-VR4uUe1uYjcqXM
+    short-id: 8e2a0cd6de5dc50a
+  servername: www.bing.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 07 - github
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 05195f917c82
 proxy-groups:
 - name: PROXIES
   type: select
@@ -104,7 +86,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - github
   - 🇹🇷 土耳其 (Turkey) 05 - github
   - 🇹🇷 土耳其 (Turkey) 06 - github
-  - 🇹🇷 土耳其 (Turkey) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,6 +97,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - github
   - 🇹🇷 土耳其 (Turkey) 05 - github
   - 🇹🇷 土耳其 (Turkey) 06 - github
-  - 🇹🇷 土耳其 (Turkey) 07 - github
 rules:
 - MATCH,PROXIES
