@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - github",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
+      "server": "vpn-tw-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "whatsapp.com",
+        "insecure": true
+      }
     },
     {
       "type": "hysteria2",
@@ -24,20 +28,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - github",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "160.187.100.109",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - github",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -55,31 +47,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - github",
-      "server": "zs.giannaycs.com",
-      "server_port": 12943,
-      "uuid": "d68fbc96-5187-4b8f-965e-eecd7a699e81",
-      "tls": {
-        "enabled": true,
-        "server_name": "zs.giannaycs.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 - github",
-        "🇹🇼 中国台湾 (Taiwan) 05 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github"
       ]
     },
     {
@@ -88,9 +62,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 - github",
-        "🇹🇼 中国台湾 (Taiwan) 05 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
