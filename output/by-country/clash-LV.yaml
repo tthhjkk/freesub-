@@ -19,19 +19,12 @@ proxies:
   client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - github
   server: 185.135.86.175
-  port: 9017
+  port: 9082
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - github
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - github
   server: 195.123.213.28
   port: 443
   udp: true
@@ -44,7 +37,7 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - github
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - github
   server: 195.123.208.32
   port: 443
   udp: true
@@ -57,19 +50,6 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - github
-  server: 31.57.106.241
-  port: 443
-  udp: true
-  type: vless
-  uuid: a4801105-c0c7-4cab-87c6-f257ff2afc09
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4SJB--DChFNhmOUz0-BZK2dS3GhZ1yZwMVIhmpobB0o
-    short-id: 44f7c5615039ae1b
-  servername: www.lmt.lv
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,8 +59,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - github
   - 🇱🇻 拉脱维亚 (Latvia) 03 - github
   - 🇱🇻 拉脱维亚 (Latvia) 04 - github
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - github
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,7 +68,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - github
   - 🇱🇻 拉脱维亚 (Latvia) 03 - github
   - 🇱🇻 拉脱维亚 (Latvia) 04 - github
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - github
-  - 🇱🇻 拉脱维亚 (Latvia) 06 - github
 rules:
 - MATCH,PROXIES

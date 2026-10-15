@@ -4,20 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
       "server": "143.246.41.31",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -38,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
       "server": "ee-1-1.unturned-rust-dead.lol",
       "server_port": 443,
       "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
@@ -62,7 +50,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
       "server": "ees92.shhflow.xyz",
       "server_port": 5443,
       "password": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -74,7 +62,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
       "server": "185.31.242.61",
       "server_port": 443,
       "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
@@ -84,33 +72,12 @@
         "server_name": "est.nztvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "7mRrVzTchVLWWBru5fCgTvtdkL7lVJ_qRj9HW8Rd8X0",
           "short_id": "0da7e14db353e7d0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
         }
       }
     },
@@ -122,9 +89,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - github"
       ]
     },
     {
@@ -134,9 +99,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
