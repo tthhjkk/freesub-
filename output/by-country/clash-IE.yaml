@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01 - github
-  server: ir.panel.privatevip.ir
-  port: 448
+- name: 🇮🇪 爱尔兰 (Ireland) 01 - github
+  server: v4.hdacd.com
+  port: 30804
   udp: true
-  type: vless
-  uuid: 72f8cb98-ce2b-4697-93b7-c9766051f321
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01 - github
+  - 🇮🇪 爱尔兰 (Ireland) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01 - github
+  - 🇮🇪 爱尔兰 (Ireland) 01 - github
 rules:
 - MATCH,PROXIES
