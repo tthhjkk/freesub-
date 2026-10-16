@@ -23,18 +23,39 @@
       ]
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - github",
+      "server": "137.23.2.56",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01 - github"
+        "🇦🇺 澳大利亚 (Australia) 01 - github",
+        "🇦🇺 澳大利亚 (Australia) 02 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01 - github"
+        "🇦🇺 澳大利亚 (Australia) 01 - github",
+        "🇦🇺 澳大利亚 (Australia) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

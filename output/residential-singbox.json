@@ -39,26 +39,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 04 (家宽) - github",
-      "server": "s3.huhiuh.space",
-      "server_port": 18642,
-      "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
-      "tls": {
-        "enabled": true,
-        "server_name": "s3.huhiuh.space",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github"
       ]
     },
     {
@@ -67,8 +54,7 @@
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
         "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github",
-        "🇸🇬 新加坡 (Singapore) 04 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
