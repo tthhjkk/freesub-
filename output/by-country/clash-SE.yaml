@@ -20,48 +20,6 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - github
-  server: hy-se.bypassme.online
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
-  sni: hy-se.bypassme.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - github
-  server: 77.110.96.201
-  port: 36264
-  udp: true
-  type: hysteria2
-  password: Telegram-vpnjey
-  sni: se.vpnjey2.dpdns.org
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: Telegram@vpnjey
-- name: 🇸🇪 瑞典 (Sweden) 05 - github
-  server: 193.27.200.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: qq
-- name: 🇸🇪 瑞典 (Sweden) 06 - github
   server: swe.wizard.select
   port: 443
   udp: true
@@ -73,7 +31,15 @@ proxies:
     public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
     short-id: 3b20e438da99
   servername: swe.wizard.select
-  client-fingerprint: chrome
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 03 - github
+  server: hy-se.bypassme.online
+  port: 443
+  udp: true
+  type: hysteria2
+  password: e625f8ef-f935-4c7d-a259-0f154b6842fd
+  sni: hy-se.bypassme.online
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,9 +48,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
-  - 🇸🇪 瑞典 (Sweden) 04 - github
-  - 🇸🇪 瑞典 (Sweden) 05 - github
-  - 🇸🇪 瑞典 (Sweden) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,8 +56,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
-  - 🇸🇪 瑞典 (Sweden) 04 - github
-  - 🇸🇪 瑞典 (Sweden) 05 - github
-  - 🇸🇪 瑞典 (Sweden) 06 - github
 rules:
 - MATCH,PROXIES

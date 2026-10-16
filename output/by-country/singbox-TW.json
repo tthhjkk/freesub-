@@ -6,12 +6,12 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - github",
-      "server": "vpn-tw-002.fastervpn.world",
+      "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-tw-002.fastervpn.world",
+        "server_name": "https://t.me/wangcai2🇨🇳",
         "insecure": true
       }
     },
@@ -35,14 +35,22 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 - github",
-      "server": "103.115.109.49",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https:",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
@@ -53,7 +61,8 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github",
+        "🇹🇼 中国台湾 (Taiwan) 04 - github"
       ]
     },
     {
@@ -62,7 +71,8 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github",
+        "🇹🇼 中国台湾 (Taiwan) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
