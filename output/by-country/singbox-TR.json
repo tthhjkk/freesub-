@@ -15,7 +15,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -69,27 +69,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
-      "tls": {
-        "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
       "server": "85.192.48.142",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
@@ -109,19 +90,22 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
+      "server": "104.21.48.18",
+      "server_port": 2053,
+      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
+        "server_name": "nimm.mpd.cc.cd",
         "insecure": false
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      "transport": {
+        "type": "ws",
+        "path": "/0962",
+        "headers": {
+          "Host": "nimm.mpd.cc.cd"
+        }
       }
     },
     {
@@ -133,8 +117,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github"
       ]
     },
     {
@@ -145,8 +128,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github",
-        "🇹🇷 土耳其 (Turkey) 06 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
