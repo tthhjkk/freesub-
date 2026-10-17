@@ -6,33 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - github
   server: 195.238.126.20
-  port: 9078
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - github
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - github
-  server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - github
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - github
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - github
   server: 84.32.109.20
   port: 443
   udp: true
@@ -45,8 +24,8 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - github
-  server: 212.24.105.101
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - github
+  server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
   type: vless
@@ -56,7 +35,7 @@ proxies:
     public-key: MbRONgV8ADD5B_aKDBv15LAW2a8QZok5bkkZexRRVAs
     short-id: 2301ac8aee8bf6d4
   servername: b58e68t.lt1.h1clayd.click
-  client-fingerprint: firefox
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,9 +44,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - github
   - 🇱🇹 立陶宛 (Lithuania) 02 - github
   - 🇱🇹 立陶宛 (Lithuania) 03 - github
-  - 🇱🇹 立陶宛 (Lithuania) 04 - github
-  - 🇱🇹 立陶宛 (Lithuania) 05 - github
-  - 🇱🇹 立陶宛 (Lithuania) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,8 +52,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 01 - github
   - 🇱🇹 立陶宛 (Lithuania) 02 - github
   - 🇱🇹 立陶宛 (Lithuania) 03 - github
-  - 🇱🇹 立陶宛 (Lithuania) 04 - github
-  - 🇱🇹 立陶宛 (Lithuania) 05 - github
-  - 🇱🇹 立陶宛 (Lithuania) 06 - github
 rules:
 - MATCH,PROXIES
