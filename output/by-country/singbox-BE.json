@@ -5,16 +5,12 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "freesocks.work",
-      "server_port": 2052,
-      "uuid": "e3fb01b6-69b4-41d7-babf-696d992de194",
+      "tag": "🇧🇪 比利时 (Belgium) 01 - github",
+      "server": "vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev",
+      "server_port": 2086,
+      "uuid": "73796e63-0000-4000-8000-000000000007",
       "transport": {
-        "type": "ws",
-        "path": "/@BlueKnight_net--@BlueKnight_net",
-        "headers": {
-          "Host": "uwu.blueknightnet.qzz.io"
-        }
+        "type": "ws"
       }
     },
     {
@@ -22,14 +18,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - github"
+        "🇧🇪 比利时 (Belgium) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - github"
+        "🇧🇪 比利时 (Belgium) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

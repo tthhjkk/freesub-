@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - github",
+      "server": "5.188.181.201",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - github",
+      "server": "5.188.181.201",
+      "server_port": 9025,
+      "method": "aes-256-cfb",
+      "password": "XPtzA9sCug3SPR4c"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - github",
       "server": "185.174.137.172",
       "server_port": 8446,
       "password": "e9dc02d400b67c727aca1620",
@@ -17,7 +33,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - github",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - github",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -37,7 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - github",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - github",
       "server": "46.28.71.247",
       "server_port": 443,
       "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
@@ -58,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - github",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - github",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -85,7 +101,9 @@
         "🇪🇸 西班牙 (Spain) 01 - github",
         "🇪🇸 西班牙 (Spain) 02 - github",
         "🇪🇸 西班牙 (Spain) 03 - github",
-        "🇪🇸 西班牙 (Spain) 04 - github"
+        "🇪🇸 西班牙 (Spain) 04 - github",
+        "🇪🇸 西班牙 (Spain) 05 - github",
+        "🇪🇸 西班牙 (Spain) 06 - github"
       ]
     },
     {
@@ -95,7 +113,9 @@
         "🇪🇸 西班牙 (Spain) 01 - github",
         "🇪🇸 西班牙 (Spain) 02 - github",
         "🇪🇸 西班牙 (Spain) 03 - github",
-        "🇪🇸 西班牙 (Spain) 04 - github"
+        "🇪🇸 西班牙 (Spain) 04 - github",
+        "🇪🇸 西班牙 (Spain) 05 - github",
+        "🇪🇸 西班牙 (Spain) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
