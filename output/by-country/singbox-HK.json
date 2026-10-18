@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
         "insecure": true
       }
     },
@@ -23,20 +23,28 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.29",
+        "server_name": "httpst.mewangcai2",
         "insecure": true
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - github",
-      "server": "node1.luoye.ee",
+      "server": "8.210.24.181",
       "server_port": 443,
-      "password": "1d23fec1-1430-46d8-bba6-9a175136fcac",
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "node1.luoye.ee",
+        "server_name": "6jdvarazgu3qqr6q.v.3dns.vip",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "6jdvarazgu3qqr6q.v.3dns.vip"
+        }
       }
     },
     {
@@ -52,15 +60,23 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - github",
-      "server": "200.181.82.91",
-      "server_port": 28122,
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6",
+      "server": "8.217.13.103",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "www.baidu.com",
-        "insecure": true
+        "server_name": "qtkdr8jxe3wefxjm.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "qtkdr8jxe3wefxjm.v.3dns.vip"
+        }
       }
     },
     {
@@ -68,7 +84,7 @@
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - github",
       "server": "8.217.254.88",
       "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
       "security": "auto",
       "tls": {
         "enabled": true,
@@ -79,7 +95,7 @@
         "type": "ws",
         "path": "/ws-vmess",
         "headers": {
-          "Host": "2b9hwy8ocx7q74nm.v.3dns.vip"
+          "Host": "2b9hwY8oCx7Q74NM.v.3dns.vip"
         }
       }
     },
@@ -104,47 +120,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - github",
-      "server": "200.181.82.91",
-      "server_port": 21148,
-      "method": "aes-256-gcm",
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - github",
-      "server": "m.cnmjin.net",
-      "server_port": 16632,
-      "uuid": "f3485652-a8ee-4f31-9af3-821c53f2bb82",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "38f5eab4e496b3c8c927160a60d5865b.mobgslb.tbcache.com"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - github",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
-      "tls": {
-        "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 11 - github",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - github",
       "server": "156.239.13.161",
       "server_port": 51443,
       "uuid": "3e4c67dd-eeaa-48ad-8066-0dca798cccb3",
@@ -165,7 +142,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12 - github",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - github",
       "server": "207.56.137.51",
       "server_port": 443,
       "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
@@ -185,46 +162,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 13 - github",
-      "server": "47.243.153.153",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "i2psm3knof5qjjix.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 14 - github",
-      "server": "47.243.194.125",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "nycqg19zkwacpm1b.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "nycqg19zkwacpm1b.v.3dns.vip"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -237,12 +174,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - github",
         "🇭🇰 中国香港 (Hong Kong) 07 - github",
         "🇭🇰 中国香港 (Hong Kong) 08 - github",
-        "🇭🇰 中国香港 (Hong Kong) 09 - github",
-        "🇭🇰 中国香港 (Hong Kong) 10 - github",
-        "🇭🇰 中国香港 (Hong Kong) 11 - github",
-        "🇭🇰 中国香港 (Hong Kong) 12 - github",
-        "🇭🇰 中国香港 (Hong Kong) 13 - github",
-        "🇭🇰 中国香港 (Hong Kong) 14 - github"
+        "🇭🇰 中国香港 (Hong Kong) 09 - github"
       ]
     },
     {
@@ -257,12 +189,7 @@
         "🇭🇰 中国香港 (Hong Kong) 06 - github",
         "🇭🇰 中国香港 (Hong Kong) 07 - github",
         "🇭🇰 中国香港 (Hong Kong) 08 - github",
-        "🇭🇰 中国香港 (Hong Kong) 09 - github",
-        "🇭🇰 中国香港 (Hong Kong) 10 - github",
-        "🇭🇰 中国香港 (Hong Kong) 11 - github",
-        "🇭🇰 中国香港 (Hong Kong) 12 - github",
-        "🇭🇰 中国香港 (Hong Kong) 13 - github",
-        "🇭🇰 中国香港 (Hong Kong) 14 - github"
+        "🇭🇰 中国香港 (Hong Kong) 09 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
