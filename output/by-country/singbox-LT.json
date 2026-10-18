@@ -14,10 +14,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
-      "server": "195.238.126.84",
-      "server_port": 9039,
+      "server": "195.238.126.20",
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "vless",

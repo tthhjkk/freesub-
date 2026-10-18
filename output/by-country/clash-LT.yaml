@@ -12,12 +12,12 @@ proxies:
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - github
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - github
   server: 212.24.105.101
   port: 443
