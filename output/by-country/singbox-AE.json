@@ -6,42 +6,51 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - github",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - github",
-      "server": "157.228.128.59",
+      "server": "157.228.155.184",
       "server_port": 443,
-      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "uuid": "c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "randomized"
         },
         "reality": {
           "enabled": true,
-          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
-          "short_id": "06e00e7c"
+          "public_key": "uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc",
+          "short_id": "e022bfea"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - github",
+      "server": "203.137.165.164",
+      "server_port": 57554,
+      "uuid": "0985e268-5c1c-4141-9d96-139f8046c47c",
+      "tls": {
+        "enabled": true,
+        "server_name": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev"
         }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - github",
-      "server": "130.49.161.70",
+      "server": "hy2.aspidnet.xyz",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
@@ -81,25 +90,22 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
-      "server": "31.59.210.32",
+      "server": "157.228.128.59",
       "server_port": 443,
-      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "uuid": "df53b6c2-8005-475c-9eb9-74e1be785dc8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.yandex.ru",
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA",
-          "short_id": "7ec4374ffc6308fd"
+          "public_key": "QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws",
+          "short_id": "06e00e7c"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "astracat"
       }
     },
     {
@@ -129,20 +135,39 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 07 - github",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "server": "129.151.64.169",
+      "server_port": 31867,
+      "uuid": "f7ff2e67-b687-4098-a28a-d102c27ba19c",
+      "tls": {
+        "enabled": true,
+        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "uae.unixzone.us"
+          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 08 - github",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 09 - github",
       "server": "45.59.120.217",
       "server_port": 443,
       "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
@@ -161,6 +186,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 10 - github",
+      "server": "31.59.210.25",
+      "server_port": 2087,
+      "uuid": "5413edfb-08d6-4fba-b51c-809c04feb127",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "KDBhxT2YMtMjDEC9VdoDEISdCwxd6KFrSE8uyUaHcTY",
+          "short_id": "ed435c242097fd05"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "astracat"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -172,7 +221,9 @@
         "🇦🇪 阿联酋 (UAE) 05 - github",
         "🇦🇪 阿联酋 (UAE) 06 - github",
         "🇦🇪 阿联酋 (UAE) 07 - github",
-        "🇦🇪 阿联酋 (UAE) 08 - github"
+        "🇦🇪 阿联酋 (UAE) 08 - github",
+        "🇦🇪 阿联酋 (UAE) 09 - github",
+        "🇦🇪 阿联酋 (UAE) 10 - github"
       ]
     },
     {
@@ -186,7 +237,9 @@
         "🇦🇪 阿联酋 (UAE) 05 - github",
         "🇦🇪 阿联酋 (UAE) 06 - github",
         "🇦🇪 阿联酋 (UAE) 07 - github",
-        "🇦🇪 阿联酋 (UAE) 08 - github"
+        "🇦🇪 阿联酋 (UAE) 08 - github",
+        "🇦🇪 阿联酋 (UAE) 09 - github",
+        "🇦🇪 阿联酋 (UAE) 10 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

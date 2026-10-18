@@ -25,17 +25,14 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 02 - github",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
       "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "type": "ws"
       }
     },
     {
@@ -49,7 +46,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -59,27 +56,34 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 04 - github",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - github",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/vless",
         "headers": {
-          "Host": "152.67.8.205"
+          "Host": "13.140.56.100"
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 05 - github",
-      "server": "172.105.39.124",
-      "server_port": 7002,
+      "tag": "🇮🇳 印度 (India) 06 - github",
+      "server": "139.84.166.47",
+      "server_port": 8388,
       "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "selector",
@@ -90,7 +94,8 @@
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
         "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 05 - github",
+        "🇮🇳 印度 (India) 06 - github"
       ]
     },
     {
@@ -101,7 +106,8 @@
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
         "🇮🇳 印度 (India) 04 - github",
-        "🇮🇳 印度 (India) 05 - github"
+        "🇮🇳 印度 (India) 05 - github",
+        "🇮🇳 印度 (India) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

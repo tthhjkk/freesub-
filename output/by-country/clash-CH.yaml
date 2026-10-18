@@ -12,19 +12,79 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - github
-  server: 45.90.59.15
-  port: 443
+  server: 107.191.53.86
+  port: 4798
   udp: true
   type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
+  uuid: 1fa79462-3a93-43f6-86b5-82c1536203df
   tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 03 - github
+  server: 208.69.78.217
+  port: 33092
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 04 - github
+  server: 208.69.78.217
+  port: 21067
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 05 - github
+  server: 208.69.78.217
+  port: 21158
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 06 - github
+  server: 208.69.78.217
+  port: 33133
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 07 - github
+  server: 208.69.78.217
+  port: 33044
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 08 - github
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 09 - github
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -39,15 +99,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 04 - github
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 05 - github
+- name: 🇨🇭 瑞士 (Switzerland) 10 - github
   server: 152.67.75.161
   port: 443
   udp: true
@@ -57,67 +109,24 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 06 - github
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 07 - github
-  server: 208.69.78.217
-  port: 21021
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - github
-  server: 208.69.78.217
-  port: 33044
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 09 - github
-  server: 208.69.78.217
-  port: 21054
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 10 - github
-  server: 208.69.78.217
-  port: 21090
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 11 - github
-  server: 208.69.78.217
-  port: 21080
+  server: 203.137.165.164
+  port: 57554
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: a3f199fc-0251-4c05-9e0e-0c1976945a3a
+  tls: true
+  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 12 - github
   server: 208.69.78.217
-  port: 33013
+  port: 33141
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -127,7 +136,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 13 - github
   server: 208.69.78.217
-  port: 33133
+  port: 33130
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -136,39 +145,44 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 14 - github
-  server: 208.69.78.217
-  port: 33092
+  server: 104.165.205.42
+  port: 8443
   udp: true
   type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 15 - github
-  server: 208.69.78.217
-  port: 33174
+  server: 45.90.59.15
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 16 - github
-  server: 208.69.78.217
-  port: 21000
+  server: 147.45.42.73
+  port: 20443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
+  type: vless
+  uuid: fcbb9617-7b3c-4b21-8a91-a57350a75222
+  tls: true
+  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇨🇭 瑞士 (Switzerland) 17 - github
   server: 208.69.78.217
-  port: 21047
+  port: 21084
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -178,7 +192,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 18 - github
   server: 208.69.78.217
-  port: 33195
+  port: 21054
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -188,7 +202,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 19 - github
   server: 208.69.78.217
-  port: 33117
+  port: 21090
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -198,7 +212,97 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 20 - github
   server: 208.69.78.217
-  port: 21067
+  port: 33152
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 21 - github
+  server: 208.69.78.217
+  port: 33174
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 22 - github
+  server: 208.69.78.217
+  port: 33117
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 23 - github
+  server: 208.69.78.217
+  port: 21047
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 24 - github
+  server: 208.69.78.217
+  port: 33195
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 25 - github
+  server: 208.69.78.217
+  port: 21080
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 26 - github
+  server: 208.69.78.217
+  port: 21161
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 27 - github
+  server: 208.69.78.217
+  port: 8444
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 28 - github
+  server: 208.69.78.217
+  port: 33025
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 29 - github
+  server: 208.69.78.217
+  port: 21147
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -231,6 +335,15 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 18 - github
   - 🇨🇭 瑞士 (Switzerland) 19 - github
   - 🇨🇭 瑞士 (Switzerland) 20 - github
+  - 🇨🇭 瑞士 (Switzerland) 21 - github
+  - 🇨🇭 瑞士 (Switzerland) 22 - github
+  - 🇨🇭 瑞士 (Switzerland) 23 - github
+  - 🇨🇭 瑞士 (Switzerland) 24 - github
+  - 🇨🇭 瑞士 (Switzerland) 25 - github
+  - 🇨🇭 瑞士 (Switzerland) 26 - github
+  - 🇨🇭 瑞士 (Switzerland) 27 - github
+  - 🇨🇭 瑞士 (Switzerland) 28 - github
+  - 🇨🇭 瑞士 (Switzerland) 29 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -256,5 +369,14 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 18 - github
   - 🇨🇭 瑞士 (Switzerland) 19 - github
   - 🇨🇭 瑞士 (Switzerland) 20 - github
+  - 🇨🇭 瑞士 (Switzerland) 21 - github
+  - 🇨🇭 瑞士 (Switzerland) 22 - github
+  - 🇨🇭 瑞士 (Switzerland) 23 - github
+  - 🇨🇭 瑞士 (Switzerland) 24 - github
+  - 🇨🇭 瑞士 (Switzerland) 25 - github
+  - 🇨🇭 瑞士 (Switzerland) 26 - github
+  - 🇨🇭 瑞士 (Switzerland) 27 - github
+  - 🇨🇭 瑞士 (Switzerland) 28 - github
+  - 🇨🇭 瑞士 (Switzerland) 29 - github
 rules:
 - MATCH,PROXIES

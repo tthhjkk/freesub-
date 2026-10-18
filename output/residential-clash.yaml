@@ -4,26 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  server: test.keoplentuio.xyz
-  port: 2053
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
+  server: 206.1.100.148
+  port: 8443
   udp: true
   type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - github
-  server: tw0.zhujue.us
-  port: 11000
-  udp: true
-  type: vless
-  uuid: 0e46345c-f33b-4f9b-b8ec-90e7c986af7e
-  flow: xtls-rprx-vision
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
   tls: true
-  reality-opts:
-    public-key: sFRyah8EOSGcab8TfIdkq53c5HBSwAVfYQCyvZ0_BG4
-  servername: s0.awsstatic.com
+  servername: game.jafarghasemivip.ir
+  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
-  server: hinet1.2yly.com
+  server: 118.167.219.24
   port: 24215
   udp: true
   type: vless
@@ -32,22 +35,90 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: safari
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  server: 185.115.207.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HV1ZNVwcHTQsJSgAJVBQUG0dCQEwWAx4AAg4c
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇩🇪 德国 (Germany) 05 (家宽) - github
+  server: 209.38.238.229
+  port: 20202
+  udp: true
+  type: vless
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
+  tls: true
+  servername: wzs.echo.net.eu.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HUlZXSwcZUQABSgMNQRoaSVhfRhoOChkDDUs=
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇸🇬 新加坡 (Singapore) 07 (家宽) - github
+  server: s3.huhiuh.space
+  port: 18642
+  udp: true
+  type: hysteria2
+  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  sni: s3.huhiuh.space
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - github
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  - 🇩🇪 德国 (Germany) 05 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 07 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 02 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 04 (家宽) - github
+  - 🇩🇪 德国 (Germany) 05 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - github
+  - 🇸🇬 新加坡 (Singapore) 07 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - github
 rules:
 - MATCH,PROXIES
