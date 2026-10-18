@@ -14,37 +14,47 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 02 - github",
-      "server": "v2ray.simspeedup.com",
+      "server": "support.zoom.us.v2ray.simspeedup.com",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "ais.speedtest.net"
+          "Host": "support.zoom.us.v2ray.simspeedup.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - github",
-      "server": "funagfrdfs.alixxplay.com",
-      "server_port": 56415,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
+      "server": "188.114.97.6",
+      "server_port": 443,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
-        "server_name": "www.kaidee.com",
+        "server_name": "v2ray.simspeedup.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
-          "short_id": "cbd39bea0805e2"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "v2ray.simspeedup.com"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - github",
+      "server": "103.107.52.106",
+      "server_port": 52351,
+      "method": "aes-256-gcm",
+      "password": "sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c="
     },
     {
       "type": "selector",
@@ -53,7 +63,8 @@
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github",
+        "🇹🇭 泰国 (Thailand) 04 - github"
       ]
     },
     {
@@ -62,7 +73,8 @@
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - github",
         "🇹🇭 泰国 (Thailand) 02 - github",
-        "🇹🇭 泰国 (Thailand) 03 - github"
+        "🇹🇭 泰国 (Thailand) 03 - github",
+        "🇹🇭 泰国 (Thailand) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
