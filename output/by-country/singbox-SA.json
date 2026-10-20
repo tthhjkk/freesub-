@@ -5,23 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - github",
-      "server": "5.181.2.168",
-      "server_port": 443,
-      "uuid": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - github",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "hr1-4v.zvcorp24.com",
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg",
-          "short_id": "86afa150bc3a48f6"
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 (Croatia) 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 (Croatia) 01 - github"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
