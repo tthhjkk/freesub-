@@ -13,13 +13,15 @@ proxies:
   sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - github
-  server: 185.156.44.99
+  server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 46.28.67.55
   port: 443
@@ -47,15 +49,13 @@ proxies:
   servername: www.datadoghq.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - github
-  server: hy2-new.aspidnet.xyz
+  server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
+  password: gf1:gfhysteria2024
+  sni: google.com
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - github
   server: 154.46.31.106
   port: 443

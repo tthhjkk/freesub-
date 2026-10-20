@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - github
-  server: 51.24.54.202
+  server: 52.214.157.27
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
+- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
+  server: 18.169.146.8
   port: 22222
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
-  server: 16.61.117.36
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
+  server: 18.169.146.8
   port: 22224
   udp: true
   type: vless
@@ -23,6 +30,7 @@ proxy-groups:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - github
   - 🇮🇪 爱尔兰 (Ireland) 02 - github
+  - 🇮🇪 爱尔兰 (Ireland) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -30,5 +38,6 @@ proxy-groups:
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - github
   - 🇮🇪 爱尔兰 (Ireland) 02 - github
+  - 🇮🇪 爱尔兰 (Ireland) 03 - github
 rules:
 - MATCH,PROXIES

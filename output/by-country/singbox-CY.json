@@ -6,67 +6,25 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-      "server": "5.253.29.254",
-      "server_port": 10443,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-      "server": "5.253.29.254",
-      "server_port": 14430,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.253.29.254"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-      "server": "5.253.30.99",
-      "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
-      "flow": "xtls-rprx-vision",
+      "server": "2.56.175.179",
+      "server_port": 9443,
+      "uuid": "8179d7cc-82bc-4eae-a97f-5d30c6c2a812",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
+        "server_name": "itunes.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - github",
-      "server": "hydra.yokkastars.com",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
+          "public_key": "8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg",
+          "short_id": "6ba7b810"
         }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
+        "service_name": "grpc"
       }
     },
     {
@@ -74,20 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

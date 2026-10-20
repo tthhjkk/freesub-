@@ -7,22 +7,14 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - github",
       "server": "217.30.10.44",
-      "server_port": 9063,
+      "server_port": 9052,
       "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - github",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - github",
-      "server": "45.194.66.17",
+      "tag": "🇵🇱 波兰 (Poland) 02 - github",
+      "server": "45.194.66.191",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -42,26 +34,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 04 - github",
-      "server": "31.133.0.186",
+      "tag": "🇵🇱 波兰 (Poland) 03 - github",
+      "server": "pl2.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "pl2.dedushka.top",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - github",
+      "tag": "🇵🇱 波兰 (Poland) 04 - github",
       "server": "pl1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
@@ -73,14 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - github",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - github",
+      "tag": "🇵🇱 波兰 (Poland) 05 - github",
       "server": "144.31.101.196",
       "server_port": 33891,
       "uuid": "1c794e75-bcd4-4a65-9f69-ed0a10f33d60",
@@ -96,6 +74,38 @@
           "enabled": true,
           "public_key": "HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw",
           "short_id": "5bd7b68ca4c04443"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 06 - github",
+      "server": "78.17.128.153",
+      "server_port": 35076,
+      "password": "b4c8ee9caa74b7ba0a61",
+      "tls": {
+        "enabled": true,
+        "server_name": "scrap.halyvanedorogo.ru",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - github",
+      "server": "pl1.h1cloud.net",
+      "server_port": 27591,
+      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "short_id": "6c5c7900406a1ae7"
         }
       }
     },
@@ -121,23 +131,32 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 09 - github",
-      "server": "scrap.halyvanedorogo.ru",
-      "server_port": 35076,
-      "password": "b4c8ee9caa74b7ba0a61",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "scrap.halyvanedorogo.ru",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 10 - github",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vmess",
@@ -151,39 +170,6 @@
         "path": "/",
         "headers": {
           "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - github",
-      "server": "2.26.225.89",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 13 - github",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
         }
       }
     },
@@ -202,9 +188,7 @@
         "🇵🇱 波兰 (Poland) 08 - github",
         "🇵🇱 波兰 (Poland) 09 - github",
         "🇵🇱 波兰 (Poland) 10 - github",
-        "🇵🇱 波兰 (Poland) 11 - github",
-        "🇵🇱 波兰 (Poland) 12 - github",
-        "🇵🇱 波兰 (Poland) 13 - github"
+        "🇵🇱 波兰 (Poland) 11 - github"
       ]
     },
     {
@@ -221,9 +205,7 @@
         "🇵🇱 波兰 (Poland) 08 - github",
         "🇵🇱 波兰 (Poland) 09 - github",
         "🇵🇱 波兰 (Poland) 10 - github",
-        "🇵🇱 波兰 (Poland) 11 - github",
-        "🇵🇱 波兰 (Poland) 12 - github",
-        "🇵🇱 波兰 (Poland) 13 - github"
+        "🇵🇱 波兰 (Poland) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
