@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - github",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -26,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - github",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - github",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -51,7 +59,8 @@
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - github"
       ]
     },
     {
@@ -59,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - github",
-        "🇱🇻 拉脱维亚 (Latvia) 02 - github"
+        "🇱🇻 拉脱维亚 (Latvia) 02 - github",
+        "🇱🇻 拉脱维亚 (Latvia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

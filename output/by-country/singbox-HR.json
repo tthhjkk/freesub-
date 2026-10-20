@@ -5,23 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github",
-      "server": "51.75.67.209",
-      "server_port": 8443,
-      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - github",
+      "server": "5.181.2.168",
+      "server_port": 443,
+      "uuid": "9ab9291e-fd72-4af9-b227-93419e90ff2e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false,
+        "server_name": "hr1-4v.zvcorp24.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FSoosmyb1Odcc6yucO4B-0YC0fKytdBbvuwJKn7Wbkg",
+          "short_id": "86afa150bc3a48f6"
         }
       }
     },
@@ -30,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github"
+        "🇭🇷 克罗地亚 (Croatia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01 - github"
+        "🇭🇷 克罗地亚 (Croatia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

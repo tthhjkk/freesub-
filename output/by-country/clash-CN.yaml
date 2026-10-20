@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
-  server: 51.75.67.209
-  port: 8443
+- name: 🇨🇳 CN 01 - github
+  server: 188.114.98.0
+  port: 443
   udp: true
   type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
   tls: true
-  servername: free.sahanwickramasinghe.me
+  servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /vlessws
     headers:
-      Host: free.sahanwickramasinghe.me
+      Host: vpn.cintaku.qzz.io
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
+  - 🇨🇳 CN 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - github
+  - 🇨🇳 CN 01 - github
 rules:
 - MATCH,PROXIES
