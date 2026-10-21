@@ -6,6 +6,35 @@
     {
       "type": "vless",
       "tag": "🇻🇳 越南 (Vietnam) 01 - github",
+      "server": "154.21.203.106",
+      "server_port": 51279,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tesla.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A",
+          "short_id": "bb82c8"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇻🇳 越南 (Vietnam) 02 - github",
+      "server": "160.22.16.196",
+      "server_port": 16836,
+      "uuid": "1e914b4e-e50a-47eb-cd07-36e971fa7f1b",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇻🇳 越南 (Vietnam) 03 - github",
       "server": "funagfrdfs.alixxplay.com",
       "server_port": 55688,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -29,14 +58,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - github"
+        "🇻🇳 越南 (Vietnam) 01 - github",
+        "🇻🇳 越南 (Vietnam) 02 - github",
+        "🇻🇳 越南 (Vietnam) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - github"
+        "🇻🇳 越南 (Vietnam) 01 - github",
+        "🇻🇳 越南 (Vietnam) 02 - github",
+        "🇻🇳 越南 (Vietnam) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

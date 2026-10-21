@@ -4,27 +4,60 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - github",
-      "server": "185.156.44.99",
+      "server": "de1.dedushka.top",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "insecure": true
+        "server_name": "de1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
+      "server": "109.104.106.101",
+      "server_port": 443,
+      "uuid": "e5544327-834c-455a-9db5-2454c788fa17",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "d1-ro.cloud-cdn.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "V-6tk21giXjug4ZXwpAhT4aXHjsXYwkgznT4dQEc9Aw",
+          "short_id": "48d6ed723454f6db"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "hy2-new.aspidnet.xyz",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -33,28 +66,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
-      }
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -64,28 +83,13 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
           "short_id": "fe24f8a0a560056e"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
-      "server": "de1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "de1.dedushka.top",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
       }
     },
     {
@@ -97,7 +101,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
-        "🇷🇴 罗马尼亚 (Romania) 05 - github"
+        "🇷🇴 罗马尼亚 (Romania) 05 - github",
+        "🇷🇴 罗马尼亚 (Romania) 06 - github"
       ]
     },
     {
@@ -108,7 +113,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
         "🇷🇴 罗马尼亚 (Romania) 04 - github",
-        "🇷🇴 罗马尼亚 (Romania) 05 - github"
+        "🇷🇴 罗马尼亚 (Romania) 05 - github",
+        "🇷🇴 罗马尼亚 (Romania) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

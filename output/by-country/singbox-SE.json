@@ -28,7 +28,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -42,12 +42,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - github",
-        "🇸🇪 瑞典 (Sweden) 02 - github"
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ]
     },
     {
@@ -55,7 +72,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - github",
-        "🇸🇪 瑞典 (Sweden) 02 - github"
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
