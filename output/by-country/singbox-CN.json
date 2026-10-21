@@ -4,26 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01 - github",
-      "server": "39.108.113.127",
-      "server_port": 10086,
-      "uuid": "7547daaa-1577-49b0-9519-bd1823add1a7",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇳 CN 02 - github",
+      "tag": "🇨🇳 CN 01 - github",
       "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
         "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
@@ -38,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - github",
-        "🇨🇳 CN 02 - github"
+        "🇨🇳 CN 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - github",
-        "🇨🇳 CN 02 - github"
+        "🇨🇳 CN 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
