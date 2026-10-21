@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01 - github",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "type": "vmess",
+      "tag": "🇲🇽 墨西哥 (Mexico) 01 - github",
+      "server": "131.196.252.59",
+      "server_port": 20521,
+      "uuid": "5809911a-a16e-43d3-90b0-2c94cfc2035e",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01 - github"
+        "🇲🇽 墨西哥 (Mexico) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01 - github"
+        "🇲🇽 墨西哥 (Mexico) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

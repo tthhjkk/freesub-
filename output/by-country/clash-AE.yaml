@@ -23,6 +23,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - github
   server: uae.unixzone.us
   port: 22573
@@ -32,6 +34,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
   server: 45.59.120.217
   port: 443
