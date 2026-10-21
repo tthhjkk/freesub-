@@ -18,14 +18,24 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇮🇳 印度 (India) 02 - github",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
+      "server": "165.99.222.161",
+      "server_port": 443,
+      "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "in1.vkusnews.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4",
+          "short_id": ""
+        }
       }
     },
     {
@@ -57,6 +67,24 @@
       "password": "RexnBgU7EV5ADxG"
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 05 - github",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 06 - github",
+      "server": "5.253.29.254",
+      "server_port": 10443,
+      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -64,7 +92,9 @@
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github"
+        "🇮🇳 印度 (India) 04 - github",
+        "🇮🇳 印度 (India) 05 - github",
+        "🇮🇳 印度 (India) 06 - github"
       ]
     },
     {
@@ -74,7 +104,9 @@
         "🇮🇳 印度 (India) 01 - github",
         "🇮🇳 印度 (India) 02 - github",
         "🇮🇳 印度 (India) 03 - github",
-        "🇮🇳 印度 (India) 04 - github"
+        "🇮🇳 印度 (India) 04 - github",
+        "🇮🇳 印度 (India) 05 - github",
+        "🇮🇳 印度 (India) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

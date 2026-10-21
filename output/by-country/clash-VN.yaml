@@ -18,14 +18,6 @@ proxies:
   servername: www.tesla.com
   client-fingerprint: random
 - name: 🇻🇳 越南 (Vietnam) 02 - github
-  server: 160.22.16.196
-  port: 16836
-  udp: true
-  type: vmess
-  uuid: 1e914b4e-e50a-47eb-cd07-36e971fa7f1b
-  alterId: 0
-  cipher: auto
-- name: 🇻🇳 越南 (Vietnam) 03 - github
   server: funagfrdfs.alixxplay.com
   port: 55688
   udp: true
@@ -45,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - github
   - 🇻🇳 越南 (Vietnam) 02 - github
-  - 🇻🇳 越南 (Vietnam) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - github
   - 🇻🇳 越南 (Vietnam) 02 - github
-  - 🇻🇳 越南 (Vietnam) 03 - github
 rules:
 - MATCH,PROXIES
