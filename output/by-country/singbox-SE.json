@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - github",
-      "server": "51.21.247.148",
+      "server": "51.21.135.136",
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
@@ -16,35 +16,20 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
-      "server": "sub.merky.top",
-      "server_port": 443,
-      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
-      "tls": {
-        "enabled": true,
-        "server_name": "sub.merky.top",
-        "insecure": false
-      },
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/merky-connect/de6/",
+        "path": "/vless",
         "headers": {
-          "Host": "sub.merky.top"
+          "Host": "5.178.109.174"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
-      "server": "13.60.198.133",
-      "server_port": 443,
-      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
-      "transport": {
-        "type": "http"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - github",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -65,8 +50,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - github",
         "🇸🇪 瑞典 (Sweden) 02 - github",
-        "🇸🇪 瑞典 (Sweden) 03 - github",
-        "🇸🇪 瑞典 (Sweden) 04 - github"
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ]
     },
     {
@@ -75,8 +59,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - github",
         "🇸🇪 瑞典 (Sweden) 02 - github",
-        "🇸🇪 瑞典 (Sweden) 03 - github",
-        "🇸🇪 瑞典 (Sweden) 04 - github"
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

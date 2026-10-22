@@ -20,6 +20,16 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 02 - github
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -32,7 +42,7 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
+- name: 🇹🇷 土耳其 (Turkey) 04 - github
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -43,8 +53,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - github
   server: 177.3.208.65
   port: 443
   udp: true
@@ -66,6 +76,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +86,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
   - 🇹🇷 土耳其 (Turkey) 04 - github
+  - 🇹🇷 土耳其 (Turkey) 05 - github
 rules:
 - MATCH,PROXIES
