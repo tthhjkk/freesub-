@@ -4,28 +4,26 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - github
-  server: 172.64.145.133
-  port: 443
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - github
+  server: 194.36.37.59
+  port: 10004
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
+  type: vless
+  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
   network: ws
   ws-opts:
-    path: /assignment
+    path: /vpnjantit
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - github
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - github
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - github
 rules:
 - MATCH,PROXIES

@@ -4,22 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - github",
-      "server": "172.64.145.133",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.pleadcourt.org",
-        "insecure": false
-      },
+      "type": "vless",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+      "server": "194.36.37.59",
+      "server_port": 10004,
+      "uuid": "f7376394-cd54-11f1-bb6a-bff6d0326f6a",
       "transport": {
         "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.pleadcourt.org"
-        }
+        "path": "/vpnjantit"
       }
     },
     {
@@ -27,14 +19,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

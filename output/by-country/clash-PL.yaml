@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
   server: 217.30.10.44
-  port: 9062
+  port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
+  password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 02 - github
   server: 217.30.10.44
   port: 9006
@@ -19,22 +19,14 @@ proxies:
   cipher: aes-256-cfb
   password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 03 - github
-  server: 31.133.0.182
+  server: 92.118.150.146
   port: 443
   udp: true
   type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
+  password: Trojan@82164024
+  sni: pl.tronsg.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04 - github
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - github
   server: 78.17.128.153
   port: 35076
   udp: true
@@ -42,19 +34,22 @@ proxies:
   password: b4c8ee9caa74b7ba0a61
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 06 - github
-  server: 54.37.131.126
-  port: 80
+- name: 🇵🇱 波兰 (Poland) 05 - github
+  server: 31.133.0.182
+  port: 443
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl1.dedushka.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 06 - github
+  server: pl2.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 07 - github
   server: 82.118.22.161
   port: 443
