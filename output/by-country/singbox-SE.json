@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - github",
+      "server": "185.58.115.62",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se2.gderevievsvideos.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
       "server": "77.110.96.201",
       "server_port": 36264,
       "password": "Telegram-vpnjey",
@@ -20,18 +41,36 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01 - github"
+        "🇸🇪 瑞典 (Sweden) 01 - github",
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01 - github"
+        "🇸🇪 瑞典 (Sweden) 01 - github",
+        "🇸🇪 瑞典 (Sweden) 02 - github",
+        "🇸🇪 瑞典 (Sweden) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

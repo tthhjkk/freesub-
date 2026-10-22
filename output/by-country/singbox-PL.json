@@ -15,50 +15,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - github",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 03 - github",
-      "server": "31.133.0.186",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.dedushka.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - github",
-      "server": "144.31.0.140",
-      "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.sakhalin.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - github",
       "server": "31.133.0.182",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
@@ -70,27 +33,20 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06 - github",
-      "server": "78.17.171.137",
+      "tag": "🇵🇱 波兰 (Poland) 04 - github",
+      "server": "31.133.0.186",
       "server_port": 443,
-      "password": "u93yPGuY2zgIsisJZKS2QzJzg",
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "2.HI-L.IM",
+        "server_name": "pl2.dedushka.top",
         "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/f2fc2a1f",
-        "headers": {
-          "Host": "2.hi-l.im"
-        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 07 - github",
-      "server": "scrap.halyvanedorogo.ru",
+      "tag": "🇵🇱 波兰 (Poland) 05 - github",
+      "server": "78.17.128.153",
       "server_port": 35076,
       "password": "b4c8ee9caa74b7ba0a61",
       "tls": {
@@ -101,7 +57,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 08 - github",
+      "tag": "🇵🇱 波兰 (Poland) 06 - github",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -116,14 +72,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - github",
-      "server": "pl.flen-vpn.xyz",
-      "server_port": 8443,
-      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tag": "🇵🇱 波兰 (Poland) 07 - github",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl.flen-vpn.xyz",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
       }
     },
     {
@@ -137,9 +102,7 @@
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
         "🇵🇱 波兰 (Poland) 06 - github",
-        "🇵🇱 波兰 (Poland) 07 - github",
-        "🇵🇱 波兰 (Poland) 08 - github",
-        "🇵🇱 波兰 (Poland) 09 - github"
+        "🇵🇱 波兰 (Poland) 07 - github"
       ]
     },
     {
@@ -152,9 +115,7 @@
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
         "🇵🇱 波兰 (Poland) 06 - github",
-        "🇵🇱 波兰 (Poland) 07 - github",
-        "🇵🇱 波兰 (Poland) 08 - github",
-        "🇵🇱 波兰 (Poland) 09 - github"
+        "🇵🇱 波兰 (Poland) 07 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

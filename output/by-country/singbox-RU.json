@@ -46,16 +46,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
-      "server": "46.17.44.216",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - github",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
       "server": "77.90.61.135",
       "server_port": 443,
       "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
@@ -64,7 +56,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -74,36 +66,13 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
-      "server": "194.87.118.184",
-      "server_port": 2053,
-      "password": "7ab3c77e-8fcc-4848-918f-cae3d4eac794",
-      "tls": {
-        "enabled": true,
-        "server_name": "194.87.118.184",
-        "insecure": true
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - github",
-      "server": "176.32.33.254",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - github",
         "🇷🇺 俄罗斯 (Russia) 02 - github",
-        "🇷🇺 俄罗斯 (Russia) 03 - github",
-        "🇷🇺 俄罗斯 (Russia) 04 - github",
-        "🇷🇺 俄罗斯 (Russia) 05 - github",
-        "🇷🇺 俄罗斯 (Russia) 06 - github"
+        "🇷🇺 俄罗斯 (Russia) 03 - github"
       ]
     },
     {
@@ -112,10 +81,7 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - github",
         "🇷🇺 俄罗斯 (Russia) 02 - github",
-        "🇷🇺 俄罗斯 (Russia) 03 - github",
-        "🇷🇺 俄罗斯 (Russia) 04 - github",
-        "🇷🇺 俄罗斯 (Russia) 05 - github",
-        "🇷🇺 俄罗斯 (Russia) 06 - github"
+        "🇷🇺 俄罗斯 (Russia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
