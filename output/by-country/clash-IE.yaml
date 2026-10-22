@@ -5,36 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - github
-  server: 18.169.214.179
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - github
-  server: 16.60.128.74
-  port: 22224
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - github
-  server: 18.169.214.179
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 04 - github
-  server: 16.60.128.74
-  port: 22223
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 05 - github
-  server: 16.60.128.74
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 06 - github
   server: ie1.dedushka.top
   port: 443
   udp: true
@@ -48,21 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - github
-  - 🇮🇪 爱尔兰 (Ireland) 02 - github
-  - 🇮🇪 爱尔兰 (Ireland) 03 - github
-  - 🇮🇪 爱尔兰 (Ireland) 04 - github
-  - 🇮🇪 爱尔兰 (Ireland) 05 - github
-  - 🇮🇪 爱尔兰 (Ireland) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - github
-  - 🇮🇪 爱尔兰 (Ireland) 02 - github
-  - 🇮🇪 爱尔兰 (Ireland) 03 - github
-  - 🇮🇪 爱尔兰 (Ireland) 04 - github
-  - 🇮🇪 爱尔兰 (Ireland) 05 - github
-  - 🇮🇪 爱尔兰 (Ireland) 06 - github
 rules:
 - MATCH,PROXIES

@@ -15,19 +15,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02 - github
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 03 - github
   server: 165.99.222.161
   port: 443
   udp: true
@@ -38,20 +27,16 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: qq
-- name: 🇮🇳 印度 (India) 04 - github
-  server: 152.67.8.205
-  port: 80
+  client-fingerprint: ios
+- name: 🇮🇳 印度 (India) 03 - github
+  server: 13.140.56.100
+  port: 14430
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: in-152.67.8.205-0250
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,7 +45,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - github
   - 🇮🇳 印度 (India) 02 - github
   - 🇮🇳 印度 (India) 03 - github
-  - 🇮🇳 印度 (India) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,6 +53,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01 - github
   - 🇮🇳 印度 (India) 02 - github
   - 🇮🇳 印度 (India) 03 - github
-  - 🇮🇳 印度 (India) 04 - github
 rules:
 - MATCH,PROXIES
