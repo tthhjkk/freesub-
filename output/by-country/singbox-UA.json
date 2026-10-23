@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 02 - github",
-      "server": "netx.smrtai.top",
-      "server_port": 443,
-      "uuid": "d8b58872-cc25-4bb2-badb-b86399c075fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk",
-          "short_id": "d8b58872"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - github",
       "server": "83.147.18.75",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -54,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 04 - github",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 03 - github",
       "server": "104.253.216.227",
       "server_port": 443,
       "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
@@ -80,8 +60,7 @@
         "auto",
         "🇺🇦 乌克兰 (Ukraine) 01 - github",
         "🇺🇦 乌克兰 (Ukraine) 02 - github",
-        "🇺🇦 乌克兰 (Ukraine) 03 - github",
-        "🇺🇦 乌克兰 (Ukraine) 04 - github"
+        "🇺🇦 乌克兰 (Ukraine) 03 - github"
       ]
     },
     {
@@ -90,8 +69,7 @@
       "outbounds": [
         "🇺🇦 乌克兰 (Ukraine) 01 - github",
         "🇺🇦 乌克兰 (Ukraine) 02 - github",
-        "🇺🇦 乌克兰 (Ukraine) 03 - github",
-        "🇺🇦 乌克兰 (Ukraine) 04 - github"
+        "🇺🇦 乌克兰 (Ukraine) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
