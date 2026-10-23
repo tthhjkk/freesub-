@@ -12,16 +12,53 @@
       "password": "S2zDyyPcmZN2h8EC"
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 02 - github",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "server": "31.133.0.186",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.dedushka.top",
+        "insecure": true
+      }
     },
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 03 - github",
+      "server": "31.133.0.182",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04 - github",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 05 - github",
       "server": "92.118.150.146",
       "server_port": 443,
       "password": "Trojan@82164024",
@@ -36,8 +73,70 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - github",
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - github",
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 08 - github",
+      "server": "144.31.0.140",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.sakhalin.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 09 - github",
+      "server": "2.26.225.89",
+      "server_port": 8443,
+      "uuid": "51a1fd52-fd88-4905-a976-35e44be28e4b",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.flen-vpn.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 10 - github",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 04 - github",
+      "tag": "🇵🇱 波兰 (Poland) 11 - github",
       "server": "78.17.128.153",
       "server_port": 35076,
       "password": "b4c8ee9caa74b7ba0a61",
@@ -45,51 +144,6 @@
         "enabled": true,
         "server_name": "scrap.halyvanedorogo.ru",
         "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - github",
-      "server": "31.133.0.182",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.dedushka.top",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 06 - github",
-      "server": "pl2.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.dedushka.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - github",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
       }
     },
     {
@@ -103,7 +157,11 @@
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
         "🇵🇱 波兰 (Poland) 06 - github",
-        "🇵🇱 波兰 (Poland) 07 - github"
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github",
+        "🇵🇱 波兰 (Poland) 09 - github",
+        "🇵🇱 波兰 (Poland) 10 - github",
+        "🇵🇱 波兰 (Poland) 11 - github"
       ]
     },
     {
@@ -116,7 +174,11 @@
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
         "🇵🇱 波兰 (Poland) 06 - github",
-        "🇵🇱 波兰 (Poland) 07 - github"
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github",
+        "🇵🇱 波兰 (Poland) 09 - github",
+        "🇵🇱 波兰 (Poland) 10 - github",
+        "🇵🇱 波兰 (Poland) 11 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

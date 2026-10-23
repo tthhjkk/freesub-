@@ -48,7 +48,7 @@ proxies:
     public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
