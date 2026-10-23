@@ -33,12 +33,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - github",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "6c825bc79850"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github"
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ]
     },
     {
@@ -46,7 +68,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - github",
-        "🇨🇿 捷克 (Czech) 02 - github"
+        "🇨🇿 捷克 (Czech) 02 - github",
+        "🇨🇿 捷克 (Czech) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

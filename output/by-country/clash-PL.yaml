@@ -5,35 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
-  server: 82.118.22.161
-  port: 443
+  server: 217.30.10.44
+  port: 9042
   udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: ''
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 02 - github
-  server: 31.133.0.182
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - github
-  server: pl2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - github
   server: 78.17.128.153
   port: 35076
   udp: true
@@ -41,7 +19,7 @@ proxies:
   password: b4c8ee9caa74b7ba0a61
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - github
+- name: 🇵🇱 波兰 (Poland) 03 - github
   server: 54.37.131.126
   port: 80
   udp: true
@@ -54,15 +32,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - github
-  server: 2.26.225.89
-  port: 8443
+- name: 🇵🇱 波兰 (Poland) 04 - github
+  server: 82.118.22.161
+  port: 443
   udp: true
   type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
   tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +54,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - github
   - 🇵🇱 波兰 (Poland) 03 - github
   - 🇵🇱 波兰 (Poland) 04 - github
-  - 🇵🇱 波兰 (Poland) 05 - github
-  - 🇵🇱 波兰 (Poland) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +63,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - github
   - 🇵🇱 波兰 (Poland) 03 - github
   - 🇵🇱 波兰 (Poland) 04 - github
-  - 🇵🇱 波兰 (Poland) 05 - github
-  - 🇵🇱 波兰 (Poland) 06 - github
 rules:
 - MATCH,PROXIES
