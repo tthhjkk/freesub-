@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - github
-  server: ee1.mycloud1.org
+  server: 194.26.141.223
   port: 443
   udp: true
   type: vless

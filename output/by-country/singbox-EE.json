@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
-      "server": "ee1.mycloud1.org",
+      "server": "194.26.141.223",
       "server_port": 443,
       "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
       "flow": "xtls-rprx-vision",

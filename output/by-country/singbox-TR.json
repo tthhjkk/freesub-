@@ -27,6 +27,43 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - github",
+      "server": "45.151.71.147",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abuse.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
+      "server": "153.56.210.134",
+      "server_port": 34121,
+      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -46,7 +83,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -69,17 +106,9 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
-      "server": "206.1.99.36",
-      "server_port": 58202,
-      "uuid": "482e7f58-e8e8-418d-accd-0a94bdf090ae",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
-      "server": "trend.eidoslab.link",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - github",
+      "server": "45.74.159.238",
       "server_port": 443,
       "uuid": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
       "flow": "xtls-rprx-vision",
@@ -88,7 +117,7 @@
         "server_name": "trend.eidoslab.link",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -106,7 +135,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github",
+        "🇹🇷 土耳其 (Turkey) 06 - github"
       ]
     },
     {
@@ -117,7 +147,8 @@
         "🇹🇷 土耳其 (Turkey) 02 - github",
         "🇹🇷 土耳其 (Turkey) 03 - github",
         "🇹🇷 土耳其 (Turkey) 04 - github",
-        "🇹🇷 土耳其 (Turkey) 05 - github"
+        "🇹🇷 土耳其 (Turkey) 05 - github",
+        "🇹🇷 土耳其 (Turkey) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

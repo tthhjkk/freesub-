@@ -5,19 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
+  server: 49.12.249.167
+  port: 147
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 5uDrCF_iLoxCiRkKku6f7A
+- name: 🇵🇱 波兰 (Poland) 02 - github
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 02 - github
-  server: scrap.halyvanedorogo.ru
-  port: 35076
+- name: 🇵🇱 波兰 (Poland) 03 - github
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
+  type: vmess
+  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +37,7 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - github
   - 🇵🇱 波兰 (Poland) 02 - github
+  - 🇵🇱 波兰 (Poland) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +45,6 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - github
   - 🇵🇱 波兰 (Poland) 02 - github
+  - 🇵🇱 波兰 (Poland) 03 - github
 rules:
 - MATCH,PROXIES
