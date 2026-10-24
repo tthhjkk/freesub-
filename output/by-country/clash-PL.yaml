@@ -5,19 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
-  server: 49.12.249.167
-  port: 147
+  server: 5.22.221.127
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  type: vless
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - github
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03 - github
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - github
+- name: 🇵🇱 波兰 (Poland) 04 - github
   server: 54.37.131.126
   port: 80
   udp: true
@@ -38,6 +43,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - github
   - 🇵🇱 波兰 (Poland) 02 - github
   - 🇵🇱 波兰 (Poland) 03 - github
+  - 🇵🇱 波兰 (Poland) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +52,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01 - github
   - 🇵🇱 波兰 (Poland) 02 - github
   - 🇵🇱 波兰 (Poland) 03 - github
+  - 🇵🇱 波兰 (Poland) 04 - github
 rules:
 - MATCH,PROXIES
