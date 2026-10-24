@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01 - github",
-      "server": "120.48.133.162",
-      "server_port": 10086,
-      "uuid": "a01e5d56-464f-45b9-b600-164db4700162",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - github"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - github"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
