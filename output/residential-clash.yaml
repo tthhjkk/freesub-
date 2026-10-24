@@ -4,7 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - github
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - github
+  server: 172.67.67.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇺🇸 美国 (United States) 02 (家宽) R50 - github
+  server: 23.160.56.99
+  port: 2087
+  udp: true
+  type: vless
+  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
+- name: 🇺🇸 美国 (United States) 03 (家宽) - github
   server: 155.117.19.17
   port: 443
   udp: true
@@ -14,7 +35,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
   server: 61.230.160.34
   port: 24215
   udp: true
@@ -25,35 +46,23 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03 (家宽) - github
-  server: 122.176.216.52
-  port: 443
-  udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
-  - 🇮🇳 印度 (India) 03 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 02 (家宽) R50 - github
+  - 🇺🇸 美国 (United States) 03 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - github
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
-  - 🇮🇳 印度 (India) 03 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 02 (家宽) R50 - github
+  - 🇺🇸 美国 (United States) 03 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
 rules:
 - MATCH,PROXIES
