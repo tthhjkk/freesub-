@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
+  server: 45.149.147.213
+  port: 4444
+  udp: true
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 02 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -16,25 +27,13 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 2.27.203.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
-  servername: edge-fi2.lovely.my
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - github
   server: 2.26.3.75
   port: 443
   udp: true
   type: hysteria2
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
+  sni: 2.26.3.75
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - github
   server: 45.144.234.157
@@ -48,7 +47,32 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: hw3.divarkhaghazi.com.
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 2.27.203.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
+  servername: edge-fi2.lovely.my
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 07 - github
+  server: 65.109.212.121
   port: 465
   udp: true
   type: vless
@@ -56,14 +80,13 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: 177.3.214.156
+- name: 🇫🇮 芬兰 (Finland) 08 - github
+  server: finlandlanzarotte.live
   port: 443
   udp: true
   type: vless
@@ -73,7 +96,37 @@ proxies:
   reality-opts:
     public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
   servername: finlandlanzarotte.live
-  client-fingerprint: firefox
+  client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 09 - github
+  server: 2.27.207.208
+  port: 8081
+  udp: true
+  type: vless
+  uuid: 9db9a16c-0cce-4b67-a7cc-7bc2cbd5c7dd
+  tls: true
+  servername: ang-el.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: ang-el.ir
+- name: 🇫🇮 芬兰 (Finland) 10 - github
+  server: 2.29.101.158
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9a0e84f8-4b58-477f-99da-5fac5a2e58e8
+  tls: true
+  reality-opts:
+    public-key: pAgrBKJCmuSJHIzYkEJTqsOBOVBK_DMtEqFPo-PaTkg
+    short-id: b3c9d0c6bdd114a6
+  servername: 36a466g.fi1.h1clayd.click
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 0adb9638509b
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,6 +138,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
+  - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -96,5 +153,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
+  - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
+  - 🇫🇮 芬兰 (Finland) 10 - github
 rules:
 - MATCH,PROXIES
