@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - github",
+      "server": "51.161.204.242",
+      "server_port": 443,
+      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
+          "short_id": "d15c17cef9b2e456"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - github",
       "server": "158.178.137.129",
       "password": "b42d90fa667942aebc734d60",
       "tls": {
@@ -24,7 +45,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - github",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - github",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -44,7 +65,8 @@
       "outbounds": [
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - github",
-        "🇦🇺 澳大利亚 (Australia) 02 - github"
+        "🇦🇺 澳大利亚 (Australia) 02 - github",
+        "🇦🇺 澳大利亚 (Australia) 03 - github"
       ]
     },
     {
@@ -52,7 +74,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - github",
-        "🇦🇺 澳大利亚 (Australia) 02 - github"
+        "🇦🇺 澳大利亚 (Australia) 02 - github",
+        "🇦🇺 澳大利亚 (Australia) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

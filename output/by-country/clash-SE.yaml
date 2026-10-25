@@ -13,7 +13,7 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 191.44.114.179
+  server: se14-node.rumedia-cdn.com
   port: 2096
   udp: true
   type: vless
@@ -21,7 +21,6 @@ proxies:
   tls: true
   servername: st33614.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live

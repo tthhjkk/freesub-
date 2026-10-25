@@ -5,19 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - github
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
   server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
@@ -28,7 +15,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
   server: 109.73.192.248
   port: 443
   udp: true
@@ -47,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - github
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - github
 rules:
 - MATCH,PROXIES
