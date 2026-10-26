@@ -6,6 +6,17 @@ log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
   server: 45.149.147.213
+  port: 4444
+  udp: true
+  type: trojan
+  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
+  sni: 45-149-147-213.sslip.io
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: kobedin-server1-trojan
+- name: 🇫🇮 芬兰 (Finland) 02 - github
+  server: 45.149.147.213
   port: 4443
   udp: true
   type: vless
@@ -17,18 +28,22 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
-- name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 45.149.147.213
-  port: 4444
+- name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 77.42.12.225
+  port: 443
   udp: true
-  type: trojan
-  password: 9b347a9b-d7a6-4b51-9890-eff62b832834
-  sni: 45-149-147-213.sslip.io
-  skip-cert-verify: false
+  type: vless
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  tls: true
+  reality-opts:
+    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
+    short-id: 09d0a94a1c6fc9d5
+  servername: 8fc752g.fi3.h1clayd.click
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: kobedin-server1-trojan
-- name: 🇫🇮 芬兰 (Finland) 03 - github
+    grpc-service-name: f345a414c040
+- name: 🇫🇮 芬兰 (Finland) 04 - github
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -37,9 +52,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04 - github
+- name: 🇫🇮 芬兰 (Finland) 05 - github
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -51,7 +64,33 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - github
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 92.242.165.10
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 75b517db-1f97-4bda-a479-863d988c31a0
+  tls: true
+  servername: speedtestmark.com
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /vless-ws
+- name: 🇫🇮 芬兰 (Finland) 07 - github
+  server: 94.228.167.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: 37ca5f34-2531-4fda-a781-20f3845fea88
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dCaQHVtwEPBeiH3ivVU9ycGJZ8uCO2JaIVjYBnfaTWY
+    short-id: c13c9bd7bd45847d
+  servername: washingphonicseatable.solsticedigest.me
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - github
   server: 65.109.212.193
   port: 465
   udp: true
@@ -65,20 +104,8 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 06 - github
-  server: 2.27.203.251
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
-  servername: edge-fi2.lovely.my
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - github
-  server: fin2.pad-sservice.lat
+- name: 🇫🇮 芬兰 (Finland) 09 - github
+  server: 213.176.17.159
   port: 8443
   udp: true
   type: vless
@@ -86,24 +113,12 @@ proxies:
   tls: true
   servername: fin2.pad-sservice.lat
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /fin2-1
     headers:
       Host: fin2.pad-service.com
-- name: 🇫🇮 芬兰 (Finland) 08 - github
-  server: 2.27.13.152
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
-    short-id: 0f47ff9aa15e3e30
-  servername: www.nokia.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,6 +132,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,5 +146,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
   - 🇫🇮 芬兰 (Finland) 08 - github
+  - 🇫🇮 芬兰 (Finland) 09 - github
 rules:
 - MATCH,PROXIES
