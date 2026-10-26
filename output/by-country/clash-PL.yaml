@@ -5,12 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
-  server: 5.22.221.127
-  port: 443
+  server: 2.26.6.1
+  port: 2087
   udp: true
   type: vless
-  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02 - github
+  server: 78.17.128.153
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03 - github
+  server: 191.217.211.128
+  port: 20270
+  udp: true
+  type: hysteria2
+  password: dd56bf58-4c37-42e1-9e75-4b6c67939ffd
+  sni: pl1.song69.fun
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - github
+  server: pl2.shvpn.ru
+  port: 4443
+  udp: true
+  type: hysteria2
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  sni: pl2.shvpn.ru
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - github
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 06 - github
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -23,71 +56,58 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 03 - github
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04 - github
-  server: tr2.soft10.ir
-  port: 2053
+- name: 🇵🇱 波兰 (Poland) 07 - github
+  server: 201.10.91.68
+  port: 8443
   udp: true
   type: vless
-  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: tr2.soft10.ir
+  servername: pl1.pad-sservice.lat
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /PL1W
     headers:
-      Host: tr2.soft10.ir
-- name: 🇵🇱 波兰 (Poland) 05 - github
-  server: site.teslamotor.site
-  port: 20001
+      Host: pl1.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 08 - github
+  server: 201.10.91.127
+  port: 8443
   udp: true
   type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 06 - github
-  server: scrap.halyvanedorogo.ru
-  port: 35076
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl2.pad-sservice.lat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /PL2W
+    headers:
+      Host: pl2.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 09 - github
+  server: pl1.shvpn.ru
+  port: 4443
   udp: true
   type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07 - github
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  sni: pl1.shvpn.ru
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - github
-  server: 150.251.113.34
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 10 - github
+  server: pl3.pad-sservice.lat
+  port: 8443
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: pl3.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /PL3W
+    headers:
+      Host: pl3.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,6 +121,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
+  - 🇵🇱 波兰 (Poland) 09 - github
+  - 🇵🇱 波兰 (Poland) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,5 +136,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
+  - 🇵🇱 波兰 (Poland) 09 - github
+  - 🇵🇱 波兰 (Poland) 10 - github
 rules:
 - MATCH,PROXIES
