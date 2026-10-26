@@ -13,7 +13,7 @@ proxies:
   sni: promo.betust.net
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: se14-node.rumedia-cdn.com
+  server: 191.44.114.179
   port: 2096
   udp: true
   type: vless
@@ -21,6 +21,7 @@ proxies:
   tls: true
   servername: st33614.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn/v3/live
@@ -40,6 +41,32 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st5ff8a.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 04 - github
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: 6fbd9bd1-ccd4-4e2f-a918-a0f871965763
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇸🇪 瑞典 (Sweden) 05 - github
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +75,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
+  - 🇸🇪 瑞典 (Sweden) 04 - github
+  - 🇸🇪 瑞典 (Sweden) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +85,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01 - github
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
+  - 🇸🇪 瑞典 (Sweden) 04 - github
+  - 🇸🇪 瑞典 (Sweden) 05 - github
 rules:
 - MATCH,PROXIES
