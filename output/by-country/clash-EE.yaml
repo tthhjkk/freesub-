@@ -13,7 +13,7 @@ proxies:
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
-  server: ee.h1cloud.net
+  server: 79.182.39.232
   port: 25895
   udp: true
   type: vless
@@ -23,7 +23,7 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

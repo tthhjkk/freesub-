@@ -16,7 +16,7 @@ proxies:
   grpc-opts:
     grpc-service-name: kobedin-server1-trojan
 - name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 45-149-147-213.sslip.io
+  server: 45.149.147.213
   port: 4443
   udp: true
   type: vless
@@ -29,19 +29,18 @@ proxies:
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
 - name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 95.216.27.15
-  port: 2053
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 196.196.204.174
+  server: 77.42.12.225
   port: 443
   udp: true
   type: vless
@@ -56,19 +55,17 @@ proxies:
   grpc-opts:
     grpc-service-name: f345a414c040
 - name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 191.44.114.179
-  port: 2096
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 06 - github
   server: 65.109.212.193
   port: 465
@@ -78,36 +75,13 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 07 - github
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 08 - github
-  server: 2.27.13.152
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
-    short-id: 0f47ff9aa15e3e30
-  servername: www.nokia.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - github
   server: 2.27.13.152
   port: 2096
   udp: true
@@ -134,8 +108,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
-  - 🇫🇮 芬兰 (Finland) 08 - github
-  - 🇫🇮 芬兰 (Finland) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -148,7 +120,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - github
   - 🇫🇮 芬兰 (Finland) 06 - github
   - 🇫🇮 芬兰 (Finland) 07 - github
-  - 🇫🇮 芬兰 (Finland) 08 - github
-  - 🇫🇮 芬兰 (Finland) 09 - github
 rules:
 - MATCH,PROXIES
