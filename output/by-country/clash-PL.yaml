@@ -5,25 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
-  server: 45.148.119.127
-  port: 443
+  server: 168.222.43.53
+  port: 2052
   udp: true
   type: vless
-  uuid: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: firefox
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - github
+  server: pl1.obxodvpn.us
+  port: 4443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nl1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03 - github
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - github
+- name: 🇵🇱 波兰 (Poland) 04 - github
+  server: 79.182.39.35
+  port: 25548
+  udp: true
+  type: vless
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  tls: true
+  reality-opts:
+    public-key: lceynvFy326oU4ew9OPR7079m-L5ZcFELgCl0sqxU2M
+    short-id: bceb5b2197b76818
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - github
   server: ru1.radiolumens.uk
   port: 8445
   udp: true
@@ -36,7 +49,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 04 - github
+- name: 🇵🇱 波兰 (Poland) 06 - github
+  server: 31.184.253.134
+  port: 53869
+  udp: true
+  type: vless
+  uuid: 252b4a9c-520d-459c-9dbc-366995206089
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rtc2Krk2fVhHCRG82EsUc4_mlw304HKHkl6MggQZEAU
+    short-id: 0f2cc340a69ed7
+  servername: www.moddb.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07 - github
   server: scrap.halyvanedorogo.ru
   port: 35076
   udp: true
@@ -44,15 +70,28 @@ proxies:
   password: b4c8ee9caa74b7ba0a61
   sni: scrap.halyvanedorogo.ru
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 05 - github
-  server: 92.118.150.146
+- name: 🇵🇱 波兰 (Poland) 08 - github
+  server: poland-new-new.failspace.top
   port: 443
   udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: poland-new-new.failspace.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 06 - github
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 09 - github
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10 - github
   server: 54.37.131.126
   port: 80
   udp: true
@@ -65,15 +104,18 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - github
-  server: 2.26.6.1
-  port: 2087
+- name: 🇵🇱 波兰 (Poland) 11 - github
+  server: 82.118.22.161
+  port: 443
   udp: true
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -87,6 +129,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - github
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
+  - 🇵🇱 波兰 (Poland) 08 - github
+  - 🇵🇱 波兰 (Poland) 09 - github
+  - 🇵🇱 波兰 (Poland) 10 - github
+  - 🇵🇱 波兰 (Poland) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +145,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - github
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
+  - 🇵🇱 波兰 (Poland) 08 - github
+  - 🇵🇱 波兰 (Poland) 09 - github
+  - 🇵🇱 波兰 (Poland) 10 - github
+  - 🇵🇱 波兰 (Poland) 11 - github
 rules:
 - MATCH,PROXIES

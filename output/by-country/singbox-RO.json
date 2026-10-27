@@ -4,27 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01 - github",
-      "server": "bogging-eyeteeth-fly.freesocks.work",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+      "server": "155.117.5.208",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
       }
     },
     {
@@ -44,20 +48,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -77,13 +69,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -91,9 +76,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
-        "🇷🇴 罗马尼亚 (Romania) 04 - github",
-        "🇷🇴 罗马尼亚 (Romania) 05 - github",
-        "🇷🇴 罗马尼亚 (Romania) 06 - github"
+        "🇷🇴 罗马尼亚 (Romania) 04 - github"
       ]
     },
     {
@@ -103,9 +86,7 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
-        "🇷🇴 罗马尼亚 (Romania) 04 - github",
-        "🇷🇴 罗马尼亚 (Romania) 05 - github",
-        "🇷🇴 罗马尼亚 (Romania) 06 - github"
+        "🇷🇴 罗马尼亚 (Romania) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

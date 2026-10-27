@@ -6,32 +6,35 @@
     {
       "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - github",
-      "server": "3h-kazakhstan1.09vpn.com",
+      "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "viber.com"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - github",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
+      "server": "46.8.43.125",
+      "server_port": 443,
+      "uuid": "846cedee-2a52-4a62-a0b9-11850ead6a8b",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "kz-central.v8x2b.lol",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
+          "public_key": "ER-T5En54-sn6IXy7jU8vQVcBbOiWvznnezf3qZ273w",
+          "short_id": ""
         }
       }
     },
