@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,27 +24,27 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 02 - github",
-      "server": "85.90.217.42",
+      "server": "66.163.118.131",
       "server_port": 443,
-      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "85.90.217.42",
-        "insecure": true
+        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 03 - github",
-      "server": "xby.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "server": "66.163.118.62",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "xby.mangshe.xyz",
-        "insecure": true
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
       }
     },
     {
@@ -68,6 +68,39 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - github",
+      "server": "193.238.154.78",
+      "server_port": 443,
+      "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts",
+          "short_id": "e93d46ee3735069e"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - github",
+      "server": "66.163.118.166",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -75,7 +108,9 @@
         "🇪🇸 西班牙 (Spain) 01 - github",
         "🇪🇸 西班牙 (Spain) 02 - github",
         "🇪🇸 西班牙 (Spain) 03 - github",
-        "🇪🇸 西班牙 (Spain) 04 - github"
+        "🇪🇸 西班牙 (Spain) 04 - github",
+        "🇪🇸 西班牙 (Spain) 05 - github",
+        "🇪🇸 西班牙 (Spain) 06 - github"
       ]
     },
     {
@@ -85,7 +120,9 @@
         "🇪🇸 西班牙 (Spain) 01 - github",
         "🇪🇸 西班牙 (Spain) 02 - github",
         "🇪🇸 西班牙 (Spain) 03 - github",
-        "🇪🇸 西班牙 (Spain) 04 - github"
+        "🇪🇸 西班牙 (Spain) 04 - github",
+        "🇪🇸 西班牙 (Spain) 05 - github",
+        "🇪🇸 西班牙 (Spain) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
