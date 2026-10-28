@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
-  server: 78.135.73.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: w0yEuw7sPMCEwk9_vDVoqjBhJsGoPvR7TsxIZVJy3iw
-    short-id: f4b2a12c
-  servername: tr2.tv-quoralyx.top
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -42,7 +16,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -56,6 +30,29 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 04 - github
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - github
   server: 177.3.208.65
   port: 443

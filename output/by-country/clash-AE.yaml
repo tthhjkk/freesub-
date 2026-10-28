@@ -18,21 +18,10 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: 185.253.116.33
-  port: 14430
-  udp: true
-  type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - github
   server: forshynewh.duckdns.org
   port: 443
   udp: true
@@ -40,39 +29,6 @@ proxies:
   password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
   sni: forshynewh.duckdns.org
   skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: uae.purchasebot.net
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d607d84-0ae0-4b9c-a4f3-1766ab456e02
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM
-    short-id: e7c5f2a9
-  servername: bunny.net
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 07 - github
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,10 +37,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - github
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
-  - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
-  - 🇦🇪 阿联酋 (UAE) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,9 +45,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - github
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
-  - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
-  - 🇦🇪 阿联酋 (UAE) 07 - github
 rules:
 - MATCH,PROXIES

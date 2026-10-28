@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - github
   server: 83.147.14.168
@@ -26,6 +26,14 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - github
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 103.115.109.49
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - github
   server: 152.32.167.33
   port: 443
   udp: true
@@ -46,6 +54,7 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +63,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 rules:
 - MATCH,PROXIES
