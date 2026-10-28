@@ -13,27 +13,14 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - github
-  server: 83.147.14.168
-  port: 9443
-  udp: true
-  type: vless
-  uuid: 4a270d3e-27b4-497d-8c8c-28f1f54958d9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
-    short-id: b390142456517acc
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: t.me
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - github
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
   server: 152.32.167.33
   port: 443
   udp: true
@@ -45,7 +32,7 @@ proxies:
     public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
     short-id: cff998a4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
   - 🇹🇼 中国台湾 (Taiwan) 03 - github
-  - 🇹🇼 中国台湾 (Taiwan) 04 - github
 rules:
 - MATCH,PROXIES
