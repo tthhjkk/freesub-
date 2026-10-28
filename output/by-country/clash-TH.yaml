@@ -5,16 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - github
-  server: 103.86.49.57
-  port: 80
+  server: th001.zestapp778.com
+  port: 22222
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: ais.speedtest.net
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
 - name: 🇹🇭 泰国 (Thailand) 02 - github
   server: 45.154.26.63
   port: 443
@@ -28,44 +26,6 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 38.60.254.50
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 04 - github
-  server: funagfrdfs.alixxplay.com
-  port: 56415
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: ios
-- name: 🇹🇭 泰国 (Thailand) 05 - github
-  server: 104.18.26.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  tls: true
-  servername: v2ray.simspeedup.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: v2ray.simspeedup.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,9 +33,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
-  - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
-  - 🇹🇭 泰国 (Thailand) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,8 +40,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
-  - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
-  - 🇹🇭 泰国 (Thailand) 05 - github
 rules:
 - MATCH,PROXIES

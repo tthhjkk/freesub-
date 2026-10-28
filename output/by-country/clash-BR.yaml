@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - github
-  server: 147.15.108.14
-  port: 20000
+  server: br001.zestapp778.com
+  port: 15040
   udp: true
-  type: hysteria2
-  password: CyG0RFxMjzs41uQD4OLuHQ==
-  sni: rmgyvpn.rest
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: br.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - github
   server: 216.238.104.154
   port: 443
