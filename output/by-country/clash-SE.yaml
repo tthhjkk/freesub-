@@ -5,24 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - github
-  server: 70.34.212.124
-  port: 8388
+  server: 50.7.38.243
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02 - github
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - github
   server: 191.44.114.154
   port: 8443
   udp: true
@@ -35,7 +25,32 @@ proxies:
     short-id: c4359f3827231250
   servername: www.wikipedia.org
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - github
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 04 - github
+  server: 191.44.114.179
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st33614.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 05 - github
   server: 191.44.114.154
   port: 2096
   udp: true
@@ -50,14 +65,6 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: st5ff8a.rumedia-cdn.com
-- name: 🇸🇪 瑞典 (Sweden) 05 - github
-  server: 50.7.38.243
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

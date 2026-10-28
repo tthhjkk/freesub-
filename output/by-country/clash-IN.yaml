@@ -17,6 +17,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - github
+  server: 139.84.132.62
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: 139.84.132.62
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 03 - github
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -25,8 +33,10 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 03 - github
-  server: 178.212.35.198
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04 - github
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -37,7 +47,7 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - github
+- name: 🇮🇳 印度 (India) 05 - github
   server: in002.zestapp778.com
   port: 46362
   udp: true
@@ -46,8 +56,7 @@ proxies:
   tls: true
   servername: in002.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 05 - github
+- name: 🇮🇳 印度 (India) 06 - github
   server: 152.67.8.205
   port: 80
   udp: true
@@ -58,6 +67,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: in-152.67.8.205-0204
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +79,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - github
   - 🇮🇳 印度 (India) 04 - github
   - 🇮🇳 印度 (India) 05 - github
+  - 🇮🇳 印度 (India) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +90,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03 - github
   - 🇮🇳 印度 (India) 04 - github
   - 🇮🇳 印度 (India) 05 - github
+  - 🇮🇳 印度 (India) 06 - github
 rules:
 - MATCH,PROXIES

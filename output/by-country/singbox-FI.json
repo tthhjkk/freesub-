@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - github",
-      "server": "helsinki03.npvnot.com",
-      "server_port": 995,
-      "method": "aes-256-gcm",
-      "password": "MjNhN2QwNmFlYTRlZGMxNWVlOTI0MGI0MTU4MDY1"
+      "server": "dns22.m3hrzd.ir",
+      "server_port": 1346,
+      "method": "chacha20-ietf-poly1305",
+      "password": "U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N"
     },
     {
       "type": "vless",
@@ -35,50 +35,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - github",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - github",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1346,
-      "method": "chacha20-ietf-poly1305",
-      "password": "U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - github",
-      "server": "hw3.divarkhaghazi.com",
-      "server_port": 465,
-      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw3.divarkhaghazi.com."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - github",
       "server": "77.42.12.225",
       "server_port": 443,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
@@ -102,42 +58,64 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - github",
-      "server": "78.17.27.137",
-      "server_port": 8443,
-      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.aalto.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
-          "short_id": "a05ccbf2edb5ebd1"
+      "tag": "🇫🇮 芬兰 (Finland) 04 - github",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - github",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - github",
       "server": "2.27.13.152",
-      "server_port": 8443,
+      "server_port": 2096,
       "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.nokia.com",
+        "server_name": "st4834a.rumedia-cdn.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "st4834a.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - github",
+      "server": "hw3.divarkhaghazi.com",
+      "server_port": 465,
+      "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
+      "tls": {
+        "enabled": true,
+        "server_name": "hw3.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
           "enabled": true,
-          "public_key": "14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk",
-          "short_id": "0f47ff9aa15e3e30"
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw3.divarkhaghazi.com."
         }
       }
     },
@@ -151,9 +129,7 @@
         "🇫🇮 芬兰 (Finland) 03 - github",
         "🇫🇮 芬兰 (Finland) 04 - github",
         "🇫🇮 芬兰 (Finland) 05 - github",
-        "🇫🇮 芬兰 (Finland) 06 - github",
-        "🇫🇮 芬兰 (Finland) 07 - github",
-        "🇫🇮 芬兰 (Finland) 08 - github"
+        "🇫🇮 芬兰 (Finland) 06 - github"
       ]
     },
     {
@@ -165,9 +141,7 @@
         "🇫🇮 芬兰 (Finland) 03 - github",
         "🇫🇮 芬兰 (Finland) 04 - github",
         "🇫🇮 芬兰 (Finland) 05 - github",
-        "🇫🇮 芬兰 (Finland) 06 - github",
-        "🇫🇮 芬兰 (Finland) 07 - github",
-        "🇫🇮 芬兰 (Finland) 08 - github"
+        "🇫🇮 芬兰 (Finland) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
