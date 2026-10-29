@@ -13,27 +13,22 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - github
-  server: 103.149.182.79
+  server: 103.141.221.124
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf
   password: asd123456
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - github
-  server: 165.154.63.139
-  port: 443
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: 45.39.198.144
+  server: 156.224.79.61
   port: 9443
   udp: true
   type: vless
@@ -46,30 +41,55 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - github
-  server: 202.146.222.174
+  server: 165.154.63.139
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: 38.22.88.248
+  port: 27509
+  udp: true
+  type: vless
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+  servername: www.suffolk.edu
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
+  sni: https://t.me/wangcai2ⁿß«ⁿß
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -79,7 +99,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - github
   server: 103.238.227.211
   port: 21003
   udp: true
@@ -91,7 +111,7 @@ proxies:
     short-id: eb9539689690d35c
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - github
   server: 103.238.227.211
   port: 21002
   udp: true
@@ -103,8 +123,8 @@ proxies:
     short-id: f0e6a8bb98db3efd
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - github
-  server: 103.238.227.211
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - github
+  server: 526.150333.xyz
   port: 21004
   udp: true
   type: vless
@@ -115,7 +135,7 @@ proxies:
     short-id: 2f34703f16523c80
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - github
   server: 526.150333.xyz
   port: 21001
   udp: true
@@ -127,64 +147,21 @@ proxies:
     short-id: b6dfd5c750351c57
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - github
-  server: nycqg19zkwacpm1b.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - github
-  server: 38.22.88.248
-  port: 27509
-  udp: true
-  type: vless
-  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
-    short-id: 6ba85179e30d4fc2
-  servername: www.suffolk.edu
-  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 15 - github
-  server: 122.10.117.1
-  port: 11674
-  udp: true
-  type: vless
-  uuid: fe40f32a-b03d-4ada-8bee-00f41b766098
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: F-yU1O5Q00eeyUdst7ZGDsgo4xS5mrdNwg0UcfsrVQs
-    short-id: d889b977
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - github
-  server: i2psm3knof5qjjix.v.3dns.vip
+  server: px2.5ibtc.cn
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
   tls: true
-  servername: I2PSm3Knof5qjjix.v.3dns.vip
+  servername: px2.5ibtc.cn
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws-vmess
+    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
     headers:
-      Host: I2PSm3Knof5qjjix.v.3dns.vip
+      Host: px2.5ibtc.cn
 proxy-groups:
 - name: PROXIES
   type: select
@@ -205,7 +182,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - github
   - 🇭🇰 中国香港 (Hong Kong) 14 - github
   - 🇭🇰 中国香港 (Hong Kong) 15 - github
-  - 🇭🇰 中国香港 (Hong Kong) 16 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -226,6 +202,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 13 - github
   - 🇭🇰 中国香港 (Hong Kong) 14 - github
   - 🇭🇰 中国香港 (Hong Kong) 15 - github
-  - 🇭🇰 中国香港 (Hong Kong) 16 - github
 rules:
 - MATCH,PROXIES

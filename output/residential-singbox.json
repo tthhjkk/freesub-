@@ -4,12 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "type": "trojan",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
+      "server": "125.227.86.45",
+      "server_port": 443,
+      "password": "0a9f1f5a397bd427",
+      "tls": {
+        "enabled": true,
+        "server_name": "TG.freecodes",
+        "insecure": true,
+        "alpn": [
+          "h2"
+        ]
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "db"
+      }
     },
     {
       "type": "vless",
@@ -35,20 +46,52 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇦 加拿大 (Canada) 04 (家宽) - github",
+      "server": "sg-transit-3.nebulacloud.win",
+      "server_port": 30330,
+      "uuid": "dfa9f875-3805-49d9-8636-46b6899be24e",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg-transit-3.nebulacloud.win",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ca/getData",
+        "headers": {
+          "Host": "sg-transit-3.nebulacloud.win"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
-        "🇮🇳 印度 (India) 02 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
+        "🇮🇳 印度 (India) 02 (家宽) - github",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+        "🇨🇦 加拿大 (Canada) 04 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - github",
-        "🇮🇳 印度 (India) 02 (家宽) - github"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github",
+        "🇮🇳 印度 (India) 02 (家宽) - github",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+        "🇨🇦 加拿大 (Canada) 04 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

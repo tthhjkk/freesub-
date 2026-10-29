@@ -4,13 +4,17 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  server: 218.237.185.234
-  port: 4652
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
+  server: 125.227.86.45
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: trojan
+  password: 0a9f1f5a397bd427
+  sni: TG.freecodes
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: db
 - name: 🇮🇳 印度 (India) 02 (家宽) - github
   server: 122.176.216.52
   port: 443
@@ -26,19 +30,46 @@ proxies:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
     headers:
       Host: app-6ada5023.deploy.meerasolution.com
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  server: 218.237.185.234
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇨🇦 加拿大 (Canada) 04 (家宽) - github
+  server: sg-transit-3.nebulacloud.win
+  port: 30330
+  udp: true
+  type: vmess
+  uuid: dfa9f875-3805-49d9-8636-46b6899be24e
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: sg-transit-3.nebulacloud.win
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ca/getData
+    headers:
+      Host: sg-transit-3.nebulacloud.win
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
   - 🇮🇳 印度 (India) 02 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇨🇦 加拿大 (Canada) 04 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - github
   - 🇮🇳 印度 (India) 02 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - github
+  - 🇨🇦 加拿大 (Canada) 04 (家宽) - github
 rules:
 - MATCH,PROXIES
