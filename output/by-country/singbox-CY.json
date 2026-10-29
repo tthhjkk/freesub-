@@ -6,47 +6,7 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-      "server": "5.253.29.253",
-      "server_port": 443,
-      "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
-      "tls": {
-        "enabled": true,
-        "server_name": "indi.qikbro.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "assets"
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-      "server": "171.22.119.74",
-      "server_port": 8446,
-      "password": "Pass-Client-1",
-      "tls": {
-        "enabled": true,
-        "server_name": "171.22.119.74",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-video-call"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-      "server": "hydra.yokkastars.com",
+      "server": "5.253.28.240",
       "server_port": 40443,
       "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
       "flow": "xtls-rprx-vision",
@@ -55,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -66,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - github",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
       "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -75,7 +35,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -94,9 +54,7 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - github"
       ]
     },
     {
@@ -104,9 +62,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - github",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - github"
+        "🇨🇾 塞浦路斯 (Cyprus) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

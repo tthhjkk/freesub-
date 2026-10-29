@@ -4,11 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - github",
-      "server": "168.222.43.53",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "vless",
@@ -18,44 +19,35 @@
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 03 - github",
-      "server": "78.17.128.153",
-      "server_port": 35076,
-      "password": "b4c8ee9caa74b7ba0a61",
+      "server": "168.222.43.53",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - github",
+      "server": "pol.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "8z2OB_gvFvpKgjFi8s9Cvw"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05 - github",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
       "tls": {
         "enabled": true,
-        "server_name": "scrap.halyvanedorogo.ru",
+        "server_name": "2.26.6.1",
         "insecure": false
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - github",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 05 - github",
+      "tag": "🇵🇱 波兰 (Poland) 06 - github",
       "server": "54.37.131.126",
       "server_port": 80,
       "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
@@ -70,14 +62,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - github",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
+      "tag": "🇵🇱 波兰 (Poland) 07 - github",
+      "server": "150.251.113.34",
+      "server_port": 443,
+      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
+          "short_id": "150a627d15154cf2"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 08 - github",
+      "server": "92.118.150.146",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.tronsg.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -90,7 +107,9 @@
         "🇵🇱 波兰 (Poland) 03 - github",
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
-        "🇵🇱 波兰 (Poland) 06 - github"
+        "🇵🇱 波兰 (Poland) 06 - github",
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github"
       ]
     },
     {
@@ -102,7 +121,9 @@
         "🇵🇱 波兰 (Poland) 03 - github",
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
-        "🇵🇱 波兰 (Poland) 06 - github"
+        "🇵🇱 波兰 (Poland) 06 - github",
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
