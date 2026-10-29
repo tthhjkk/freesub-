@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - github
-  server: support.zoom.us.v2ray.simspeedup.com
+  server: 103.86.49.57
   port: 80
   udp: true
   type: vless
@@ -13,17 +13,9 @@ proxies:
   network: ws
   ws-opts:
     path: /ws
+    headers:
+      Host: ais.speedtest.net
 - name: 🇹🇭 泰国 (Thailand) 02 - github
-  server: th001.zestapp778.com
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 03 - github
   server: 45.154.26.63
   port: 443
   udp: true
@@ -36,19 +28,15 @@ proxies:
     short-id: 3c032a7e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇹🇭 泰国 (Thailand) 04 - github
-  server: 154.21.203.106
-  port: 21033
+- name: 🇹🇭 泰国 (Thailand) 03 - github
+  server: th001.zestapp778.com
+  port: 22222
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: firefox
+  servername: th001.zestapp778.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +45,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -66,6 +53,5 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
   - 🇹🇭 泰国 (Thailand) 03 - github
-  - 🇹🇭 泰国 (Thailand) 04 - github
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - github
-  server: 178.83.45.226
+  server: 155.117.5.208
   port: 2052
   udp: true
   type: vless
@@ -21,25 +21,13 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - github
-  server: 82.117.255.174
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
-    short-id: 31e91d43e553bf32
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +36,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - github
   - 🇷🇴 罗马尼亚 (Romania) 02 - github
   - 🇷🇴 罗马尼亚 (Romania) 03 - github
-  - 🇷🇴 罗马尼亚 (Romania) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +44,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - github
   - 🇷🇴 罗马尼亚 (Romania) 02 - github
   - 🇷🇴 罗马尼亚 (Romania) 03 - github
-  - 🇷🇴 罗马尼亚 (Romania) 04 - github
 rules:
 - MATCH,PROXIES

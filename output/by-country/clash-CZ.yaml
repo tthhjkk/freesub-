@@ -29,19 +29,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
-- name: 🇨🇿 捷克 (Czech) 03 - github
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6dfc9149-1ff9-41c3-8563-0ef284381731
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 1374bddeb25d
-  servername: www.tradingview.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
-  - 🇨🇿 捷克 (Czech) 03 - github
 rules:
 - MATCH,PROXIES
