@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - github
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
-  udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - github
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
   server: 38.76.180.144
   port: 1443
   udp: true
@@ -36,15 +15,22 @@ proxies:
     path: /vless-ws
     headers:
       Host: 38.76.180.144
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - github
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - github
   server: 202.146.222.174
   port: 443
   udp: true
@@ -52,34 +38,90 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
-  server: 172.67.149.199
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
+  server: 195.58.144.56
+  port: 11907
   udp: true
   type: vless
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
   tls: true
-  servername: px2.5ibtc.cn
+  servername: 195.58.144.56
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
-    headers:
-      Host: px2.5ibtc.cn
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - github
-  server: 47.244.120.197
-  port: 23026
+  server: 8.217.254.88
+  port: 443
   udp: true
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   alterId: 0
   cipher: auto
+  tls: true
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /arki
+    path: /ws-vmess
     headers:
-      Host: 47.244.120.197
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
+  server: 8.218.195.61
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+  server: 47.76.57.83
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - github
+  server: 47.243.194.125
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +134,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - github
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
+  - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +149,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05 - github
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
+  - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
+  - 🇭🇰 中国香港 (Hong Kong) 10 - github
 rules:
 - MATCH,PROXIES
