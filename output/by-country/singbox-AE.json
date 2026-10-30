@@ -4,31 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 01 - github",
-      "server": "156.229.163.237",
-      "server_port": 10238,
-      "uuid": "05cfac59-b08a-4d35-9e6d-7924f6439f28",
-      "tls": {
-        "enabled": true,
-        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 01 - github",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -44,7 +21,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - github",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - github",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -55,30 +32,16 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
-      "server": "178.253.16.185",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - github",
+      "server": "ams1.rvpn.app",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
-      "server": "uae.unixzone.us",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -97,9 +60,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - github",
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
-        "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github",
-        "🇦🇪 阿联酋 (UAE) 06 - github"
+        "🇦🇪 阿联酋 (UAE) 04 - github"
       ]
     },
     {
@@ -109,9 +70,7 @@
         "🇦🇪 阿联酋 (UAE) 01 - github",
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
-        "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github",
-        "🇦🇪 阿联酋 (UAE) 06 - github"
+        "🇦🇪 阿联酋 (UAE) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
