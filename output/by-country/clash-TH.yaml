@@ -24,15 +24,6 @@ proxies:
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: th001.zestapp778.com
-  skip-cert-verify: true
-- name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: 38.60.233.38
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: th001.zestapp778.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -41,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
-  - 🇹🇭 泰国 (Thailand) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01 - github
   - 🇹🇭 泰国 (Thailand) 02 - github
-  - 🇹🇭 泰国 (Thailand) 03 - github
 rules:
 - MATCH,PROXIES
