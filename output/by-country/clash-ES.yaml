@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - github
   server: 5.188.181.201
-  port: 9027
+  port: 9014
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: EXN3S3eQpjE7EJu8
+  password: KnJGad3FqTvjqbaX
 - name: 🇪🇸 西班牙 (Spain) 02 - github
   server: 212.227.235.66
   port: 2053
@@ -24,6 +24,27 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 03 - github
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 04 - github
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05 - github
   server: 156.252.229.159
   port: 8443
   udp: true
@@ -35,8 +56,8 @@ proxies:
     short-id: 974f7f8f
   servername: play.googleapis.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04 - github
-  server: 156.252.229.30
+- name: 🇪🇸 西班牙 (Spain) 06 - github
+  server: 156.252.229.136
   port: 8443
   udp: true
   type: vless
@@ -46,8 +67,16 @@ proxies:
     public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
     short-id: 974f7f8f
   servername: play.googleapis.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 05 - github
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 07 - github
+  server: 66.163.118.244
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 08 - github
   server: 66.163.118.131
   port: 443
   udp: true
@@ -55,26 +84,25 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: www.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 06 - github
-  server: 193.238.154.78
-  port: 443
+- name: 🇪🇸 西班牙 (Spain) 09 - github
+  server: 156.252.229.11
+  port: 8443
   udp: true
   type: vless
-  uuid: 897d47f8-4dd5-42a1-bcd0-bef19caff55a
-  flow: xtls-rprx-vision
+  uuid: 3e21e3d3-6d26-4155-b851-764dd8e8c6b5
   tls: true
   reality-opts:
-    public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
-    short-id: e93d46ee3735069e
-  servername: gateway.icloud.com
-  client-fingerprint: ''
-- name: 🇪🇸 西班牙 (Spain) 07 - github
-  server: 66.163.118.166
+    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
+    short-id: 974f7f8f
+  servername: play.googleapis.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 10 - github
+  server: 66.163.118.251
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -88,6 +116,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - github
   - 🇪🇸 西班牙 (Spain) 06 - github
   - 🇪🇸 西班牙 (Spain) 07 - github
+  - 🇪🇸 西班牙 (Spain) 08 - github
+  - 🇪🇸 西班牙 (Spain) 09 - github
+  - 🇪🇸 西班牙 (Spain) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,5 +131,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - github
   - 🇪🇸 西班牙 (Spain) 06 - github
   - 🇪🇸 西班牙 (Spain) 07 - github
+  - 🇪🇸 西班牙 (Spain) 08 - github
+  - 🇪🇸 西班牙 (Spain) 09 - github
+  - 🇪🇸 西班牙 (Spain) 10 - github
 rules:
 - MATCH,PROXIES

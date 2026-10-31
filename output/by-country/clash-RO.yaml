@@ -11,16 +11,6 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - github
-  server: 162.249.125.133
-  port: 443
-  udp: true
-  type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 46.28.67.55
   port: 443
   udp: true
@@ -33,7 +23,7 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - github
   server: 82.117.255.174
   port: 443
   udp: true
@@ -46,8 +36,18 @@ proxies:
     short-id: 31e91d43e553bf32
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - github
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - github
-  server: 2.26.89.192
+  server: app-ms-90.next-gen-shopping.com
   port: 443
   udp: true
   type: vless
@@ -59,14 +59,6 @@ proxies:
     short-id: 36b707a341db758d
   servername: assets-ms-90.next-gen-shopping.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - github
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,7 +69,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - github
   - 🇷🇴 罗马尼亚 (Romania) 04 - github
   - 🇷🇴 罗马尼亚 (Romania) 05 - github
-  - 🇷🇴 罗马尼亚 (Romania) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,6 +79,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 03 - github
   - 🇷🇴 罗马尼亚 (Romania) 04 - github
   - 🇷🇴 罗马尼亚 (Romania) 05 - github
-  - 🇷🇴 罗马尼亚 (Romania) 06 - github
 rules:
 - MATCH,PROXIES
