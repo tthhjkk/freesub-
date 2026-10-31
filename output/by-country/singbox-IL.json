@@ -33,12 +33,24 @@
       "tls": {
         "enabled": true,
         "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇮🇱 以色列 (Israel) 03 - github",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03 - github",
+      "tag": "🇮🇱 以色列 (Israel) 04 - github",
       "server": "77.91.69.169",
       "server_port": 19226,
       "uuid": "f0b144bd-4c44-440d-b630-d79ec82cad3a",
@@ -64,7 +76,8 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - github",
         "🇮🇱 以色列 (Israel) 02 - github",
-        "🇮🇱 以色列 (Israel) 03 - github"
+        "🇮🇱 以色列 (Israel) 03 - github",
+        "🇮🇱 以色列 (Israel) 04 - github"
       ]
     },
     {
@@ -73,7 +86,8 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - github",
         "🇮🇱 以色列 (Israel) 02 - github",
-        "🇮🇱 以色列 (Israel) 03 - github"
+        "🇮🇱 以色列 (Israel) 03 - github",
+        "🇮🇱 以色列 (Israel) 04 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

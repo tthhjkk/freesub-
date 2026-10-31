@@ -13,13 +13,13 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
         "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -29,6 +29,27 @@
     {
       "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -48,14 +69,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - github",
+      "server": "2.26.89.192",
+      "server_port": 443,
+      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-ms-90.next-gen-shopping.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HA8RX24k72lyACy0T1mCDeYcUQh22XRlT4wuhj3Onl4",
+          "short_id": "36b707a341db758d"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - github",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - github",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -67,7 +109,9 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
-        "🇷🇴 罗马尼亚 (Romania) 04 - github"
+        "🇷🇴 罗马尼亚 (Romania) 04 - github",
+        "🇷🇴 罗马尼亚 (Romania) 05 - github",
+        "🇷🇴 罗马尼亚 (Romania) 06 - github"
       ]
     },
     {
@@ -77,7 +121,9 @@
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
         "🇷🇴 罗马尼亚 (Romania) 02 - github",
         "🇷🇴 罗马尼亚 (Romania) 03 - github",
-        "🇷🇴 罗马尼亚 (Romania) 04 - github"
+        "🇷🇴 罗马尼亚 (Romania) 04 - github",
+        "🇷🇴 罗马尼亚 (Romania) 05 - github",
+        "🇷🇴 罗马尼亚 (Romania) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

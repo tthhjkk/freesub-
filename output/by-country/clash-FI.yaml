@@ -24,6 +24,19 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - github
   server: 65.109.210.221
   port: 465
   udp: true
@@ -38,21 +51,19 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 65.109.211.81
-  port: 465
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: webdisk.jaggyslawa.org
+  port: 443
   udp: true
   type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
+  uuid: b62e3646-b84d-443c-9c94-718b646502e0
+  flow: xtls-rprx-vision
   tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
+  reality-opts:
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: dda5f542d835
+  servername: www.foxsports.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,6 +73,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
+  - 🇫🇮 芬兰 (Finland) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +83,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
+  - 🇫🇮 芬兰 (Finland) 05 - github
 rules:
 - MATCH,PROXIES
