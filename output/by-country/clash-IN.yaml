@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - github
+  server: in002.zestapp778.com
+  port: 42733
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 02 - github
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -13,7 +21,16 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇮🇳 印度 (India) 02 - github
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - github
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇮🇳 印度 (India) 04 - github
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -24,9 +41,9 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - github
-  server: 178.212.35.198
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 05 - github
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -36,22 +53,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - github
-  server: 139.84.210.39
-  port: 42733
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: in002.zestapp778.com
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 05 - github
-  server: 172.105.39.124
-  port: 7002
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 06 - github
   server: 152.67.8.205
   port: 80
@@ -65,20 +67,6 @@ proxies:
     path: /
     headers:
       Host: 152.67.8.205
-- name: 🇮🇳 印度 (India) 07 - github
-  server: 188.114.96.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
-  tls: true
-  servername: tepar-k4j9.jounet.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/8651a8ada76c/loc-0
-    headers:
-      Host: tepar-k4j9.jounet.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,7 +78,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - github
   - 🇮🇳 印度 (India) 05 - github
   - 🇮🇳 印度 (India) 06 - github
-  - 🇮🇳 印度 (India) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,6 +89,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - github
   - 🇮🇳 印度 (India) 05 - github
   - 🇮🇳 印度 (India) 06 - github
-  - 🇮🇳 印度 (India) 07 - github
 rules:
 - MATCH,PROXIES

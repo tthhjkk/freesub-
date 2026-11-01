@@ -4,13 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  server: 49.254.204.133
-  port: 1774
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - github
+  server: 104.18.0.1
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  tls: true
+  servername: all.speedtest03.ccwu.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: all.speedtest03.ccwu.cc
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
   server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
   port: 443
@@ -42,7 +50,7 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
   - 🇮🇳 印度 (India) 03 (家宽) - github
 - name: AUTO
@@ -50,7 +58,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - github
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
   - 🇮🇳 印度 (India) 03 (家宽) - github
 rules:

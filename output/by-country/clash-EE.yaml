@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - github
-  server: 13.143.239.127
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
   server: 179.253.179.109
   port: 57043
   udp: true
@@ -21,8 +13,7 @@ proxies:
   tls: true
   servername: 87.121.86.24
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - github
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -34,6 +25,19 @@ proxies:
     short-id: a73f0410d728c823
   servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - github
+  server: 45.86.60.102
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  servername: ee1.vpngold.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

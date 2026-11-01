@@ -11,15 +11,15 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - github
-  server: 185.253.116.33
+  server: 95.174.68.188
   port: 14430
   udp: true
   type: vless
-  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   network: ws
   ws-opts:
     path: /vless
@@ -32,38 +32,18 @@ proxies:
   sni: forshynewh.duckdns.org
   skip-cert-verify: true
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
-  server: 95.174.68.188
-  port: 14430
+  server: 31.76.227.57
+  port: 443
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: 129.153.71.28
-  port: 28863
-  udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
   tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
+  reality-opts:
+    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
+    short-id: a7856800c2deb7b2
+  servername: assets-mi-26.spbstudentlife.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,8 +53,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,7 +62,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
 rules:
 - MATCH,PROXIES
