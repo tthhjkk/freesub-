@@ -5,61 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽) - github
-  server: 104.18.0.1
-  port: 443
+  server: us001.zestapp778.com
+  port: 57277
   udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
+  server: tr2.h1cloud.net
+  port: 25021
   udp: true
   type: vless
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 (家宽) - github
-  server: 122.176.216.52
-  port: 443
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
+  server: ench-snet-app.w-ctrip.cn
+  port: 45503
   udp: true
-  type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-  tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
-    headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  - 🇮🇳 印度 (India) 03 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  - 🇮🇳 印度 (India) 03 (家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github
 rules:
 - MATCH,PROXIES

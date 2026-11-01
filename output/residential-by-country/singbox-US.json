@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - github",
-      "server": "104.18.0.1",
-      "server_port": 443,
-      "uuid": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "all.speedtest03.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "all.speedtest03.ccwu.cc"
-        }
+        "server_name": "us001.zestapp778.com",
+        "insecure": false
       }
     },
     {

@@ -47,21 +47,22 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
-      "server": "177.3.208.65",
+      "server": "153.56.210.61",
       "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": false,
+        "server_name": "amd.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
+          "short_id": "a696de84963656de"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-tr"
       }
     },
     {
