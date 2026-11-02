@@ -5,13 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
-  server: 217.60.73.56
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 95.174.68.188
   port: 14430
@@ -24,33 +26,14 @@ proxies:
     headers:
       Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: 188.114.96.198
+  server: forshynewh.duckdns.org
   port: 443
   udp: true
-  type: vless
-  uuid: b15f187e-9b34-437c-8243-8651a8ada76c
-  tls: true
-  servername: tepar-k4j9.jounet.workers.dev
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/DEVCOP/8651a8ada76c/loc-1
-    headers:
-      Host: tepar-k4j9.jounet.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
-  server: 91.132.48.199
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0d607d84-0ae0-4b9c-a4f3-1766ab456e02
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM
-    short-id: e7c5f2a9
-  servername: bunny.net
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
   server: app-mi-26.spbstudentlife.com
   port: 443
   udp: true
@@ -72,7 +55,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +64,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
 rules:
 - MATCH,PROXIES

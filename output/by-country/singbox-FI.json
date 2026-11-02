@@ -26,20 +26,6 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - github",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - github",
       "server": "31.77.199.147",
       "server_port": 4443,
       "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
@@ -59,50 +45,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - github",
-      "server": "65.109.211.81",
-      "server_port": 465,
-      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw6.divarkhaghazi.com."
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - github",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 41184,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "ench-snet-app.w-ctrip.cn",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - github",
-        "🇫🇮 芬兰 (Finland) 02 - github",
-        "🇫🇮 芬兰 (Finland) 03 - github",
-        "🇫🇮 芬兰 (Finland) 04 - github",
-        "🇫🇮 芬兰 (Finland) 05 - github"
+        "🇫🇮 芬兰 (Finland) 02 - github"
       ]
     },
     {
@@ -110,10 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - github",
-        "🇫🇮 芬兰 (Finland) 02 - github",
-        "🇫🇮 芬兰 (Finland) 03 - github",
-        "🇫🇮 芬兰 (Finland) 04 - github",
-        "🇫🇮 芬兰 (Finland) 05 - github"
+        "🇫🇮 芬兰 (Finland) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

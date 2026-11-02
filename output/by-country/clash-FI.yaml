@@ -17,17 +17,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - github
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - github
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -40,29 +29,6 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: ench-snet-app.w-ctrip.cn
-  port: 41184
-  udp: true
-  type: trojan
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  sni: ench-snet-app.w-ctrip.cn
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
-  - 🇫🇮 芬兰 (Finland) 03 - github
-  - 🇫🇮 芬兰 (Finland) 04 - github
-  - 🇫🇮 芬兰 (Finland) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,8 +43,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
-  - 🇫🇮 芬兰 (Finland) 03 - github
-  - 🇫🇮 芬兰 (Finland) 04 - github
-  - 🇫🇮 芬兰 (Finland) 05 - github
 rules:
 - MATCH,PROXIES
