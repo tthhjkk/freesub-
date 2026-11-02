@@ -4,20 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 01 - github",
-      "server": "185.72.11.43",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
+      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
       "server_port": 443,
-      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
-      "flow": "xtls-rprx-vision",
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "rs8.speedtestinternet.link",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -25,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - github"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - github"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

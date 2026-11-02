@@ -43,26 +43,6 @@ proxies:
     public-key: MQrvfivvEfLGzDee7h0j5uC-DwaD_38_NXOY9-NhqxM
   servername: swidenafterlanzerotte.space
   client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05 - github
-  server: 179.253.179.109
-  port: 54443
-  udp: true
-  type: vless
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
-  tls: true
-  servername: 177.3.215.54
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - github
-  server: 179.253.179.109
-  port: 54083
-  udp: true
-  type: vless
-  uuid: 0ef03752-c8bf-4482-8710-e563ca4808f9
-  tls: true
-  servername: 177.3.215.54
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,8 +52,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
   - 🇸🇪 瑞典 (Sweden) 04 - github
-  - 🇸🇪 瑞典 (Sweden) 05 - github
-  - 🇸🇪 瑞典 (Sweden) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +61,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - github
   - 🇸🇪 瑞典 (Sweden) 03 - github
   - 🇸🇪 瑞典 (Sweden) 04 - github
-  - 🇸🇪 瑞典 (Sweden) 05 - github
-  - 🇸🇪 瑞典 (Sweden) 06 - github
 rules:
 - MATCH,PROXIES

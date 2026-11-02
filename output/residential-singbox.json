@@ -12,52 +12,62 @@
       "tls": {
         "enabled": true,
         "server_name": "us001.zestapp778.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 45502,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
+      "tag": "🇺🇸 美国 (United States) 02 (移动家宽) - github",
+      "server": "130.94.19.95",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
+        "server_name": "us001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github",
+      "server": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "aed1cc24-351d-11ef-ba52-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github",
-      "server": "tr2.h1cloud.net",
-      "server_port": 25021,
-      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github",
+      "server": "60.248.219.78",
+      "server_port": 443,
+      "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "short_id": "17fa3af0924c88b3"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 45503,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
+        "server_name": "ty986gfazs.cainiaohub.xyz",
         "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/81574b6b-c9d7-44a0-b83d-dad56e8cb530",
+        "headers": {
+          "Host": "ty986gfazs.cainiaohub.xyz"
+        }
       }
     },
     {
@@ -66,9 +76,10 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇺🇸 美国 (United States) 02 (移动家宽) - github",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ]
     },
     {
@@ -76,9 +87,10 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - github",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽) - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - github"
+        "🇺🇸 美国 (United States) 02 (移动家宽) - github",
+        "🇰🇷 韩国 (South Korea) 03 (家宽) - github",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - github",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
