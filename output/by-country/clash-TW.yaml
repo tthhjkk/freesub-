@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 - github
-  server: 103.115.109.49
+  server: 160.187.100.109
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: vpn-tw-002.fastervpn.world
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - github
   server: 152.32.167.33
@@ -26,12 +26,12 @@ proxies:
   servername: www.amazon.com
   client-fingerprint: firefox
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - github
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
+  sni: 103.115.109.49
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 04 - github
   server: 684616s4.df6h451rh.xin

@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - github",
       "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
+      "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
       "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -21,19 +29,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
-      "server": "213.183.63.60",
-      "server_port": 9030,
-      "method": "aes-256-cfb",
-      "password": "GeregetR8cvQHzYr"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - github",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
@@ -47,25 +47,25 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - github",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - github",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9030,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "GeregetR8cvQHzYr"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
@@ -97,14 +97,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - github",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -118,8 +110,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 07 - github",
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
         "🇧🇬 保加利亚 (Bulgaria) 09 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 10 - github"
       ]
     },
     {
@@ -135,8 +126,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 07 - github",
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
         "🇧🇬 保加利亚 (Bulgaria) 09 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 10 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
