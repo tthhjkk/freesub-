@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 02 - github
   server: 217.30.10.72
   port: 443
   udp: true
@@ -17,20 +24,15 @@ proxies:
     short-id: 1a2b3c4d
   servername: images.porsche.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02 - github
-  server: 2.26.255.215
+- name: 🇵🇱 波兰 (Poland) 03 - github
+  server: 70.34.252.255
   port: 443
   udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - github
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - github
   server: 179.198.49.218
   port: 443
   udp: true
@@ -43,20 +45,33 @@ proxies:
     short-id: 75fe71d16ccae610
   servername: assets-44.topp-con.xyz
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04 - github
-  server: 94.249.180.86
+- name: 🇵🇱 波兰 (Poland) 05 - github
+  server: 2.26.255.215
   port: 443
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05 - github
+- name: 🇵🇱 波兰 (Poland) 06 - github
+  server: 217.60.33.67
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2a66ad35-93ce-4fd2-831f-bcaa63cdac1e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
+    short-id: de
+  servername: go-obsh-auto-drun.keno.su
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 07 - github
   server: 54.37.131.126
   port: 80
   udp: true
@@ -69,39 +84,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - github
-  server: 2.26.231.218
-  port: 2063
+- name: 🇵🇱 波兰 (Poland) 08 - github
+  server: 94.249.180.86
+  port: 443
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 - github
-  server: 84.23.52.120
-  port: 28449
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 08 - github
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 09 - github
   server: 84.23.52.120
   port: 28453
@@ -112,32 +107,6 @@ proxies:
   servername: pl.sparxiecn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 10 - github
-  server: 84.23.52.120
-  port: 28450
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 11 - github
-  server: 84.23.52.120
-  port: 28448
-  udp: true
-  type: vless
-  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
-  tls: true
-  servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: ios
   network: ws
   ws-opts:
     path: /lovelive
@@ -155,8 +124,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
   - 🇵🇱 波兰 (Poland) 09 - github
-  - 🇵🇱 波兰 (Poland) 10 - github
-  - 🇵🇱 波兰 (Poland) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -171,7 +138,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
   - 🇵🇱 波兰 (Poland) 09 - github
-  - 🇵🇱 波兰 (Poland) 10 - github
-  - 🇵🇱 波兰 (Poland) 11 - github
 rules:
 - MATCH,PROXIES
