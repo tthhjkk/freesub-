@@ -18,6 +18,27 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
+      "server": "31.77.236.114",
+      "server_port": 443,
+      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "files.porsche.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
+          "short_id": "1a2b3c4d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
       "server": "147.45.245.17",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -38,7 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
       "server": "109.71.247.200",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -54,27 +75,6 @@
           "enabled": true,
           "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
           "short_id": "b9120cd53ffd7bba"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-      "server": "31.77.236.114",
-      "server_port": 443,
-      "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "files.porsche.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk",
-          "short_id": "1a2b3c4d"
         }
       }
     },
@@ -100,6 +100,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - github",
+      "server": "185.225.205.53",
+      "server_port": 443,
+      "uuid": "3d526c7f-059c-4e2b-b09a-8569b268935b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8",
+          "short_id": "2e82d7ac"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -108,7 +129,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
       ]
     },
     {
@@ -119,7 +141,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 03 - github",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - github",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 05 - github",
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
