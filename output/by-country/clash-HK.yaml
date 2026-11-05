@@ -5,23 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - github
-  server: 103.36.91.32
-  port: 8388
+  server: 103.204.174.80
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
+  type: vless
+  uuid: 91a538f2-e8d6-4fd1-b00a-d39522f20c35
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: c8xReeCgCTOZ2snvR7I4sPtSYAJquSC-_pAIuZG3rVQ
+    short-id: 9b1813e63f474741
+  servername: gateway.icloud.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - github
-  server: 152.32.254.68
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
   server: 210.0.244.157
   port: 443
   udp: true
@@ -32,14 +28,25 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
+  server: 210.0.244.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: ebc368f4-c13c-4bd2-849b-4d245615728f
+  tls: true
+  reality-opts:
+    public-key: HhYjpNgNw0X_Qrjv9R5aHfV92hHbZmlY1u12DMTPrVw
+  servername: cloudflare.com
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: 202.146.222.174
+  server: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  password: 2e42c1ee-aaaa-11ec-bb74-f23c9164ca5d
+  sni: a91af2af-tmm5c0-twnp5a-ahsb.hk3.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - github
   server: 165.154.63.139
   port: 443
@@ -52,16 +59,24 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - github
-  server: 202.146.222.29
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2≡ƒç¿≡ƒç│
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - github
+  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
   server: 202.146.222.89
   port: 443
   udp: true
@@ -69,16 +84,16 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
-  server: 152.175.6.229
-  port: 31884
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - github
+  server: 152.32.254.68
+  port: 5010
   udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: hk010.zestapp778.com
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,6 +107,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,5 +121,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
   - 🇭🇰 中国香港 (Hong Kong) 07 - github
   - 🇭🇰 中国香港 (Hong Kong) 08 - github
+  - 🇭🇰 中国香港 (Hong Kong) 09 - github
 rules:
 - MATCH,PROXIES
