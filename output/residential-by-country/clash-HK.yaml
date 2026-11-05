@@ -5,29 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github
-  server: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
+  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 8bb68d04-6973-11ee-b518-f23c9164ca5d
-  sni: fc05feb7-tmm5c0-tpv2b9-1o8ak.hk3.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  server: 112.120.123.140
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
-  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
-  server: 56481.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
+  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - github
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - github
 rules:
 - MATCH,PROXIES

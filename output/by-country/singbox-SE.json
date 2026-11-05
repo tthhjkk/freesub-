@@ -25,20 +25,54 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "138.124.86.230",
+      "server_port": 48115,
+      "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
       "tls": {
         "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
+        "server_name": "138-124-86-230.sslip.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "138-124-86-230-sslip-io"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - github",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - github",
+      "server": "185.153.55.28",
+      "server_port": 443,
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.mimowhat.online",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
       "server": "31.77.13.20",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -59,21 +93,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - github",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - github",
       "server": "se3.shtil.io",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
@@ -92,14 +112,14 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - github",
-      "server": "se.mimowhat.online",
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - github",
+      "server": "70.34.207.14",
       "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "se.mimowhat.online",
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
         "insecure": false
       }
     },
@@ -114,7 +134,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - github",
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
-        "🇸🇪 瑞典 (Sweden) 07 - github"
+        "🇸🇪 瑞典 (Sweden) 07 - github",
+        "🇸🇪 瑞典 (Sweden) 08 - github"
       ]
     },
     {
@@ -127,7 +148,8 @@
         "🇸🇪 瑞典 (Sweden) 04 - github",
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
-        "🇸🇪 瑞典 (Sweden) 07 - github"
+        "🇸🇪 瑞典 (Sweden) 07 - github",
+        "🇸🇪 瑞典 (Sweden) 08 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
