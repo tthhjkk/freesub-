@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - github
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -31,21 +19,20 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
-  server: 153.56.210.61
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 - github
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - github
-  server: 198.105.123.224
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
+  server: tr1.japancase.site
   port: 443
   udp: true
   type: vless
@@ -56,7 +43,7 @@ proxies:
     public-key: zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg
     short-id: 41ae8e266bc3346f
   servername: tr1.japancase.site
-  client-fingerprint: firefox
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,7 +52,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01 - github
   - 🇹🇷 土耳其 (Turkey) 02 - github
   - 🇹🇷 土耳其 (Turkey) 03 - github
-  - 🇹🇷 土耳其 (Turkey) 04 - github
 rules:
 - MATCH,PROXIES
