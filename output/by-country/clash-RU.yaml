@@ -5,34 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
-- name: 🇷🇺 俄罗斯 (Russia) 02 - github
-  server: 38.60.223.125
-  port: 13108
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
-- name: 🇷🇺 俄罗斯 (Russia) 03 - github
-  server: 193.233.199.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g
-    short-id: 38559e47f5536913
-  servername: fi3game.japancase.site
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 04 - github
-  server: fduknew.titun.su
+  server: 89.105.218.138
   port: 443
   udp: true
   type: vless
@@ -42,9 +15,17 @@ proxies:
   reality-opts:
     public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
     short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  servername: golos.mail.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 02 - github
+  server: steel7.hadsvpn.com
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 03 - github
   server: 193.233.252.43
   port: 443
   udp: true
@@ -57,28 +38,7 @@ proxies:
     short-id: 41ae8e266bc3346f
   servername: se1.japancase.site
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06 - github
-  server: novonl.subv.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: golos.mail.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 07 - github
-  server: steel7.hadsvpn.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 08 - github
+- name: 🇷🇺 俄罗斯 (Russia) 04 - github
   server: 130.49.177.193
   port: 443
   udp: true
@@ -91,8 +51,8 @@ proxies:
     short-id: 681fc2dd643bc2f3
   servername: de-2.ffpn.pro
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - github
-  server: 81.177.215.220
+- name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  server: 193.233.199.84
   port: 443
   udp: true
   type: vless
@@ -100,12 +60,12 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: B5Rbu23-J_PmzD6d-5ra_pxKaXd1MeRf6IT4jT_6PEM
-    short-id: 071c3bd86b0c3c73
-  servername: tr3.japancase.site
+    public-key: 1ONSjyJWD3lAomwIqFmmzb6lAhg077bvMJ7rGJCDk0g
+    short-id: 38559e47f5536913
+  servername: fi3game.japancase.site
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - github
-  server: ee.subv.ru
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 185.215.184.85
   port: 443
   udp: true
   type: vless
@@ -117,6 +77,58 @@ proxies:
     short-id: 428ef87fd47a3a32
   servername: dvizhok.su
   client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+  server: novonl.subv.ru
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: golos.mail.ru
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 08 - github
+  server: fduknew.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: bizorg.su
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 09 - github
+  server: 201.24.121.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
+  tls: true
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 10 - github
+  server: prvtch.titun.su
+  port: 443
+  udp: true
+  type: vless
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: perevodchiki.su
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 11 - github
   server: xsru1.ddnsfree.com
   port: 443
@@ -146,32 +158,12 @@ proxies:
     headers:
       Host: xsru2.freeddns.org
 - name: 🇷🇺 俄罗斯 (Russia) 13 - github
-  server: 193.233.253.180
-  port: 8444
+  server: 38.60.223.125
+  port: 13108
   udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 14 - github
-  server: 201.24.121.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
+  type: ss
+  cipher: aes-128-gcm
+  password: 8722de56b6c0b3f6a4d01cf91c07e6aa
 proxy-groups:
 - name: PROXIES
   type: select
@@ -190,7 +182,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - github
   - 🇷🇺 俄罗斯 (Russia) 12 - github
   - 🇷🇺 俄罗斯 (Russia) 13 - github
-  - 🇷🇺 俄罗斯 (Russia) 14 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -209,6 +200,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 11 - github
   - 🇷🇺 俄罗斯 (Russia) 12 - github
   - 🇷🇺 俄罗斯 (Russia) 13 - github
-  - 🇷🇺 俄罗斯 (Russia) 14 - github
 rules:
 - MATCH,PROXIES

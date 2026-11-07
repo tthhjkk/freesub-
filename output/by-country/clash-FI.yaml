@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: b79d736d-0f10-4169-b626-362059d18204
-  tls: true
-  reality-opts:
-    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
-    short-id: 10351b07c712d2a2
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 02 - github
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -27,30 +15,20 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 129.6.29.252
-  port: 80
-  udp: true
-  type: vmess
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  alterId: 0
-  cipher: auto
-  network: httpupgrade
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 02 - github
+  server: 217.144.188.185
+  port: 443
   udp: true
   type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 188.114.96.3
+- name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan
@@ -68,8 +46,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
-  - 🇫🇮 芬兰 (Finland) 04 - github
-  - 🇫🇮 芬兰 (Finland) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,7 +54,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
-  - 🇫🇮 芬兰 (Finland) 04 - github
-  - 🇫🇮 芬兰 (Finland) 05 - github
 rules:
 - MATCH,PROXIES
