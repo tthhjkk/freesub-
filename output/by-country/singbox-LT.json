@@ -6,6 +6,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - github",
+      "server": "195.238.126.84",
+      "server_port": 9039,
+      "method": "aes-256-cfb",
+      "password": "qYEN5HX4JKeVCdEC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
       "server": "195.238.126.20",
       "server_port": 9008,
       "method": "aes-256-cfb",
@@ -13,23 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - github",
-      "server": "195.238.126.20",
-      "server_port": 9002,
-      "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - github",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
@@ -37,7 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - github",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
@@ -45,7 +37,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - github",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -53,7 +45,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - github",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - github",
       "server": "195.238.126.20",
       "server_port": 9086,
       "method": "aes-256-cfb",
@@ -69,8 +61,7 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - github",
         "🇱🇹 立陶宛 (Lithuania) 04 - github",
         "🇱🇹 立陶宛 (Lithuania) 05 - github",
-        "🇱🇹 立陶宛 (Lithuania) 06 - github",
-        "🇱🇹 立陶宛 (Lithuania) 07 - github"
+        "🇱🇹 立陶宛 (Lithuania) 06 - github"
       ]
     },
     {
@@ -82,8 +73,7 @@
         "🇱🇹 立陶宛 (Lithuania) 03 - github",
         "🇱🇹 立陶宛 (Lithuania) 04 - github",
         "🇱🇹 立陶宛 (Lithuania) 05 - github",
-        "🇱🇹 立陶宛 (Lithuania) 06 - github",
-        "🇱🇹 立陶宛 (Lithuania) 07 - github"
+        "🇱🇹 立陶宛 (Lithuania) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

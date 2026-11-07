@@ -6,33 +6,54 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
   server: 213.183.63.60
-  port: 9085
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
   port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
   server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
   server: 2.27.105.13
   port: 31238
   udp: true
@@ -45,18 +66,13 @@ proxies:
     short-id: a9d8f11690e70dd8
   servername: rbc.ru
   client-fingerprint: firefox
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
-  server: p2real4.greewebservices.ir
-  port: 1340
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - github
+  server: 213.183.63.60
+  port: 9061
   udp: true
-  type: vless
-  uuid: fb1d2d8a-d9bd-496f-9d5f-f179cbd00123
-  tls: true
-  reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +84,9 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - github
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +98,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - github
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 09 - github
 rules:
 - MATCH,PROXIES

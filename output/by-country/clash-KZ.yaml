@@ -16,7 +16,7 @@ proxies:
     public-key: eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE
     short-id: 4000cdda6278d236
   servername: kz1.japancase.site
-  client-fingerprint: firefox
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
