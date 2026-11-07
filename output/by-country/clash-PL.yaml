@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - github
   server: 217.30.10.44
-  port: 9062
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 02 - github
-  server: 217.30.10.44
   port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 03 - github
+- name: 🇵🇱 波兰 (Poland) 02 - github
   server: 217.30.10.44
-  port: 9099
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 03 - github
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 04 - github
   server: 217.30.10.44
   port: 9095
@@ -34,11 +34,11 @@ proxies:
   password: N7j3pdTYkKmsy8CR
 - name: 🇵🇱 波兰 (Poland) 05 - github
   server: 217.30.10.44
-  port: 9063
+  port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 06 - github
   server: 217.30.10.44
   port: 9052
@@ -55,12 +55,27 @@ proxies:
   password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 08 - github
   server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 09 - github
+  server: 217.30.10.44
   port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 09 - github
+- name: 🇵🇱 波兰 (Poland) 10 - github
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 11 - github
   server: 2.26.255.215
   port: 443
   udp: true
@@ -73,15 +88,20 @@ proxies:
     short-id: '50'
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - github
-  server: 70.34.252.255
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 12 - github
+  server: ru1.radiolumens.uk
+  port: 8445
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - github
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 13 - github
   server: 54.37.131.126
   port: 80
   udp: true
@@ -94,6 +114,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 14 - github
+  server: pl3.japancase.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
+    short-id: 5037f0423dc4e4ff
+  servername: pl3.japancase.site
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,6 +143,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - github
   - 🇵🇱 波兰 (Poland) 10 - github
   - 🇵🇱 波兰 (Poland) 11 - github
+  - 🇵🇱 波兰 (Poland) 12 - github
+  - 🇵🇱 波兰 (Poland) 13 - github
+  - 🇵🇱 波兰 (Poland) 14 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -126,5 +162,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 09 - github
   - 🇵🇱 波兰 (Poland) 10 - github
   - 🇵🇱 波兰 (Poland) 11 - github
+  - 🇵🇱 波兰 (Poland) 12 - github
+  - 🇵🇱 波兰 (Poland) 13 - github
+  - 🇵🇱 波兰 (Poland) 14 - github
 rules:
 - MATCH,PROXIES

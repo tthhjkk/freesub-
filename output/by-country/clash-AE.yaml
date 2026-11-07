@@ -5,27 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - github
-  server: 151.241.19.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 02 - github
   server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇪 阿联酋 (UAE) 02 - github
+  server: 151.241.19.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 03 - github
-  server: 130.49.161.70
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
@@ -39,25 +39,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 151.241.19.44
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 06 - github
-  server: sclass-00.catcat321.com
-  port: 20123
-  udp: true
-  type: trojan
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  sni: hk.catxstar.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,8 +48,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,7 +57,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - github
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
-  - 🇦🇪 阿联酋 (UAE) 05 - github
-  - 🇦🇪 阿联酋 (UAE) 06 - github
 rules:
 - MATCH,PROXIES
