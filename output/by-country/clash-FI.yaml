@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: 208.103.161.16
-  port: 2096
+  server: 217.144.188.185
+  port: 443
   udp: true
-  type: trojan
-  password: hWsj5AwIRPF8
-  sni: rayAnconfIg3-Bhl0ai7j-t2.raYan-coNfig-3.woRKers.dEV
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
+  type: vless
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - github
   server: 45.144.234.157
   port: 14430
@@ -27,16 +28,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 188.114.96.3
-  port: 2053
+  server: 5.129.249.155
+  port: 443
   udp: true
-  type: trojan
-  password: gHQP0D7D15
-  sni: marvdasht.phonecomparisonblog.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
+    short-id: b9120cd53ffd7bba
+  servername: assets-59.topp-con.xyz
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
