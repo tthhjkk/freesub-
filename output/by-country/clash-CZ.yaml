@@ -5,30 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01 - github
-  server: 195.123.245.241
+  server: 129.101.103.211
   port: 443
   udp: true
   type: vless
-  uuid: 7c053ca8-38cc-45e2-930c-eda1fd66f903
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hlY5ce1UsVIgE46y5PlEZhUsSaXUnCtoDLLaGrhInjw
-    short-id: 23d0950d60bc0d5b
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+    public-key: 8fSwTqCwJ2HWGxcTQsZs8Sx0hRk2Ru7HFdu-iLnesGg
+    short-id: 53d0d0611a
+  servername: de2.gacvpn.site
+  client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 02 - github
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  uuid: 13aef2e0-b3fb-4322-a0e9-c10b908ce6b5
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: 8325360e8bd2
-  servername: www.foxsports.com
+    short-id: 87f895f23064
+  servername: www.techradar.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

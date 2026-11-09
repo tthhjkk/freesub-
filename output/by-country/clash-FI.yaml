@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: 177.202.75.56
-  port: 443
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
+  type: vmess
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02 - github
   server: 45.144.234.157
   port: 14430
@@ -24,19 +24,39 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 5.129.249.155
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 217.144.188.185
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: assets-59.topp-con.xyz
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - github
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 129.101.102.168
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QjYksCdraKvxMG024774_EOZjxtIB7xHm3GYGx3oN1Y
+    short-id: c59bb8af70d9db1e
+  servername: fi3-edge.gacvpn.site
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - github
   server: 146.103.118.189
   port: 443
   udp: true
@@ -51,14 +71,6 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +81,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
+  - 🇫🇮 芬兰 (Finland) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +92,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
+  - 🇫🇮 芬兰 (Finland) 06 - github
 rules:
 - MATCH,PROXIES

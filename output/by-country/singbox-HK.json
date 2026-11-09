@@ -4,32 +4,53 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - github",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "209.33.160.122",
+      "server_port": 39098,
+      "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2",
-        "insecure": true
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - github",
-      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+      "server": "202.146.222.174",
       "server_port": 443,
-      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
-        "insecure": false
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - github",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/clashv8",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - github",
       "server": "152.32.254.68",
       "server_port": 5010,
       "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
@@ -45,25 +66,13 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - github",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - github",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - github",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/clashv8🇨🇳",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
