@@ -7,13 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - github",
       "server": "217.30.10.44",
+      "server_port": 9042,
+      "method": "aes-256-cfb",
+      "password": "S7KwUu7yBy58S3Ga"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02 - github",
+      "server": "217.30.10.44",
+      "server_port": 9062,
+      "method": "aes-256-cfb",
+      "password": "tkhHVxxfM2QErBWe"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - github",
+      "server": "217.30.10.44",
       "server_port": 9006,
       "method": "aes-256-cfb",
       "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - github",
+      "tag": "🇵🇱 波兰 (Poland) 04 - github",
       "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
@@ -21,7 +37,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - github",
+      "tag": "🇵🇱 波兰 (Poland) 05 - github",
+      "server": "217.30.10.44",
+      "server_port": 9076,
+      "method": "aes-256-cfb",
+      "password": "S2zDyyPcmZN2h8EC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 06 - github",
       "server": "217.30.10.44",
       "server_port": 9063,
       "method": "aes-256-cfb",
@@ -29,27 +53,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - github",
+      "tag": "🇵🇱 波兰 (Poland) 07 - github",
       "server": "217.30.10.44",
-      "server_port": 9042,
+      "server_port": 9071,
       "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
+      "password": "mENfxTFQpRKKh4As"
     },
     {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - github",
-      "server": "70.34.252.255",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
-        "insecure": false
-      }
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 08 - github",
+      "server": "217.30.10.44",
+      "server_port": 9099,
+      "method": "aes-256-cfb",
+      "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - github",
+      "tag": "🇵🇱 波兰 (Poland) 09 - github",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
@@ -64,6 +84,67 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇵🇱 波兰 (Poland) 10 - github",
+      "server": "70.34.252.255",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "browseexecutivejobopeningsandenhanceleadershipcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 11 - github",
+      "server": "217.30.10.44",
+      "server_port": 9095,
+      "method": "aes-256-cfb",
+      "password": "N7j3pdTYkKmsy8CR"
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 12 - github",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 13 - github",
+      "server": "80.47.13.182",
+      "server_port": 443,
+      "uuid": "95f85937-7b95-45c4-8d69-95da6a978569",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.megadrishto.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "stats.v2.StreamService"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -73,7 +154,14 @@
         "🇵🇱 波兰 (Poland) 03 - github",
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
-        "🇵🇱 波兰 (Poland) 06 - github"
+        "🇵🇱 波兰 (Poland) 06 - github",
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github",
+        "🇵🇱 波兰 (Poland) 09 - github",
+        "🇵🇱 波兰 (Poland) 10 - github",
+        "🇵🇱 波兰 (Poland) 11 - github",
+        "🇵🇱 波兰 (Poland) 12 - github",
+        "🇵🇱 波兰 (Poland) 13 - github"
       ]
     },
     {
@@ -85,7 +173,14 @@
         "🇵🇱 波兰 (Poland) 03 - github",
         "🇵🇱 波兰 (Poland) 04 - github",
         "🇵🇱 波兰 (Poland) 05 - github",
-        "🇵🇱 波兰 (Poland) 06 - github"
+        "🇵🇱 波兰 (Poland) 06 - github",
+        "🇵🇱 波兰 (Poland) 07 - github",
+        "🇵🇱 波兰 (Poland) 08 - github",
+        "🇵🇱 波兰 (Poland) 09 - github",
+        "🇵🇱 波兰 (Poland) 10 - github",
+        "🇵🇱 波兰 (Poland) 11 - github",
+        "🇵🇱 波兰 (Poland) 12 - github",
+        "🇵🇱 波兰 (Poland) 13 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
