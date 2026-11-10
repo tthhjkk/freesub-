@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇸 冰岛 (Iceland) 01 - github",
-      "server": "93.95.226.159",
-      "server_port": 28150,
-      "uuid": "b4e69d67-9d41-417c-b465-ebf1591fb792",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - github",
+      "server": "104.253.216.227",
+      "server_port": 443,
+      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "www.hollywoodreporter.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "KQW_o2BlCjMC8aH5lkNkO_rmMCAUykQIQCCIIehhsAo",
-          "short_id": "06"
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "225e930cfd4d"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - github"
+        "🇺🇦 乌克兰 (Ukraine) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - github"
+        "🇺🇦 乌克兰 (Ukraine) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
