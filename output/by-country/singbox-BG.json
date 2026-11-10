@@ -7,33 +7,33 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - github",
       "server": "213.183.63.60",
-      "server_port": 9028,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "9eeJ2fwnZA5Fxgz8"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
       "server": "213.183.63.60",
-      "server_port": 9098,
+      "server_port": 9054,
       "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "VcFuyXvND2yQWSFY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - github",
       "server": "213.183.63.60",
-      "server_port": 9085,
+      "server_port": 9098,
       "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
+      "password": "aLpQtfEZe445QyHk"
     },
     {
       "type": "shadowsocks",
@@ -47,9 +47,9 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - github",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
@@ -63,13 +63,34 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9085,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - github",
+      "server": "131.123.43.103",
+      "server_port": 443,
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bg2.gacvpn.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
+          "short_id": "1f8bab7ad81089f2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - github",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -89,29 +110,27 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-      "server": "bg2.gacvpn.site",
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - github",
+      "server": "191.44.112.170",
       "server_port": 443,
-      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
-      "flow": "xtls-rprx-vision",
+      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
         "enabled": true,
-        "server_name": "bg2.gacvpn.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
-          "short_id": "1f8bab7ad81089f2"
+        "server_name": "orbylume.my.to",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-trojan/bg",
+        "headers": {
+          "Host": "orbylume.my.to"
         }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 11 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 12 - github",
       "server": "191.44.112.170.sslip.io",
       "server_port": 443,
       "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
@@ -143,7 +162,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
         "🇧🇬 保加利亚 (Bulgaria) 09 - github",
         "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - github",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - github"
       ]
     },
     {
@@ -160,7 +180,8 @@
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
         "🇧🇬 保加利亚 (Bulgaria) 09 - github",
         "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 11 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 11 - github",
+        "🇧🇬 保加利亚 (Bulgaria) 12 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

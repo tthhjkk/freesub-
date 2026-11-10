@@ -5,28 +5,25 @@
   "outbounds": [
     {
       "type": "vmess",
-      "tag": "🇨🇳 CN 01 - github",
-      "server": "39.108.113.127",
+      "tag": "🇸🇬 新加坡 (Singapore) 01 (家宽) - github",
+      "server": "195.133.135.238",
       "server_port": 10086,
-      "uuid": "b0253c6c-0b96-4950-bde1-669f13bc1a01",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - github"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - github"
+        "🇸🇬 新加坡 (Singapore) 01 (家宽) - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
