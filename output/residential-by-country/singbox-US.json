@@ -4,26 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽) - github",
-      "server": "172.67.67.178",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "server": "us001.zestapp778.com",
+      "server_port": 57277,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
+        "server_name": "us001.zestapp778.com",
+        "insecure": true
       }
     },
     {
