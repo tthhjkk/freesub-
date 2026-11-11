@@ -4,15 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
-      "server": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "server": "23.95.72.244",
+      "server_port": 10000,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "f675b7ac-tmeqo0-0-1imi4.hk3.hyhuawei.com",
-        "insecure": true
+        "server_name": "sellercentral.amazon.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zbxwe24LRKKKjXccD1t_yJ3WDFXXY_y9j7SqbkPMIRw",
+          "short_id": "99aa2eb4f2c77af5"
+        }
       }
     },
     {

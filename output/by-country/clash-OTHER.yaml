@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇸 冰岛 (Iceland) 01 - github
-  server: 191.44.112.170
-  port: 443
+- name: 🌐 其他地区 (Other) 01 - github
+  server: 104.21.58.37
+  port: 2053
   udp: true
   type: vless
-  uuid: 46d221fa-e9b4-748c-4eae-019a88e42991
+  uuid: c83f15bf-1817-4ec8-a19f-6393d226434c
   tls: true
-  servername: orbylume.my.to
+  servername: fast.145779.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: android
   network: ws
   ws-opts:
-    path: /tvpn-tor/is
+    path: /ws-tesla
     headers:
-      Host: orbylume.my.to
+      Host: fast.145779.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇸 冰岛 (Iceland) 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇸 冰岛 (Iceland) 01 - github
+  - 🌐 其他地区 (Other) 01 - github
 rules:
 - MATCH,PROXIES

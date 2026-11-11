@@ -28,7 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
@@ -47,6 +47,16 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -54,7 +64,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - github",
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
-        "🇦🇪 阿联酋 (UAE) 04 - github"
+        "🇦🇪 阿联酋 (UAE) 04 - github",
+        "🇦🇪 阿联酋 (UAE) 05 - github"
       ]
     },
     {
@@ -64,7 +75,8 @@
         "🇦🇪 阿联酋 (UAE) 01 - github",
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
-        "🇦🇪 阿联酋 (UAE) 04 - github"
+        "🇦🇪 阿联酋 (UAE) 04 - github",
+        "🇦🇪 阿联酋 (UAE) 05 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

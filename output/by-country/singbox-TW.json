@@ -12,24 +12,15 @@
       "password": "b7I6g7l7fJhBaMInJ+zkzw=="
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - github",
-      "server": "23.95.72.244",
-      "server_port": 4443,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "business.amazon.co.uk",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "E6XD__G0KCmX1LibW4qwafvYXID5zci_bcwKueuhEA8",
-          "short_id": "807c3fa325465508"
-        }
+        "server_name": "160.187.100.109",
+        "insecure": true
       }
     },
     {
@@ -40,19 +31,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - github",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
@@ -63,8 +42,7 @@
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github"
       ]
     },
     {
@@ -73,8 +51,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
         "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github",
-        "🇹🇼 中国台湾 (Taiwan) 04 - github"
+        "🇹🇼 中国台湾 (Taiwan) 03 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

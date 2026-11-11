@@ -16,7 +16,7 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - github
   server: 216.106.191.201
   port: 10303
