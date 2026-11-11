@@ -5,14 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - github
-  server: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
-  password: 8f99107c-f091-11ee-9935-f23c9164ca5d
-  sni: 4e3e8635-tmm5c0-tvh2gy-1qzi1.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - github
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
   server: 39.109.111.23
   port: 39675
   udp: true
@@ -25,23 +35,7 @@ proxies:
     short-id: 551a216445
   servername: www.lamer.com.hk
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - github
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - github
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
   server: doghkzf.zalolink.com
   port: 28675
   udp: true
@@ -54,37 +48,22 @@ proxies:
     short-id: 9a79807253c040
   servername: www.lamer.com.hk
   client-fingerprint: ios
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - github
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
+  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - github
-  server: 152.32.254.68
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - github
+  server: 202.146.222.174
+  port: 443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - github
-  server: 103.172.116.191
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: mjWmmSvs0D3V3130FT7MVbRs94pPuWXR7ffaQ_3A4kU
-    short-id: f96b3b17a0f5b1fe
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,8 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - github
   - 🇭🇰 中国香港 (Hong Kong) 05 - github
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
-  - 🇭🇰 中国香港 (Hong Kong) 07 - github
-  - 🇭🇰 中国香港 (Hong Kong) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,7 +86,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - github
   - 🇭🇰 中国香港 (Hong Kong) 05 - github
   - 🇭🇰 中国香港 (Hong Kong) 06 - github
-  - 🇭🇰 中国香港 (Hong Kong) 07 - github
-  - 🇭🇰 中国香港 (Hong Kong) 08 - github
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - github
-  server: 154.44.24.25
+  server: 154.21.203.106
   port: 51279
   udp: true
   type: vless

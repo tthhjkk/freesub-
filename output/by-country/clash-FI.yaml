@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: oztq9osla2ad.dop15.com
+  server: 2.29.138.56
   port: 26412
   udp: true
   type: ss
@@ -25,6 +25,45 @@ proxies:
   servername: key-master-saver.com
   client-fingerprint: ios
 - name: 🇫🇮 芬兰 (Finland) 03 - github
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 06 - github
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: fa15684a-81e6-4ba7-bc4b-f601c0d998e9
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 07 - github
   server: 72.35.246.39
   port: 2053
   udp: true
@@ -36,31 +75,7 @@ proxies:
     public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
     short-id: 5e39e518bfac6392
   servername: vk.ru
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - github
-  server: 5.129.249.155
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: assets-59.topp-con.xyz
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - github
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +86,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
+  - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +98,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - github
   - 🇫🇮 芬兰 (Finland) 04 - github
   - 🇫🇮 芬兰 (Finland) 05 - github
+  - 🇫🇮 芬兰 (Finland) 06 - github
+  - 🇫🇮 芬兰 (Finland) 07 - github
 rules:
 - MATCH,PROXIES
