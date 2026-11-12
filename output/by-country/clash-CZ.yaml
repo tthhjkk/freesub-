@@ -30,6 +30,19 @@ proxies:
     short-id: 23d0950d60bc0d5b
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇨🇿 捷克 (Czech) 03 - github
+  server: 94.183.234.245
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -37,6 +50,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +58,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - github
   - 🇨🇿 捷克 (Czech) 02 - github
+  - 🇨🇿 捷克 (Czech) 03 - github
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - github
-  server: 169.40.34.41
-  port: 443
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
-  flow: xtls-rprx-vision
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - github
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
   tls: true
   reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: ios
-- name: 🇫🇮 芬兰 (Finland) 02 - github
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 03 - github
   server: 65.109.208.183
   port: 443
   udp: true
@@ -27,14 +37,21 @@ proxies:
   servername: free.for.member.iiproxy.com
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - github
-  server: 177.202.75.56
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 146.103.118.189
   port: 443
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
+  type: vless
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  tls: true
+  servername: nl2.574ck.xyz
   skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +60,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
+  - 🇫🇮 芬兰 (Finland) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +69,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
+  - 🇫🇮 芬兰 (Finland) 04 - github
 rules:
 - MATCH,PROXIES

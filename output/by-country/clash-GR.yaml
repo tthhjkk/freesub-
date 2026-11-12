@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01 - github
-  server: 23.95.72.244
-  port: 50121
+  server: 85.90.197.220
+  port: 443
   udp: true
   type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wwVM0-8EUXMZthXS6SAGpu3xSPbf2kjWB_A3i-TCOS0
-    short-id: 888cb24cb698
-  servername: api.adidas.com
-  client-fingerprint: chrome
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
