@@ -13,34 +13,6 @@ proxies:
   sni: us001.zestapp778.com
   skip-cert-verify: false
 - name: 🇺🇸 美国 (United States) 02 (移动家宽) - github
-  server: 130.94.20.17
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 (家宽) - github
-  server: 23.95.72.244
-  port: 5461
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: tm0HMw__h6gfIxujioVLds50pGoQAhaIryqJsapBGXU
-    short-id: 9847a4468a
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 04 (家宽) - github
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇺🇸 美国 (United States) 05 (移动家宽) - github
   server: 23.95.72.244
   port: 5466
   udp: true
@@ -52,6 +24,45 @@ proxies:
     public-key: vr-C-6JEfZhnEVO2NDzUIlRhr0LCXFx9BoOBb31AsSg
     short-id: fb16a20a0815
   servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 03 (移动家宽) - github
+  server: 23.95.72.244
+  port: 5465
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
+    short-id: 7024258fb07f5eb5
+  servername: api.adidas.com
+  client-fingerprint: edge
+- name: 🇺🇸 美国 (United States) 04 (移动家宽) - github
+  server: 23.95.72.244
+  port: 5467
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wMLrAweVXsOzwV-Uc_7t7OZBycbjVrgPp0ukPjuXA2U
+    short-id: 6e47891d
+  servername: api.adidas.com
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - github
+  server: 23.95.72.244
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
+    short-id: b88b4ed92599c16a
+  servername: api.amazonalexa.com
   client-fingerprint: ios
 - name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - github
   server: 23.95.72.244
@@ -68,31 +79,18 @@ proxies:
   client-fingerprint: safari
 - name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
   server: 23.95.72.244
-  port: 5463
+  port: 5462
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
-    short-id: be33ecc1975c
+    public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
+    short-id: 4b7a508fcd3ef1a1
   servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 08 (家宽) - github
-  server: 23.95.72.244
-  port: 52541
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
-    short-id: ce5793a7ad9594
-  servername: api.adidas.com
-  client-fingerprint: firefox
-- name: 🇰🇷 韩国 (South Korea) 09 (家宽) - github
+  client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽) - github
   server: 23.95.72.244
   port: 5455
   udp: true
@@ -103,6 +101,19 @@ proxies:
   reality-opts:
     public-key: 57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU
     short-id: bb32911d6c
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 09 (家宽) - github
+  server: 23.95.72.244
+  port: 52541
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs
+    short-id: ce5793a7ad9594
   servername: api.adidas.com
   client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 10 (家宽) - github
@@ -120,17 +131,17 @@ proxies:
   client-fingerprint: chrome
 - name: 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - github
   server: 23.95.72.244
-  port: 5462
+  port: 5463
   udp: true
   type: vless
   uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
-    short-id: 4b7a508fcd3ef1a1
+    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+    short-id: be33ecc1975c
   servername: api.adidas.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,13 +149,13 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽) - github
   - 🇺🇸 美国 (United States) 02 (移动家宽) - github
-  - 🇺🇸 美国 (United States) 03 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - github
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 04 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
-  - 🇯🇵 日本 (Japan) 08 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - github
+  - 🇯🇵 日本 (Japan) 09 (家宽) - github
   - 🇰🇷 韩国 (South Korea) 10 (家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - github
 - name: AUTO
@@ -154,13 +165,13 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽) - github
   - 🇺🇸 美国 (United States) 02 (移动家宽) - github
-  - 🇺🇸 美国 (United States) 03 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 04 (家宽) - github
-  - 🇺🇸 美国 (United States) 05 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 03 (移动家宽) - github
+  - 🇺🇸 美国 (United States) 04 (移动家宽) - github
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - github
   - 🇭🇰 中国香港 (Hong Kong) 06 (家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 07 (家宽) - github
-  - 🇯🇵 日本 (Japan) 08 (家宽) - github
-  - 🇰🇷 韩国 (South Korea) 09 (家宽) - github
+  - 🇰🇷 韩国 (South Korea) 08 (家宽) - github
+  - 🇯🇵 日本 (Japan) 09 (家宽) - github
   - 🇰🇷 韩国 (South Korea) 10 (家宽) - github
   - 🇹🇼 中国台湾 (Taiwan) 11 (家宽) - github
 rules:

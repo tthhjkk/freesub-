@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - github
-  server: 49.254.204.133
-  port: 1774
+  server: 23.95.72.244
+  port: 2096
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 71OwuN_2X-et_42RLIteY2parqX2cARuv-718eg_VD4
+    short-id: b88b4ed92599c16a
+  servername: api.amazonalexa.com
+  client-fingerprint: ios
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - github
   server: 23.95.72.244
   port: 5455
