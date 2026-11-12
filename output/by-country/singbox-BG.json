@@ -7,25 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - github",
       "server": "213.183.63.60",
+      "server_port": 9029,
+      "method": "aes-256-cfb",
+      "password": "dU3DSNS8wYPXzEKw"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
+      "server": "213.183.63.60",
       "server_port": 9085,
       "method": "aes-256-cfb",
       "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - github",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - github",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9066,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "shadowsocks",
@@ -39,29 +39,21 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - github",
       "server": "213.183.63.60",
-      "server_port": 9054,
+      "server_port": 9049,
       "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
+      "password": "PRBf4BS2HvJqtWxY"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - github",
       "server": "213.183.63.60",
-      "server_port": 9066,
+      "server_port": 9061,
       "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - github",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
+      "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - github",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -82,7 +74,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - github",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - github",
       "server": "bg2.gacvpn.site",
       "server_port": 443,
       "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
@@ -103,23 +95,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 10 - github",
-      "server": "23.95.72.244",
-      "server_port": 50126,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - github",
+      "server": "88.80.150.15",
+      "server_port": 443,
+      "uuid": "1d46250c-f015-439d-a7fd-c4d9e2a4c63d",
       "tls": {
         "enabled": true,
-        "server_name": "api.adidas.com",
+        "server_name": "bg2.oncloudvpn.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "XgRdRRJhfjkRmBiRu2PWEmn4kch0lS0hXWM4AzRDx2I",
-          "short_id": "2cc6a03dcf980530"
+          "fingerprint": "edge"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -135,8 +129,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 06 - github",
         "🇧🇬 保加利亚 (Bulgaria) 07 - github",
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 09 - github"
       ]
     },
     {
@@ -151,8 +144,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 06 - github",
         "🇧🇬 保加利亚 (Bulgaria) 07 - github",
         "🇧🇬 保加利亚 (Bulgaria) 08 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - github",
-        "🇧🇬 保加利亚 (Bulgaria) 10 - github"
+        "🇧🇬 保加利亚 (Bulgaria) 09 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

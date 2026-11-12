@@ -19,14 +19,6 @@ proxies:
   uuid: 5cf1f470-3f70-4589-a2a4-4657ea3a1edf
   alterId: 0
   cipher: auto
-- name: 🇲🇽 墨西哥 (Mexico) 03 - github
-  server: mx001.zestapp778.com
-  port: 15083
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: mx001.zestapp778.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - github
   - 🇲🇽 墨西哥 (Mexico) 02 - github
-  - 🇲🇽 墨西哥 (Mexico) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - github
   - 🇲🇽 墨西哥 (Mexico) 02 - github
-  - 🇲🇽 墨西哥 (Mexico) 03 - github
 rules:
 - MATCH,PROXIES
