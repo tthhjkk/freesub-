@@ -12,32 +12,12 @@
       "password": "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - github",
-      "server": "162.249.125.133",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - github",
-      "server": "185.156.44.99",
-      "server_port": 443,
-      "password": "gf1:gfhysteria2024",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.amazon.com",
-        "insecure": true
-      }
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -45,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
-        "🇷🇴 罗马尼亚 (Romania) 02 - github",
-        "🇷🇴 罗马尼亚 (Romania) 03 - github"
+        "🇷🇴 罗马尼亚 (Romania) 02 - github"
       ]
     },
     {
@@ -54,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - github",
-        "🇷🇴 罗马尼亚 (Romania) 02 - github",
-        "🇷🇴 罗马尼亚 (Romania) 03 - github"
+        "🇷🇴 罗马尼亚 (Romania) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

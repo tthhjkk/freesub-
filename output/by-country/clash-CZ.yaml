@@ -16,7 +16,7 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 - name: 🇨🇿 捷克 (Czech) 02 - github
   server: 153.52.69.249
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: WVfpQqoeOrTtCq052_IOxvMv7RCWfLlAOxEfsH1aa2U
     short-id: d5492c7a39515c65
   servername: cache-78.topp-con.xyz
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
