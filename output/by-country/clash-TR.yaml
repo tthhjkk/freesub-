@@ -16,16 +16,6 @@ proxies:
   obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
 - name: 🇹🇷 土耳其 (Turkey) 02 - github
   server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 03 - github
-  server: 153.56.210.134
   port: 38045
   udp: true
   type: hysteria2
@@ -34,6 +24,16 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 642516f2-f9bd-41ce-9904-dee699c39cf9
+- name: 🇹🇷 土耳其 (Turkey) 03 - github
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 04 - github
   server: 62.133.63.45
   port: 8444
@@ -49,50 +49,18 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 05 - github
-  server: 185.246.155.91
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
-    short-id: 6859f5b59e55aa30
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 06 - github
-  server: sclass-b1.catcat321.com
-  port: 20027
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 07 - github
-  server: sclass-b1.catcat321.com
-  port: 20028
-  udp: true
-  type: trojan
-  password: d7563108-615c-4338-a7bd-77f359869a4a
-  sni: hk.catxstar.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 08 - github
-  server: 188.225.37.43
+  server: 45.92.219.47
   port: 443
   udp: true
   type: vless
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  flow: xtls-rprx-vision
   tls: true
-  servername: torvani.cyou
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/boards/live
-    headers:
-      Host: torvani.cyou
-- name: 🇹🇷 土耳其 (Turkey) 09 - github
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: ty.galactichub.online
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 06 - github
   server: 78.135.73.47
   port: 443
   udp: true
@@ -105,6 +73,35 @@ proxies:
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - github
+  server: 185.246.155.91
+  port: 10103
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko
+    short-id: 6859f5b59e55aa30
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - github
+  server: sclass-b1.catcat321.com
+  port: 20027
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 09 - github
+  server: sclass-b1.catcat321.com
+  port: 20028
+  udp: true
+  type: trojan
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  sni: hk.catxstar.com
+  skip-cert-verify: false
 - name: 🇹🇷 土耳其 (Turkey) 10 - github
   server: 151.241.226.201
   port: 2053
