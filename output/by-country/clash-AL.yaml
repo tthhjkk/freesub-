@@ -11,26 +11,17 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
-- name: 🇦🇱 AL 02 - github
-  server: dns22.m3hrzd.ir
-  port: 1348
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇱 AL 01 - github
-  - 🇦🇱 AL 02 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇱 AL 01 - github
-  - 🇦🇱 AL 02 - github
 rules:
 - MATCH,PROXIES

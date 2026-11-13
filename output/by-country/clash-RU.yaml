@@ -31,115 +31,27 @@ proxies:
   grpc-opts:
     grpc-service-name: qi8ws15c7jv5q2fa
 - name: 🇷🇺 俄罗斯 (Russia) 03 - github
-  server: 81.17.18.109
+  server: 193.228.128.230
   port: 443
   udp: true
   type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
+  uuid: de404269-a97c-4f49-9efb-43509c2afa09
   tls: true
   reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: perevodchiki.su
+    public-key: rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY
+    short-id: 8b8dd8a1c0c468d3
+  servername: ch.primarymaster.online
   client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇷🇺 俄罗斯 (Russia) 04 - github
-  server: fduknew.titun.su
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: bizorg.su
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05 - github
   server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 06 - github
-  server: 201.24.121.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-  tls: true
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 07 - github
-  server: srv-17e124.21freedom.net
-  port: 11592
-  udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 08 - github
-  server: 185.215.184.50
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.50
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 09 - github
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4662bf2b-af58-0001-ae5f-ef3d7d3a624f
-  tls: true
-  servername: mbr.rkn-pediki.site
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /session
-    headers:
-      Host: mbr.rkn-pediki.site
-- name: 🇷🇺 俄罗斯 (Russia) 10 - github
-  server: 185.215.184.79
-  port: 443
-  udp: true
-  type: vless
-  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
-    short-id: 428ef87fd47a3a32
-  servername: 185.215.184.79
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11 - github
-  server: 185.86.147.175
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7955bf18-35c4-412d-aabd-c0b36c793063
-  tls: true
-  servername: bhjolq0d0l.flowersgood.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /service/telemetry/045d381f1166/
-    headers:
-      Host: bhjolq0d0l.flowersgood.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -149,13 +61,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - github
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
-  - 🇷🇺 俄罗斯 (Russia) 05 - github
-  - 🇷🇺 俄罗斯 (Russia) 06 - github
-  - 🇷🇺 俄罗斯 (Russia) 07 - github
-  - 🇷🇺 俄罗斯 (Russia) 08 - github
-  - 🇷🇺 俄罗斯 (Russia) 09 - github
-  - 🇷🇺 俄罗斯 (Russia) 10 - github
-  - 🇷🇺 俄罗斯 (Russia) 11 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -165,12 +70,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 02 - github
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
-  - 🇷🇺 俄罗斯 (Russia) 05 - github
-  - 🇷🇺 俄罗斯 (Russia) 06 - github
-  - 🇷🇺 俄罗斯 (Russia) 07 - github
-  - 🇷🇺 俄罗斯 (Russia) 08 - github
-  - 🇷🇺 俄罗斯 (Russia) 09 - github
-  - 🇷🇺 俄罗斯 (Russia) 10 - github
-  - 🇷🇺 俄罗斯 (Russia) 11 - github
 rules:
 - MATCH,PROXIES

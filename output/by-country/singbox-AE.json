@@ -38,14 +38,20 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
+      "server": "9.247.174.134",
+      "server_port": 8443,
+      "uuid": "585a421d-d782-4420-912e-dd58ff5966d7",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A",
+          "short_id": "974f7f8f"
         }
       }
     },
@@ -64,6 +70,17 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
+      "server": "95.174.68.188",
+      "server_port": 14430,
+      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +89,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ]
     },
     {
@@ -83,7 +101,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

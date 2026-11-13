@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github",
-      "server": "112.120.123.140",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - github",
+      "server": "nlll.obxodvpn.us",
       "server_port": 443,
-      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
         "enabled": true,
-        "server_name": "11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com",
+        "server_name": "nlll.obxodvpn.us",
         "insecure": false
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - github"
+        "🇪🇪 爱沙尼亚 (Estonia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

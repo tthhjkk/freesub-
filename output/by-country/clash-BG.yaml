@@ -6,33 +6,47 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - github
   server: 213.183.63.60
-  port: 9085
+  port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - github
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
   port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - github
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - github
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - github
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - github
   server: 195.123.226.21
   port: 443
   udp: true
@@ -45,19 +59,18 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - github
-  server: 88.80.150.15
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - github
+  server: p1real5.greewebservices.ir
+  port: 1270
   udp: true
   type: vless
-  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
+  uuid: b0511969-f769-460b-963b-70c6b84b6967
   tls: true
-  servername: bg2.oncloudvpn.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +82,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - github
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +95,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 04 - github
   - 🇧🇬 保加利亚 (Bulgaria) 05 - github
   - 🇧🇬 保加利亚 (Bulgaria) 06 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - github
+  - 🇧🇬 保加利亚 (Bulgaria) 08 - github
 rules:
 - MATCH,PROXIES
