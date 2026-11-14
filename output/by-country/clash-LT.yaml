@@ -13,11 +13,11 @@ proxies:
   password: b8KkNDjEd5QqFyRm
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - github
   server: 195.238.126.20
-  port: 9086
+  port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: mwgRg9hRq3b4Qnwb
 proxy-groups:
 - name: PROXIES
   type: select

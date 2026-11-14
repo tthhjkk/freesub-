@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01 - github",
-      "server": "202.50.253.45",
+      "server": "202.50.253.99",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -14,22 +14,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 02 - github",
-      "server": "185.164.175.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 03 - github",
-      "server": "202.50.253.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 04 - github",
       "server": "202.50.253.72",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -37,8 +21,24 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - github",
+      "server": "202.50.253.27",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04 - github",
+      "server": "202.50.253.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 05 - github",
-      "server": "202.50.253.54",
+      "server": "202.50.253.90",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -46,7 +46,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 06 - github",
-      "server": "202.50.253.63",
+      "server": "202.50.253.54",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -54,7 +54,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 07 - github",
-      "server": "202.50.253.36",
+      "server": "202.50.253.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -62,6 +62,38 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 08 - github",
+      "server": "185.164.175.81",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 09 - github",
+      "server": "202.50.253.36",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 10 - github",
+      "server": "202.50.253.45",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 11 - github",
+      "server": "202.50.253.63",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 12 - github",
       "server": "91.201.65.122",
       "server_port": 9059,
       "method": "aes-256-cfb",
@@ -69,15 +101,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 09 - github",
+      "tag": "🇮🇹 意大利 (Italy) 13 - github",
       "server": "91.201.65.122",
-      "server_port": 9039,
+      "server_port": 9097,
       "method": "aes-256-cfb",
-      "password": "qYEN5HX4JKeVCdEC"
+      "password": "Sn5B7jTqr76aCJT8"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 14 - github",
+      "server": "91.201.65.122",
+      "server_port": 9092,
+      "method": "aes-256-cfb",
+      "password": "TyNkGmp9hs6eGpDK"
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 10 - github",
+      "tag": "🇮🇹 意大利 (Italy) 15 - github",
       "server": "172.213.24.16",
       "server_port": 2083,
       "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
@@ -98,43 +138,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 11 - github",
+      "tag": "🇮🇹 意大利 (Italy) 16 - github",
       "server": "91.201.65.122",
-      "server_port": 9074,
+      "server_port": 9053,
       "method": "aes-256-cfb",
-      "password": "p5wSkb2uM3pKSS3j"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 12 - github",
-      "server": "202.50.253.90",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 13 - github",
-      "server": "202.50.253.99",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 14 - github",
-      "server": "202.50.253.27",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 15 - github",
-      "server": "202.50.253.81",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "password": "SBM7R883jBmnqe6C"
     },
     {
       "type": "selector",
@@ -155,7 +163,8 @@
         "🇮🇹 意大利 (Italy) 12 - github",
         "🇮🇹 意大利 (Italy) 13 - github",
         "🇮🇹 意大利 (Italy) 14 - github",
-        "🇮🇹 意大利 (Italy) 15 - github"
+        "🇮🇹 意大利 (Italy) 15 - github",
+        "🇮🇹 意大利 (Italy) 16 - github"
       ]
     },
     {
@@ -176,7 +185,8 @@
         "🇮🇹 意大利 (Italy) 12 - github",
         "🇮🇹 意大利 (Italy) 13 - github",
         "🇮🇹 意大利 (Italy) 14 - github",
-        "🇮🇹 意大利 (Italy) 15 - github"
+        "🇮🇹 意大利 (Italy) 15 - github",
+        "🇮🇹 意大利 (Italy) 16 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
