@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - github",
-      "server": "151.241.19.29",
+      "server": "151.241.19.36",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -14,7 +14,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 02 - github",
-      "server": "151.241.19.36",
+      "server": "151.241.19.29",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -50,14 +50,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
+      "server": "123466.ru",
+      "server_port": 26032,
+      "uuid": "804334e2-04ca-434c-8311-3ccee8218175",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws",
-        "path": "/"
+        "type": "ws"
       }
     },
     {
@@ -69,7 +76,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ]
     },
     {
@@ -80,7 +88,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
