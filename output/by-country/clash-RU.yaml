@@ -5,28 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 193.228.128.230
-  port: 443
+  server: 90.156.203.62
+  port: 5112
   udp: true
-  type: vless
-  uuid: de404269-a97c-4f49-9efb-43509c2afa09
-  tls: true
-  reality-opts:
-    public-key: rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY
-    short-id: 8b8dd8a1c0c468d3
-  servername: ch.primarymaster.online
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: VVlAff77CnAU43Aoc5j15Y
 - name: 🇷🇺 俄罗斯 (Russia) 02 - github
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 0SxLXFtomY9ypO4o8rrNWEpNSZEFzsMnfhBETUd3oOw=
+- name: 🇷🇺 俄罗斯 (Russia) 03 - github
   server: 185.22.153.117
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 03 - github
+- name: 🇷🇺 俄罗斯 (Russia) 04 - github
   server: 201.24.121.243
   port: 443
   udp: true
@@ -39,21 +38,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 04 - github
-  server: 212.41.8.76
-  port: 13443
-  udp: true
-  type: vless
-  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
-  tls: true
-  reality-opts:
-    public-key: d2B_vurRVKXLrK0ib-0sTtQuI3VDdaj8ZKTXgEPwAlc
-    short-id: 9de815e2
-  servername: s3.storage.selcloud.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 - name: 🇷🇺 俄罗斯 (Russia) 05 - github
   server: 185.39.204.117
   port: 10002
@@ -67,6 +51,36 @@ proxies:
   network: ws
   ws-opts:
     path: /vpnjantit
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 185.197.193.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  tls: true
+  servername: us2.v2less.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: us2.v2less.site
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+  server: 212.41.8.76
+  port: 13443
+  udp: true
+  type: vless
+  uuid: a628c583-24a8-4ce5-98ad-c6458abf1cc4
+  tls: true
+  reality-opts:
+    public-key: d2B_vurRVKXLrK0ib-0sTtQuI3VDdaj8ZKTXgEPwAlc
+    short-id: 9de815e2
+  servername: s3.storage.selcloud.ru
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -77,6 +91,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
   - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +103,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03 - github
   - 🇷🇺 俄罗斯 (Russia) 04 - github
   - 🇷🇺 俄罗斯 (Russia) 05 - github
+  - 🇷🇺 俄罗斯 (Russia) 06 - github
+  - 🇷🇺 俄罗斯 (Russia) 07 - github
 rules:
 - MATCH,PROXIES

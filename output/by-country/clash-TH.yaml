@@ -24,7 +24,7 @@ proxies:
     headers:
       Host: d36lt9hzl2ug3d.cloudfront.net:assets.opensignal.com
 - name: 🇹🇭 泰国 (Thailand) 03 - github
-  server: www.true.th
+  server: 99.86.77.43
   port: 80
   udp: true
   type: vless

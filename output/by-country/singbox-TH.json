@@ -28,12 +28,11 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - github",
-      "server": "www.true.th",
+      "server": "99.86.77.43",
       "server_port": 80,
       "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
       "transport": {
         "type": "ws",
-        "path": "/",
         "headers": {
           "Host": "dcm4kwis2exkw.cloudfront.net"
         }

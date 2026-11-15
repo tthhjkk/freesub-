@@ -7,8 +7,8 @@
       "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - github",
       "server": "153.56.210.134",
-      "server_port": 38045,
-      "password": "a81a7b45-dd70-42ef-822f-ef467f944382",
+      "server_port": 57251,
+      "password": "ff0343ad-1c9f-4986-8c62-c01935b508ca",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
@@ -16,7 +16,7 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "642516f2-f9bd-41ce-9904-dee699c39cf9"
+        "password": "0ee2089e-70df-4c30-bfea-1fb9be61d93e"
       }
     },
     {
@@ -39,8 +39,8 @@
       "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - github",
       "server": "153.56.210.134",
-      "server_port": 57251,
-      "password": "ff0343ad-1c9f-4986-8c62-c01935b508ca",
+      "server_port": 38045,
+      "password": "a81a7b45-dd70-42ef-822f-ef467f944382",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
@@ -48,33 +48,12 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "0ee2089e-70df-4c30-bfea-1fb9be61d93e"
+        "password": "642516f2-f9bd-41ce-9904-dee699c39cf9"
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - github",
-      "server": "45.92.219.47",
-      "server_port": 443,
-      "uuid": "ecc0e60a-f2cc-4266-8353-b228df89730a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ty.galactichub.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -94,6 +73,22 @@
       "transport": {
         "type": "grpc",
         "service_name": "GunService"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - github",
+      "server": "157.254.38.210",
+      "server_port": 20027,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -118,15 +113,18 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇹🇷 土耳其 (Turkey) 07 - github",
-      "server": "157.254.38.210",
-      "server_port": 20027,
-      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "server": "38.17.64.118",
+      "server_port": 25515,
+      "password": "b36a14f8-fc3f-4142-968f-48031cf5f330",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
-        "insecure": false
+        "server_name": "2c74e5t.tr3.h1clayd.click",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
       }
     },
     {
@@ -140,7 +138,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
