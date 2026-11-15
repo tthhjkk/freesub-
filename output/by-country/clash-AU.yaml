@@ -13,7 +13,17 @@ proxies:
   sni: connectwithemployerstohireyouridealteam.com
   skip-cert-verify: false
 - name: 🇦🇺 澳大利亚 (Australia) 02 - github
-  server: 176.97.68.100
+  server: 152.67.115.203
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+- name: 🇦🇺 澳大利亚 (Australia) 03 - github
+  server: v1au.mateflora.com
   port: 443
   udp: true
   type: vless
@@ -24,17 +34,7 @@ proxies:
     public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
     short-id: 54cca3c1c1c7
   servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇦🇺 澳大利亚 (Australia) 03 - github
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
