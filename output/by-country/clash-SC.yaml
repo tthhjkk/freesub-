@@ -28,18 +28,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇸🇨 塞舌尔 (Seychelles) 03 - github
-  server: b6d267t.es10.h1clayd.shop
-  port: 443
-  udp: true
-  type: vless
-  uuid: b082567f-6291-4abf-be72-acdda82d4351
-  tls: true
-  reality-opts:
-    public-key: cxyrz3HGwHEptrO2fvz6EiikFoEDgTl0SQkrNyj5yRc
-    short-id: 74f848c51d8139d1
-  servername: b6d267t.es10.h1clayd.shop
-  client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - github
   server: 188.225.24.62
   port: 443
   udp: true
@@ -58,7 +46,6 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - github
   - 🇸🇨 塞舌尔 (Seychelles) 02 - github
   - 🇸🇨 塞舌尔 (Seychelles) 03 - github
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +54,5 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - github
   - 🇸🇨 塞舌尔 (Seychelles) 02 - github
   - 🇸🇨 塞舌尔 (Seychelles) 03 - github
-  - 🇸🇨 塞舌尔 (Seychelles) 04 - github
 rules:
 - MATCH,PROXIES
