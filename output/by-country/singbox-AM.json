@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - github",
-      "server": "83.147.18.75",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - github",
+      "server": "153.56.228.244",
       "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
+      "uuid": "88edfb30-a34b-41e1-a08f-985a93e3bc36",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "49930ag.es8.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
+          "public_key": "H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw",
+          "short_id": "2437eeeb791b6d80"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "61c20be08f4f"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01 - github"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

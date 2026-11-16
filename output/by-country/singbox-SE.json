@@ -6,38 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - github",
-      "server": "62.182.193.228",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "2e555e46dbc421452416834962fd014f"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
-      "server": "194.59.250.52",
-      "server_port": 18501,
-      "method": "aes-128-gcm",
-      "password": "517403753b63fd4fac88986bf98b11e0"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - github",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - github",
+      "server": "194.59.250.52",
+      "server_port": 18501,
+      "method": "aes-128-gcm",
+      "password": "517403753b63fd4fac88986bf98b11e0"
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - github",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - github",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -47,8 +31,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - github",
+      "server": "136.148.213.149",
+      "server_port": 443,
+      "uuid": "4618cebd-e1e9-45c3-be98-d9d6e3ee8bef",
+      "tls": {
+        "enabled": true,
+        "server_name": "362c1eg.se1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "BLhS7fE4Yh6kAADw7yRIn2PzKun-JDagJHJNOePYRSY",
+          "short_id": "bee802ae4ab66496"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - github",
       "server": "138.199.55.230",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -56,6 +63,18 @@
       "tls": {
         "enabled": true,
         "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - github",
+      "server": "95.143.196.97",
+      "server_port": 443,
+      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "tls": {
+        "enabled": true,
+        "server_name": "se.mimowhat.online",
         "insecure": false
       }
     },
@@ -93,18 +112,6 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 09 - github",
-      "server": "95.143.196.97",
-      "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
-      "tls": {
-        "enabled": true,
-        "server_name": "se.mimowhat.online",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -116,8 +123,7 @@
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
         "🇸🇪 瑞典 (Sweden) 07 - github",
-        "🇸🇪 瑞典 (Sweden) 08 - github",
-        "🇸🇪 瑞典 (Sweden) 09 - github"
+        "🇸🇪 瑞典 (Sweden) 08 - github"
       ]
     },
     {
@@ -131,8 +137,7 @@
         "🇸🇪 瑞典 (Sweden) 05 - github",
         "🇸🇪 瑞典 (Sweden) 06 - github",
         "🇸🇪 瑞典 (Sweden) 07 - github",
-        "🇸🇪 瑞典 (Sweden) 08 - github",
-        "🇸🇪 瑞典 (Sweden) 09 - github"
+        "🇸🇪 瑞典 (Sweden) 08 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
