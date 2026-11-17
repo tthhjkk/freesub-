@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01 - github
-  server: 81.171.14.72
+  server: 178.162.147.131
   port: 443
   udp: true
   type: vless
@@ -31,7 +31,7 @@ proxies:
   servername: apple.com
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 03 - github
-  server: 185.79.19.8
+  server: 185.79.19.7
   port: 443
   udp: true
   type: vless
@@ -42,21 +42,59 @@ proxies:
     public-key: YLcEO7lE6TeHKOMwRMkzLwaka7JOCbV8WCQ15eQVWEE
     short-id: 1d482377da
   servername: fazuno.net
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 04 - github
-  server: 37.235.247.81
-  port: 8443
+  server: 5.253.86.3
+  port: 443
   udp: true
   type: vless
-  uuid: 2ae0670d-0bdf-409e-9a55-4e970252d378
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  servername: apple.com
+    public-key: 51ZCyVOxvcD_smARtd9mV-3Rh_WurOzMGRFxk9u2Kgo
+    short-id: fa1754221e4c5f9e
+  servername: nl3.gofizz.in
   client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 05 - github
+  server: 178.130.46.226
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3619ae0e-bd3a-458c-bb0a-c0479019d9ec
+  flow: xtls-rprx-vision
+  tls: true
+  servername: serv1.fishtohome.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 06 - github
+  server: 185.231.101.94
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: eiTR0q65sQ8SUwFSxHY1IXHKkNb-_QTQnambcVxnUFU
+    short-id: 51057fb54d2364f4
+  servername: fuzora.net
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I=
+- name: 🇷🇺 俄罗斯 (Russia) 08 - github
+  server: 185.22.153.117
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 09 - github
   server: 212.41.8.76
   port: 13443
   udp: true
@@ -71,20 +109,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc
-- name: 🇷🇺 俄罗斯 (Russia) 06 - github
-  server: 200.169.179.233
-  port: 443
-  udp: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-  tls: true
-  servername: vps3.nemnogogo.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 07 - github
+- name: 🇷🇺 俄罗斯 (Russia) 10 - github
   server: 201.24.121.243
   port: 443
   udp: true
@@ -97,13 +122,60 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 08 - github
-  server: 185.22.153.117
-  port: 18443
+- name: 🇷🇺 俄罗斯 (Russia) 11 - github
+  server: 201.24.116.192
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 12 - github
+  server: 185.39.204.117
+  port: 10002
+  udp: true
+  type: vless
+  uuid: facb802c-de2e-11f1-9a22-a3404e852f3b
+  tls: true
+  servername: tr2.vpnjantit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+- name: 🇷🇺 俄罗斯 (Russia) 13 - github
+  server: 95.129.236.117
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77998cc6-8a4d-4251-b974-ebff48a84c4d
+  tls: true
+  servername: cdn.dash.gearmonster.org
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /edge/node8/push
+    headers:
+      Host: cdn.dash.gearmonster.org
+- name: 🇷🇺 俄罗斯 (Russia) 14 - github
+  server: 185.197.193.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 313b84fa-b922-500f-9b65-acb67c040cc0
+  tls: true
+  servername: us2.v2less.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: us2.v2less.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -117,6 +189,12 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - github
   - 🇷🇺 俄罗斯 (Russia) 07 - github
   - 🇷🇺 俄罗斯 (Russia) 08 - github
+  - 🇷🇺 俄罗斯 (Russia) 09 - github
+  - 🇷🇺 俄罗斯 (Russia) 10 - github
+  - 🇷🇺 俄罗斯 (Russia) 11 - github
+  - 🇷🇺 俄罗斯 (Russia) 12 - github
+  - 🇷🇺 俄罗斯 (Russia) 13 - github
+  - 🇷🇺 俄罗斯 (Russia) 14 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -130,5 +208,11 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - github
   - 🇷🇺 俄罗斯 (Russia) 07 - github
   - 🇷🇺 俄罗斯 (Russia) 08 - github
+  - 🇷🇺 俄罗斯 (Russia) 09 - github
+  - 🇷🇺 俄罗斯 (Russia) 10 - github
+  - 🇷🇺 俄罗斯 (Russia) 11 - github
+  - 🇷🇺 俄罗斯 (Russia) 12 - github
+  - 🇷🇺 俄罗斯 (Russia) 13 - github
+  - 🇷🇺 俄罗斯 (Russia) 14 - github
 rules:
 - MATCH,PROXIES

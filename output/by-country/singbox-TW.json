@@ -6,30 +6,18 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - github",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - github",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - github",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - github",
       "server": "114.37.105.51",
       "server_port": 443,
       "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
@@ -39,7 +27,7 @@
         "server_name": "tw1.gofizzin.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -54,8 +42,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github"
+        "🇹🇼 中国台湾 (Taiwan) 02 - github"
       ]
     },
     {
@@ -63,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - github",
-        "🇹🇼 中国台湾 (Taiwan) 02 - github",
-        "🇹🇼 中国台湾 (Taiwan) 03 - github"
+        "🇹🇼 中国台湾 (Taiwan) 02 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
