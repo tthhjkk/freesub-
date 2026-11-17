@@ -12,122 +12,89 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 02 - github
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - github
   server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - github
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 05 - github
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 06 - github
-  server: 202.50.253.45
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 07 - github
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 08 - github
-  server: 202.50.253.54
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 09 - github
-  server: 202.50.253.27
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 10 - github
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 11 - github
-  server: 172.213.24.16
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
-    short-id: 0123456789abcdef
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 12 - github
+- name: 🇮🇹 意大利 (Italy) 03 - github
   server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 13 - github
-  server: 91.201.65.122
-  port: 9059
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
-- name: 🇮🇹 意大利 (Italy) 14 - github
+- name: 🇮🇹 意大利 (Italy) 04 - github
   server: 91.201.65.122
   port: 9070
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: bf7v334KKDV3YDhH
-- name: 🇮🇹 意大利 (Italy) 15 - github
+- name: 🇮🇹 意大利 (Italy) 05 - github
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 06 - github
   server: 91.201.65.122
-  port: 9065
+  port: 9097
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: PeHSHm5SqEjBuEXE
-- name: 🇮🇹 意大利 (Italy) 16 - github
-  server: 152.89.168.55
-  port: 443
+  password: Sn5B7jTqr76aCJT8
+- name: 🇮🇹 意大利 (Italy) 07 - github
+  server: 202.50.253.45
+  port: 19999
   udp: true
-  type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: KawjxoeWPWzD1GPZhwdiTje1gZIUiLzHUS7uqCiEtHE
-    short-id: 22750eb5ffb0
-  servername: it1.gofizzin.com
-  client-fingerprint: edge
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 08 - github
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 09 - github
+  server: 202.50.253.63
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 10 - github
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 11 - github
+  server: 202.50.253.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 12 - github
+  server: 202.50.253.54
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - github
+  server: 57.131.21.102
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: n4uygjtq54pz1oiv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,9 +113,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 11 - github
   - 🇮🇹 意大利 (Italy) 12 - github
   - 🇮🇹 意大利 (Italy) 13 - github
-  - 🇮🇹 意大利 (Italy) 14 - github
-  - 🇮🇹 意大利 (Italy) 15 - github
-  - 🇮🇹 意大利 (Italy) 16 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -167,8 +131,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 11 - github
   - 🇮🇹 意大利 (Italy) 12 - github
   - 🇮🇹 意大利 (Italy) 13 - github
-  - 🇮🇹 意大利 (Italy) 14 - github
-  - 🇮🇹 意大利 (Italy) 15 - github
-  - 🇮🇹 意大利 (Italy) 16 - github
 rules:
 - MATCH,PROXIES

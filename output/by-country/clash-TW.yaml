@@ -10,21 +10,29 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: 127.0.0.1
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - github
-  server: 114.37.105.51
+  server: 85.237.207.221
   port: 443
   udp: true
   type: vless
-  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  uuid: b59bcb5b-5150-4c6b-9227-681886197014
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8
-    short-id: 2c14765d0b
-  servername: tw1.gofizzin.com
-  client-fingerprint: firefox
+    public-key: lJz7AGWUC-ZTEIJaU5y1GRrROWJ9J_VzQRyrYPmOygs
+    short-id: fd2fa5e06670120b
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - github
+  server: 103.115.109.49
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
+  - 🇹🇼 中国台湾 (Taiwan) 03 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - github
   - 🇹🇼 中国台湾 (Taiwan) 02 - github
+  - 🇹🇼 中国台湾 (Taiwan) 03 - github
 rules:
 - MATCH,PROXIES

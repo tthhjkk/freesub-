@@ -20,60 +20,12 @@ proxies:
   password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 03 - github
   server: 217.30.10.44
-  port: 9099
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 04 - github
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 05 - github
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 06 - github
-  server: 217.30.10.70
-  port: 9084
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: c3NtHJ5ujV2tGDfj
-- name: 🇵🇱 波兰 (Poland) 07 - github
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 08 - github
-  server: 217.30.10.70
-  port: 9014
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: KnJGad3FqTvjqbaX
-- name: 🇵🇱 波兰 (Poland) 09 - github
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 10 - github
   server: 45.194.66.177
   port: 443
   udp: true
@@ -84,7 +36,19 @@ proxies:
   servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 11 - github
+- name: 🇵🇱 波兰 (Poland) 05 - github
+  server: 80.47.10.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7c92e4b10d6f835
+  servername: pl8.galioncc.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - github
   server: 201.58.189.105
   port: 2083
   udp: true
@@ -99,20 +63,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: google.storage.v2.Storage
-- name: 🇵🇱 波兰 (Poland) 12 - github
-  server: 80.47.10.106
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 07 - github
+  server: 54.37.131.126
+  port: 80
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 13 - github
-  server: 212.87.190.249
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - github
+  server: 13.143.232.205
   port: 443
   udp: true
   type: vless
@@ -137,11 +102,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
-  - 🇵🇱 波兰 (Poland) 09 - github
-  - 🇵🇱 波兰 (Poland) 10 - github
-  - 🇵🇱 波兰 (Poland) 11 - github
-  - 🇵🇱 波兰 (Poland) 12 - github
-  - 🇵🇱 波兰 (Poland) 13 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,10 +115,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - github
   - 🇵🇱 波兰 (Poland) 07 - github
   - 🇵🇱 波兰 (Poland) 08 - github
-  - 🇵🇱 波兰 (Poland) 09 - github
-  - 🇵🇱 波兰 (Poland) 10 - github
-  - 🇵🇱 波兰 (Poland) 11 - github
-  - 🇵🇱 波兰 (Poland) 12 - github
-  - 🇵🇱 波兰 (Poland) 13 - github
 rules:
 - MATCH,PROXIES

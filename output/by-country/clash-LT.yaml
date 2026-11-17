@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - github
-  server: 195.238.126.20
-  port: 9086
+  server: 195.238.126.84
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
+  password: qYEN5HX4JKeVCdEC
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - github
   server: 195.238.126.20
-  port: 9068
+  port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - github
   server: 195.238.126.20
   port: 9011
@@ -27,26 +27,19 @@ proxies:
   password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 04 - github
   server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - github
+  server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - github
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - github
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - github
   server: 84.32.248.124
   port: 443
   udp: true
@@ -58,22 +51,7 @@ proxies:
     short-id: a7d309e4c16b825f
   servername: net-io-api.galioncc.com
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - github
-  server: 84.32.149.211
-  port: 443
-  udp: true
-  type: vless
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-  tls: true
-  reality-opts:
-    public-key: M-cE7q2hNgBeNv7COM8DS2QC3GGi6Pu7pD1lvUfG0mo
-    short-id: e4fc6803b3212ad4
-  servername: acorn.willowfen.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - github
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - github
   server: 84.32.83.197
   port: 443
   udp: true
@@ -85,21 +63,6 @@ proxies:
     short-id: a7d309e4c16b825f
   servername: api-dns-gw.galioncc.com
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 10 - github
-  server: 84.32.149.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-  tls: true
-  reality-opts:
-    public-key: kZZd7-Pzutoww6ZOnQQwvanbxDbixSAVH5FvEfAXBls
-    short-id: 2c25ffa1927ebf0f
-  servername: folio.willowfen.top
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -112,9 +75,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - github
   - 🇱🇹 立陶宛 (Lithuania) 06 - github
   - 🇱🇹 立陶宛 (Lithuania) 07 - github
-  - 🇱🇹 立陶宛 (Lithuania) 08 - github
-  - 🇱🇹 立陶宛 (Lithuania) 09 - github
-  - 🇱🇹 立陶宛 (Lithuania) 10 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -127,8 +87,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - github
   - 🇱🇹 立陶宛 (Lithuania) 06 - github
   - 🇱🇹 立陶宛 (Lithuania) 07 - github
-  - 🇱🇹 立陶宛 (Lithuania) 08 - github
-  - 🇱🇹 立陶宛 (Lithuania) 09 - github
-  - 🇱🇹 立陶宛 (Lithuania) 10 - github
 rules:
 - MATCH,PROXIES
