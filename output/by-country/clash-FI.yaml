@@ -27,7 +27,7 @@ proxies:
     public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
     short-id: 81959fce
   servername: apple.com
-  client-fingerprint: ''
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - github
   server: 94.183.164.119
   port: 24433
@@ -36,6 +36,26 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 04 - github
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - github
+  server: 138.124.80.29
+  port: 443
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: fin1-r.bankai.party
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +64,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
+  - 🇫🇮 芬兰 (Finland) 04 - github
+  - 🇫🇮 芬兰 (Finland) 05 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +74,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - github
   - 🇫🇮 芬兰 (Finland) 02 - github
   - 🇫🇮 芬兰 (Finland) 03 - github
+  - 🇫🇮 芬兰 (Finland) 04 - github
+  - 🇫🇮 芬兰 (Finland) 05 - github
 rules:
 - MATCH,PROXIES
