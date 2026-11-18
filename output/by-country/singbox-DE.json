@@ -4,8 +4,101 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇩🇪 德国 (Germany) 01 - github",
+      "server": "render.com",
+      "server_port": 443,
+      "uuid": "253d0ec6-6a98-4aaf-a22b-94ca72ef4d87",
+      "tls": {
+        "enabled": true,
+        "server_name": "sparkling-tree-fa79.xujfjcjjzjzjxjcha.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "sparkling-tree-fa79.xujfjcjjzjzjxjcha.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 02 - github",
+      "server": "172.66.44.124",
+      "server_port": 8443,
+      "uuid": "b2f2f9f2-1864-48ea-839b-22815faff1f1",
+      "tls": {
+        "enabled": true,
+        "server_name": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 03 - github",
+      "server": "104.27.109.16",
+      "server_port": 443,
+      "uuid": "67ab86b7-69fb-41bf-8967-290cbd08f0ac",
+      "tls": {
+        "enabled": true,
+        "server_name": "jLDmwA9CfRug7b03Cr1vs.paGes.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/43gYvFJEPmUtPFSZ?ed=2560",
+        "headers": {
+          "Host": "jldmwa9cfrug7b03cr1vs.pages.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 04 - github",
+      "server": "213.202.208.199",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 05 - github",
+      "server": "213.202.208.199",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 06 - github",
       "server": "193.108.116.98",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -13,63 +106,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 02 - github",
-      "server": "185.176.204.18",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 03 - github",
-      "server": "193.108.119.3",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 04 - github",
-      "server": "193.108.117.84",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 05 - github",
-      "server": "193.108.117.111",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 06 - github",
-      "server": "23.157.88.43",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 07 - github",
-      "server": "193.108.119.83",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 08 - github",
-      "server": "146.70.20.147",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 09 - github",
       "server": "193.108.119.2",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -77,22 +114,79 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 08 - github",
+      "server": "145.79.177.201",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 09 - github",
+      "server": "193.108.119.3",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇩🇪 德国 (Germany) 10 - github",
+      "server": "193.108.117.111",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 11 - github",
+      "server": "23.157.88.43",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 12 - github",
+      "server": "185.176.204.18",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 13 - github",
       "server": "193.108.118.247",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 11 - github",
-      "server": "159.195.207.238",
-      "server_port": 49313,
-      "uuid": "855c7aaa-e7d6-463e-971e-d36032744428"
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 14 - github",
+      "server": "135.220.178.46",
+      "server_port": 46303,
+      "method": "chacha20-ietf-poly1305",
+      "password": "zZMNTGpPl38ASlbI1EKOBJ"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 12 - github",
+      "tag": "🇩🇪 德国 (Germany) 15 - github",
+      "server": "185.226.172.8",
+      "server_port": 8008,
+      "method": "aes-256-gcm",
+      "password": "XKFKl2rULjIp74"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 16 - github",
+      "server": "47.254.143.251",
+      "server_port": 443,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 17 - github",
       "server": "47.254.175.2",
       "server_port": 443,
       "method": "2022-blake3-chacha20-poly1305",
@@ -100,124 +194,46 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 13 - github",
-      "server": "185.226.172.8",
-      "server_port": 8008,
+      "tag": "🇩🇪 德国 (Germany) 18 - github",
+      "server": "146.70.20.147",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 19 - github",
+      "server": "193.108.117.84",
+      "server_port": 19999,
       "method": "aes-256-gcm",
-      "password": "XKFKl2rULjIp74"
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 20 - github",
+      "server": "193.108.119.83",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 21 - github",
+      "server": "51.38.127.93",
+      "server_port": 8080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "03y5gbnyl4o1hc2n"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 14 - github",
+      "tag": "🇩🇪 德国 (Germany) 22 - github",
       "server": "167.233.129.126",
       "server_port": 2474,
       "uuid": "287db857-de04-4212-bd69-5d14083e340e"
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 15 - github",
-      "server": "163.245.42.87",
-      "server_port": 443,
-      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mother-earth.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 16 - github",
-      "server": "185.177.229.95",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 17 - github",
-      "server": "163.245.42.56",
-      "server_port": 443,
-      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "mother-earth.fyi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 18 - github",
-      "server": "88.216.211.36",
-      "server_port": 443,
-      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
-      "tls": {
-        "enabled": true,
-        "server_name": "de8.galioncc.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "c4e7a1902b8d6f35"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 19 - github",
-      "server": "57.129.41.216",
-      "server_port": 80,
-      "uuid": "18535741-e8b3-4b43-9348-785b55936751",
-      "transport": {
-        "type": "ws",
-        "path": "/vless/",
-        "headers": {
-          "Host": "ov-germany1.09vpn.com"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 20 - github",
-      "server": "193.108.119.87",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 21 - github",
+      "tag": "🇩🇪 德国 (Germany) 23 - github",
       "server": "9.247.23.209",
       "server_port": 443,
       "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
@@ -238,7 +254,138 @@
     },
     {
       "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 22 - github",
+      "tag": "🇩🇪 德国 (Germany) 24 - github",
+      "server": "185.177.229.95",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 25 - github",
+      "server": "193.108.119.34",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.iloverussia2026.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 26 - github",
+      "server": "163.245.42.87",
+      "server_port": 443,
+      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mother-earth.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 27 - github",
+      "server": "169.150.210.233",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 28 - github",
+      "server": "187.7.206.179",
+      "server_port": 443,
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "1fw71df.virtual-network.lol",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 29 - github",
+      "server": "163.245.42.56",
+      "server_port": 443,
+      "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "mother-earth.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 30 - github",
+      "server": "159.195.207.238",
+      "server_port": 49313,
+      "uuid": "855c7aaa-e7d6-463e-971e-d36032744428"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 31 - github",
+      "server": "193.108.119.96",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "learn.iloverussia2026.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 32 - github",
+      "server": "82.139.235.73",
+      "server_port": 443,
+      "uuid": "45fbaffc-0737-4fd7-bef1-3f0af83330be",
+      "tls": {
+        "enabled": true,
+        "server_name": "cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IXRlHf-YEhBbvFahvvyQD173TUy2UfKNjZljrZw5NHA",
+          "short_id": "52ac85a27935"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 33 - github",
       "server": "193.108.117.61",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -250,24 +397,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 23 - github",
-      "server": "213.202.208.199",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 24 - github",
-      "server": "169.150.210.233",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 25 - github",
+      "tag": "🇩🇪 德国 (Germany) 34 - github",
       "server": "187.7.206.176",
       "server_port": 443,
       "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
@@ -278,26 +409,116 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇩🇪 德国 (Germany) 26 - github",
-      "server": "91.107.169.224",
-      "server_port": 80,
-      "uuid": "014f8bf6-9221-4f99-838f-4c16ca90334f",
-      "security": "auto",
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/",
-        "host": "google.whatsapp.snapp.torob.basalam.dns-look.space."
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 35 - github",
+      "server": "144.31.217.18",
+      "server_port": 1883,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "dfINKWLXoOgH3Ox72CAmkCvWmDlP+idaTuu/DdDG4FU=:V9v8Fd5AvDk3+nyah0WxCeqzv8Q5+cMXUj7WjVCgQz0="
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 36 - github",
+      "server": "170.168.25.39",
+      "server_port": 443,
+      "uuid": "21c24d1c-d938-495a-b33f-957bc65d301f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "detectportal.firefox.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZwMEL1FEHRGDKBNqSLnpHwSiEUPvY7vTk_cUIczPnEQ",
+          "short_id": "b21d9c9270653002"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 27 - github",
+      "tag": "🇩🇪 德国 (Germany) 37 - github",
+      "server": "144.31.140.125",
+      "server_port": 8443,
+      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wgyw3OxZw4HEzedNdY_eHdcVkrtT7GEeZSHfzcZ8iDo",
+          "short_id": "168c15efac9df5fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 38 - github",
+      "server": "5.83.129.236",
+      "server_port": 443,
+      "uuid": "d86e6fda-e519-46ab-98eb-9ff9a9da5984",
+      "tls": {
+        "enabled": true,
+        "server_name": "host-de-upscale.cdn.cachefleet.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "a9w9wmko0k2od14hv8v"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 39 - github",
+      "server": "193.108.119.87",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 40 - github",
+      "server": "88.216.211.36",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
+      "tls": {
+        "enabled": true,
+        "server_name": "de8.galioncc.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "c4e7a1902b8d6f35"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 41 - github",
       "server": "46.28.69.123",
       "server_port": 443,
       "uuid": "b945f9aa-1b45-4912-aa7e-248509472bad",
@@ -318,19 +539,19 @@
     },
     {
       "type": "trojan",
-      "tag": "🇩🇪 德国 (Germany) 28 - github",
-      "server": "193.108.119.193",
+      "tag": "🇩🇪 德国 (Germany) 42 - github",
+      "server": "193.108.119.78",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.iloverussia2026.com",
+        "server_name": "www.iloverussia2026.com",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 29 - github",
+      "tag": "🇩🇪 德国 (Germany) 43 - github",
       "server": "edge.bookmai.com",
       "server_port": 443,
       "uuid": "b9bfa54d-bc44-4592-a6d6-89a9665d286f",
@@ -340,7 +561,7 @@
         "server_name": "mother-earth.fyi",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -351,31 +572,99 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 30 - github",
-      "server": "153.56.229.188",
+      "tag": "🇩🇪 德国 (Germany) 44 - github",
+      "server": "87.248.149.50",
       "server_port": 443,
-      "uuid": "13e6bdfd-d51b-4e57-a40e-b88784cba8bd",
+      "uuid": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec",
       "tls": {
         "enabled": true,
-        "server_name": "ec7a81g.de15.h1clayd.click",
+        "server_name": "base.hosamobenl.co.uk",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "shUbIWcBJdXaDzO80KqTU9exgMarUCOiiZ56Dwl7XVU",
-          "short_id": "7a8e24da4eb2c1b5"
+          "fingerprint": "chrome"
         }
-      },
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇩🇪 德国 (Germany) 45 - github",
+      "server": "91.107.169.224",
+      "server_port": 80,
+      "uuid": "014f8bf6-9221-4f99-838f-4c16ca90334f",
+      "security": "auto",
       "transport": {
-        "type": "grpc",
-        "service_name": "43f41cd7fee0"
+        "type": "httpupgrade",
+        "path": "/",
+        "host": "google.whatsapp.snapp.torob.basalam.dns-look.space."
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 46 - github",
+      "server": "18.194.242.173",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 47 - github",
+      "server": "177.202.66.212",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.obxodvpn.us",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 48 - github",
+      "server": "18.193.79.104",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "18.193.79.104",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇩🇪 德国 (Germany) 49 - github",
+      "server": "3.76.221.4",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "3.76.221.4",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 31 - github",
+      "tag": "🇩🇪 德国 (Germany) 50 - github",
+      "server": "91.107.247.173",
+      "server_port": 2083,
+      "uuid": "0386df1b-7abd-4676-f3c6-d65d691023b9",
+      "tls": {
+        "enabled": true,
+        "server_name": "sino.bestsellers1.site",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 51 - github",
       "server": "195.63.128.21",
       "server_port": 2443,
       "uuid": "fa937345-6d3e-4ff4-8127-1a836987a0db",
@@ -395,26 +684,34 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 32 - github",
-      "server": "177.202.66.212",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 52 - github",
+      "server": "57.129.113.16",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "NcAXc0UZI6yQJE1p8QmOv8"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 53 - github",
+      "server": "193.108.119.29",
       "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "de1.obxodvpn.us",
-        "insecure": true
+        "server_name": "blog.iloverussia2026.com",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 33 - github",
-      "server": "88.216.70.125",
-      "server_port": 443,
-      "uuid": "88e79aa6-f431-4453-8dcc-652a0c747198",
+      "tag": "🇩🇪 德国 (Germany) 54 - github",
+      "server": "91.107.188.129",
+      "server_port": 2083,
+      "uuid": "bd6c11e0-0233-4fb1-ba97-8d5f16d7155f",
       "tls": {
         "enabled": true,
-        "server_name": "o685y.save-node.com",
+        "server_name": "site.check-looks.space",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -422,36 +719,12 @@
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/api/se1k2rfxlsuer3ry4u6e84kl8rqp721p",
-        "headers": {
-          "Host": "o685y.save-node.com"
-        }
+        "type": "ws"
       }
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 34 - github",
-      "server": "153.56.229.218",
-      "server_port": 443,
-      "uuid": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
-      "tls": {
-        "enabled": true,
-        "server_name": "71b840t.de7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
-          "short_id": "e572b6579ea525d4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 35 - github",
+      "tag": "🇩🇪 德国 (Germany) 55 - github",
       "server": "82.39.171.12",
       "server_port": 443,
       "uuid": "d65cc14c-f53f-4fe2-b262-97856601319c",
@@ -472,144 +745,132 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 36 - github",
-      "server": "195.206.235.202",
+      "tag": "🇩🇪 德国 (Germany) 56 - github",
+      "server": "188.225.73.41",
       "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "uuid": "4cabcd59-a405-4c00-96f5-03507e1e28fa",
       "tls": {
         "enabled": true,
-        "server_name": "4935e4t.de25.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
-          "short_id": "6976d670818644cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 37 - github",
-      "server": "91.107.247.173",
-      "server_port": 2083,
-      "uuid": "0386df1b-7abd-4676-f3c6-d65d691023b9",
-      "tls": {
-        "enabled": true,
-        "server_name": "sino.bestsellers1.site",
-        "insecure": true
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 38 - github",
-      "server": "82.118.19.153",
-      "server_port": 443,
-      "uuid": "adcaa148-7c66-4282-a81a-99ec8afa029d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE",
-          "short_id": "670ed9f350bd8ee0"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 39 - github",
-      "server": "zibanabz.jonsonvip.ir",
-      "server_port": 3939,
-      "uuid": "92e598b8-014a-4232-952b-3ac6d00da498",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ai.android",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "dnnN66V_xqEbGoG5P8E_Zqk3TaZt2lM4SI9N7Ana7FA",
-          "short_id": "d9a2600fdecd7be2"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 40 - github",
-      "server": "18.194.242.173",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "18.194.242.173",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 41 - github",
-      "server": "91.107.188.129",
-      "server_port": 2083,
-      "uuid": "bd6c11e0-0233-4fb1-ba97-8d5f16d7155f",
-      "tls": {
-        "enabled": true,
-        "server_name": "site.check-looks.space",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 42 - github",
-      "server": "18.153.65.67",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 43 - github",
-      "server": "87.248.149.50",
-      "server_port": 443,
-      "uuid": "667016ca-f02e-4b5f-bfc3-3d8ed81e9bec",
-      "tls": {
-        "enabled": true,
-        "server_name": "base.hosamobenl.co.uk",
+        "server_name": "cadrin.wtf",
         "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "cache.sync.v1"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 57 - github",
+      "server": "196.245.217.39",
+      "server_port": 443,
+      "uuid": "95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "345739t.de15.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "hFee7zTreqlv_wccK_8zxN5v23hj9u-DshByvGf-KAA",
+          "short_id": "23732d14a527990d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 58 - github",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.com",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 59 - github",
+      "server": "185.71.216.95",
+      "server_port": 2194,
+      "uuid": "128bd8ad-4f6c-4d70-af13-15a2cec331d2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jHtC6ayzhkd_GVNF5TIGPu9iVpqUltBAQj1dpGJHwxs",
+          "short_id": "55986a94e2228791"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇩🇪 德国 (Germany) 60 - github",
+      "server": "193.108.119.193",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "resources.iloverussia2026.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇩🇪 德国 (Germany) 61 - github",
+      "server": "rivulet.filnex.baby",
+      "server_port": 443,
+      "uuid": "80a06811-f74b-4b82-ac99-7e66c2a98e1c",
+      "tls": {
+        "enabled": true,
+        "server_name": "rivulet.filnex.baby",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/api/de6/stream",
+        "headers": {
+          "Host": "rivulet.filnex.baby"
+        }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇩🇪 德国 (Germany) 44 - github",
+      "tag": "🇩🇪 德国 (Germany) 62 - github",
       "server": "3.69.232.199",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -621,105 +882,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 45 - github",
-      "server": "45.129.242.56",
+      "tag": "🇩🇪 德国 (Germany) 63 - github",
+      "server": "153.56.229.218",
       "server_port": 443,
-      "uuid": "ebdfaf99-41d8-4e48-8196-d54510ffb556",
-      "flow": "xtls-rprx-vision",
+      "uuid": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "71b840t.de7.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "YURKlEQ3rap4KOXXGsVFZyYev2oDU2gCEbNTXPdKWRY",
-          "short_id": "abcdef"
+          "public_key": "3wFF83gtIA0sXj-6GGCAa--oQbSr0MVUj0FBc-0QmiE",
+          "short_id": "e572b6579ea525d4"
         }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 46 - github",
-      "server": "213.202.208.199",
-      "server_port": 5000,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 47 - github",
-      "server": "reedbed.filnex.baby",
-      "server_port": 443,
-      "uuid": "80a06811-f74b-4b82-ac99-7e66c2a98e1c",
-      "tls": {
-        "enabled": true,
-        "server_name": "reedbed.filnex.baby",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/de6/stream",
-        "headers": {
-          "Host": "reedbed.filnex.baby"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 48 - github",
-      "server": "51.38.127.93",
-      "server_port": 8080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "03y5gbnyl4o1hc2n"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇩🇪 德国 (Germany) 49 - github",
-      "server": "57.129.113.16",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "NcAXc0UZI6yQJE1p8QmOv8"
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 50 - github",
-      "server": "147.45.66.208",
-      "server_port": 43000,
-      "uuid": "01e61db7-9e0b-4431-a995-a5288a01b951",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "147.45.66.208",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DbL9RJFvJrnxBu6fFhWkHF8nsD6cK_DKMuMV00RmlWg",
-          "short_id": "4d3d8e15"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇪 德国 (Germany) 51 - github",
-      "server": "185.65.202.122",
-      "server_port": 10004,
-      "uuid": "836c4d68-e086-11f1-aabc-67841df8a6f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vpnjantit"
       }
     },
     {
@@ -777,7 +955,19 @@
         "🇩🇪 德国 (Germany) 48 - github",
         "🇩🇪 德国 (Germany) 49 - github",
         "🇩🇪 德国 (Germany) 50 - github",
-        "🇩🇪 德国 (Germany) 51 - github"
+        "🇩🇪 德国 (Germany) 51 - github",
+        "🇩🇪 德国 (Germany) 52 - github",
+        "🇩🇪 德国 (Germany) 53 - github",
+        "🇩🇪 德国 (Germany) 54 - github",
+        "🇩🇪 德国 (Germany) 55 - github",
+        "🇩🇪 德国 (Germany) 56 - github",
+        "🇩🇪 德国 (Germany) 57 - github",
+        "🇩🇪 德国 (Germany) 58 - github",
+        "🇩🇪 德国 (Germany) 59 - github",
+        "🇩🇪 德国 (Germany) 60 - github",
+        "🇩🇪 德国 (Germany) 61 - github",
+        "🇩🇪 德国 (Germany) 62 - github",
+        "🇩🇪 德国 (Germany) 63 - github"
       ]
     },
     {
@@ -834,7 +1024,19 @@
         "🇩🇪 德国 (Germany) 48 - github",
         "🇩🇪 德国 (Germany) 49 - github",
         "🇩🇪 德国 (Germany) 50 - github",
-        "🇩🇪 德国 (Germany) 51 - github"
+        "🇩🇪 德国 (Germany) 51 - github",
+        "🇩🇪 德国 (Germany) 52 - github",
+        "🇩🇪 德国 (Germany) 53 - github",
+        "🇩🇪 德国 (Germany) 54 - github",
+        "🇩🇪 德国 (Germany) 55 - github",
+        "🇩🇪 德国 (Germany) 56 - github",
+        "🇩🇪 德国 (Germany) 57 - github",
+        "🇩🇪 德国 (Germany) 58 - github",
+        "🇩🇪 德国 (Germany) 59 - github",
+        "🇩🇪 德国 (Germany) 60 - github",
+        "🇩🇪 德国 (Germany) 61 - github",
+        "🇩🇪 德国 (Germany) 62 - github",
+        "🇩🇪 德国 (Germany) 63 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -29,6 +29,17 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - github
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - github
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -37,18 +48,13 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - github
-  server: 151.241.19.44
-  port: 1270
+- name: 🇦🇪 阿联酋 (UAE) 06 - github
+  server: 16.106.7.232
+  port: 20086
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
+  type: trojan
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  sni: hk.catxstar.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -60,6 +66,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
   - 🇦🇪 阿联酋 (UAE) 05 - github
+  - 🇦🇪 阿联酋 (UAE) 06 - github
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,5 +77,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - github
   - 🇦🇪 阿联酋 (UAE) 04 - github
   - 🇦🇪 阿联酋 (UAE) 05 - github
+  - 🇦🇪 阿联酋 (UAE) 06 - github
 rules:
 - MATCH,PROXIES

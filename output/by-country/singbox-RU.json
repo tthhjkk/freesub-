@@ -15,7 +15,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -27,34 +27,31 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - github",
-      "server": "200.169.179.233",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "server": "37.235.247.81",
+      "server_port": 8443,
+      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
+        "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": "6ba85179e30d4fc2"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - github",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": false
-      }
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU="
     },
     {
       "type": "vless",
@@ -82,22 +79,21 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 05 - github",
-      "server": "37.235.247.81",
-      "server_port": 8443,
-      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
-      "flow": "xtls-rprx-vision",
+      "server": "200.169.179.233",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": "6ba85179e30d4fc2"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
       }
     },
     {

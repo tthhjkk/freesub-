@@ -38,28 +38,42 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - github",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
+        "path": "/vless"
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - github",
-      "server": "151.241.19.44",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - github",
+      "server": "16.106.7.232",
+      "server_port": 20086,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
       "tls": {
         "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+        "server_name": "hk.catxstar.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -71,7 +85,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ]
     },
     {
@@ -82,7 +97,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - github",
         "🇦🇪 阿联酋 (UAE) 03 - github",
         "🇦🇪 阿联酋 (UAE) 04 - github",
-        "🇦🇪 阿联酋 (UAE) 05 - github"
+        "🇦🇪 阿联酋 (UAE) 05 - github",
+        "🇦🇪 阿联酋 (UAE) 06 - github"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
